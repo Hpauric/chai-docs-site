@@ -19,15 +19,25 @@ search: true
 
 # Introduction
 
-Welcome to the Kittn API! You can use our API to access Kittn API endpoints, which can get information on various cats, kittens, and breeds in our database.
+The Chai API is broken down by style or task.
 
-We have language bindings in Shell, Ruby, and Python! You can view code examples in the dark area to the right, and you can switch the programming language of the examples with the tabs in the top right.
+## Assertion Styles
 
-This example API documentation page was created with [Slate](https://github.com/tripit/slate). Feel free to edit it and use it as a base for your own API's documentation.
+The Expect / Should API covers the BDD assertion styles.
+The Assert API covers the TDD assertion style.
 
-# Authentication
+### Plugins
 
-> To authorize, use this code:
+The Plugin API will be of use to anyone interested in building plugins as helpers to DRY up your tests, or for release to the community.
+
+### Tools
+
+The Online Test Suite is a live run of Chai’s test suite. Use it to ensure browser compatibility.
+
+# Assert
+
+The assert style is very similar to node.js’ included assert module, with a bit of extra sugar. 
+Of the three style options, assert is the only one that is not chainable. Check out the [Style Guide](http://chaijs.com/guide/styles/) for a comparison.
 
 ```ruby
 require 'kittn'
