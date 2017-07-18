@@ -231,18 +231,59 @@
       <div class="content">
         <h1 id="introduction">Introduction</h1>
 
-<p>Welcome to the Kittn API! You can use our API to access Kittn API endpoints, which can get information on various cats, kittens, and breeds in our database.</p>
+<p>The Chai API is broken down by style or task.</p>
 
-<p>We have language bindings in Shell, Ruby, and Python! You can view code examples in the dark area to the right, and you can switch the programming language of the examples with the tabs in the top right.</p>
+<h2 id="assertion-styles">Assertion Styles</h2>
 
-<p>This example API documentation page was created with <a href="https://github.com/tripit/slate">Slate</a>. Feel free to edit it and use it as a base for your own API&rsquo;s documentation.</p>
+<p>The Expect / Should API covers the BDD assertion styles.
+The Assert API covers the TDD assertion style.</p>
 
-<h1 id="authentication">Authentication</h1>
+<h3 id="plugins">Plugins</h3>
 
-<blockquote>
-<p>To authorize, use this code:</p>
-</blockquote>
-<pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
+<p>The Plugin API will be of use to anyone interested in building plugins as helpers to DRY up your tests, or for release to the community.</p>
+
+<h3 id="tools">Tools</h3>
+
+<p>The Online Test Suite is a live run of Chai’s test suite. Use it to ensure browser compatibility.</p>
+
+<h1 id="assert">Assert</h1>
+
+<p>The assert style is very similar to node.js’ included assert module, with a bit of extra sugar. 
+Of the three style options, assert is the only one that is not chainable. Check out the <a href="http://chaijs.com/guide/styles/">Style Guide</a> for a comparison.</p>
+
+<h2 id="api-reference">API Reference</h2>
+
+<h3 id="assert-expression-message">assert(expression, message)</h3>
+
+<ul>
+<li>@param { Mixed } expression to test for truthiness</li>
+<li>@param { String } message to display on error
+Write your own test expressions.</li>
+</ul>
+<pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">(</span><span class="s1">'foo'</span> <span class="o">!==</span> <span class="s1">'bar'</span><span class="p">,</span> <span class="s1">'foo is not bar'</span><span class="p">);</span>
+<span class="nx">assert</span><span class="p">(</span><span class="nb">Array</span><span class="p">.</span><span class="nx">isArray</span><span class="p">([]),</span> <span class="s1">'empty arrays are arrays'</span><span class="p">);</span>
+</code></pre>
+<h3 id="fail-actual-expected-message-operator">.fail(actual, expected, [message], [operator])</h3>
+
+<ul>
+<li>@param { Mixed } actual</li>
+<li>@param { Mixed } expected</li>
+<li>@param { String } message</li>
+<li>@param { String } operator</li>
+</ul>
+
+<p>Throw a failure. Node.js assert module-compatible.</p>
+
+<h3 id="isok-object-message">.isOk(object, [message])</h3>
+
+<ul>
+<li>@param { Mixed } object to test</li>
+<li>@param { String } message
+Asserts that object is truthy.</li>
+</ul>
+<pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">isOk</span><span class="p">(</span><span class="s1">'everything'</span><span class="p">,</span> <span class="s1">'everything is ok'</span><span class="p">);</span>
+<span class="nx">assert</span><span class="p">.</span><span class="nx">isOk</span><span class="p">(</span><span class="kc">false</span><span class="p">,</span> <span class="s1">'this will fail'</span><span class="p">);</span>
+</code></pre><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
 
 <span class="n">api</span> <span class="o">=</span> <span class="no">Kittn</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">)</span>
 </code></pre><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">kittn</span>
