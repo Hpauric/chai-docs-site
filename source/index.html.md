@@ -39,6 +39,40 @@ The Online Test Suite is a live run of Chai’s test suite. Use it to ensure bro
 The assert style is very similar to node.js’ included assert module, with a bit of extra sugar. 
 Of the three style options, assert is the only one that is not chainable. Check out the [Style Guide](http://chaijs.com/guide/styles/) for a comparison.
 
+## API Reference
+
+### assert(expression, message)
+
+* @param { Mixed } expression to test for truthiness
+* @param { String } message to display on error
+Write your own test expressions.
+
+```javascript
+assert('foo' !== 'bar', 'foo is not bar');
+assert(Array.isArray([]), 'empty arrays are arrays');
+```
+
+### .fail(actual, expected, [message], [operator])
+
+* @param { Mixed } actual
+* @param { Mixed } expected
+* @param { String } message
+* @param { String } operator
+
+Throw a failure. Node.js assert module-compatible.
+
+### .isOk(object, [message])
+
+* @param { Mixed } object to test
+* @param { String } message
+Asserts that object is truthy.
+
+```javascript
+assert.isOk('everything', 'everything is ok');
+assert.isOk(false, 'this will fail');
+```
+
+
 ```ruby
 require 'kittn'
 
