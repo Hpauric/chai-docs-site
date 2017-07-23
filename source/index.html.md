@@ -69,6 +69,8 @@ Write your own test expressions.
     assert(Array.isArray([]), 'empty arrays are arrays');
 ## .fail(actual, expected, [message], [operator])
 
+# Type Tests
+
 Throw a failure. Node.js `assert` module-compatible.
 ## .isOk(object, [message])
 
@@ -328,6 +330,9 @@ Asserts `value` is not an instance of `constructor`.
       , chai = new String('chai');
 
     assert.notInstanceOf(chai, Tea, 'chai is not an instance of tea');
+    
+# Object Tests    
+    
 ## .include(haystack, needle, [message])
 
 Asserts that `haystack` includes `needle`. Can be used to assert the
