@@ -113,6 +113,8 @@ Asserts that `actual` is deeply equal to `expected`.
 
 Assert that `actual` is not deeply equal to `expected`.
 
+# Number Tests
+
     assert.notDeepEqual({ tea: 'green' }, { tea: 'jasmine' });
 ## .isAbove(valueToCheck, valueToBeAbove, [message])
 
