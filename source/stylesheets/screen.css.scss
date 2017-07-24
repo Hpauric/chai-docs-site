@@ -198,6 +198,7 @@ html, body {
       font-size: 12px;
       background-color: darken( $dark-cream, 10% );
     }
+    }
 
     // for embossed look:
     @include embossed-bg;
