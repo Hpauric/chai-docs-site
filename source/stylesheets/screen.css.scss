@@ -193,11 +193,16 @@ html, body {
     // manually added nested component
     .tocify-subheader {
     .tocify-item>a {
-      // Styling here for a level 2 nesting. For example -> 
+      // Styling here for h3 elements -> 
       padding-left: $nav-padding + $nav-indent * 2;
       font-size: 12px;
       background-color: darken( $dark-cream, 10% );
     }
+    .tocify-item.tocify-focus>a {
+      // With focus -> 
+      background-color: $steel-blue;
+    }
+    
     }
 
     // for embossed look:
@@ -384,11 +389,11 @@ html, body {
   h2 {
     @extend %header-font;
     font-size: 20px;
-    margin-top: 4em;
+    margin-top: 0;
     margin-bottom: 0;
     border-top: 1px solid #ccc;
     padding-top: 1.2em;
-    padding-bottom: 1.2em;
+    padding-bottom: 0;
     background-image: linear-gradient(to bottom, rgba(#fff, 0.4), rgba(#fff, 0));
   }
 
