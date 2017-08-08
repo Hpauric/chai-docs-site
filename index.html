@@ -200,7 +200,7 @@
       <script src="javascripts/all.js"></script>
   </head>
 
-  <body class="index" data-languages="[&quot;javascript&quot;]">
+  <body class="index" data-languages="[]">
     <a href="#" id="nav-button">
       <span>
         NAV
@@ -209,9 +209,6 @@
     </a>
     <div class="tocify-wrapper">
       <img src="images/logo.png" alt="Logo" />
-        <div class="lang-selector">
-              <a href="#" data-language-name="javascript">javascript</a>
-        </div>
         <div class="search">
           <input type="text" class="search" id="input-search" placeholder="Search">
         </div>
@@ -219,7 +216,7 @@
       <div id="toc">
       </div>
         <ul class="toc-footer">
-            <li><a href='#'>Sign Up for a Developer Key</a></li>
+            <li><a href='http://chaijs.com/api/'>Original Chai Documentation</a></li>
             <li><a href='https://github.com/tripit/slate'>Documentation Powered by Slate</a></li>
         </ul>
     </div>
@@ -476,9 +473,8 @@ Of the three style options, assert is the only one that is not chainable. Check 
 
 <ul>
 <li>{Number} value</li>
+<li>{String} message</li>
 </ul>
-
-<h2 id="string-message">- {String} message</h2>
 
 <h3 id="closeto">closeTo</h3>
 
@@ -503,6 +499,15 @@ Of the three style options, assert is the only one that is not chainable. Check 
 <p>Asserts that the target is equal <code class="prettyprint">expected</code>, to within a +/- <code class="prettyprint">delta</code> range.</p>
 <pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">approximately</span><span class="p">(</span><span class="mf">1.5</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="s1">'numbers are close'</span><span class="p">);</span>
 </code></pre>
+<h4 id="parameters">Parameters</h4>
+
+<ul>
+<li>{Number} actual</li>
+<li>{Number} expected</li>
+<li>{Number} delta</li>
+<li>{String} message</li>
+</ul>
+
 <h2 id="true-or-false">True or False</h2>
 
 <h3 id="isok">isOk</h3>
@@ -1769,32 +1774,6 @@ assert class.</p>
 <li>{Object} object</li>
 </ul>
 
-<h2 id="operator">operator</h2>
-
-<h4 id="operator-val1-operator-val2-message">.operator(val1, operator, val2, [message])</h4>
-
-<p>Compares two values using <code class="prettyprint">operator</code>.</p>
-<pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">operator</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="s1">'&lt;'</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="s1">'everything is ok'</span><span class="p">);</span>
-<span class="nx">assert</span><span class="p">.</span><span class="nx">operator</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="s1">'&gt;'</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="s1">'this will fail'</span><span class="p">);</span>
-</code></pre>
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Mixed} val1</li>
-<li>{String} operator</li>
-<li>{Mixed} val2</li>
-<li>{String} message</li>
-</ul>
-
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Number} actual</li>
-<li>{Number} expected</li>
-<li>{Number} delta</li>
-<li>{String} message</li>
-</ul>
-
 <h2 id="members">Members</h2>
 
 <h3 id="samemembers">sameMembers</h3>
@@ -2421,6 +2400,23 @@ and its existing properties cannot be modified).</p>
 
 <h2 id="mixed-misc">Mixed Misc</h2>
 
+<h3 id="operator">operator</h3>
+
+<h4 id="operator-val1-operator-val2-message">.operator(val1, operator, val2, [message])</h4>
+
+<p>Compares two values using <code class="prettyprint">operator</code>.</p>
+<pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">operator</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="s1">'&lt;'</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="s1">'everything is ok'</span><span class="p">);</span>
+<span class="nx">assert</span><span class="p">.</span><span class="nx">operator</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="s1">'&gt;'</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="s1">'this will fail'</span><span class="p">);</span>
+</code></pre>
+<h4 id="parameters">Parameters</h4>
+
+<ul>
+<li>{Mixed} val1</li>
+<li>{String} operator</li>
+<li>{Mixed} val2</li>
+<li>{String} message</li>
+</ul>
+
 <h3 id="isempty">isEmpty</h3>
 
 <h4 id="isempty-target">.isEmpty(target)</h4>
@@ -2463,69 +2459,8 @@ enumerable string keys.</p>
 <li>{String} message <em>optional</em></li>
 </ul>
 
-          <h1 id="errors">Errors</h1>
-
-<aside class="notice">This error section is stored in a separate file in `includes/_errors.md`. Slate allows you to optionally separate out your docs into many files&hellip;just save them to the `includes` folder and add them to the top of your `index.md`&lsquo;s frontmatter. Files are included in the order listed.</aside>
-
-<p>The Kittn API uses the following error codes:</p>
-
-<table><thead>
-<tr>
-<th>Error Code</th>
-<th>Meaning</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>400</td>
-<td>Bad Request &ndash; Your request sucks</td>
-</tr>
-<tr>
-<td>401</td>
-<td>Unauthorized &ndash; Your API key is wrong</td>
-</tr>
-<tr>
-<td>403</td>
-<td>Forbidden &ndash; The kitten requested is hidden for administrators only</td>
-</tr>
-<tr>
-<td>404</td>
-<td>Not Found &ndash; The specified kitten could not be found</td>
-</tr>
-<tr>
-<td>405</td>
-<td>Method Not Allowed &ndash; You tried to access a kitten with an invalid method</td>
-</tr>
-<tr>
-<td>406</td>
-<td>Not Acceptable &ndash; You requested a format that isn&rsquo;t json</td>
-</tr>
-<tr>
-<td>410</td>
-<td>Gone &ndash; The kitten requested has been removed from our servers</td>
-</tr>
-<tr>
-<td>418</td>
-<td>I&rsquo;m a teapot</td>
-</tr>
-<tr>
-<td>429</td>
-<td>Too Many Requests &ndash; You&rsquo;re requesting too many kittens! Slow down!</td>
-</tr>
-<tr>
-<td>500</td>
-<td>Internal Server Error &ndash; We had a problem with our server. Try again later.</td>
-</tr>
-<tr>
-<td>503</td>
-<td>Service Unavailable &ndash; We&rsquo;re temporarily offline for maintenance. Please try again later.</td>
-</tr>
-</tbody></table>
-
       </div>
       <div class="dark-box">
-          <div class="lang-selector">
-                <a href="#" data-language-name="javascript">javascript</a>
-          </div>
       </div>
     </div>
   </body>
