@@ -1452,7 +1452,9 @@ nested reference. Uses a deep equality check.</p>
 <li>{String} message</li>
 </ul>
 
-<h2 id="hasanykeys">hasAnyKeys</h2>
+<h2 id="keys">Keys</h2>
+
+<h3 id="hasanykeys">hasAnyKeys</h3>
 
 <h4 id="hasanykeys-object-keys-message">.hasAnyKeys(object, [keys], [message])</h4>
 
@@ -1472,7 +1474,7 @@ will be used as the expected set of keys.</p>
 <li>{String} message</li>
 </ul>
 
-<h2 id="hasallkeys">hasAllKeys</h2>
+<h3 id="hasallkeys">hasAllKeys</h3>
 
 <h4 id="hasallkeys-object-keys-message">.hasAllKeys(object, [keys], [message])</h4>
 
@@ -1492,7 +1494,7 @@ will be used as the expected set of keys.</p>
 <li>{String} message</li>
 </ul>
 
-<h2 id="containsallkeys">containsAllKeys</h2>
+<h3 id="containsallkeys">containsAllKeys</h3>
 
 <h4 id="containsallkeys-object-keys-message">.containsAllKeys(object, [keys], [message])</h4>
 
@@ -1516,7 +1518,7 @@ will be used as the expected set of keys.</p>
 <li>{String} message</li>
 </ul>
 
-<h2 id="doesnothaveanykeys">doesNotHaveAnyKeys</h2>
+<h3 id="doesnothaveanykeys">doesNotHaveAnyKeys</h3>
 
 <h4 id="doesnothaveanykeys-object-keys-message">.doesNotHaveAnyKeys(object, [keys], [message])</h4>
 
@@ -1536,7 +1538,7 @@ will be used as the expected set of keys.</p>
 <li>{String} message</li>
 </ul>
 
-<h2 id="doesnothaveallkeys">doesNotHaveAllKeys</h2>
+<h3 id="doesnothaveallkeys">doesNotHaveAllKeys</h3>
 
 <h4 id="doesnothaveallkeys-object-keys-message">.doesNotHaveAllKeys(object, [keys], [message])</h4>
 
@@ -1556,7 +1558,7 @@ will be used as the expected set of keys.</p>
 <li>{String} message</li>
 </ul>
 
-<h2 id="doesnothaveallkeys">doesNotHaveAllKeys</h2>
+<h3 id="doesnothaveallkeys">doesNotHaveAllKeys</h3>
 
 <h4 id="hasanydeepkeys-object-keys-message">.hasAnyDeepKeys(object, [keys], [message])</h4>
 
@@ -1567,10 +1569,10 @@ You can also provide a single object instead of a <code class="prettyprint">keys
 will be used as the expected set of keys.</p>
 <pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">hasAnyDeepKeys</span><span class="p">(</span><span class="k">new</span> <span class="nx">Map</span><span class="p">([[{</span><span class="na">one</span><span class="p">:</span> <span class="s1">'one'</span><span class="p">},</span> <span class="s1">'valueOne'</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]]),</span> <span class="p">{</span><span class="na">one</span><span class="p">:</span> <span class="s1">'one'</span><span class="p">});</span>
 <span class="nx">assert</span><span class="p">.</span><span class="nx">hasAnyDeepKeys</span><span class="p">(</span><span class="k">new</span> <span class="nx">Map</span><span class="p">([[{</span><span class="na">one</span><span class="p">:</span> <span class="s1">'one'</span><span class="p">},</span> <span class="s1">'valueOne'</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]]),</span> <span class="p">[{</span><span class="na">one</span><span class="p">:</span> <span class="s1">'one'</span><span class="p">},</span> <span class="p">{</span><span class="na">two</span><span class="p">:</span> <span class="s1">'two'</span><span class="p">}]);</span>
-    <span class="nx">assert</span><span class="p">.</span><span class="nx">hasAnyDeepKeys</span><span class="p">(</span><span class="k">new</span> <span class="nx">Map</span><span class="p">([[{</span><span class="na">one</span><span class="p">:</span> <span class="s1">'one'</span><span class="p">},</span> <span class="s1">'valueOne'</span><span class="p">],</span> <span class="p">[{</span><span class="na">two</span><span class="p">:</span> <span class="s1">'two'</span><span class="p">},</span> <span class="s1">'valueTwo'</span><span class="p">]]),</span> <span class="p">[{</span><span class="na">one</span><span class="p">:</span> <span class="s1">'one'</span><span class="p">},</span> <span class="p">{</span><span class="na">two</span><span class="p">:</span> <span class="s1">'two'</span><span class="p">}]);</span>
-    <span class="nx">assert</span><span class="p">.</span><span class="nx">hasAnyDeepKeys</span><span class="p">(</span><span class="k">new</span> <span class="nx">Set</span><span class="p">([{</span><span class="na">one</span><span class="p">:</span> <span class="s1">'one'</span><span class="p">},</span> <span class="p">{</span><span class="na">two</span><span class="p">:</span> <span class="s1">'two'</span><span class="p">}]),</span> <span class="p">{</span><span class="na">one</span><span class="p">:</span> <span class="s1">'one'</span><span class="p">});</span>
-    <span class="nx">assert</span><span class="p">.</span><span class="nx">hasAnyDeepKeys</span><span class="p">(</span><span class="k">new</span> <span class="nx">Set</span><span class="p">([{</span><span class="na">one</span><span class="p">:</span> <span class="s1">'one'</span><span class="p">},</span> <span class="p">{</span><span class="na">two</span><span class="p">:</span> <span class="s1">'two'</span><span class="p">}]),</span> <span class="p">[{</span><span class="na">one</span><span class="p">:</span> <span class="s1">'one'</span><span class="p">},</span> <span class="p">{</span><span class="na">three</span><span class="p">:</span> <span class="s1">'three'</span><span class="p">}]);</span>
-    <span class="nx">assert</span><span class="p">.</span><span class="nx">hasAnyDeepKeys</span><span class="p">(</span><span class="k">new</span> <span class="nx">Set</span><span class="p">([{</span><span class="na">one</span><span class="p">:</span> <span class="s1">'one'</span><span class="p">},</span> <span class="p">{</span><span class="na">two</span><span class="p">:</span> <span class="s1">'two'</span><span class="p">}]),</span> <span class="p">[{</span><span class="na">one</span><span class="p">:</span> <span class="s1">'one'</span><span class="p">},</span> <span class="p">{</span><span class="na">two</span><span class="p">:</span> <span class="s1">'two'</span><span class="p">}]);</span>
+<span class="nx">assert</span><span class="p">.</span><span class="nx">hasAnyDeepKeys</span><span class="p">(</span><span class="k">new</span> <span class="nx">Map</span><span class="p">([[{</span><span class="na">one</span><span class="p">:</span> <span class="s1">'one'</span><span class="p">},</span> <span class="s1">'valueOne'</span><span class="p">],</span> <span class="p">[{</span><span class="na">two</span><span class="p">:</span> <span class="s1">'two'</span><span class="p">},</span> <span class="s1">'valueTwo'</span><span class="p">]]),</span> <span class="p">[{</span><span class="na">one</span><span class="p">:</span> <span class="s1">'one'</span><span class="p">},</span> <span class="p">{</span><span class="na">two</span><span class="p">:</span> <span class="s1">'two'</span><span class="p">}]);</span>
+<span class="nx">assert</span><span class="p">.</span><span class="nx">hasAnyDeepKeys</span><span class="p">(</span><span class="k">new</span> <span class="nx">Set</span><span class="p">([{</span><span class="na">one</span><span class="p">:</span> <span class="s1">'one'</span><span class="p">},</span> <span class="p">{</span><span class="na">two</span><span class="p">:</span> <span class="s1">'two'</span><span class="p">}]),</span> <span class="p">{</span><span class="na">one</span><span class="p">:</span> <span class="s1">'one'</span><span class="p">});</span>
+<span class="nx">assert</span><span class="p">.</span><span class="nx">hasAnyDeepKeys</span><span class="p">(</span><span class="k">new</span> <span class="nx">Set</span><span class="p">([{</span><span class="na">one</span><span class="p">:</span> <span class="s1">'one'</span><span class="p">},</span> <span class="p">{</span><span class="na">two</span><span class="p">:</span> <span class="s1">'two'</span><span class="p">}]),</span> <span class="p">[{</span><span class="na">one</span><span class="p">:</span> <span class="s1">'one'</span><span class="p">},</span> <span class="p">{</span><span class="na">three</span><span class="p">:</span> <span class="s1">'three'</span><span class="p">}]);</span>
+<span class="nx">assert</span><span class="p">.</span><span class="nx">hasAnyDeepKeys</span><span class="p">(</span><span class="k">new</span> <span class="nx">Set</span><span class="p">([{</span><span class="na">one</span><span class="p">:</span> <span class="s1">'one'</span><span class="p">},</span> <span class="p">{</span><span class="na">two</span><span class="p">:</span> <span class="s1">'two'</span><span class="p">}]),</span> <span class="p">[{</span><span class="na">one</span><span class="p">:</span> <span class="s1">'one'</span><span class="p">},</span> <span class="p">{</span><span class="na">two</span><span class="p">:</span> <span class="s1">'two'</span><span class="p">}]);</span>
 </code></pre>
 <h4 id="parameters">Parameters</h4>
 
@@ -1580,7 +1582,7 @@ will be used as the expected set of keys.</p>
 <li>{String} message</li>
 </ul>
 
-<h2 id="hasalldeepkeys">hasAllDeepKeys</h2>
+<h3 id="hasalldeepkeys">hasAllDeepKeys</h3>
 
 <h4 id="hasalldeepkeys-object-keys-message">.hasAllDeepKeys(object, [keys], [message])</h4>
 
@@ -1602,7 +1604,7 @@ will be used as the expected set of keys.</p>
 <li>{String} message</li>
 </ul>
 
-<h2 id="containsalldeepkeys">containsAllDeepKeys</h2>
+<h3 id="containsalldeepkeys">containsAllDeepKeys</h3>
 
 <h4 id="containsalldeepkeys-object-keys-message">.containsAllDeepKeys(object, [keys], [message])</h4>
 
@@ -1624,7 +1626,7 @@ will be used as the expected set of keys.</p>
 <li>{String} message</li>
 </ul>
 
-<h2 id="doesnothaveanydeepkeys">doesNotHaveAnyDeepKeys</h2>
+<h3 id="doesnothaveanydeepkeys">doesNotHaveAnyDeepKeys</h3>
 
 <h4 id="doesnothaveanydeepkeys-object-keys-message">.doesNotHaveAnyDeepKeys(object, [keys], [message])</h4>
 
@@ -1646,7 +1648,7 @@ will be used as the expected set of keys.</p>
 <li>{String} message</li>
 </ul>
 
-<h2 id="doesnothavealldeepkeys">doesNotHaveAllDeepKeys</h2>
+<h3 id="doesnothavealldeepkeys">doesNotHaveAllDeepKeys</h3>
 
 <h4 id="doesnothavealldeepkeys-object-keys-message">.doesNotHaveAllDeepKeys(object, [keys], [message])</h4>
 
@@ -1773,7 +1775,9 @@ message matching <code class="prettyprint">errMsgMatcher</code>.</p>
 <li>{String} message</li>
 </ul>
 
-<h2 id="samemembers">sameMembers</h2>
+<h2 id="members">Members</h2>
+
+<h3 id="samemembers">sameMembers</h3>
 
 <h4 id="samemembers-set1-set2-message">.sameMembers(set1, set2, [message])</h4>
 
@@ -1789,7 +1793,7 @@ strict equality check (===).</p>
 <li>{String} message</li>
 </ul>
 
-<h2 id="notsamemembers">notSameMembers</h2>
+<h3 id="notsamemembers">notSameMembers</h3>
 
 <h4 id="notsamemembers-set1-set2-message">.notSameMembers(set1, set2, [message])</h4>
 
@@ -1805,7 +1809,7 @@ Uses a strict equality check (===).</p>
 <li>{String} message</li>
 </ul>
 
-<h2 id="samedeepmembers">sameDeepMembers</h2>
+<h3 id="samedeepmembers">sameDeepMembers</h3>
 
 <h4 id="samedeepmembers-set1-set2-message">.sameDeepMembers(set1, set2, [message])</h4>
 
@@ -1821,7 +1825,7 @@ deep equality check.</p>
 <li>{String} message</li>
 </ul>
 
-<h2 id="notsamedeepmembers">notSameDeepMembers</h2>
+<h3 id="notsamedeepmembers">notSameDeepMembers</h3>
 
 <h4 id="notsamedeepmembers-set1-set2-message">.notSameDeepMembers(set1, set2, [message])</h4>
 
@@ -1837,7 +1841,7 @@ Uses a deep equality check.</p>
 <li>{String} message</li>
 </ul>
 
-<h2 id="sameorderedmembers">sameOrderedMembers</h2>
+<h3 id="sameorderedmembers">sameOrderedMembers</h3>
 
 <h4 id="sameorderedmembers-set1-set2-message">.sameOrderedMembers(set1, set2, [message])</h4>
 
@@ -1853,7 +1857,7 @@ Uses a strict equality check (===).</p>
 <li>{String} message</li>
 </ul>
 
-<h2 id="notsameorderedmembers">notSameOrderedMembers</h2>
+<h3 id="notsameorderedmembers">notSameOrderedMembers</h3>
 
 <h4 id="notsameorderedmembers-set1-set2-message">.notSameOrderedMembers(set1, set2, [message])</h4>
 
@@ -1869,16 +1873,14 @@ order. Uses a strict equality check (===).</p>
 <li>{String} message</li>
 </ul>
 
-<h2 id="samedeeporderedmembers">sameDeepOrderedMembers</h2>
+<h3 id="samedeeporderedmembers">sameDeepOrderedMembers</h3>
 
 <h4 id="samedeeporderedmembers-set1-set2-message">.sameDeepOrderedMembers(set1, set2, [message])</h4>
 
 <p>Asserts that <code class="prettyprint">set1</code> and <code class="prettyprint">set2</code> have the same members in the same order.
 Uses a deep equality check.</p>
-
-<p>assert.sameDeepOrderedMembers([ { a: 1 }, { b: 2 }, { c: 3 } ], [ { a: 1 }, { b: 2 }, { c: 3 } ], &lsquo;same deep ordered members&rsquo;);
-&rdquo;`</p>
-
+<pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">sameDeepOrderedMembers</span><span class="p">([</span> <span class="p">{</span> <span class="na">a</span><span class="p">:</span> <span class="mi">1</span> <span class="p">},</span> <span class="p">{</span> <span class="na">b</span><span class="p">:</span> <span class="mi">2</span> <span class="p">},</span> <span class="p">{</span> <span class="na">c</span><span class="p">:</span> <span class="mi">3</span> <span class="p">}</span> <span class="p">],</span> <span class="p">[</span> <span class="p">{</span> <span class="na">a</span><span class="p">:</span> <span class="mi">1</span> <span class="p">},</span> <span class="p">{</span> <span class="na">b</span><span class="p">:</span> <span class="mi">2</span> <span class="p">},</span> <span class="p">{</span> <span class="na">c</span><span class="p">:</span> <span class="mi">3</span> <span class="p">}</span> <span class="p">],</span> <span class="s1">'same deep ordered members'</span><span class="p">);</span>
+</code></pre>
 <h4 id="parameters">Parameters</h4>
 
 <ul>
@@ -1887,17 +1889,15 @@ Uses a deep equality check.</p>
 <li>{String} message</li>
 </ul>
 
-<h2 id="notsamedeeporderedmembers">notSameDeepOrderedMembers</h2>
+<h3 id="notsamedeeporderedmembers">notSameDeepOrderedMembers</h3>
 
 <h4 id="notsamedeeporderedmembers-set1-set2-message">.notSameDeepOrderedMembers(set1, set2, [message])</h4>
 
 <p>Asserts that <code class="prettyprint">set1</code> and <code class="prettyprint">set2</code> don&rsquo;t have the same members in the same
 order. Uses a deep equality check.</p>
-
-<p>assert.notSameDeepOrderedMembers([ { a: 1 }, { b: 2 }, { c: 3 } ], [ { a: 1 }, { b: 2 }, { z: 5 } ], &lsquo;not same deep ordered members&rsquo;);
-assert.notSameDeepOrderedMembers([ { a: 1 }, { b: 2 }, { c: 3 } ], [ { b: 2 }, { a: 1 }, { c: 3 } ], &lsquo;not same deep ordered members&rsquo;);
-&ldquo;`</p>
-
+<pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">notSameDeepOrderedMembers</span><span class="p">([</span> <span class="p">{</span> <span class="na">a</span><span class="p">:</span> <span class="mi">1</span> <span class="p">},</span> <span class="p">{</span> <span class="na">b</span><span class="p">:</span> <span class="mi">2</span> <span class="p">},</span> <span class="p">{</span> <span class="na">c</span><span class="p">:</span> <span class="mi">3</span> <span class="p">}</span> <span class="p">],</span> <span class="p">[</span> <span class="p">{</span> <span class="na">a</span><span class="p">:</span> <span class="mi">1</span> <span class="p">},</span> <span class="p">{</span> <span class="na">b</span><span class="p">:</span> <span class="mi">2</span> <span class="p">},</span> <span class="p">{</span> <span class="na">z</span><span class="p">:</span> <span class="mi">5</span> <span class="p">}</span> <span class="p">],</span> <span class="s1">'not same deep ordered members'</span><span class="p">);</span>
+<span class="nx">assert</span><span class="p">.</span><span class="nx">notSameDeepOrderedMembers</span><span class="p">([</span> <span class="p">{</span> <span class="na">a</span><span class="p">:</span> <span class="mi">1</span> <span class="p">},</span> <span class="p">{</span> <span class="na">b</span><span class="p">:</span> <span class="mi">2</span> <span class="p">},</span> <span class="p">{</span> <span class="na">c</span><span class="p">:</span> <span class="mi">3</span> <span class="p">}</span> <span class="p">],</span> <span class="p">[</span> <span class="p">{</span> <span class="na">b</span><span class="p">:</span> <span class="mi">2</span> <span class="p">},</span> <span class="p">{</span> <span class="na">a</span><span class="p">:</span> <span class="mi">1</span> <span class="p">},</span> <span class="p">{</span> <span class="na">c</span><span class="p">:</span> <span class="mi">3</span> <span class="p">}</span> <span class="p">],</span> <span class="s1">'not same deep ordered members'</span><span class="p">);</span>
+</code></pre>
 <h4 id="parameters">Parameters</h4>
 
 <ul>
@@ -1906,7 +1906,7 @@ assert.notSameDeepOrderedMembers([ { a: 1 }, { b: 2 }, { c: 3 } ], [ { b: 2 }, {
 <li>{String} message</li>
 </ul>
 
-<h2 id="includemembers">includeMembers</h2>
+<h3 id="includemembers">includeMembers</h3>
 
 <h4 id="includemembers-superset-subset-message">.includeMembers(superset, subset, [message])</h4>
 
@@ -1922,7 +1922,7 @@ strict equality check (===). Duplicates are ignored.</p>
 <li>{String} message</li>
 </ul>
 
-<h2 id="notincludemembers">notIncludeMembers</h2>
+<h3 id="notincludemembers">notIncludeMembers</h3>
 
 <h4 id="notincludemembers-superset-subset-message">.notIncludeMembers(superset, subset, [message])</h4>
 
@@ -1938,7 +1938,7 @@ strict equality check (===). Duplicates are ignored.</p>
 <li>{String} message</li>
 </ul>
 
-<h2 id="includedeepmembers">includeDeepMembers</h2>
+<h3 id="includedeepmembers">includeDeepMembers</h3>
 
 <h4 id="includedeepmembers-superset-subset-message">.includeDeepMembers(superset, subset, [message])</h4>
 
@@ -1954,7 +1954,7 @@ equality check. Duplicates are ignored.</p>
 <li>{String} message</li>
 </ul>
 
-<h2 id="notincludedeepmembers">notIncludeDeepMembers</h2>
+<h3 id="notincludedeepmembers">notIncludeDeepMembers</h3>
 
 <h4 id="notincludedeepmembers-superset-subset-message">.notIncludeDeepMembers(superset, subset, [message])</h4>
 
@@ -1970,7 +1970,7 @@ deep equality check. Duplicates are ignored.</p>
 <li>{String} message</li>
 </ul>
 
-<h2 id="includeorderedmembers">includeOrderedMembers</h2>
+<h3 id="includeorderedmembers">includeOrderedMembers</h3>
 
 <h4 id="includeorderedmembers-superset-subset-message">.includeOrderedMembers(superset, subset, [message])</h4>
 
@@ -1987,7 +1987,7 @@ check (===).</p>
 <li>{String} message</li>
 </ul>
 
-<h2 id="notincludeorderedmembers">notIncludeOrderedMembers</h2>
+<h3 id="notincludeorderedmembers">notIncludeOrderedMembers</h3>
 
 <h4 id="notincludeorderedmembers-superset-subset-message">.notIncludeOrderedMembers(superset, subset, [message])</h4>
 
@@ -2005,7 +2005,7 @@ check (===).</p>
 <li>{String} message</li>
 </ul>
 
-<h2 id="includedeeporderedmembers">includeDeepOrderedMembers</h2>
+<h3 id="includedeeporderedmembers">includeDeepOrderedMembers</h3>
 
 <h4 id="includedeeporderedmembers-superset-subset-message">.includeDeepOrderedMembers(superset, subset, [message])</h4>
 
@@ -2022,7 +2022,7 @@ check.</p>
 <li>{String} message</li>
 </ul>
 
-<h2 id="notincludedeeporderedmembers">notIncludeDeepOrderedMembers</h2>
+<h3 id="notincludedeeporderedmembers">notIncludeDeepOrderedMembers</h3>
 
 <h4 id="notincludedeeporderedmembers-superset-subset-message">.notIncludeDeepOrderedMembers(superset, subset, [message])</h4>
 
