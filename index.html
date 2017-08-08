@@ -370,7 +370,7 @@ Of the three style options, assert is the only one that is not chainable. Check 
 <li>{String} message</li>
 </ul>
 
-<h2 id="value-tests">Value Tests</h2>
+<h2 id="numbers">Numbers</h2>
 
 <h3 id="isabove">isAbove</h3>
 
@@ -476,9 +476,33 @@ Of the three style options, assert is the only one that is not chainable. Check 
 
 <ul>
 <li>{Number} value</li>
+</ul>
+
+<h2 id="string-message">- {String} message</h2>
+
+<h3 id="closeto">closeTo</h3>
+
+<h4 id="closeto-actual-expected-delta-message">.closeTo(actual, expected, delta, [message])</h4>
+
+<p>Asserts that the target is equal <code class="prettyprint">expected</code>, to within a +/- <code class="prettyprint">delta</code> range.</p>
+<pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">closeTo</span><span class="p">(</span><span class="mf">1.5</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="s1">'numbers are close'</span><span class="p">);</span>
+</code></pre>
+<h4 id="parameters">Parameters</h4>
+
+<ul>
+<li>{Number} actual</li>
+<li>{Number} expected</li>
+<li>{Number} delta</li>
 <li>{String} message</li>
 </ul>
 
+<h3 id="approximately">approximately</h3>
+
+<h4 id="approximately-actual-expected-delta-message">.approximately(actual, expected, delta, [message])</h4>
+
+<p>Asserts that the target is equal <code class="prettyprint">expected</code>, to within a +/- <code class="prettyprint">delta</code> range.</p>
+<pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">approximately</span><span class="p">(</span><span class="mf">1.5</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="s1">'numbers are close'</span><span class="p">);</span>
+</code></pre>
 <h2 id="true-or-false">True or False</h2>
 
 <h3 id="isok">isOk</h3>
@@ -940,19 +964,18 @@ inclusion of a value in an array, a substring in a string, or a subset of
 properties in an object.</p>
 <pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">include</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">],</span> <span class="mi">2</span><span class="p">,</span> <span class="s1">'array contains value'</span><span class="p">);</span>
 <span class="nx">assert</span><span class="p">.</span><span class="nx">include</span><span class="p">(</span><span class="s1">'foobar'</span><span class="p">,</span> <span class="s1">'foo'</span><span class="p">,</span> <span class="s1">'string contains substring'</span><span class="p">);</span>
-    <span class="nx">assert</span><span class="p">.</span><span class="nx">include</span><span class="p">({</span> <span class="na">foo</span><span class="p">:</span> <span class="s1">'bar'</span><span class="p">,</span> <span class="na">hello</span><span class="p">:</span> <span class="s1">'universe'</span> <span class="p">},</span> <span class="p">{</span> <span class="na">foo</span><span class="p">:</span> <span class="s1">'bar'</span> <span class="p">},</span> <span class="s1">'object contains property'</span><span class="p">);</span>
-
-<span class="nx">Strict</span> <span class="nx">equality</span> <span class="p">(</span><span class="o">===</span><span class="p">)</span> <span class="nx">is</span> <span class="nx">used</span><span class="p">.</span> <span class="nx">When</span> <span class="nx">asserting</span> <span class="nx">the</span> <span class="nx">inclusion</span> <span class="nx">of</span> <span class="nx">a</span> <span class="nx">value</span> <span class="k">in</span>
-<span class="nx">an</span> <span class="nx">array</span><span class="p">,</span> <span class="nx">the</span> <span class="nx">array</span> <span class="nx">is</span> <span class="nx">searched</span> <span class="k">for</span> <span class="nx">an</span> <span class="nx">element</span> <span class="nx">that</span><span class="err">'</span><span class="nx">s</span> <span class="nx">strictly</span> <span class="nx">equal</span> <span class="nx">to</span> <span class="nx">the</span>
-<span class="nx">given</span> <span class="nx">value</span><span class="p">.</span> <span class="nx">When</span> <span class="nx">asserting</span> <span class="nx">a</span> <span class="nx">subset</span> <span class="nx">of</span> <span class="nx">properties</span> <span class="k">in</span> <span class="nx">an</span> <span class="nx">object</span><span class="p">,</span> <span class="nx">the</span> <span class="nx">object</span>
-<span class="nx">is</span> <span class="nx">searched</span> <span class="k">for</span> <span class="nx">the</span> <span class="nx">given</span> <span class="nx">property</span> <span class="nx">keys</span><span class="p">,</span> <span class="nx">checking</span> <span class="nx">that</span> <span class="nx">each</span> <span class="nx">one</span> <span class="nx">is</span> <span class="nx">present</span>
-<span class="nx">and</span> <span class="nx">stricty</span> <span class="nx">equal</span> <span class="nx">to</span> <span class="nx">the</span> <span class="nx">given</span> <span class="nx">property</span> <span class="nx">value</span><span class="p">.</span> <span class="nx">For</span> <span class="nx">instance</span><span class="p">:</span>
-
-    <span class="kd">var</span> <span class="nx">obj1</span> <span class="o">=</span> <span class="p">{</span><span class="na">a</span><span class="p">:</span> <span class="mi">1</span><span class="p">}</span>
-      <span class="p">,</span> <span class="nx">obj2</span> <span class="o">=</span> <span class="p">{</span><span class="na">b</span><span class="p">:</span> <span class="mi">2</span><span class="p">};</span>
-    <span class="nx">assert</span><span class="p">.</span><span class="nx">include</span><span class="p">([</span><span class="nx">obj1</span><span class="p">,</span> <span class="nx">obj2</span><span class="p">],</span> <span class="nx">obj1</span><span class="p">);</span>
-    <span class="nx">assert</span><span class="p">.</span><span class="nx">include</span><span class="p">({</span><span class="na">foo</span><span class="p">:</span> <span class="nx">obj1</span><span class="p">,</span> <span class="na">bar</span><span class="p">:</span> <span class="nx">obj2</span><span class="p">},</span> <span class="p">{</span><span class="na">foo</span><span class="p">:</span> <span class="nx">obj1</span><span class="p">});</span>
-    <span class="nx">assert</span><span class="p">.</span><span class="nx">include</span><span class="p">({</span><span class="na">foo</span><span class="p">:</span> <span class="nx">obj1</span><span class="p">,</span> <span class="na">bar</span><span class="p">:</span> <span class="nx">obj2</span><span class="p">},</span> <span class="p">{</span><span class="na">foo</span><span class="p">:</span> <span class="nx">obj1</span><span class="p">,</span> <span class="na">bar</span><span class="p">:</span> <span class="nx">obj2</span><span class="p">});</span>
+<span class="nx">assert</span><span class="p">.</span><span class="nx">include</span><span class="p">({</span> <span class="na">foo</span><span class="p">:</span> <span class="s1">'bar'</span><span class="p">,</span> <span class="na">hello</span><span class="p">:</span> <span class="s1">'universe'</span> <span class="p">},</span> <span class="p">{</span> <span class="na">foo</span><span class="p">:</span> <span class="s1">'bar'</span> <span class="p">},</span> <span class="s1">'object contains property'</span><span class="p">);</span>
+</code></pre>
+<p>Strict equality (===) is used. When asserting the inclusion of a value in
+an array, the array is searched for an element that&rsquo;s strictly equal to the
+given value. When asserting a subset of properties in an object, the object
+is searched for the given property keys, checking that each one is present
+and stricty equal to the given property value. For instance:</p>
+<pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">obj1</span> <span class="o">=</span> <span class="p">{</span><span class="na">a</span><span class="p">:</span> <span class="mi">1</span><span class="p">}</span>
+<span class="p">,</span> <span class="nx">obj2</span> <span class="o">=</span> <span class="p">{</span><span class="na">b</span><span class="p">:</span> <span class="mi">2</span><span class="p">};</span>
+<span class="nx">assert</span><span class="p">.</span><span class="nx">include</span><span class="p">([</span><span class="nx">obj1</span><span class="p">,</span> <span class="nx">obj2</span><span class="p">],</span> <span class="nx">obj1</span><span class="p">);</span> 
+<span class="nx">assert</span><span class="p">.</span><span class="nx">include</span><span class="p">({</span><span class="na">foo</span><span class="p">:</span> <span class="nx">obj1</span><span class="p">,</span> <span class="na">bar</span><span class="p">:</span> <span class="nx">obj2</span><span class="p">},</span> <span class="p">{</span><span class="na">foo</span><span class="p">:</span> <span class="nx">obj1</span><span class="p">});</span>
+<span class="nx">assert</span><span class="p">.</span><span class="nx">include</span><span class="p">({</span><span class="na">foo</span><span class="p">:</span> <span class="nx">obj1</span><span class="p">,</span> <span class="na">bar</span><span class="p">:</span> <span class="nx">obj2</span><span class="p">},</span> <span class="p">{</span><span class="na">foo</span><span class="p">:</span> <span class="nx">obj1</span><span class="p">,</span> <span class="na">bar</span><span class="p">:</span> <span class="nx">obj2</span><span class="p">});</span>
 </code></pre>
 <h4 id="parameters">Parameters</h4>
 
@@ -971,20 +994,19 @@ the absence of a value in an array, a substring in a string, or a subset of
 properties in an object.</p>
 <pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">notInclude</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">],</span> <span class="mi">4</span><span class="p">,</span> <span class="s1">'array doesn'</span><span class="nx">t</span> <span class="nx">contain</span> <span class="nx">value</span><span class="s1">');
 assert.notInclude('</span><span class="nx">foobar</span><span class="s1">', '</span><span class="nx">baz</span><span class="s1">', '</span><span class="nx">string</span> <span class="nx">doesn</span><span class="s1">'t contain substring'</span><span class="p">);</span>
-    <span class="nx">assert</span><span class="p">.</span><span class="nx">notInclude</span><span class="p">({</span> <span class="na">foo</span><span class="p">:</span> <span class="s1">'bar'</span><span class="p">,</span> <span class="na">hello</span><span class="p">:</span> <span class="s1">'universe'</span> <span class="p">},</span> <span class="p">{</span> <span class="na">foo</span><span class="p">:</span> <span class="s1">'baz'</span> <span class="p">},</span> <span class="s1">'object doesn'</span><span class="nx">t</span> <span class="nx">contain</span> <span class="nx">property</span><span class="s1">');
-
-Strict equality (===) is used. When asserting the absence of a value in an
-array, the array is searched to confirm the absence of an element that'</span><span class="nx">s</span>
-<span class="nx">strictly</span> <span class="nx">equal</span> <span class="nx">to</span> <span class="nx">the</span> <span class="nx">given</span> <span class="nx">value</span><span class="p">.</span> <span class="nx">When</span> <span class="nx">asserting</span> <span class="nx">a</span> <span class="nx">subset</span> <span class="nx">of</span> <span class="nx">properties</span> <span class="k">in</span>
-<span class="nx">an</span> <span class="nx">object</span><span class="p">,</span> <span class="nx">the</span> <span class="nx">object</span> <span class="nx">is</span> <span class="nx">searched</span> <span class="nx">to</span> <span class="nx">confirm</span> <span class="nx">that</span> <span class="nx">at</span> <span class="nx">least</span> <span class="nx">one</span> <span class="nx">of</span> <span class="nx">the</span> <span class="nx">given</span>
-<span class="nx">property</span> <span class="nx">keys</span> <span class="nx">is</span> <span class="nx">either</span> <span class="nx">not</span> <span class="nx">present</span> <span class="nx">or</span> <span class="nx">not</span> <span class="nx">strictly</span> <span class="nx">equal</span> <span class="nx">to</span> <span class="nx">the</span> <span class="nx">given</span>
-<span class="nx">property</span> <span class="nx">value</span><span class="p">.</span> <span class="nx">For</span> <span class="nx">instance</span><span class="p">:</span>
-
-    <span class="kd">var</span> <span class="nx">obj1</span> <span class="o">=</span> <span class="p">{</span><span class="na">a</span><span class="p">:</span> <span class="mi">1</span><span class="p">}</span>
-      <span class="p">,</span> <span class="nx">obj2</span> <span class="o">=</span> <span class="p">{</span><span class="na">b</span><span class="p">:</span> <span class="mi">2</span><span class="p">};</span>
-    <span class="nx">assert</span><span class="p">.</span><span class="nx">notInclude</span><span class="p">([</span><span class="nx">obj1</span><span class="p">,</span> <span class="nx">obj2</span><span class="p">],</span> <span class="p">{</span><span class="na">a</span><span class="p">:</span> <span class="mi">1</span><span class="p">});</span>
-    <span class="nx">assert</span><span class="p">.</span><span class="nx">notInclude</span><span class="p">({</span><span class="na">foo</span><span class="p">:</span> <span class="nx">obj1</span><span class="p">,</span> <span class="na">bar</span><span class="p">:</span> <span class="nx">obj2</span><span class="p">},</span> <span class="p">{</span><span class="na">foo</span><span class="p">:</span> <span class="p">{</span><span class="na">a</span><span class="p">:</span> <span class="mi">1</span><span class="p">}});</span>
-    <span class="nx">assert</span><span class="p">.</span><span class="nx">notInclude</span><span class="p">({</span><span class="na">foo</span><span class="p">:</span> <span class="nx">obj1</span><span class="p">,</span> <span class="na">bar</span><span class="p">:</span> <span class="nx">obj2</span><span class="p">},</span> <span class="p">{</span><span class="na">foo</span><span class="p">:</span> <span class="nx">obj1</span><span class="p">,</span> <span class="na">bar</span><span class="p">:</span> <span class="p">{</span><span class="na">b</span><span class="p">:</span> <span class="mi">2</span><span class="p">}});</span>
+    <span class="nx">assert</span><span class="p">.</span><span class="nx">notInclude</span><span class="p">({</span> <span class="na">foo</span><span class="p">:</span> <span class="s1">'bar'</span><span class="p">,</span> <span class="na">hello</span><span class="p">:</span> <span class="s1">'universe'</span> <span class="p">},</span> <span class="p">{</span> <span class="na">foo</span><span class="p">:</span> <span class="s1">'baz'</span> <span class="p">},</span> <span class="s1">'object doesn'</span><span class="nx">t</span> <span class="nx">contain</span> <span class="nx">property</span><span class="err">'</span><span class="p">);</span>
+</code></pre>
+<p>Strict equality (===) is used. When asserting the absence of a value in an
+array, the array is searched to confirm the absence of an element that&rsquo;s
+strictly equal to the given value. When asserting a subset of properties in
+an object, the object is searched to confirm that at least one of the given
+property keys is either not present or not strictly equal to the given
+property value. For instance:</p>
+<pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">obj1</span> <span class="o">=</span> <span class="p">{</span><span class="na">a</span><span class="p">:</span> <span class="mi">1</span><span class="p">}</span>
+  <span class="p">,</span> <span class="nx">obj2</span> <span class="o">=</span> <span class="p">{</span><span class="na">b</span><span class="p">:</span> <span class="mi">2</span><span class="p">};</span>
+<span class="nx">assert</span><span class="p">.</span><span class="nx">notInclude</span><span class="p">([</span><span class="nx">obj1</span><span class="p">,</span> <span class="nx">obj2</span><span class="p">],</span> <span class="p">{</span><span class="na">a</span><span class="p">:</span> <span class="mi">1</span><span class="p">});</span>
+<span class="nx">assert</span><span class="p">.</span><span class="nx">notInclude</span><span class="p">({</span><span class="na">foo</span><span class="p">:</span> <span class="nx">obj1</span><span class="p">,</span> <span class="na">bar</span><span class="p">:</span> <span class="nx">obj2</span><span class="p">},</span> <span class="p">{</span><span class="na">foo</span><span class="p">:</span> <span class="p">{</span><span class="na">a</span><span class="p">:</span> <span class="mi">1</span><span class="p">}});</span>
+<span class="nx">assert</span><span class="p">.</span><span class="nx">notInclude</span><span class="p">({</span><span class="na">foo</span><span class="p">:</span> <span class="nx">obj1</span><span class="p">,</span> <span class="na">bar</span><span class="p">:</span> <span class="nx">obj2</span><span class="p">},</span> <span class="p">{</span><span class="na">foo</span><span class="p">:</span> <span class="nx">obj1</span><span class="p">,</span> <span class="na">bar</span><span class="p">:</span> <span class="p">{</span><span class="na">b</span><span class="p">:</span> <span class="mi">2</span><span class="p">}});</span>
 </code></pre>
 <h4 id="parameters">Parameters</h4>
 
@@ -1222,7 +1244,7 @@ object while ignoring inherited properties and checking for deep equality.</p>
 <li>{String} message</li>
 </ul>
 
-<h2 id="property">property</h2>
+<h2 id="object-properties">Object Properties</h2>
 
 <h3 id="property">property</h3>
 
@@ -1455,7 +1477,7 @@ nested reference. Uses a deep equality check.</p>
 <li>{String} message</li>
 </ul>
 
-<h2 id="keys">Keys</h2>
+<h2 id="object-keys">Object Keys</h2>
 
 <h3 id="hasanykeys">hasAnyKeys</h3>
 
@@ -1662,8 +1684,8 @@ You can also provide a single object instead of a <code class="prettyprint">keys
 will be used as the expected set of keys.</p>
 <pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">doesNotHaveAllDeepKeys</span><span class="p">(</span><span class="k">new</span> <span class="nx">Map</span><span class="p">([[{</span><span class="na">one</span><span class="p">:</span> <span class="s1">'one'</span><span class="p">},</span> <span class="s1">'valueOne'</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]]),</span> <span class="p">{</span><span class="na">thisDoesNot</span><span class="p">:</span> <span class="s1">'exist'</span><span class="p">});</span>
 <span class="nx">assert</span><span class="p">.</span><span class="nx">doesNotHaveAllDeepKeys</span><span class="p">(</span><span class="k">new</span> <span class="nx">Map</span><span class="p">([[{</span><span class="na">one</span><span class="p">:</span> <span class="s1">'one'</span><span class="p">},</span> <span class="s1">'valueOne'</span><span class="p">],</span> <span class="p">[{</span><span class="na">two</span><span class="p">:</span> <span class="s1">'two'</span><span class="p">},</span> <span class="s1">'valueTwo'</span><span class="p">]]),</span> <span class="p">[{</span><span class="na">twenty</span><span class="p">:</span> <span class="s1">'twenty'</span><span class="p">},</span> <span class="p">{</span><span class="na">one</span><span class="p">:</span> <span class="s1">'one'</span><span class="p">}]);</span>
-    <span class="nx">assert</span><span class="p">.</span><span class="nx">doesNotHaveAllDeepKeys</span><span class="p">(</span><span class="k">new</span> <span class="nx">Set</span><span class="p">([{</span><span class="na">one</span><span class="p">:</span> <span class="s1">'one'</span><span class="p">},</span> <span class="p">{</span><span class="na">two</span><span class="p">:</span> <span class="s1">'two'</span><span class="p">}]),</span> <span class="p">{</span><span class="na">twenty</span><span class="p">:</span> <span class="s1">'twenty'</span><span class="p">});</span>
-    <span class="nx">assert</span><span class="p">.</span><span class="nx">doesNotHaveAllDeepKeys</span><span class="p">(</span><span class="k">new</span> <span class="nx">Set</span><span class="p">([{</span><span class="na">one</span><span class="p">:</span> <span class="s1">'one'</span><span class="p">},</span> <span class="p">{</span><span class="na">two</span><span class="p">:</span> <span class="s1">'two'</span><span class="p">}]),</span> <span class="p">[{</span><span class="na">one</span><span class="p">:</span> <span class="s1">'one'</span><span class="p">},</span> <span class="p">{</span><span class="na">fifty</span><span class="p">:</span> <span class="s1">'fifty'</span><span class="p">}]);</span>
+<span class="nx">assert</span><span class="p">.</span><span class="nx">doesNotHaveAllDeepKeys</span><span class="p">(</span><span class="k">new</span> <span class="nx">Set</span><span class="p">([{</span><span class="na">one</span><span class="p">:</span> <span class="s1">'one'</span><span class="p">},</span> <span class="p">{</span><span class="na">two</span><span class="p">:</span> <span class="s1">'two'</span><span class="p">}]),</span> <span class="p">{</span><span class="na">twenty</span><span class="p">:</span> <span class="s1">'twenty'</span><span class="p">});</span>
+<span class="nx">assert</span><span class="p">.</span><span class="nx">doesNotHaveAllDeepKeys</span><span class="p">(</span><span class="k">new</span> <span class="nx">Set</span><span class="p">([{</span><span class="na">one</span><span class="p">:</span> <span class="s1">'one'</span><span class="p">},</span> <span class="p">{</span><span class="na">two</span><span class="p">:</span> <span class="s1">'two'</span><span class="p">}]),</span> <span class="p">[{</span><span class="na">one</span><span class="p">:</span> <span class="s1">'one'</span><span class="p">},</span> <span class="p">{</span><span class="na">fifty</span><span class="p">:</span> <span class="s1">'fifty'</span><span class="p">}]);</span>
 </code></pre>
 <h4 id="parameters">Parameters</h4>
 
@@ -1673,7 +1695,9 @@ will be used as the expected set of keys.</p>
 <li>{String} message</li>
 </ul>
 
-<h2 id="throws">throws</h2>
+<h2 id="errors">Errors</h2>
+
+<h3 id="throws">throws</h3>
 
 <h4 id="throws-fn-errorlike-string-regexp-string-regexp-message">.throws(fn, [errorLike/string/regexp], [string/regexp], [message])</h4>
 
@@ -1701,7 +1725,7 @@ message matching <code class="prettyprint">errMsgMatcher</code>.</p>
 <li>{String} message</li>
 </ul>
 
-<h2 id="doesnotthrow">doesNotThrow</h2>
+<h3 id="doesnotthrow">doesNotThrow</h3>
 
 <h4 id="doesnotthrow-fn-errorlike-string-regexp-string-regexp-message">.doesNotThrow(fn, [errorLike/string/regexp], [string/regexp], [message])</h4>
 
@@ -1729,6 +1753,22 @@ message matching <code class="prettyprint">errMsgMatcher</code>.</p>
 <li>{String} message</li>
 </ul>
 
+<h3 id="iferror">ifError</h3>
+
+<h4 id="iferror-object">.ifError(object)</h4>
+
+<p>Asserts if value is not a false value, and throws if it is a true value.
+This is added to allow for chai to be a drop-in replacement for Node&rsquo;s
+assert class.</p>
+<pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">err</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Error</span><span class="p">(</span><span class="s1">'I am a custom error'</span><span class="p">);</span>
+<span class="nx">assert</span><span class="p">.</span><span class="nx">ifError</span><span class="p">(</span><span class="nx">err</span><span class="p">);</span> <span class="c1">// Rethrows err!</span>
+</code></pre>
+<h4 id="parameters">Parameters</h4>
+
+<ul>
+<li>{Object} object</li>
+</ul>
+
 <h2 id="operator">operator</h2>
 
 <h4 id="operator-val1-operator-val2-message">.operator(val1, operator, val2, [message])</h4>
@@ -1746,29 +1786,6 @@ message matching <code class="prettyprint">errMsgMatcher</code>.</p>
 <li>{String} message</li>
 </ul>
 
-<h2 id="closeto">closeTo</h2>
-
-<h4 id="closeto-actual-expected-delta-message">.closeTo(actual, expected, delta, [message])</h4>
-
-<p>Asserts that the target is equal <code class="prettyprint">expected</code>, to within a +/- <code class="prettyprint">delta</code> range.</p>
-<pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">closeTo</span><span class="p">(</span><span class="mf">1.5</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="s1">'numbers are close'</span><span class="p">);</span>
-</code></pre>
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Number} actual</li>
-<li>{Number} expected</li>
-<li>{Number} delta</li>
-<li>{String} message</li>
-</ul>
-
-<h2 id="approximately">approximately</h2>
-
-<h4 id="approximately-actual-expected-delta-message">.approximately(actual, expected, delta, [message])</h4>
-
-<p>Asserts that the target is equal <code class="prettyprint">expected</code>, to within a +/- <code class="prettyprint">delta</code> range.</p>
-<pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">approximately</span><span class="p">(</span><span class="mf">1.5</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="s1">'numbers are close'</span><span class="p">);</span>
-</code></pre>
 <h4 id="parameters">Parameters</h4>
 
 <ul>
@@ -2302,23 +2319,9 @@ check.</p>
 <li>{String} message <em>optional</em></li>
 </ul>
 
-<h2 id="iferror">ifError</h2>
+<h2 id="object-misc">Object Misc</h2>
 
-<h4 id="iferror-object">.ifError(object)</h4>
-
-<p>Asserts if value is not a false value, and throws if it is a true value.
-This is added to allow for chai to be a drop-in replacement for Node&rsquo;s
-assert class.</p>
-<pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">err</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Error</span><span class="p">(</span><span class="s1">'I am a custom error'</span><span class="p">);</span>
-<span class="nx">assert</span><span class="p">.</span><span class="nx">ifError</span><span class="p">(</span><span class="nx">err</span><span class="p">);</span> <span class="c1">// Rethrows err!</span>
-</code></pre>
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Object} object</li>
-</ul>
-
-<h2 id="isextensible">isExtensible</h2>
+<h3 id="isextensible">isExtensible</h3>
 
 <h4 id="isextensible-object">.isExtensible(object)</h4>
 
@@ -2332,7 +2335,7 @@ assert class.</p>
 <li>{String} message <em>optional</em></li>
 </ul>
 
-<h2 id="isnotextensible">isNotExtensible</h2>
+<h3 id="isnotextensible">isNotExtensible</h3>
 
 <h4 id="isnotextensible-object">.isNotExtensible(object)</h4>
 
@@ -2352,7 +2355,7 @@ assert class.</p>
 <li>{String} message <em>optional</em></li>
 </ul>
 
-<h2 id="issealed">isSealed</h2>
+<h3 id="issealed">isSealed</h3>
 
 <h4 id="issealed-object">.isSealed(object)</h4>
 
@@ -2371,7 +2374,7 @@ and its existing properties cannot be removed).</p>
 <li>{String} message <em>optional</em></li>
 </ul>
 
-<h2 id="isnotsealed">isNotSealed</h2>
+<h3 id="isnotsealed">isNotSealed</h3>
 
 <h4 id="isnotsealed-object">.isNotSealed(object)</h4>
 
@@ -2385,7 +2388,7 @@ and its existing properties cannot be removed).</p>
 <li>{String} message <em>optional</em></li>
 </ul>
 
-<h2 id="isfrozen">isFrozen</h2>
+<h3 id="isfrozen">isFrozen</h3>
 
 <h4 id="isfrozen-object">.isFrozen(object)</h4>
 
@@ -2401,7 +2404,7 @@ and its existing properties cannot be modified).</p>
 <li>{String} message <em>optional</em></li>
 </ul>
 
-<h2 id="isnotfrozen">isNotFrozen</h2>
+<h3 id="isnotfrozen">isNotFrozen</h3>
 
 <h4 id="isnotfrozen-object">.isNotFrozen(object)</h4>
 
@@ -2412,10 +2415,13 @@ and its existing properties cannot be modified).</p>
 
 <ul>
 <li>{Object} object</li>
-<li>{String} message <em>optional</em></li>
 </ul>
 
-<h2 id="isempty">isEmpty</h2>
+<h2 id="string-message-optional">- {String} message <em>optional</em></h2>
+
+<h2 id="mixed-misc">Mixed Misc</h2>
+
+<h3 id="isempty">isEmpty</h3>
 
 <h4 id="isempty-target">.isEmpty(target)</h4>
 
@@ -2436,7 +2442,7 @@ enumerable string keys.</p>
 <li>{String} message <em>optional</em></li>
 </ul>
 
-<h2 id="isnotempty">isNotEmpty</h2>
+<h3 id="isnotempty">isNotEmpty</h3>
 
 <h4 id="isnotempty-target">.isNotEmpty(target)</h4>
 
