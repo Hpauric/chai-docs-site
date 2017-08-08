@@ -311,6 +311,8 @@ Of the three style options, assert is the only one that is not chainable. Check 
 
 <h2 id="equal">equal</h2>
 
+<h3 id="equal">equal</h3>
+
 <h4 id="equal-actual-expected-message">.equal(actual, expected, [message])</h4>
 
 <p>Asserts non-strict equality (<code class="prettyprint">==</code>) of <code class="prettyprint">actual</code> and <code class="prettyprint">expected</code>.</p>
@@ -324,7 +326,7 @@ Of the three style options, assert is the only one that is not chainable. Check 
 <li>{String} message</li>
 </ul>
 
-<h2 id="notequal">notEqual</h2>
+<h3 id="notequal">notEqual</h3>
 
 <h4 id="notequal-actual-expected-message">.notEqual(actual, expected, [message])</h4>
 
@@ -339,7 +341,7 @@ Of the three style options, assert is the only one that is not chainable. Check 
 <li>{String} message</li>
 </ul>
 
-<h2 id="strictequal">strictEqual</h2>
+<h3 id="strictequal">strictEqual</h3>
 
 <h4 id="strictequal-actual-expected-message">.strictEqual(actual, expected, [message])</h4>
 
@@ -354,7 +356,7 @@ Of the three style options, assert is the only one that is not chainable. Check 
 <li>{String} message</li>
 </ul>
 
-<h2 id="notstrictequal">notStrictEqual</h2>
+<h3 id="notstrictequal">notStrictEqual</h3>
 
 <h4 id="notstrictequal-actual-expected-message">.notStrictEqual(actual, expected, [message])</h4>
 
@@ -369,7 +371,7 @@ Of the three style options, assert is the only one that is not chainable. Check 
 <li>{String} message</li>
 </ul>
 
-<h2 id="deepequal">deepEqual</h2>
+<h3 id="deepequal">deepEqual</h3>
 
 <h4 id="deepequal-actual-expected-message">.deepEqual(actual, expected, [message])</h4>
 
@@ -384,7 +386,7 @@ Of the three style options, assert is the only one that is not chainable. Check 
 <li>{String} message</li>
 </ul>
 
-<h2 id="notdeepequal">notDeepEqual</h2>
+<h3 id="notdeepequal">notDeepEqual</h3>
 
 <h4 id="notdeepequal-actual-expected-message">.notDeepEqual(actual, expected, [message])</h4>
 
@@ -399,7 +401,9 @@ Of the three style options, assert is the only one that is not chainable. Check 
 <li>{String} message</li>
 </ul>
 
-<h2 id="isabove">isAbove</h2>
+<h2 id="value-tests">Value Tests</h2>
+
+<h3 id="isabove">isAbove</h3>
 
 <h4 id="isabove-valuetocheck-valuetobeabove-message">.isAbove(valueToCheck, valueToBeAbove, [message])</h4>
 
@@ -414,7 +418,7 @@ Of the three style options, assert is the only one that is not chainable. Check 
 <li>{String} message</li>
 </ul>
 
-<h2 id="isatleast">isAtLeast</h2>
+<h3 id="isatleast">isAtLeast</h3>
 
 <h4 id="isatleast-valuetocheck-valuetobeatleast-message">.isAtLeast(valueToCheck, valueToBeAtLeast, [message])</h4>
 
@@ -430,7 +434,7 @@ Of the three style options, assert is the only one that is not chainable. Check 
 <li>{String} message</li>
 </ul>
 
-<h2 id="isbelow">isBelow</h2>
+<h3 id="isbelow">isBelow</h3>
 
 <h4 id="isbelow-valuetocheck-valuetobebelow-message">.isBelow(valueToCheck, valueToBeBelow, [message])</h4>
 
@@ -445,7 +449,7 @@ Of the three style options, assert is the only one that is not chainable. Check 
 <li>{String} message</li>
 </ul>
 
-<h2 id="isatmost">isAtMost</h2>
+<h3 id="isatmost">isAtMost</h3>
 
 <h4 id="isatmost-valuetocheck-valuetobeatmost-message">.isAtMost(valueToCheck, valueToBeAtMost, [message])</h4>
 
@@ -458,95 +462,6 @@ Of the three style options, assert is the only one that is not chainable. Check 
 <ul>
 <li>{Mixed} valueToCheck</li>
 <li>{Mixed} valueToBeAtMost</li>
-<li>{String} message</li>
-</ul>
-
-<h2 id="istrue">isTrue</h2>
-
-<h4 id="istrue-value-message">.isTrue(value, [message])</h4>
-
-<p>Asserts that <code class="prettyprint">value</code> is true.</p>
-<pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">teaServed</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
-<span class="nx">assert</span><span class="p">.</span><span class="nx">isTrue</span><span class="p">(</span><span class="nx">teaServed</span><span class="p">,</span> <span class="s1">'the tea has been served'</span><span class="p">);</span>
-</code></pre>
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Mixed} value</li>
-<li>{String} message</li>
-</ul>
-
-<h2 id="isnottrue">isNotTrue</h2>
-
-<h4 id="isnottrue-value-message">.isNotTrue(value, [message])</h4>
-
-<p>Asserts that <code class="prettyprint">value</code> is not true.</p>
-<pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">tea</span> <span class="o">=</span> <span class="s1">'tasty chai'</span><span class="p">;</span>
-<span class="nx">assert</span><span class="p">.</span><span class="nx">isNotTrue</span><span class="p">(</span><span class="nx">tea</span><span class="p">,</span> <span class="s1">'great, time for tea!'</span><span class="p">);</span>
-</code></pre>
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Mixed} value</li>
-<li>{String} message</li>
-</ul>
-
-<h2 id="isfalse">isFalse</h2>
-
-<h4 id="isfalse-value-message">.isFalse(value, [message])</h4>
-
-<p>Asserts that <code class="prettyprint">value</code> is false.</p>
-<pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">teaServed</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
-<span class="nx">assert</span><span class="p">.</span><span class="nx">isFalse</span><span class="p">(</span><span class="nx">teaServed</span><span class="p">,</span> <span class="s1">'no tea yet? hmm...'</span><span class="p">);</span>
-</code></pre>
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Mixed} value</li>
-<li>{String} message</li>
-</ul>
-
-<h2 id="isnotfalse">isNotFalse</h2>
-
-<h4 id="isnotfalse-value-message">.isNotFalse(value, [message])</h4>
-
-<p>Asserts that <code class="prettyprint">value</code> is not false.</p>
-<pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">tea</span> <span class="o">=</span> <span class="s1">'tasty chai'</span><span class="p">;</span>
-<span class="nx">assert</span><span class="p">.</span><span class="nx">isNotFalse</span><span class="p">(</span><span class="nx">tea</span><span class="p">,</span> <span class="s1">'great, time for tea!'</span><span class="p">);</span>
-</code></pre>
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Mixed} value</li>
-<li>{String} message</li>
-</ul>
-
-<h2 id="isnull">isNull</h2>
-
-<h4 id="isnull-value-message">.isNull(value, [message])</h4>
-
-<p>Asserts that <code class="prettyprint">value</code> is null.</p>
-<pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">isNull</span><span class="p">(</span><span class="nx">err</span><span class="p">,</span> <span class="s1">'there was no error'</span><span class="p">);</span>
-</code></pre>
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Mixed} value</li>
-<li>{String} message</li>
-</ul>
-
-<h2 id="isnotnull">isNotNull</h2>
-
-<h4 id="isnotnull-value-message">.isNotNull(value, [message])</h4>
-
-<p>Asserts that <code class="prettyprint">value</code> is not null.</p>
-<pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">tea</span> <span class="o">=</span> <span class="s1">'tasty chai'</span><span class="p">;</span>
-<span class="nx">assert</span><span class="p">.</span><span class="nx">isNotNull</span><span class="p">(</span><span class="nx">tea</span><span class="p">,</span> <span class="s1">'great, time for tea!'</span><span class="p">);</span>
-</code></pre>
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Mixed} value</li>
 <li>{String} message</li>
 </ul>
 
@@ -578,222 +493,6 @@ Of the three style options, assert is the only one that is not chainable. Check 
 <li>{String} message</li>
 </ul>
 
-<h2 id="exists">exists</h2>
-
-<h4 id="exists">.exists</h4>
-
-<p>Asserts that the target is neither <code class="prettyprint">null</code> nor <code class="prettyprint">undefined</code>.</p>
-<pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">foo</span> <span class="o">=</span> <span class="s1">'hi'</span><span class="p">;</span>
-
-<span class="nx">assert</span><span class="p">.</span><span class="nx">exists</span><span class="p">(</span><span class="nx">foo</span><span class="p">,</span> <span class="s1">'foo is neither `null` nor `undefined`'</span><span class="p">);</span>
-</code></pre>
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Mixed} value</li>
-<li>{String} message</li>
-</ul>
-
-<h2 id="notexists">notExists</h2>
-
-<h4 id="notexists">.notExists</h4>
-
-<p>Asserts that the target is either <code class="prettyprint">null</code> or <code class="prettyprint">undefined</code>.</p>
-<pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">bar</span> <span class="o">=</span> <span class="kc">null</span>
-  <span class="p">,</span> <span class="nx">baz</span><span class="p">;</span>
-
-    <span class="nx">assert</span><span class="p">.</span><span class="nx">notExists</span><span class="p">(</span><span class="nx">bar</span><span class="p">);</span>
-    <span class="nx">assert</span><span class="p">.</span><span class="nx">notExists</span><span class="p">(</span><span class="nx">baz</span><span class="p">,</span> <span class="s1">'baz is either null or undefined'</span><span class="p">);</span>
-</code></pre>
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Mixed} value</li>
-<li>{String} message</li>
-</ul>
-
-<h2 id="isundefined">isUndefined</h2>
-
-<h4 id="isundefined-value-message">.isUndefined(value, [message])</h4>
-
-<p>Asserts that <code class="prettyprint">value</code> is <code class="prettyprint">undefined</code>.</p>
-<pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">tea</span><span class="p">;</span>
-<span class="nx">assert</span><span class="p">.</span><span class="nx">isUndefined</span><span class="p">(</span><span class="nx">tea</span><span class="p">,</span> <span class="s1">'no tea defined'</span><span class="p">);</span>
-</code></pre>
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Mixed} value</li>
-<li>{String} message</li>
-</ul>
-
-<h2 id="isdefined">isDefined</h2>
-
-<h4 id="isdefined-value-message">.isDefined(value, [message])</h4>
-
-<p>Asserts that <code class="prettyprint">value</code> is not <code class="prettyprint">undefined</code>.</p>
-<pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">tea</span> <span class="o">=</span> <span class="s1">'cup of chai'</span><span class="p">;</span>
-<span class="nx">assert</span><span class="p">.</span><span class="nx">isDefined</span><span class="p">(</span><span class="nx">tea</span><span class="p">,</span> <span class="s1">'tea has been defined'</span><span class="p">);</span>
-</code></pre>
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Mixed} value</li>
-<li>{String} message</li>
-</ul>
-
-<h2 id="isfunction">isFunction</h2>
-
-<h4 id="isfunction-value-message">.isFunction(value, [message])</h4>
-
-<p>Asserts that <code class="prettyprint">value</code> is a function.</p>
-<pre class="highlight javascript tab-javascript"><code><span class="kd">function</span> <span class="nx">serveTea</span><span class="p">()</span> <span class="p">{</span> <span class="k">return</span> <span class="s1">'cup of tea'</span><span class="p">;</span> <span class="p">};</span>
-<span class="nx">assert</span><span class="p">.</span><span class="nx">isFunction</span><span class="p">(</span><span class="nx">serveTea</span><span class="p">,</span> <span class="s1">'great, we can have tea now'</span><span class="p">);</span>
-</code></pre>
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Mixed} value</li>
-<li>{String} message</li>
-</ul>
-
-<h2 id="isnotfunction">isNotFunction</h2>
-
-<h4 id="isnotfunction-value-message">.isNotFunction(value, [message])</h4>
-
-<p>Asserts that <code class="prettyprint">value</code> is <em>not</em> a function.</p>
-<pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">serveTea</span> <span class="o">=</span> <span class="p">[</span> <span class="s1">'heat'</span><span class="p">,</span> <span class="s1">'pour'</span><span class="p">,</span> <span class="s1">'sip'</span> <span class="p">];</span>
-<span class="nx">assert</span><span class="p">.</span><span class="nx">isNotFunction</span><span class="p">(</span><span class="nx">serveTea</span><span class="p">,</span> <span class="s1">'great, we have listed the steps'</span><span class="p">);</span>
-</code></pre>
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Mixed} value</li>
-<li>{String} message</li>
-</ul>
-
-<h2 id="isobject">isObject</h2>
-
-<h4 id="isobject-value-message">.isObject(value, [message])</h4>
-
-<p>Asserts that <code class="prettyprint">value</code> is an object of type &lsquo;Object&rsquo; (as revealed by <code class="prettyprint">Object.prototype.toString</code>).
-<em>The assertion does not match subclassed objects.</em></p>
-<pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">selection</span> <span class="o">=</span> <span class="p">{</span> <span class="na">name</span><span class="p">:</span> <span class="s1">'Chai'</span><span class="p">,</span> <span class="na">serve</span><span class="p">:</span> <span class="s1">'with spices'</span> <span class="p">};</span>
-<span class="nx">assert</span><span class="p">.</span><span class="nx">isObject</span><span class="p">(</span><span class="nx">selection</span><span class="p">,</span> <span class="s1">'tea selection is an object'</span><span class="p">);</span>
-</code></pre>
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Mixed} value</li>
-<li>{String} message</li>
-</ul>
-
-<h2 id="isnotobject">isNotObject</h2>
-
-<h4 id="isnotobject-value-message">.isNotObject(value, [message])</h4>
-
-<p>Asserts that <code class="prettyprint">value</code> is <em>not</em> an object of type &lsquo;Object&rsquo; (as revealed by <code class="prettyprint">Object.prototype.toString</code>).</p>
-<pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">selection</span> <span class="o">=</span> <span class="s1">'chai'</span>
-<span class="nx">assert</span><span class="p">.</span><span class="nx">isNotObject</span><span class="p">(</span><span class="nx">selection</span><span class="p">,</span> <span class="s1">'tea selection is not an object'</span><span class="p">);</span>
-    <span class="nx">assert</span><span class="p">.</span><span class="nx">isNotObject</span><span class="p">(</span><span class="kc">null</span><span class="p">,</span> <span class="s1">'null is not an object'</span><span class="p">);</span>
-</code></pre>
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Mixed} value</li>
-<li>{String} message</li>
-</ul>
-
-<h2 id="isarray">isArray</h2>
-
-<h4 id="isarray-value-message">.isArray(value, [message])</h4>
-
-<p>Asserts that <code class="prettyprint">value</code> is an array.</p>
-<pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">menu</span> <span class="o">=</span> <span class="p">[</span> <span class="s1">'green'</span><span class="p">,</span> <span class="s1">'chai'</span><span class="p">,</span> <span class="s1">'oolong'</span> <span class="p">];</span>
-<span class="nx">assert</span><span class="p">.</span><span class="nx">isArray</span><span class="p">(</span><span class="nx">menu</span><span class="p">,</span> <span class="s1">'what kind of tea do we want?'</span><span class="p">);</span>
-</code></pre>
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Mixed} value</li>
-<li>{String} message</li>
-</ul>
-
-<h2 id="isnotarray">isNotArray</h2>
-
-<h4 id="isnotarray-value-message">.isNotArray(value, [message])</h4>
-
-<p>Asserts that <code class="prettyprint">value</code> is <em>not</em> an array.</p>
-<pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">menu</span> <span class="o">=</span> <span class="s1">'green|chai|oolong'</span><span class="p">;</span>
-<span class="nx">assert</span><span class="p">.</span><span class="nx">isNotArray</span><span class="p">(</span><span class="nx">menu</span><span class="p">,</span> <span class="s1">'what kind of tea do we want?'</span><span class="p">);</span>
-</code></pre>
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Mixed} value</li>
-<li>{String} message</li>
-</ul>
-
-<h2 id="isstring">isString</h2>
-
-<h4 id="isstring-value-message">.isString(value, [message])</h4>
-
-<p>Asserts that <code class="prettyprint">value</code> is a string.</p>
-<pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">teaOrder</span> <span class="o">=</span> <span class="s1">'chai'</span><span class="p">;</span>
-<span class="nx">assert</span><span class="p">.</span><span class="nx">isString</span><span class="p">(</span><span class="nx">teaOrder</span><span class="p">,</span> <span class="s1">'order placed'</span><span class="p">);</span>
-</code></pre>
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Mixed} value</li>
-<li>{String} message</li>
-</ul>
-
-<h2 id="isnotstring">isNotString</h2>
-
-<h4 id="isnotstring-value-message">.isNotString(value, [message])</h4>
-
-<p>Asserts that <code class="prettyprint">value</code> is <em>not</em> a string.</p>
-<pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">teaOrder</span> <span class="o">=</span> <span class="mi">4</span><span class="p">;</span>
-<span class="nx">assert</span><span class="p">.</span><span class="nx">isNotString</span><span class="p">(</span><span class="nx">teaOrder</span><span class="p">,</span> <span class="s1">'order placed'</span><span class="p">);</span>
-</code></pre>
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Mixed} value</li>
-<li>{String} message</li>
-</ul>
-
-<h2 id="isnumber">isNumber</h2>
-
-<h4 id="isnumber-value-message">.isNumber(value, [message])</h4>
-
-<p>Asserts that <code class="prettyprint">value</code> is a number.</p>
-<pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">cups</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>
-<span class="nx">assert</span><span class="p">.</span><span class="nx">isNumber</span><span class="p">(</span><span class="nx">cups</span><span class="p">,</span> <span class="s1">'how many cups'</span><span class="p">);</span>
-</code></pre>
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Number} value</li>
-<li>{String} message</li>
-</ul>
-
-<h2 id="isnotnumber">isNotNumber</h2>
-
-<h4 id="isnotnumber-value-message">.isNotNumber(value, [message])</h4>
-
-<p>Asserts that <code class="prettyprint">value</code> is <em>not</em> a number.</p>
-<pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">cups</span> <span class="o">=</span> <span class="s1">'2 cups please'</span><span class="p">;</span>
-<span class="nx">assert</span><span class="p">.</span><span class="nx">isNotNumber</span><span class="p">(</span><span class="nx">cups</span><span class="p">,</span> <span class="s1">'how many cups'</span><span class="p">);</span>
-</code></pre>
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Mixed} value</li>
-<li>{String} message</li>
-</ul>
-
 <h2 id="isfinite">isFinite</h2>
 
 <h4 id="isfinite-value-message">.isFinite(value, [message])</h4>
@@ -811,7 +510,316 @@ Of the three style options, assert is the only one that is not chainable. Check 
 <li>{String} message</li>
 </ul>
 
-<h2 id="isboolean">isBoolean</h2>
+<h2 id="true-or-false">True or False</h2>
+
+<h3 id="istrue">isTrue</h3>
+
+<h4 id="istrue-value-message">.isTrue(value, [message])</h4>
+
+<p>Asserts that <code class="prettyprint">value</code> is true.</p>
+<pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">teaServed</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+<span class="nx">assert</span><span class="p">.</span><span class="nx">isTrue</span><span class="p">(</span><span class="nx">teaServed</span><span class="p">,</span> <span class="s1">'the tea has been served'</span><span class="p">);</span>
+</code></pre>
+<h4 id="parameters">Parameters</h4>
+
+<ul>
+<li>{Mixed} value</li>
+<li>{String} message</li>
+</ul>
+
+<h3 id="isnottrue">isNotTrue</h3>
+
+<h4 id="isnottrue-value-message">.isNotTrue(value, [message])</h4>
+
+<p>Asserts that <code class="prettyprint">value</code> is not true.</p>
+<pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">tea</span> <span class="o">=</span> <span class="s1">'tasty chai'</span><span class="p">;</span>
+<span class="nx">assert</span><span class="p">.</span><span class="nx">isNotTrue</span><span class="p">(</span><span class="nx">tea</span><span class="p">,</span> <span class="s1">'great, time for tea!'</span><span class="p">);</span>
+</code></pre>
+<h4 id="parameters">Parameters</h4>
+
+<ul>
+<li>{Mixed} value</li>
+<li>{String} message</li>
+</ul>
+
+<h3 id="isfalse">isFalse</h3>
+
+<h4 id="isfalse-value-message">.isFalse(value, [message])</h4>
+
+<p>Asserts that <code class="prettyprint">value</code> is false.</p>
+<pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">teaServed</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
+<span class="nx">assert</span><span class="p">.</span><span class="nx">isFalse</span><span class="p">(</span><span class="nx">teaServed</span><span class="p">,</span> <span class="s1">'no tea yet? hmm...'</span><span class="p">);</span>
+</code></pre>
+<h4 id="parameters">Parameters</h4>
+
+<ul>
+<li>{Mixed} value</li>
+<li>{String} message</li>
+</ul>
+
+<h3 id="isnotfalse">isNotFalse</h3>
+
+<h4 id="isnotfalse-value-message">.isNotFalse(value, [message])</h4>
+
+<p>Asserts that <code class="prettyprint">value</code> is not false.</p>
+<pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">tea</span> <span class="o">=</span> <span class="s1">'tasty chai'</span><span class="p">;</span>
+<span class="nx">assert</span><span class="p">.</span><span class="nx">isNotFalse</span><span class="p">(</span><span class="nx">tea</span><span class="p">,</span> <span class="s1">'great, time for tea!'</span><span class="p">);</span>
+</code></pre>
+<h4 id="parameters">Parameters</h4>
+
+<ul>
+<li>{Mixed} value</li>
+<li>{String} message</li>
+</ul>
+
+<h2 id="primitive-type-tests">Primitive Type Tests</h2>
+
+<h3 id="isnull">isNull</h3>
+
+<h4 id="isnull-value-message">.isNull(value, [message])</h4>
+
+<p>Asserts that <code class="prettyprint">value</code> is null.</p>
+<pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">isNull</span><span class="p">(</span><span class="nx">err</span><span class="p">,</span> <span class="s1">'there was no error'</span><span class="p">);</span>
+</code></pre>
+<h4 id="parameters">Parameters</h4>
+
+<ul>
+<li>{Mixed} value</li>
+<li>{String} message</li>
+</ul>
+
+<h3 id="isnotnull">isNotNull</h3>
+
+<h4 id="isnotnull-value-message">.isNotNull(value, [message])</h4>
+
+<p>Asserts that <code class="prettyprint">value</code> is not null.</p>
+<pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">tea</span> <span class="o">=</span> <span class="s1">'tasty chai'</span><span class="p">;</span>
+<span class="nx">assert</span><span class="p">.</span><span class="nx">isNotNull</span><span class="p">(</span><span class="nx">tea</span><span class="p">,</span> <span class="s1">'great, time for tea!'</span><span class="p">);</span>
+</code></pre>
+<h4 id="parameters">Parameters</h4>
+
+<ul>
+<li>{Mixed} value</li>
+<li>{String} message</li>
+</ul>
+
+<h3 id="exists">exists</h3>
+
+<h4 id="exists">.exists</h4>
+
+<p>Asserts that the target is neither <code class="prettyprint">null</code> nor <code class="prettyprint">undefined</code>.</p>
+<pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">foo</span> <span class="o">=</span> <span class="s1">'hi'</span><span class="p">;</span>
+
+<span class="nx">assert</span><span class="p">.</span><span class="nx">exists</span><span class="p">(</span><span class="nx">foo</span><span class="p">,</span> <span class="s1">'foo is neither `null` nor `undefined`'</span><span class="p">);</span>
+</code></pre>
+<h4 id="parameters">Parameters</h4>
+
+<ul>
+<li>{Mixed} value</li>
+<li>{String} message</li>
+</ul>
+
+<h3 id="notexists">notExists</h3>
+
+<h4 id="notexists">.notExists</h4>
+
+<p>Asserts that the target is either <code class="prettyprint">null</code> or <code class="prettyprint">undefined</code>.</p>
+<pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">bar</span> <span class="o">=</span> <span class="kc">null</span>
+  <span class="p">,</span> <span class="nx">baz</span><span class="p">;</span>
+
+    <span class="nx">assert</span><span class="p">.</span><span class="nx">notExists</span><span class="p">(</span><span class="nx">bar</span><span class="p">);</span>
+    <span class="nx">assert</span><span class="p">.</span><span class="nx">notExists</span><span class="p">(</span><span class="nx">baz</span><span class="p">,</span> <span class="s1">'baz is either null or undefined'</span><span class="p">);</span>
+</code></pre>
+<h4 id="parameters">Parameters</h4>
+
+<ul>
+<li>{Mixed} value</li>
+<li>{String} message</li>
+</ul>
+
+<h3 id="isundefined">isUndefined</h3>
+
+<h4 id="isundefined-value-message">.isUndefined(value, [message])</h4>
+
+<p>Asserts that <code class="prettyprint">value</code> is <code class="prettyprint">undefined</code>.</p>
+<pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">tea</span><span class="p">;</span>
+<span class="nx">assert</span><span class="p">.</span><span class="nx">isUndefined</span><span class="p">(</span><span class="nx">tea</span><span class="p">,</span> <span class="s1">'no tea defined'</span><span class="p">);</span>
+</code></pre>
+<h4 id="parameters">Parameters</h4>
+
+<ul>
+<li>{Mixed} value</li>
+<li>{String} message</li>
+</ul>
+
+<h3 id="isdefined">isDefined</h3>
+
+<h4 id="isdefined-value-message">.isDefined(value, [message])</h4>
+
+<p>Asserts that <code class="prettyprint">value</code> is not <code class="prettyprint">undefined</code>.</p>
+<pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">tea</span> <span class="o">=</span> <span class="s1">'cup of chai'</span><span class="p">;</span>
+<span class="nx">assert</span><span class="p">.</span><span class="nx">isDefined</span><span class="p">(</span><span class="nx">tea</span><span class="p">,</span> <span class="s1">'tea has been defined'</span><span class="p">);</span>
+</code></pre>
+<h4 id="parameters">Parameters</h4>
+
+<ul>
+<li>{Mixed} value</li>
+<li>{String} message</li>
+</ul>
+
+<h3 id="isfunction">isFunction</h3>
+
+<h4 id="isfunction-value-message">.isFunction(value, [message])</h4>
+
+<p>Asserts that <code class="prettyprint">value</code> is a function.</p>
+<pre class="highlight javascript tab-javascript"><code><span class="kd">function</span> <span class="nx">serveTea</span><span class="p">()</span> <span class="p">{</span> <span class="k">return</span> <span class="s1">'cup of tea'</span><span class="p">;</span> <span class="p">};</span>
+<span class="nx">assert</span><span class="p">.</span><span class="nx">isFunction</span><span class="p">(</span><span class="nx">serveTea</span><span class="p">,</span> <span class="s1">'great, we can have tea now'</span><span class="p">);</span>
+</code></pre>
+<h4 id="parameters">Parameters</h4>
+
+<ul>
+<li>{Mixed} value</li>
+<li>{String} message</li>
+</ul>
+
+<h3 id="isnotfunction">isNotFunction</h3>
+
+<h4 id="isnotfunction-value-message">.isNotFunction(value, [message])</h4>
+
+<p>Asserts that <code class="prettyprint">value</code> is <em>not</em> a function.</p>
+<pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">serveTea</span> <span class="o">=</span> <span class="p">[</span> <span class="s1">'heat'</span><span class="p">,</span> <span class="s1">'pour'</span><span class="p">,</span> <span class="s1">'sip'</span> <span class="p">];</span>
+<span class="nx">assert</span><span class="p">.</span><span class="nx">isNotFunction</span><span class="p">(</span><span class="nx">serveTea</span><span class="p">,</span> <span class="s1">'great, we have listed the steps'</span><span class="p">);</span>
+</code></pre>
+<h4 id="parameters">Parameters</h4>
+
+<ul>
+<li>{Mixed} value</li>
+<li>{String} message</li>
+</ul>
+
+<h3 id="isobject">isObject</h3>
+
+<h4 id="isobject-value-message">.isObject(value, [message])</h4>
+
+<p>Asserts that <code class="prettyprint">value</code> is an object of type &lsquo;Object&rsquo; (as revealed by <code class="prettyprint">Object.prototype.toString</code>).
+<em>The assertion does not match subclassed objects.</em></p>
+<pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">selection</span> <span class="o">=</span> <span class="p">{</span> <span class="na">name</span><span class="p">:</span> <span class="s1">'Chai'</span><span class="p">,</span> <span class="na">serve</span><span class="p">:</span> <span class="s1">'with spices'</span> <span class="p">};</span>
+<span class="nx">assert</span><span class="p">.</span><span class="nx">isObject</span><span class="p">(</span><span class="nx">selection</span><span class="p">,</span> <span class="s1">'tea selection is an object'</span><span class="p">);</span>
+</code></pre>
+<h4 id="parameters">Parameters</h4>
+
+<ul>
+<li>{Mixed} value</li>
+<li>{String} message</li>
+</ul>
+
+<h3 id="isnotobject">isNotObject</h3>
+
+<h4 id="isnotobject-value-message">.isNotObject(value, [message])</h4>
+
+<p>Asserts that <code class="prettyprint">value</code> is <em>not</em> an object of type &lsquo;Object&rsquo; (as revealed by <code class="prettyprint">Object.prototype.toString</code>).</p>
+<pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">selection</span> <span class="o">=</span> <span class="s1">'chai'</span>
+<span class="nx">assert</span><span class="p">.</span><span class="nx">isNotObject</span><span class="p">(</span><span class="nx">selection</span><span class="p">,</span> <span class="s1">'tea selection is not an object'</span><span class="p">);</span>
+    <span class="nx">assert</span><span class="p">.</span><span class="nx">isNotObject</span><span class="p">(</span><span class="kc">null</span><span class="p">,</span> <span class="s1">'null is not an object'</span><span class="p">);</span>
+</code></pre>
+<h4 id="parameters">Parameters</h4>
+
+<ul>
+<li>{Mixed} value</li>
+<li>{String} message</li>
+</ul>
+
+<h3 id="isarray">isArray</h3>
+
+<h4 id="isarray-value-message">.isArray(value, [message])</h4>
+
+<p>Asserts that <code class="prettyprint">value</code> is an array.</p>
+<pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">menu</span> <span class="o">=</span> <span class="p">[</span> <span class="s1">'green'</span><span class="p">,</span> <span class="s1">'chai'</span><span class="p">,</span> <span class="s1">'oolong'</span> <span class="p">];</span>
+<span class="nx">assert</span><span class="p">.</span><span class="nx">isArray</span><span class="p">(</span><span class="nx">menu</span><span class="p">,</span> <span class="s1">'what kind of tea do we want?'</span><span class="p">);</span>
+</code></pre>
+<h4 id="parameters">Parameters</h4>
+
+<ul>
+<li>{Mixed} value</li>
+<li>{String} message</li>
+</ul>
+
+<h3 id="isnotarray">isNotArray</h3>
+
+<h4 id="isnotarray-value-message">.isNotArray(value, [message])</h4>
+
+<p>Asserts that <code class="prettyprint">value</code> is <em>not</em> an array.</p>
+<pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">menu</span> <span class="o">=</span> <span class="s1">'green|chai|oolong'</span><span class="p">;</span>
+<span class="nx">assert</span><span class="p">.</span><span class="nx">isNotArray</span><span class="p">(</span><span class="nx">menu</span><span class="p">,</span> <span class="s1">'what kind of tea do we want?'</span><span class="p">);</span>
+</code></pre>
+<h4 id="parameters">Parameters</h4>
+
+<ul>
+<li>{Mixed} value</li>
+<li>{String} message</li>
+</ul>
+
+<h3 id="isstring">isString</h3>
+
+<h4 id="isstring-value-message">.isString(value, [message])</h4>
+
+<p>Asserts that <code class="prettyprint">value</code> is a string.</p>
+<pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">teaOrder</span> <span class="o">=</span> <span class="s1">'chai'</span><span class="p">;</span>
+<span class="nx">assert</span><span class="p">.</span><span class="nx">isString</span><span class="p">(</span><span class="nx">teaOrder</span><span class="p">,</span> <span class="s1">'order placed'</span><span class="p">);</span>
+</code></pre>
+<h4 id="parameters">Parameters</h4>
+
+<ul>
+<li>{Mixed} value</li>
+<li>{String} message</li>
+</ul>
+
+<h3 id="isnotstring">isNotString</h3>
+
+<h4 id="isnotstring-value-message">.isNotString(value, [message])</h4>
+
+<p>Asserts that <code class="prettyprint">value</code> is <em>not</em> a string.</p>
+<pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">teaOrder</span> <span class="o">=</span> <span class="mi">4</span><span class="p">;</span>
+<span class="nx">assert</span><span class="p">.</span><span class="nx">isNotString</span><span class="p">(</span><span class="nx">teaOrder</span><span class="p">,</span> <span class="s1">'order placed'</span><span class="p">);</span>
+</code></pre>
+<h4 id="parameters">Parameters</h4>
+
+<ul>
+<li>{Mixed} value</li>
+<li>{String} message</li>
+</ul>
+
+<h3 id="isnumber">isNumber</h3>
+
+<h4 id="isnumber-value-message">.isNumber(value, [message])</h4>
+
+<p>Asserts that <code class="prettyprint">value</code> is a number.</p>
+<pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">cups</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>
+<span class="nx">assert</span><span class="p">.</span><span class="nx">isNumber</span><span class="p">(</span><span class="nx">cups</span><span class="p">,</span> <span class="s1">'how many cups'</span><span class="p">);</span>
+</code></pre>
+<h4 id="parameters">Parameters</h4>
+
+<ul>
+<li>{Number} value</li>
+<li>{String} message</li>
+</ul>
+
+<h3 id="isnotnumber">isNotNumber</h3>
+
+<h4 id="isnotnumber-value-message">.isNotNumber(value, [message])</h4>
+
+<p>Asserts that <code class="prettyprint">value</code> is <em>not</em> a number.</p>
+<pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">cups</span> <span class="o">=</span> <span class="s1">'2 cups please'</span><span class="p">;</span>
+<span class="nx">assert</span><span class="p">.</span><span class="nx">isNotNumber</span><span class="p">(</span><span class="nx">cups</span><span class="p">,</span> <span class="s1">'how many cups'</span><span class="p">);</span>
+</code></pre>
+<h4 id="parameters">Parameters</h4>
+
+<ul>
+<li>{Mixed} value</li>
+<li>{String} message</li>
+</ul>
+
+<h3 id="isboolean">isBoolean</h3>
 
 <h4 id="isboolean-value-message">.isBoolean(value, [message])</h4>
 
@@ -829,7 +837,7 @@ Of the three style options, assert is the only one that is not chainable. Check 
 <li>{String} message</li>
 </ul>
 
-<h2 id="isnotboolean">isNotBoolean</h2>
+<h3 id="isnotboolean">isNotBoolean</h3>
 
 <h4 id="isnotboolean-value-message">.isNotBoolean(value, [message])</h4>
 
@@ -847,7 +855,7 @@ Of the three style options, assert is the only one that is not chainable. Check 
 <li>{String} message</li>
 </ul>
 
-<h2 id="typeof">typeOf</h2>
+<h3 id="typeof">typeOf</h3>
 
 <h4 id="typeof-value-name-message">.typeOf(value, name, [message])</h4>
 
@@ -868,7 +876,7 @@ Of the three style options, assert is the only one that is not chainable. Check 
 <li>{String} message</li>
 </ul>
 
-<h2 id="nottypeof">notTypeOf</h2>
+<h3 id="nottypeof">notTypeOf</h3>
 
 <h4 id="nottypeof-value-name-message">.notTypeOf(value, name, [message])</h4>
 
@@ -883,6 +891,8 @@ Of the three style options, assert is the only one that is not chainable. Check 
 <li>{String} typeof name</li>
 <li>{String} message</li>
 </ul>
+
+<h2 id="misc">Misc</h2>
 
 <h2 id="instanceof">instanceOf</h2>
 
