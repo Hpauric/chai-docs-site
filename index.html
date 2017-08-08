@@ -248,7 +248,7 @@ The Assert API covers the TDD assertion style.</p>
 <p>The assert style is very similar to node.js’ included assert module, with a bit of extra sugar. 
 Of the three style options, assert is the only one that is not chainable. Check out the <a href="http://chaijs.com/guide/styles/">Style Guide</a> for a comparison.</p>
 
-<h2 id="mixed-expression-to-test-for-truthiness">{Mixed} expression to test for truthiness</h2>
+<h2 id="assert">Assert</h2>
 
 <h4 id="assert-expression-message">assert(expression, message)</h4>
 
@@ -267,8 +267,7 @@ Of the three style options, assert is the only one that is not chainable. Check 
 
 <h4 id="fail-actual-expected-message-operator">.fail(actual, expected, [message], [operator])</h4>
 
-<p>Throw a failure. Node.js <code class="prettyprint">assert</code> module-compatible.
-&ldquo;`</p>
+<p>Throw a failure. Node.js <code class="prettyprint">assert</code> module-compatible.</p>
 
 <h4 id="parameters">Parameters</h4>
 
@@ -277,36 +276,6 @@ Of the three style options, assert is the only one that is not chainable. Check 
 <li>{Mixed} expected</li>
 <li>{String} message</li>
 <li>{String} operator</li>
-</ul>
-
-<h2 id="isok">isOk</h2>
-
-<h4 id="isok-object-message">.isOk(object, [message])</h4>
-
-<p>Asserts that <code class="prettyprint">object</code> is truthy.</p>
-<pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">isOk</span><span class="p">(</span><span class="s1">'everything'</span><span class="p">,</span> <span class="s1">'everything is ok'</span><span class="p">);</span>
-<span class="nx">assert</span><span class="p">.</span><span class="nx">isOk</span><span class="p">(</span><span class="kc">false</span><span class="p">,</span> <span class="s1">'this will fail'</span><span class="p">);</span>
-</code></pre>
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Mixed} object to test</li>
-<li>{String} message</li>
-</ul>
-
-<h2 id="isnotok">isNotOk</h2>
-
-<h4 id="isnotok-object-message">.isNotOk(object, [message])</h4>
-
-<p>Asserts that <code class="prettyprint">object</code> is falsy.</p>
-<pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">isNotOk</span><span class="p">(</span><span class="s1">'everything'</span><span class="p">,</span> <span class="s1">'this will fail'</span><span class="p">);</span>
-<span class="nx">assert</span><span class="p">.</span><span class="nx">isNotOk</span><span class="p">(</span><span class="kc">false</span><span class="p">,</span> <span class="s1">'this will pass'</span><span class="p">);</span>
-</code></pre>
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Mixed} object to test</li>
-<li>{String} message</li>
 </ul>
 
 <h2 id="equal">equal</h2>
@@ -465,7 +434,7 @@ Of the three style options, assert is the only one that is not chainable. Check 
 <li>{String} message</li>
 </ul>
 
-<h2 id="isnan">isNaN</h2>
+<h3 id="isnan">isNaN</h3>
 
 <h4 id="isnan">.isNaN</h4>
 
@@ -479,7 +448,7 @@ Of the three style options, assert is the only one that is not chainable. Check 
 <li>{String} message</li>
 </ul>
 
-<h2 id="isnotnan">isNotNaN</h2>
+<h3 id="isnotnan">isNotNaN</h3>
 
 <h4 id="isnotnan">.isNotNaN</h4>
 
@@ -493,7 +462,7 @@ Of the three style options, assert is the only one that is not chainable. Check 
 <li>{String} message</li>
 </ul>
 
-<h2 id="isfinite">isFinite</h2>
+<h3 id="isfinite">isFinite</h3>
 
 <h4 id="isfinite-value-message">.isFinite(value, [message])</h4>
 
@@ -511,6 +480,36 @@ Of the three style options, assert is the only one that is not chainable. Check 
 </ul>
 
 <h2 id="true-or-false">True or False</h2>
+
+<h2 id="isok">isOk</h2>
+
+<h4 id="isok-object-message">.isOk(object, [message])</h4>
+
+<p>Asserts that <code class="prettyprint">object</code> is truthy.</p>
+<pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">isOk</span><span class="p">(</span><span class="s1">'everything'</span><span class="p">,</span> <span class="s1">'everything is ok'</span><span class="p">);</span>
+<span class="nx">assert</span><span class="p">.</span><span class="nx">isOk</span><span class="p">(</span><span class="kc">false</span><span class="p">,</span> <span class="s1">'this will fail'</span><span class="p">);</span>
+</code></pre>
+<h4 id="parameters">Parameters</h4>
+
+<ul>
+<li>{Mixed} object to test</li>
+<li>{String} message</li>
+</ul>
+
+<h2 id="isnotok">isNotOk</h2>
+
+<h4 id="isnotok-object-message">.isNotOk(object, [message])</h4>
+
+<p>Asserts that <code class="prettyprint">object</code> is falsy.</p>
+<pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">isNotOk</span><span class="p">(</span><span class="s1">'everything'</span><span class="p">,</span> <span class="s1">'this will fail'</span><span class="p">);</span>
+<span class="nx">assert</span><span class="p">.</span><span class="nx">isNotOk</span><span class="p">(</span><span class="kc">false</span><span class="p">,</span> <span class="s1">'this will pass'</span><span class="p">);</span>
+</code></pre>
+<h4 id="parameters">Parameters</h4>
+
+<ul>
+<li>{Mixed} object to test</li>
+<li>{String} message</li>
+</ul>
 
 <h3 id="istrue">isTrue</h3>
 
@@ -932,6 +931,8 @@ Of the three style options, assert is the only one that is not chainable. Check 
 
 <h2 id="include">include</h2>
 
+<h3 id="include">include</h3>
+
 <h4 id="include-haystack-needle-message">.include(haystack, needle, [message])</h4>
 
 <p>Asserts that <code class="prettyprint">haystack</code> includes <code class="prettyprint">needle</code>. Can be used to assert the
@@ -961,7 +962,7 @@ properties in an object.</p>
 <li>{String} message</li>
 </ul>
 
-<h2 id="notinclude">notInclude</h2>
+<h3 id="notinclude">notInclude</h3>
 
 <h4 id="notinclude-haystack-needle-message">.notInclude(haystack, needle, [message])</h4>
 
@@ -993,7 +994,7 @@ array, the array is searched to confirm the absence of an element that'</span><s
 <li>{String} message</li>
 </ul>
 
-<h2 id="deepinclude">deepInclude</h2>
+<h3 id="deepinclude">deepInclude</h3>
 
 <h4 id="deepinclude-haystack-needle-message">.deepInclude(haystack, needle, [message])</h4>
 
@@ -1014,7 +1015,7 @@ Deep equality is used.</p>
 <li>{String} message</li>
 </ul>
 
-<h2 id="notdeepinclude">notDeepInclude</h2>
+<h3 id="notdeepinclude">notDeepInclude</h3>
 
 <h4 id="notdeepinclude-haystack-needle-message">.notDeepInclude(haystack, needle, [message])</h4>
 
@@ -1035,7 +1036,7 @@ Deep equality is used.</p>
 <li>{String} message</li>
 </ul>
 
-<h2 id="nestedinclude">nestedInclude</h2>
+<h3 id="nestedinclude">nestedInclude</h3>
 
 <h4 id="nestedinclude-haystack-needle-message">.nestedInclude(haystack, needle, [message])</h4>
 
@@ -1056,7 +1057,7 @@ properties.
 <li>{String} message</li>
 </ul>
 
-<h2 id="notnestedinclude">notNestedInclude</h2>
+<h3 id="notnestedinclude">notNestedInclude</h3>
 
 <h4 id="notnestedinclude-haystack-needle-message">.notNestedInclude(haystack, needle, [message])</h4>
 
@@ -1077,7 +1078,7 @@ properties.
 <li>{String} message</li>
 </ul>
 
-<h2 id="deepnestedinclude">deepNestedInclude</h2>
+<h3 id="deepnestedinclude">deepNestedInclude</h3>
 
 <h4 id="deepnestedinclude-haystack-needle-message">.deepNestedInclude(haystack, needle, [message])</h4>
 
@@ -1098,7 +1099,7 @@ properties.
 <li>{String} message</li>
 </ul>
 
-<h2 id="notdeepnestedinclude">notDeepNestedInclude</h2>
+<h3 id="notdeepnestedinclude">notDeepNestedInclude</h3>
 
 <h4 id="notdeepnestedinclude-haystack-needle-message">.notDeepNestedInclude(haystack, needle, [message])</h4>
 
@@ -1119,7 +1120,7 @@ properties.
 <li>{String} message</li>
 </ul>
 
-<h2 id="owninclude">ownInclude</h2>
+<h3 id="owninclude">ownInclude</h3>
 
 <h4 id="owninclude-haystack-needle-message">.ownInclude(haystack, needle, [message])</h4>
 
@@ -1136,7 +1137,7 @@ object while ignoring inherited properties.</p>
 <li>{String} message</li>
 </ul>
 
-<h2 id="notowninclude">notOwnInclude</h2>
+<h3 id="notowninclude">notOwnInclude</h3>
 
 <h4 id="notowninclude-haystack-needle-message">.notOwnInclude(haystack, needle, [message])</h4>
 
@@ -1155,7 +1156,7 @@ object while ignoring inherited properties.</p>
 <li>{String} message</li>
 </ul>
 
-<h2 id="deepowninclude">deepOwnInclude</h2>
+<h3 id="deepowninclude">deepOwnInclude</h3>
 
 <h4 id="deepowninclude-haystack-needle-message">.deepOwnInclude(haystack, needle, [message])</h4>
 
@@ -1172,7 +1173,7 @@ object while ignoring inherited properties and checking for deep equality.</p>
 <li>{String} message</li>
 </ul>
 
-<h2 id="notdeepowninclude">notDeepOwnInclude</h2>
+<h3 id="notdeepowninclude">notDeepOwnInclude</h3>
 
 <h4 id="notdeepowninclude-haystack-needle-message">.notDeepOwnInclude(haystack, needle, [message])</h4>
 
@@ -1189,7 +1190,9 @@ object while ignoring inherited properties and checking for deep equality.</p>
 <li>{String} message</li>
 </ul>
 
-<h2 id="match">match</h2>
+<h2 id="regex">Regex</h2>
+
+<h3 id="match">match</h3>
 
 <h4 id="match-value-regexp-message">.match(value, regexp, [message])</h4>
 
@@ -1204,7 +1207,7 @@ object while ignoring inherited properties and checking for deep equality.</p>
 <li>{String} message</li>
 </ul>
 
-<h2 id="notmatch">notMatch</h2>
+<h3 id="notmatch">notMatch</h3>
 
 <h4 id="notmatch-value-regexp-message">.notMatch(value, regexp, [message])</h4>
 
