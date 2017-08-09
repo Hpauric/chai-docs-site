@@ -890,7 +890,7 @@ Of the three style options, assert is the only one that is not chainable. Check 
 <li>{String} message</li>
 </ul>
 
-<h2 id="object-constructor">Object Constructor</h2>
+<h2 id="object-constructor-tests">Object Constructor Tests</h2>
 
 <h3 id="instanceof">instanceOf</h3>
 
@@ -1187,7 +1187,7 @@ object while ignoring inherited properties and checking for deep equality.</p>
 <li>{String} message</li>
 </ul>
 
-<h2 id="regex">Regex</h2>
+<h2 id="regex-tests">Regex Tests</h2>
 
 <h3 id="match">match</h3>
 
@@ -1219,7 +1219,7 @@ object while ignoring inherited properties and checking for deep equality.</p>
 <li>{String} message</li>
 </ul>
 
-<h2 id="object-properties">Object Properties</h2>
+<h2 id="object-property-tests">Object Property Tests</h2>
 
 <h3 id="property">property</h3>
 
@@ -1436,7 +1436,7 @@ nested reference. Uses a deep equality check.</p>
 <li>{String} message</li>
 </ul>
 
-<h2 id="object-keys">Object Keys</h2>
+<h2 id="object-key-tests">Object Key Tests</h2>
 
 <h3 id="hasanykeys">hasAnyKeys</h3>
 
@@ -1654,7 +1654,7 @@ will be used as the expected set of keys.</p>
 <li>{String} message</li>
 </ul>
 
-<h2 id="errors">Errors</h2>
+<h2 id="error-tests">Error Tests</h2>
 
 <h3 id="throws">throws</h3>
 
@@ -1728,7 +1728,7 @@ assert class.</p>
 <li>{Object} object</li>
 </ul>
 
-<h2 id="members">Members</h2>
+<h2 id="member-tests">Member Tests</h2>
 
 <h3 id="samemembers">sameMembers</h3>
 
@@ -1994,21 +1994,6 @@ check.</p>
 <li>{String} message</li>
 </ul>
 
-<h2 id="oneof">oneOf</h2>
-
-<h4 id="oneof-inlist-list-message">.oneOf(inList, list, [message])</h4>
-
-<p>Asserts that non-object, non-array value <code class="prettyprint">inList</code> appears in the flat array <code class="prettyprint">list</code>.</p>
-<pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">oneOf</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="p">[</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span> <span class="p">],</span> <span class="s1">'Not found in list'</span><span class="p">);</span>
-</code></pre>
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{*} inList</li>
-<li>{Array&lt;*&gt;} list</li>
-<li>{String} message</li>
-</ul>
-
 <h2 id="function-tests">Function Tests</h2>
 
 <h3 id="changes">changes</h3>
@@ -2252,7 +2237,7 @@ check.</p>
 <li>{String} message <em>optional</em></li>
 </ul>
 
-<h2 id="object-misc">Object Misc</h2>
+<h2 id="object-misc-tests">Object Misc Tests</h2>
 
 <h3 id="isextensible">isExtensible</h3>
 
@@ -2348,9 +2333,8 @@ and its existing properties cannot be modified).</p>
 
 <ul>
 <li>{Object} object</li>
+<li>{String} message <em>optional</em></li>
 </ul>
-
-<h2 id="string-message-optional">- {String} message <em>optional</em></h2>
 
 <h2 id="mixed-misc-tests">Mixed Misc Tests</h2>
 
@@ -2414,6 +2398,21 @@ and its existing properties cannot be modified).</p>
 <li>{Mixed} val1</li>
 <li>{String} operator</li>
 <li>{Mixed} val2</li>
+<li>{String} message</li>
+</ul>
+
+<h3 id="oneof">oneOf</h3>
+
+<h4 id="oneof-inlist-list-message">.oneOf(inList, list, [message])</h4>
+
+<p>Asserts that non-object, non-array value <code class="prettyprint">inList</code> appears in the flat array <code class="prettyprint">list</code>.</p>
+<pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">oneOf</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="p">[</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span> <span class="p">],</span> <span class="s1">'Not found in list'</span><span class="p">);</span>
+</code></pre>
+<h4 id="parameters">Parameters</h4>
+
+<ul>
+<li>{*} inList</li>
+<li>{Array&lt;*&gt;} list</li>
 <li>{String} message</li>
 </ul>
 
