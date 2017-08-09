@@ -232,11 +232,11 @@
 <p>The Expect / Should API covers the BDD assertion styles.
 The Assert API covers the TDD assertion style.</p>
 
-<h3 id="plugins">Plugins</h3>
+<h2 id="plugins">Plugins</h2>
 
 <p>The Plugin API will be of use to anyone interested in building plugins as helpers to DRY up your tests, or for release to the community.</p>
 
-<h3 id="tools">Tools</h3>
+<h2 id="tools">Tools</h2>
 
 <p>The Online Test Suite is a live run of Chai’s test suite. Use it to ensure browser compatibility.</p>
 
@@ -245,37 +245,7 @@ The Assert API covers the TDD assertion style.</p>
 <p>The assert style is very similar to node.js’ included assert module, with a bit of extra sugar. 
 Of the three style options, assert is the only one that is not chainable. Check out the <a href="http://chaijs.com/guide/styles/">Style Guide</a> for a comparison.</p>
 
-<h2 id="assert">Assert</h2>
-
-<h4 id="assert-expression-message">assert(expression, message)</h4>
-
-<p>Write your own test expressions.</p>
-<pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">(</span><span class="s1">'foo'</span> <span class="o">!==</span> <span class="s1">'bar'</span><span class="p">,</span> <span class="s1">'foo is not bar'</span><span class="p">);</span>
-<span class="nx">assert</span><span class="p">(</span><span class="nb">Array</span><span class="p">.</span><span class="nx">isArray</span><span class="p">([]),</span> <span class="s1">'empty arrays are arrays'</span><span class="p">);</span>
-</code></pre>
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Mixed} expression to test for truthiness</li>
-<li>{String} message to display on error</li>
-</ul>
-
-<h2 id="fail">fail</h2>
-
-<h4 id="fail-actual-expected-message-operator">.fail(actual, expected, [message], [operator])</h4>
-
-<p>Throw a failure. Node.js <code class="prettyprint">assert</code> module-compatible.</p>
-
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Mixed} actual</li>
-<li>{Mixed} expected</li>
-<li>{String} message</li>
-<li>{String} operator</li>
-</ul>
-
-<h2 id="equal">equal</h2>
+<h2 id="equals-tests">Equals Tests</h2>
 
 <h3 id="equal">equal</h3>
 
@@ -367,7 +337,7 @@ Of the three style options, assert is the only one that is not chainable. Check 
 <li>{String} message</li>
 </ul>
 
-<h2 id="numbers">Numbers</h2>
+<h2 id="number-tests">Number Tests</h2>
 
 <h3 id="isabove">isAbove</h3>
 
@@ -508,7 +478,7 @@ Of the three style options, assert is the only one that is not chainable. Check 
 <li>{String} message</li>
 </ul>
 
-<h2 id="true-or-false">True or False</h2>
+<h2 id="true-false-tests">True/False Tests</h2>
 
 <h3 id="isok">isOk</h3>
 
@@ -600,7 +570,7 @@ Of the three style options, assert is the only one that is not chainable. Check 
 <li>{String} message</li>
 </ul>
 
-<h2 id="primitive-type-tests">Primitive Type Tests</h2>
+<h2 id="typeof-tests">Typeof Tests</h2>
 
 <h3 id="isnull">isNull</h3>
 
@@ -958,7 +928,7 @@ Of the three style options, assert is the only one that is not chainable. Check 
 <li>{String} message</li>
 </ul>
 
-<h2 id="include">include</h2>
+<h2 id="includes-tests">Includes Tests</h2>
 
 <h3 id="include">include</h3>
 
@@ -1463,22 +1433,6 @@ nested reference. Uses a deep equality check.</p>
 <li>{Object} object</li>
 <li>{String} property</li>
 <li>{Mixed} value</li>
-<li>{String} message</li>
-</ul>
-
-<h2 id="lengthof">lengthOf</h2>
-
-<h4 id="lengthof-object-length-message">.lengthOf(object, length, [message])</h4>
-
-<p>Asserts that <code class="prettyprint">object</code> has a <code class="prettyprint">length</code> property with the expected value.</p>
-<pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">lengthOf</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">],</span> <span class="mi">3</span><span class="p">,</span> <span class="s1">'array has length of 3'</span><span class="p">);</span>
-<span class="nx">assert</span><span class="p">.</span><span class="nx">lengthOf</span><span class="p">(</span><span class="s1">'foobar'</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="s1">'string has length of 6'</span><span class="p">);</span>
-</code></pre>
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Mixed} object</li>
-<li>{Number} length</li>
 <li>{String} message</li>
 </ul>
 
@@ -2398,7 +2352,53 @@ and its existing properties cannot be modified).</p>
 
 <h2 id="string-message-optional">- {String} message <em>optional</em></h2>
 
-<h2 id="mixed-misc">Mixed Misc</h2>
+<h2 id="mixed-misc-tests">Mixed Misc Tests</h2>
+
+<h3 id="assert">Assert</h3>
+
+<h4 id="assert-expression-message">assert(expression, message)</h4>
+
+<p>Write your own test expressions.</p>
+<pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">(</span><span class="s1">'foo'</span> <span class="o">!==</span> <span class="s1">'bar'</span><span class="p">,</span> <span class="s1">'foo is not bar'</span><span class="p">);</span>
+<span class="nx">assert</span><span class="p">(</span><span class="nb">Array</span><span class="p">.</span><span class="nx">isArray</span><span class="p">([]),</span> <span class="s1">'empty arrays are arrays'</span><span class="p">);</span>
+</code></pre>
+<h4 id="parameters">Parameters</h4>
+
+<ul>
+<li>{Mixed} expression to test for truthiness</li>
+<li>{String} message to display on error</li>
+</ul>
+
+<h3 id="fail">fail</h3>
+
+<h4 id="fail-actual-expected-message-operator">.fail(actual, expected, [message], [operator])</h4>
+
+<p>Throw a failure. Node.js <code class="prettyprint">assert</code> module-compatible.</p>
+
+<h4 id="parameters">Parameters</h4>
+
+<ul>
+<li>{Mixed} actual</li>
+<li>{Mixed} expected</li>
+<li>{String} message</li>
+<li>{String} operator</li>
+</ul>
+
+<h3 id="lengthof">lengthOf</h3>
+
+<h4 id="lengthof-object-length-message">.lengthOf(object, length, [message])</h4>
+
+<p>Asserts that <code class="prettyprint">object</code> has a <code class="prettyprint">length</code> property with the expected value.</p>
+<pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">lengthOf</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">],</span> <span class="mi">3</span><span class="p">,</span> <span class="s1">'array has length of 3'</span><span class="p">);</span>
+<span class="nx">assert</span><span class="p">.</span><span class="nx">lengthOf</span><span class="p">(</span><span class="s1">'foobar'</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="s1">'string has length of 6'</span><span class="p">);</span>
+</code></pre>
+<h4 id="parameters">Parameters</h4>
+
+<ul>
+<li>{Mixed} object</li>
+<li>{Number} length</li>
+<li>{String} message</li>
+</ul>
 
 <h3 id="operator">operator</h3>
 
