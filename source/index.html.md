@@ -1,15 +1,9 @@
 ---
 title: Chai API Reference
 
-language_tabs:
-  - javascript
-
 toc_footers:
-  - <a href='#'>Sign Up for a Developer Key</a>
+  - <a href='http://chaijs.com/api/'>Original Chai Documentation</a>
   - <a href='https://github.com/tripit/slate'>Documentation Powered by Slate</a>
-
-includes:
-  - errors
 
 search: true
 ---
@@ -23,11 +17,11 @@ The Chai API is broken down by style or task.
 The Expect / Should API covers the BDD assertion styles.
 The Assert API covers the TDD assertion style.
 
-### Plugins
+## Plugins
 
 The Plugin API will be of use to anyone interested in building plugins as helpers to DRY up your tests, or for release to the community.
 
-### Tools
+## Tools
 
 The Online Test Suite is a live run of Chai’s test suite. Use it to ensure browser compatibility.
 
@@ -36,61 +30,11 @@ The Online Test Suite is a live run of Chai’s test suite. Use it to ensure bro
 The assert style is very similar to node.js’ included assert module, with a bit of extra sugar. 
 Of the three style options, assert is the only one that is not chainable. Check out the [Style Guide](http://chaijs.com/guide/styles/) for a comparison.
 
-##{Mixed} expression to test for truthiness
-#### assert(expression, message)
-Write your own test expressions.
-
-```javascript
-assert('foo' !== 'bar', 'foo is not bar');
-assert(Array.isArray([]), 'empty arrays are arrays');
-```
-
-#### Parameters
-- {Mixed} expression to test for truthiness
-- {String} message to display on error
 
 
-##fail
-#### .fail(actual, expected, [message], [operator])
-Throw a failure. Node.js `assert` module-compatible.
-```
+## Equals Tests
 
-#### Parameters
-- {Mixed} actual
-- {Mixed} expected
-- {String} message
-- {String} operator
-
-
-##isOk
-#### .isOk(object, [message])
-Asserts that `object` is truthy.
-
-```javascript
-assert.isOk('everything', 'everything is ok');
-assert.isOk(false, 'this will fail');
-```
-
-#### Parameters
-- {Mixed} object to test
-- {String} message
-
-
-##isNotOk
-#### .isNotOk(object, [message])
-Asserts that `object` is falsy.
-
-```javascript
-assert.isNotOk('everything', 'this will fail');
-assert.isNotOk(false, 'this will pass');
-```
-
-#### Parameters
-- {Mixed} object to test
-- {String} message
-
-
-##equal
+###equal
 #### .equal(actual, expected, [message])
 Asserts non-strict equality (`==`) of `actual` and `expected`.
 
@@ -104,7 +48,7 @@ assert.equal(3, '3', '== coerces values to strings');
 - {String} message
 
 
-##notEqual
+###notEqual
 #### .notEqual(actual, expected, [message])
 Asserts non-strict inequality (`!=`) of `actual` and `expected`.
 
@@ -118,7 +62,7 @@ assert.notEqual(3, 4, 'these numbers are not equal');
 - {String} message
 
 
-##strictEqual
+###strictEqual
 #### .strictEqual(actual, expected, [message])
 Asserts strict equality (`===`) of `actual` and `expected`.
 
@@ -132,7 +76,7 @@ assert.strictEqual(true, true, 'these booleans are strictly equal');
 - {String} message
 
 
-##notStrictEqual
+###notStrictEqual
 #### .notStrictEqual(actual, expected, [message])
 Asserts strict inequality (`!==`) of `actual` and `expected`.
 
@@ -146,7 +90,7 @@ assert.notStrictEqual(3, '3', 'no coercion for strict equality');
 - {String} message
 
 
-##deepEqual
+###deepEqual
 #### .deepEqual(actual, expected, [message])
 Asserts that `actual` is deeply equal to `expected`.
 
@@ -160,7 +104,7 @@ assert.deepEqual({ tea: 'green' }, { tea: 'green' });
 - {String} message
 
 
-##notDeepEqual
+###notDeepEqual
 #### .notDeepEqual(actual, expected, [message])
 Assert that `actual` is not deeply equal to `expected`.
 
@@ -173,8 +117,9 @@ assert.notDeepEqual({ tea: 'green' }, { tea: 'jasmine' });
 - {Mixed} expected
 - {String} message
 
+## Number Tests
 
-##isAbove
+###isAbove
 #### .isAbove(valueToCheck, valueToBeAbove, [message])
 Asserts `valueToCheck` is strictly greater than (>) `valueToBeAbove`.
 
@@ -188,7 +133,7 @@ assert.isAbove(5, 2, '5 is strictly greater than 2');
 - {String} message
 
 
-##isAtLeast
+###isAtLeast
 #### .isAtLeast(valueToCheck, valueToBeAtLeast, [message])
 Asserts `valueToCheck` is greater than or equal to (>=) `valueToBeAtLeast`.
 
@@ -203,7 +148,7 @@ assert.isAtLeast(3, 3, '3 is greater or equal to 3');
 - {String} message
 
 
-##isBelow
+###isBelow
 #### .isBelow(valueToCheck, valueToBeBelow, [message])
 Asserts `valueToCheck` is strictly less than (<) `valueToBeBelow`.
 
@@ -217,7 +162,7 @@ assert.isBelow(3, 6, '3 is strictly less than 6');
 - {String} message
 
 
-##isAtMost
+###isAtMost
 #### .isAtMost(valueToCheck, valueToBeAtMost, [message])
 Asserts `valueToCheck` is less than or equal to (<=) `valueToBeAtMost`.
 
@@ -231,8 +176,105 @@ assert.isAtMost(4, 4, '4 is less than or equal to 4');
 - {Mixed} valueToBeAtMost
 - {String} message
 
+###isNaN
+#### .isNaN
+Asserts that value is NaN.
 
-##isTrue
+```javascript
+assert.isNaN(NaN, 'NaN is NaN');
+```
+
+#### Parameters
+- {Mixed} value
+- {String} message
+
+
+###isNotNaN
+#### .isNotNaN
+Asserts that value is not NaN.
+
+```javascript
+assert.isNotNaN(4, '4 is not NaN');
+```
+
+#### Parameters
+- {Mixed} value
+- {String} message
+
+###isFinite
+#### .isFinite(value, [message])
+Asserts that `value` is a finite number. Unlike `.isNumber`, this will fail for `NaN` and `Infinity`.
+
+```javascript
+var cups = 2;
+assert.isFinite(cups, 'how many cups');
+
+    assert.isFinite(NaN); // throws
+```
+
+#### Parameters
+- {Number} value
+- {String} message
+
+###closeTo
+#### .closeTo(actual, expected, delta, [message])
+Asserts that the target is equal `expected`, to within a +/- `delta` range.
+
+```javascript
+assert.closeTo(1.5, 1, 0.5, 'numbers are close');
+```
+
+#### Parameters
+- {Number} actual
+- {Number} expected
+- {Number} delta
+- {String} message
+
+
+###approximately
+#### .approximately(actual, expected, delta, [message])
+Asserts that the target is equal `expected`, to within a +/- `delta` range.
+
+```javascript
+assert.approximately(1.5, 1, 0.5, 'numbers are close');
+```
+#### Parameters
+- {Number} actual
+- {Number} expected
+- {Number} delta
+- {String} message
+
+
+## True/False Tests
+
+###isOk
+#### .isOk(object, [message])
+Asserts that `object` is truthy.
+
+```javascript
+assert.isOk('everything', 'everything is ok');
+assert.isOk(false, 'this will fail');
+```
+
+#### Parameters
+- {Mixed} object to test
+- {String} message
+
+
+###isNotOk
+#### .isNotOk(object, [message])
+Asserts that `object` is falsy.
+
+```javascript
+assert.isNotOk('everything', 'this will fail');
+assert.isNotOk(false, 'this will pass');
+```
+
+#### Parameters
+- {Mixed} object to test
+- {String} message
+
+###isTrue
 #### .isTrue(value, [message])
 Asserts that `value` is true.
 
@@ -246,7 +288,7 @@ assert.isTrue(teaServed, 'the tea has been served');
 - {String} message
 
 
-##isNotTrue
+###isNotTrue
 #### .isNotTrue(value, [message])
 Asserts that `value` is not true.
 
@@ -260,7 +302,7 @@ assert.isNotTrue(tea, 'great, time for tea!');
 - {String} message
 
 
-##isFalse
+###isFalse
 #### .isFalse(value, [message])
 Asserts that `value` is false.
 
@@ -274,7 +316,7 @@ assert.isFalse(teaServed, 'no tea yet? hmm...');
 - {String} message
 
 
-##isNotFalse
+###isNotFalse
 #### .isNotFalse(value, [message])
 Asserts that `value` is not false.
 
@@ -287,8 +329,10 @@ assert.isNotFalse(tea, 'great, time for tea!');
 - {Mixed} value
 - {String} message
 
+## Typeof Tests
 
-##isNull
+
+###isNull
 #### .isNull(value, [message])
 Asserts that `value` is null.
 
@@ -301,7 +345,7 @@ assert.isNull(err, 'there was no error');
 - {String} message
 
 
-##isNotNull
+###isNotNull
 #### .isNotNull(value, [message])
 Asserts that `value` is not null.
 
@@ -314,34 +358,7 @@ assert.isNotNull(tea, 'great, time for tea!');
 - {Mixed} value
 - {String} message
 
-
-##isNaN
-#### .isNaN
-Asserts that value is NaN.
-
-```javascript
-assert.isNaN(NaN, 'NaN is NaN');
-```
-
-#### Parameters
-- {Mixed} value
-- {String} message
-
-
-##isNotNaN
-#### .isNotNaN
-Asserts that value is not NaN.
-
-```javascript
-assert.isNotNaN(4, '4 is not NaN');
-```
-
-#### Parameters
-- {Mixed} value
-- {String} message
-
-
-##exists
+###exists
 #### .exists
 Asserts that the target is neither `null` nor `undefined`.
 
@@ -356,7 +373,7 @@ assert.exists(foo, 'foo is neither `null` nor `undefined`');
 - {String} message
 
 
-##notExists
+###notExists
 #### .notExists
 Asserts that the target is either `null` or `undefined`.
 
@@ -373,7 +390,7 @@ var bar = null
 - {String} message
 
 
-##isUndefined
+###isUndefined
 #### .isUndefined(value, [message])
 Asserts that `value` is `undefined`.
 
@@ -387,7 +404,7 @@ assert.isUndefined(tea, 'no tea defined');
 - {String} message
 
 
-##isDefined
+###isDefined
 #### .isDefined(value, [message])
 Asserts that `value` is not `undefined`.
 
@@ -401,7 +418,7 @@ assert.isDefined(tea, 'tea has been defined');
 - {String} message
 
 
-##isFunction
+###isFunction
 #### .isFunction(value, [message])
 Asserts that `value` is a function.
 
@@ -415,7 +432,7 @@ assert.isFunction(serveTea, 'great, we can have tea now');
 - {String} message
 
 
-##isNotFunction
+###isNotFunction
 #### .isNotFunction(value, [message])
 Asserts that `value` is _not_ a function.
 
@@ -429,7 +446,7 @@ assert.isNotFunction(serveTea, 'great, we have listed the steps');
 - {String} message
 
 
-##isObject
+###isObject
 #### .isObject(value, [message])
 Asserts that `value` is an object of type 'Object' (as revealed by `Object.prototype.toString`).
 _The assertion does not match subclassed objects._
@@ -444,7 +461,7 @@ assert.isObject(selection, 'tea selection is an object');
 - {String} message
 
 
-##isNotObject
+###isNotObject
 #### .isNotObject(value, [message])
 Asserts that `value` is _not_ an object of type 'Object' (as revealed by `Object.prototype.toString`).
 
@@ -459,7 +476,7 @@ assert.isNotObject(selection, 'tea selection is not an object');
 - {String} message
 
 
-##isArray
+###isArray
 #### .isArray(value, [message])
 Asserts that `value` is an array.
 
@@ -473,7 +490,7 @@ assert.isArray(menu, 'what kind of tea do we want?');
 - {String} message
 
 
-##isNotArray
+###isNotArray
 #### .isNotArray(value, [message])
 Asserts that `value` is _not_ an array.
 
@@ -487,7 +504,7 @@ assert.isNotArray(menu, 'what kind of tea do we want?');
 - {String} message
 
 
-##isString
+###isString
 #### .isString(value, [message])
 Asserts that `value` is a string.
 
@@ -501,7 +518,7 @@ assert.isString(teaOrder, 'order placed');
 - {String} message
 
 
-##isNotString
+###isNotString
 #### .isNotString(value, [message])
 Asserts that `value` is _not_ a string.
 
@@ -515,7 +532,7 @@ assert.isNotString(teaOrder, 'order placed');
 - {String} message
 
 
-##isNumber
+###isNumber
 #### .isNumber(value, [message])
 Asserts that `value` is a number.
 
@@ -529,7 +546,7 @@ assert.isNumber(cups, 'how many cups');
 - {String} message
 
 
-##isNotNumber
+###isNotNumber
 #### .isNotNumber(value, [message])
 Asserts that `value` is _not_ a number.
 
@@ -543,23 +560,10 @@ assert.isNotNumber(cups, 'how many cups');
 - {String} message
 
 
-##isFinite
-#### .isFinite(value, [message])
-Asserts that `value` is a finite number. Unlike `.isNumber`, this will fail for `NaN` and `Infinity`.
-
-```javascript
-var cups = 2;
-assert.isFinite(cups, 'how many cups');
-
-    assert.isFinite(NaN); // throws
-```
-
-#### Parameters
-- {Number} value
-- {String} message
 
 
-##isBoolean
+
+###isBoolean
 #### .isBoolean(value, [message])
 Asserts that `value` is a boolean.
 
@@ -576,7 +580,7 @@ var teaReady = true
 - {String} message
 
 
-##isNotBoolean
+###isNotBoolean
 #### .isNotBoolean(value, [message])
 Asserts that `value` is _not_ a boolean.
 
@@ -593,7 +597,7 @@ var teaReady = 'yep'
 - {String} message
 
 
-##typeOf
+###typeOf
 #### .typeOf(value, name, [message])
 Asserts that `value`'s type is `name`, as determined by
 `Object.prototype.toString`.
@@ -613,7 +617,7 @@ assert.typeOf(['chai', 'jasmine'], 'array', 'we have an array');
 - {String} message
 
 
-##notTypeOf
+###notTypeOf
 #### .notTypeOf(value, name, [message])
 Asserts that `value`'s type is _not_ `name`, as determined by
 `Object.prototype.toString`.
@@ -627,8 +631,9 @@ assert.notTypeOf('tea', 'number', 'strings are not numbers');
 - {String} typeof name
 - {String} message
 
+## Object Constructor Tests
 
-##instanceOf
+###instanceOf
 #### .instanceOf(object, constructor, [message])
 Asserts that `value` is an instance of `constructor`.
 
@@ -645,7 +650,7 @@ var Tea = function (name) { this.name = name; }
 - {String} message
 
 
-##notInstanceOf
+###notInstanceOf
 #### .notInstanceOf(object, constructor, [message])
 Asserts `value` is not an instance of `constructor`.
 
@@ -662,7 +667,9 @@ var Tea = function (name) { this.name = name; }
 - {String} message
 
 
-##include
+## Includes Tests
+
+###include
 #### .include(haystack, needle, [message])
 Asserts that `haystack` includes `needle`. Can be used to assert the
 inclusion of a value in an array, a substring in a string, or a subset of
@@ -671,7 +678,8 @@ properties in an object.
 ```javascript
 assert.include([1,2,3], 2, 'array contains value');
 assert.include('foobar', 'foo', 'string contains substring');
-    assert.include({ foo: 'bar', hello: 'universe' }, { foo: 'bar' }, 'object contains property');
+assert.include({ foo: 'bar', hello: 'universe' }, { foo: 'bar' }, 'object contains property');
+```
 
 Strict equality (===) is used. When asserting the inclusion of a value in
 an array, the array is searched for an element that's strictly equal to the
@@ -679,11 +687,12 @@ given value. When asserting a subset of properties in an object, the object
 is searched for the given property keys, checking that each one is present
 and stricty equal to the given property value. For instance:
 
-    var obj1 = {a: 1}
-      , obj2 = {b: 2};
-    assert.include([obj1, obj2], obj1);
-    assert.include({foo: obj1, bar: obj2}, {foo: obj1});
-    assert.include({foo: obj1, bar: obj2}, {foo: obj1, bar: obj2});
+```javascript
+var obj1 = {a: 1}
+, obj2 = {b: 2};
+assert.include([obj1, obj2], obj1); 
+assert.include({foo: obj1, bar: obj2}, {foo: obj1});
+assert.include({foo: obj1, bar: obj2}, {foo: obj1, bar: obj2});
 ```
 
 #### Parameters
@@ -692,7 +701,7 @@ and stricty equal to the given property value. For instance:
 - {String} message
 
 
-##notInclude
+###notInclude
 #### .notInclude(haystack, needle, [message])
 Asserts that `haystack` does not include `needle`. Can be used to assert
 the absence of a value in an array, a substring in a string, or a subset of
@@ -702,6 +711,7 @@ properties in an object.
 assert.notInclude([1,2,3], 4, 'array doesn't contain value');
 assert.notInclude('foobar', 'baz', 'string doesn't contain substring');
     assert.notInclude({ foo: 'bar', hello: 'universe' }, { foo: 'baz' }, 'object doesn't contain property');
+```
 
 Strict equality (===) is used. When asserting the absence of a value in an
 array, the array is searched to confirm the absence of an element that's
@@ -710,11 +720,12 @@ an object, the object is searched to confirm that at least one of the given
 property keys is either not present or not strictly equal to the given
 property value. For instance:
 
-    var obj1 = {a: 1}
-      , obj2 = {b: 2};
-    assert.notInclude([obj1, obj2], {a: 1});
-    assert.notInclude({foo: obj1, bar: obj2}, {foo: {a: 1}});
-    assert.notInclude({foo: obj1, bar: obj2}, {foo: obj1, bar: {b: 2}});
+```javascript
+var obj1 = {a: 1}
+  , obj2 = {b: 2};
+assert.notInclude([obj1, obj2], {a: 1});
+assert.notInclude({foo: obj1, bar: obj2}, {foo: {a: 1}});
+assert.notInclude({foo: obj1, bar: obj2}, {foo: obj1, bar: {b: 2}});
 ```
 
 #### Parameters
@@ -723,7 +734,7 @@ property value. For instance:
 - {String} message
 
 
-##deepInclude
+###deepInclude
 #### .deepInclude(haystack, needle, [message])
 Asserts that `haystack` includes `needle`. Can be used to assert the
 inclusion of a value in an array or a subset of properties in an object.
@@ -743,7 +754,7 @@ var obj1 = {a: 1}
 - {String} message
 
 
-##notDeepInclude
+###notDeepInclude
 #### .notDeepInclude(haystack, needle, [message])
 Asserts that `haystack` does not include `needle`. Can be used to assert
 the absence of a value in an array or a subset of properties in an object.
@@ -763,7 +774,7 @@ var obj1 = {a: 1}
 - {String} message
 
 
-##nestedInclude
+###nestedInclude
 #### .nestedInclude(haystack, needle, [message])
 Asserts that 'haystack' includes 'needle'. 
 Can be used to assert the inclusion of a subset of properties in an 
@@ -783,7 +794,7 @@ assert.nestedInclude({'a': {'[b]': 'x'}}, {'a.\\[b\\]': 'x'});
 - {String} message
 
 
-##notNestedInclude
+###notNestedInclude
 #### .notNestedInclude(haystack, needle, [message])
 Asserts that 'haystack' does not include 'needle'. 
 Can be used to assert the absence of a subset of properties in an 
@@ -803,7 +814,7 @@ assert.notNestedInclude({'a': {'[b]': 'x'}}, {'a.\\[b\\]': 'y'});
 - {String} message
 
 
-##deepNestedInclude
+###deepNestedInclude
 #### .deepNestedInclude(haystack, needle, [message])
 Asserts that 'haystack' includes 'needle'.
 Can be used to assert the inclusion of a subset of properties in an 
@@ -823,7 +834,7 @@ assert.deepNestedInclude({'.a': {'[b]': {x: 1}}}, {'\\.a.\\[b\\]': {x: 1}});
 - {String} message
 
 
-##notDeepNestedInclude
+###notDeepNestedInclude
 #### .notDeepNestedInclude(haystack, needle, [message])
 Asserts that 'haystack' does not include 'needle'.
 Can be used to assert the absence of a subset of properties in an 
@@ -843,7 +854,7 @@ assert.notDeepNestedInclude({'.a': {'[b]': {x: 1}}}, {'\\.a.\\[b\\]': {y: 2}});
 - {String} message
 
 
-##ownInclude
+###ownInclude
 #### .ownInclude(haystack, needle, [message])
 Asserts that 'haystack' includes 'needle'.
 Can be used to assert the inclusion of a subset of properties in an 
@@ -859,7 +870,7 @@ assert.ownInclude({ a: 1 }, { a: 1 });
 - {String} message
 
 
-##notOwnInclude
+###notOwnInclude
 #### .notOwnInclude(haystack, needle, [message])
 Asserts that 'haystack' includes 'needle'.
 Can be used to assert the absence of a subset of properties in an 
@@ -877,7 +888,7 @@ assert.notOwnInclude({ a: 1 }, { b: 2 });
 - {String} message
 
 
-##deepOwnInclude
+###deepOwnInclude
 #### .deepOwnInclude(haystack, needle, [message])
 Asserts that 'haystack' includes 'needle'.
 Can be used to assert the inclusion of a subset of properties in an 
@@ -893,7 +904,7 @@ object while ignoring inherited properties and checking for deep equality.
 - {String} message
 
 
-##notDeepOwnInclude
+###notDeepOwnInclude
 #### .notDeepOwnInclude(haystack, needle, [message])
 Asserts that 'haystack' includes 'needle'.
 Can be used to assert the absence of a subset of properties in an 
@@ -908,8 +919,10 @@ object while ignoring inherited properties and checking for deep equality.
 - {Object} needle
 - {String} message
 
+## Regex Tests
 
-##match
+
+###match
 #### .match(value, regexp, [message])
 Asserts that `value` matches the regular expression `regexp`.
 
@@ -923,7 +936,7 @@ assert.match('foobar', /^foo/, 'regexp matches');
 - {String} message
 
 
-##notMatch
+###notMatch
 #### .notMatch(value, regexp, [message])
 Asserts that `value` does not match the regular expression `regexp`.
 
@@ -937,7 +950,9 @@ assert.notMatch('foobar', /^foo/, 'regexp does not match');
 - {String} message
 
 
-##property
+## Object Property Tests
+
+###property
 #### .property(object, property, [message])
 Asserts that `object` has a direct or inherited property named by
 `property`.
@@ -953,7 +968,7 @@ assert.property({ tea: { green: 'matcha' }}, 'toString');
 - {String} message
 
 
-##notProperty
+###notProperty
 #### .notProperty(object, property, [message])
 Asserts that `object` does _not_ have a direct or inherited property named
 by `property`.
@@ -968,7 +983,7 @@ assert.notProperty({ tea: { green: 'matcha' }}, 'coffee');
 - {String} message
 
 
-##propertyVal
+###propertyVal
 #### .propertyVal(object, property, value, [message])
 Asserts that `object` has a direct or inherited property named by
 `property` with a value given by `value`. Uses a strict equality check
@@ -985,7 +1000,7 @@ assert.propertyVal({ tea: 'is good' }, 'tea', 'is good');
 - {String} message
 
 
-##notPropertyVal
+###notPropertyVal
 #### .notPropertyVal(object, property, value, [message])
 Asserts that `object` does _not_ have a direct or inherited property named
 by `property` with value given by `value`. Uses a strict equality check
@@ -1003,7 +1018,7 @@ assert.notPropertyVal({ tea: 'is good' }, 'coffee', 'is good');
 - {String} message
 
 
-##deepPropertyVal
+###deepPropertyVal
 #### .deepPropertyVal(object, property, value, [message])
 Asserts that `object` has a direct or inherited property named by
 `property` with a value given by `value`. Uses a deep equality check.
@@ -1019,7 +1034,7 @@ assert.deepPropertyVal({ tea: { green: 'matcha' } }, 'tea', { green: 'matcha' })
 - {String} message
 
 
-##notDeepPropertyVal
+###notDeepPropertyVal
 #### .notDeepPropertyVal(object, property, value, [message])
 Asserts that `object` does _not_ have a direct or inherited property named
 by `property` with value given by `value`. Uses a deep equality check.
@@ -1037,7 +1052,7 @@ assert.notDeepPropertyVal({ tea: { green: 'matcha' } }, 'tea', { green: 'oolong'
 - {String} message
 
 
-##nestedProperty
+###nestedProperty
 #### .nestedProperty(object, property, [message])
 Asserts that `object` has a direct or inherited property named by
 `property`, which can be a string using dot- and bracket-notation for
@@ -1053,7 +1068,7 @@ assert.nestedProperty({ tea: { green: 'matcha' }}, 'tea.green');
 - {String} message
 
 
-##notNestedProperty
+###notNestedProperty
 #### .notNestedProperty(object, property, [message])
 Asserts that `object` does _not_ have a property named by `property`, which
 can be a string using dot- and bracket-notation for nested reference. The
@@ -1069,7 +1084,7 @@ assert.notNestedProperty({ tea: { green: 'matcha' }}, 'tea.oolong');
 - {String} message
 
 
-##nestedPropertyVal
+###nestedPropertyVal
 #### .nestedPropertyVal(object, property, value, [message])
 Asserts that `object` has a property named by `property` with value given
 by `value`. `property` can use dot- and bracket-notation for nested
@@ -1086,7 +1101,7 @@ assert.nestedPropertyVal({ tea: { green: 'matcha' }}, 'tea.green', 'matcha');
 - {String} message
 
 
-##notNestedPropertyVal
+###notNestedPropertyVal
 #### .notNestedPropertyVal(object, property, value, [message])
 Asserts that `object` does _not_ have a property named by `property` with
 value given by `value`. `property` can use dot- and bracket-notation for
@@ -1104,7 +1119,7 @@ assert.notNestedPropertyVal({ tea: { green: 'matcha' }}, 'coffee.green', 'matcha
 - {String} message
 
 
-##deepNestedPropertyVal
+###deepNestedPropertyVal
 #### .deepNestedPropertyVal(object, property, value, [message])
 Asserts that `object` has a property named by `property` with a value given
 by `value`. `property` can use dot- and bracket-notation for nested
@@ -1121,7 +1136,7 @@ assert.deepNestedPropertyVal({ tea: { green: { matcha: 'yum' } } }, 'tea.green',
 - {String} message
 
 
-##notDeepNestedPropertyVal
+###notDeepNestedPropertyVal
 #### .notDeepNestedPropertyVal(object, property, value, [message])
 Asserts that `object` does _not_ have a property named by `property` with
 value given by `value`. `property` can use dot- and bracket-notation for
@@ -1140,22 +1155,11 @@ assert.notDeepNestedPropertyVal({ tea: { green: { matcha: 'yum' } } }, 'tea.gree
 - {String} message
 
 
-##lengthOf
-#### .lengthOf(object, length, [message])
-Asserts that `object` has a `length` property with the expected value.
-
-```javascript
-assert.lengthOf([1,2,3], 3, 'array has length of 3');
-assert.lengthOf('foobar', 6, 'string has length of 6');
-```
-
-#### Parameters
-- {Mixed} object
-- {Number} length
-- {String} message
 
 
-##hasAnyKeys
+## Object Key Tests
+
+###hasAnyKeys
 #### .hasAnyKeys(object, [keys], [message])
 Asserts that `object` has at least one of the `keys` provided.
 You can also provide a single object instead of a `keys` array and its keys
@@ -1174,7 +1178,7 @@ assert.hasAnyKey({foo: 1, bar: 2, baz: 3}, {foo: 30, iDontExist: 99, baz: 1337])
 - {String} message
 
 
-##hasAllKeys
+###hasAllKeys
 #### .hasAllKeys(object, [keys], [message])
 Asserts that `object` has all and only all of the `keys` provided.
 You can also provide a single object instead of a `keys` array and its keys
@@ -1193,7 +1197,7 @@ assert.hasAllKeys({foo: 1, bar: 2, baz: 3}, {foo: 30, bar: 99, baz: 1337]);
 - {String} message
 
 
-##containsAllKeys
+###containsAllKeys
 #### .containsAllKeys(object, [keys], [message])
 Asserts that `object` has all of the `keys` provided but may have more keys not listed.
 You can also provide a single object instead of a `keys` array and its keys
@@ -1216,7 +1220,7 @@ assert.containsAllKeys({foo: 1, bar: 2, baz: 3}, ['foo', 'bar', 'baz']);
 - {String} message
 
 
-##doesNotHaveAnyKeys
+###doesNotHaveAnyKeys
 #### .doesNotHaveAnyKeys(object, [keys], [message])
 Asserts that `object` has none of the `keys` provided.
 You can also provide a single object instead of a `keys` array and its keys
@@ -1235,7 +1239,7 @@ assert.doesNotHaveAnyKeys({foo: 1, bar: 2, baz: 3}, {one: 1, two: 2, example: 'f
 - {String} message
 
 
-##doesNotHaveAllKeys
+###doesNotHaveAllKeys
 #### .doesNotHaveAllKeys(object, [keys], [message])
 Asserts that `object` does not have at least one of the `keys` provided.
 You can also provide a single object instead of a `keys` array and its keys
@@ -1254,7 +1258,7 @@ assert.doesNotHaveAllKeys({foo: 1, bar: 2, baz: 3}, {one: 1, two: 2, example: 'f
 - {String} message
 
 
-##doesNotHaveAllKeys
+###doesNotHaveAllKeys
 #### .hasAnyDeepKeys(object, [keys], [message])
 Asserts that `object` has at least one of the `keys` provided.
 Since Sets and Maps can have objects as keys you can use this assertion to perform
@@ -1265,10 +1269,10 @@ will be used as the expected set of keys.
 ```javascript
 assert.hasAnyDeepKeys(new Map([[{one: 'one'}, 'valueOne'], [1, 2]]), {one: 'one'});
 assert.hasAnyDeepKeys(new Map([[{one: 'one'}, 'valueOne'], [1, 2]]), [{one: 'one'}, {two: 'two'}]);
-    assert.hasAnyDeepKeys(new Map([[{one: 'one'}, 'valueOne'], [{two: 'two'}, 'valueTwo']]), [{one: 'one'}, {two: 'two'}]);
-    assert.hasAnyDeepKeys(new Set([{one: 'one'}, {two: 'two'}]), {one: 'one'});
-    assert.hasAnyDeepKeys(new Set([{one: 'one'}, {two: 'two'}]), [{one: 'one'}, {three: 'three'}]);
-    assert.hasAnyDeepKeys(new Set([{one: 'one'}, {two: 'two'}]), [{one: 'one'}, {two: 'two'}]);
+assert.hasAnyDeepKeys(new Map([[{one: 'one'}, 'valueOne'], [{two: 'two'}, 'valueTwo']]), [{one: 'one'}, {two: 'two'}]);
+assert.hasAnyDeepKeys(new Set([{one: 'one'}, {two: 'two'}]), {one: 'one'});
+assert.hasAnyDeepKeys(new Set([{one: 'one'}, {two: 'two'}]), [{one: 'one'}, {three: 'three'}]);
+assert.hasAnyDeepKeys(new Set([{one: 'one'}, {two: 'two'}]), [{one: 'one'}, {two: 'two'}]);
 ```
 
 #### Parameters
@@ -1277,7 +1281,7 @@ assert.hasAnyDeepKeys(new Map([[{one: 'one'}, 'valueOne'], [1, 2]]), [{one: 'one
 - {String} message
 
 
-##hasAllDeepKeys
+###hasAllDeepKeys
 #### .hasAllDeepKeys(object, [keys], [message])
 Asserts that `object` has all and only all of the `keys` provided.
 Since Sets and Maps can have objects as keys you can use this assertion to perform
@@ -1298,7 +1302,7 @@ assert.hasAllDeepKeys(new Map([[{one: 'one'}, 'valueOne'], [{two: 'two'}, 'value
 - {String} message
 
 
-##containsAllDeepKeys
+###containsAllDeepKeys
 #### .containsAllDeepKeys(object, [keys], [message])
 Asserts that `object` contains all of the `keys` provided.
 Since Sets and Maps can have objects as keys you can use this assertion to perform
@@ -1319,7 +1323,7 @@ assert.containsAllDeepKeys(new Map([[{one: 'one'}, 'valueOne'], [{two: 'two'}, '
 - {String} message
 
 
-##doesNotHaveAnyDeepKeys
+###doesNotHaveAnyDeepKeys
 #### .doesNotHaveAnyDeepKeys(object, [keys], [message])
 Asserts that `object` has none of the `keys` provided.
 Since Sets and Maps can have objects as keys you can use this assertion to perform
@@ -1340,7 +1344,7 @@ assert.doesNotHaveAnyDeepKeys(new Map([[{one: 'one'}, 'valueOne'], [{two: 'two'}
 - {String} message
 
 
-##doesNotHaveAllDeepKeys
+###doesNotHaveAllDeepKeys
 #### .doesNotHaveAllDeepKeys(object, [keys], [message])
 Asserts that `object` does not have at least one of the `keys` provided.
 Since Sets and Maps can have objects as keys you can use this assertion to perform
@@ -1351,8 +1355,8 @@ will be used as the expected set of keys.
 ```javascript
 assert.doesNotHaveAllDeepKeys(new Map([[{one: 'one'}, 'valueOne'], [1, 2]]), {thisDoesNot: 'exist'});
 assert.doesNotHaveAllDeepKeys(new Map([[{one: 'one'}, 'valueOne'], [{two: 'two'}, 'valueTwo']]), [{twenty: 'twenty'}, {one: 'one'}]);
-    assert.doesNotHaveAllDeepKeys(new Set([{one: 'one'}, {two: 'two'}]), {twenty: 'twenty'});
-    assert.doesNotHaveAllDeepKeys(new Set([{one: 'one'}, {two: 'two'}]), [{one: 'one'}, {fifty: 'fifty'}]);
+assert.doesNotHaveAllDeepKeys(new Set([{one: 'one'}, {two: 'two'}]), {twenty: 'twenty'});
+assert.doesNotHaveAllDeepKeys(new Set([{one: 'one'}, {two: 'two'}]), [{one: 'one'}, {fifty: 'fifty'}]);
 ```
 
 #### Parameters
@@ -1360,8 +1364,9 @@ assert.doesNotHaveAllDeepKeys(new Map([[{one: 'one'}, 'valueOne'], [{two: 'two'}
 - {Array|Object} keys
 - {String} message
 
+## Error Tests
 
-##throws
+###throws
 #### .throws(fn, [errorLike/string/regexp], [string/regexp], [message])
 If `errorLike` is an `Error` constructor, asserts that `fn` will throw an error that is an
 instance of `errorLike`.
@@ -1388,7 +1393,7 @@ assert.throws(fn, /function throws a reference error/);
 - {String} message
 
 
-##doesNotThrow
+###doesNotThrow
 #### .doesNotThrow(fn, [errorLike/string/regexp], [string/regexp], [message])
 If `errorLike` is an `Error` constructor, asserts that `fn` will _not_ throw an error that is an
 instance of `errorLike`.
@@ -1414,54 +1419,24 @@ assert.doesNotThrow(fn, /Any Error thrown must not match this/);
 - {RegExp|String} errMsgMatcher
 - {String} message
 
-
-##operator
-#### .operator(val1, operator, val2, [message])
-Compares two values using `operator`.
+###ifError
+#### .ifError(object)
+Asserts if value is not a false value, and throws if it is a true value.
+This is added to allow for chai to be a drop-in replacement for Node's
+assert class.
 
 ```javascript
-assert.operator(1, '<', 2, 'everything is ok');
-assert.operator(1, '>', 2, 'this will fail');
+var err = new Error('I am a custom error');
+assert.ifError(err); // Rethrows err!
 ```
 
 #### Parameters
-- {Mixed} val1
-- {String} operator
-- {Mixed} val2
-- {String} message
+- {Object} object
 
 
-##closeTo
-#### .closeTo(actual, expected, delta, [message])
-Asserts that the target is equal `expected`, to within a +/- `delta` range.
+## Member Tests
 
-```javascript
-assert.closeTo(1.5, 1, 0.5, 'numbers are close');
-```
-
-#### Parameters
-- {Number} actual
-- {Number} expected
-- {Number} delta
-- {String} message
-
-
-##approximately
-#### .approximately(actual, expected, delta, [message])
-Asserts that the target is equal `expected`, to within a +/- `delta` range.
-
-```javascript
-assert.approximately(1.5, 1, 0.5, 'numbers are close');
-```
-
-#### Parameters
-- {Number} actual
-- {Number} expected
-- {Number} delta
-- {String} message
-
-
-##sameMembers
+###sameMembers
 #### .sameMembers(set1, set2, [message])
 Asserts that `set1` and `set2` have the same members in any order. Uses a
 strict equality check (===).
@@ -1476,7 +1451,7 @@ assert.sameMembers([ 1, 2, 3 ], [ 2, 1, 3 ], 'same members');
 - {String} message
 
 
-##notSameMembers
+###notSameMembers
 #### .notSameMembers(set1, set2, [message])
 Asserts that `set1` and `set2` don't have the same members in any order.
 Uses a strict equality check (===).
@@ -1491,7 +1466,7 @@ assert.notSameMembers([ 1, 2, 3 ], [ 5, 1, 3 ], 'not same members');
 - {String} message
 
 
-##sameDeepMembers
+###sameDeepMembers
 #### .sameDeepMembers(set1, set2, [message])
 Asserts that `set1` and `set2` have the same members in any order. Uses a
 deep equality check.
@@ -1506,7 +1481,7 @@ assert.sameDeepMembers([ { a: 1 }, { b: 2 }, { c: 3 } ], [{ b: 2 }, { a: 1 }, { 
 - {String} message
 
 
-##notSameDeepMembers
+###notSameDeepMembers
 #### .notSameDeepMembers(set1, set2, [message])
 Asserts that `set1` and `set2` don't have the same members in any order.
 Uses a deep equality check.
@@ -1521,7 +1496,7 @@ assert.notSameDeepMembers([ { a: 1 }, { b: 2 }, { c: 3 } ], [{ b: 2 }, { a: 1 },
 - {String} message
 
 
-##sameOrderedMembers
+###sameOrderedMembers
 #### .sameOrderedMembers(set1, set2, [message])
 Asserts that `set1` and `set2` have the same members in the same order.
 Uses a strict equality check (===).
@@ -1536,7 +1511,7 @@ assert.sameOrderedMembers([ 1, 2, 3 ], [ 1, 2, 3 ], 'same ordered members');
 - {String} message
 
 
-##notSameOrderedMembers
+###notSameOrderedMembers
 #### .notSameOrderedMembers(set1, set2, [message])
 Asserts that `set1` and `set2` don't have the same members in the same
 order. Uses a strict equality check (===).
@@ -1551,11 +1526,12 @@ assert.notSameOrderedMembers([ 1, 2, 3 ], [ 2, 1, 3 ], 'not same ordered members
 - {String} message
 
 
-##sameDeepOrderedMembers
+###sameDeepOrderedMembers
 #### .sameDeepOrderedMembers(set1, set2, [message])
 Asserts that `set1` and `set2` have the same members in the same order.
 Uses a deep equality check.
 
+```javascript
 assert.sameDeepOrderedMembers([ { a: 1 }, { b: 2 }, { c: 3 } ], [ { a: 1 }, { b: 2 }, { c: 3 } ], 'same deep ordered members');
 ```
 
@@ -1565,11 +1541,12 @@ assert.sameDeepOrderedMembers([ { a: 1 }, { b: 2 }, { c: 3 } ], [ { a: 1 }, { b:
 - {String} message
 
 
-##notSameDeepOrderedMembers
+### notSameDeepOrderedMembers
 #### .notSameDeepOrderedMembers(set1, set2, [message])
 Asserts that `set1` and `set2` don't have the same members in the same
 order. Uses a deep equality check.
 
+```javascript
 assert.notSameDeepOrderedMembers([ { a: 1 }, { b: 2 }, { c: 3 } ], [ { a: 1 }, { b: 2 }, { z: 5 } ], 'not same deep ordered members');
 assert.notSameDeepOrderedMembers([ { a: 1 }, { b: 2 }, { c: 3 } ], [ { b: 2 }, { a: 1 }, { c: 3 } ], 'not same deep ordered members');
 ```
@@ -1580,7 +1557,7 @@ assert.notSameDeepOrderedMembers([ { a: 1 }, { b: 2 }, { c: 3 } ], [ { b: 2 }, {
 - {String} message
 
 
-##includeMembers
+###includeMembers
 #### .includeMembers(superset, subset, [message])
 Asserts that `subset` is included in `superset` in any order. Uses a
 strict equality check (===). Duplicates are ignored.
@@ -1595,7 +1572,7 @@ assert.includeMembers([ 1, 2, 3 ], [ 2, 1, 2 ], 'include members');
 - {String} message
 
 
-##notIncludeMembers
+###notIncludeMembers
 #### .notIncludeMembers(superset, subset, [message])
 Asserts that `subset` isn't included in `superset` in any order. Uses a
 strict equality check (===). Duplicates are ignored.
@@ -1610,7 +1587,7 @@ assert.notIncludeMembers([ 1, 2, 3 ], [ 5, 1 ], 'not include members');
 - {String} message
 
 
-##includeDeepMembers
+###includeDeepMembers
 #### .includeDeepMembers(superset, subset, [message])
 Asserts that `subset` is included in `superset` in any order. Uses a deep
 equality check. Duplicates are ignored.
@@ -1625,7 +1602,7 @@ assert.includeDeepMembers([ { a: 1 }, { b: 2 }, { c: 3 } ], [ { b: 2 }, { a: 1 }
 - {String} message
 
 
-##notIncludeDeepMembers
+###notIncludeDeepMembers
 #### .notIncludeDeepMembers(superset, subset, [message])
 Asserts that `subset` isn't included in `superset` in any order. Uses a
 deep equality check. Duplicates are ignored.
@@ -1640,7 +1617,7 @@ assert.notIncludeDeepMembers([ { a: 1 }, { b: 2 }, { c: 3 } ], [ { b: 2 }, { f: 
 - {String} message
 
 
-##includeOrderedMembers
+###includeOrderedMembers
 #### .includeOrderedMembers(superset, subset, [message])
 Asserts that `subset` is included in `superset` in the same order
 beginning with the first element in `superset`. Uses a strict equality
@@ -1656,7 +1633,7 @@ assert.includeOrderedMembers([ 1, 2, 3 ], [ 1, 2 ], 'include ordered members');
 - {String} message
 
 
-##notIncludeOrderedMembers
+###notIncludeOrderedMembers
 #### .notIncludeOrderedMembers(superset, subset, [message])
 Asserts that `subset` isn't included in `superset` in the same order
 beginning with the first element in `superset`. Uses a strict equality
@@ -1673,7 +1650,7 @@ assert.notIncludeOrderedMembers([ 1, 2, 3 ], [ 2, 3 ], 'not include ordered memb
 - {String} message
 
 
-##includeDeepOrderedMembers
+###includeDeepOrderedMembers
 #### .includeDeepOrderedMembers(superset, subset, [message])
 Asserts that `subset` is included in `superset` in the same order
 beginning with the first element in `superset`. Uses a deep equality
@@ -1689,7 +1666,7 @@ assert.includeDeepOrderedMembers([ { a: 1 }, { b: 2 }, { c: 3 } ], [ { a: 1 }, {
 - {String} message
 
 
-##notIncludeDeepOrderedMembers
+###notIncludeDeepOrderedMembers
 #### .notIncludeDeepOrderedMembers(superset, subset, [message])
 Asserts that `subset` isn't included in `superset` in the same order
 beginning with the first element in `superset`. Uses a deep equality
@@ -1707,21 +1684,11 @@ assert.notIncludeDeepOrderedMembers([ { a: 1 }, { b: 2 }, { c: 3 } ], [ { b: 2 }
 - {String} message
 
 
-##oneOf
-#### .oneOf(inList, list, [message])
-Asserts that non-object, non-array value `inList` appears in the flat array `list`.
-
-```javascript
-assert.oneOf(1, [ 2, 1 ], 'Not found in list');
-```
-
-#### Parameters
-- {*} inList
-- {Array<*>} list
-- {String} message
 
 
-##changes
+## Function Tests
+
+###changes
 #### .changes(function, object, property, [message])
 Asserts that a function changes the value of a property.
 
@@ -1738,7 +1705,7 @@ var fn = function() { obj.val = 22 };
 - {String} message _optional_
 
 
-##changesBy
+###changesBy
 #### .changesBy(function, object, property, delta, [message])
 Asserts that a function changes the value of a property by an amount (delta).
 
@@ -1756,7 +1723,7 @@ var fn = function() { obj.val += 2 };
 - {String} message _optional_
 
 
-##doesNotChange
+###doesNotChange
 #### .doesNotChange(function, object, property, [message])
 Asserts that a function does not change the value of a property.
 
@@ -1773,7 +1740,7 @@ var fn = function() { console.log('foo'); };
 - {String} message _optional_
 
 
-##changesButNotBy
+###changesButNotBy
 #### .changesButNotBy(function, object, property, delta, [message])
 Asserts that a function does not change the value of a property or of a function's return value by an amount (delta)
 
@@ -1791,7 +1758,7 @@ var fn = function() { obj.val += 10 };
 - {String} message _optional_
 
 
-##increases
+###increases
 #### .increases(function, object, property, [message])
 Asserts that a function increases a numeric object property.
 
@@ -1808,7 +1775,7 @@ var fn = function() { obj.val = 13 };
 - {String} message _optional_
 
 
-##increasesBy
+###increasesBy
 #### .increasesBy(function, object, property, delta, [message])
 Asserts that a function increases a numeric object property or a function's return value by an amount (delta).
 
@@ -1826,7 +1793,7 @@ var fn = function() { obj.val += 10 };
 - {String} message _optional_
 
 
-##doesNotIncrease
+###doesNotIncrease
 #### .doesNotIncrease(function, object, property, [message])
 Asserts that a function does not increase a numeric object property.
 
@@ -1843,7 +1810,7 @@ var fn = function() { obj.val = 8 };
 - {String} message _optional_
 
 
-##increasesButNotBy
+###increasesButNotBy
 #### .increasesButNotBy(function, object, property, [message])
 Asserts that a function does not increase a numeric object property or function's return value by an amount (delta).
 
@@ -1861,7 +1828,7 @@ var fn = function() { obj.val = 15 };
 - {String} message _optional_
 
 
-##decreases
+###decreases
 #### .decreases(function, object, property, [message])
 Asserts that a function decreases a numeric object property.
 
@@ -1878,7 +1845,7 @@ var fn = function() { obj.val = 5 };
 - {String} message _optional_
 
 
-##decreasesBy
+###decreasesBy
 #### .decreasesBy(function, object, property, delta, [message])
 Asserts that a function decreases a numeric object property or a function's return value by an amount (delta)
 
@@ -1896,7 +1863,7 @@ var fn = function() { obj.val -= 5 };
 - {String} message _optional_
 
 
-##doesNotDecrease
+###doesNotDecrease
 #### .doesNotDecrease(function, object, property, [message])
 Asserts that a function does not decreases a numeric object property.
 
@@ -1913,7 +1880,7 @@ var fn = function() { obj.val = 15 };
 - {String} message _optional_
 
 
-##doesNotDecrease
+###doesNotDecrease
 #### .doesNotDecreaseBy(function, object, property, delta, [message])
 Asserts that a function does not decreases a numeric object property or a function's return value by an amount (delta)
 
@@ -1931,7 +1898,7 @@ var fn = function() { obj.val = 5 };
 - {String} message _optional_
 
 
-##decreasesButNotBy
+###decreasesButNotBy
 #### .decreasesButNotBy(function, object, property, delta, [message])
 Asserts that a function does not decreases a numeric object property or a function's return value by an amount (delta)
 
@@ -1949,22 +1916,10 @@ var fn = function() { obj.val = 5 };
 - {String} message _optional_
 
 
-##ifError
-#### .ifError(object)
-Asserts if value is not a false value, and throws if it is a true value.
-This is added to allow for chai to be a drop-in replacement for Node's
-assert class.
 
-```javascript
-var err = new Error('I am a custom error');
-assert.ifError(err); // Rethrows err!
-```
+## Object Misc Tests
 
-#### Parameters
-- {Object} object
-
-
-##isExtensible
+###isExtensible
 #### .isExtensible(object)
 Asserts that `object` is extensible (can have new properties added to it).
 
@@ -1977,7 +1932,7 @@ assert.isExtensible({});
 - {String} message _optional_
 
 
-##isNotExtensible
+###isNotExtensible
 #### .isNotExtensible(object)
 Asserts that `object` is _not_ extensible.
 
@@ -1996,7 +1951,7 @@ var sealedObject = Object.seal({});
 - {String} message _optional_
 
 
-##isSealed
+###isSealed
 #### .isSealed(object)
 Asserts that `object` is sealed (cannot have new properties added to it
 and its existing properties cannot be removed).
@@ -2014,7 +1969,7 @@ var frozenObject = Object.seal({});
 - {String} message _optional_
 
 
-##isNotSealed
+###isNotSealed
 #### .isNotSealed(object)
 Asserts that `object` is _not_ sealed.
 
@@ -2027,7 +1982,7 @@ assert.isNotSealed({});
 - {String} message _optional_
 
 
-##isFrozen
+###isFrozen
 #### .isFrozen(object)
 Asserts that `object` is frozen (cannot have new properties added to it
 and its existing properties cannot be modified).
@@ -2042,7 +1997,7 @@ assert.frozen(frozenObject);
 - {String} message _optional_
 
 
-##isNotFrozen
+###isNotFrozen
 #### .isNotFrozen(object)
 Asserts that `object` is _not_ frozen.
 
@@ -2054,8 +2009,78 @@ assert.isNotFrozen({});
 - {Object} object
 - {String} message _optional_
 
+## Mixed Misc Tests
 
-##isEmpty
+### Assert
+#### assert(expression, message)
+Write your own test expressions.
+
+```javascript
+assert('foo' !== 'bar', 'foo is not bar');
+assert(Array.isArray([]), 'empty arrays are arrays');
+```
+
+#### Parameters
+- {Mixed} expression to test for truthiness
+- {String} message to display on error
+
+
+###fail
+#### .fail(actual, expected, [message], [operator])
+Throw a failure. Node.js `assert` module-compatible.
+
+#### Parameters
+- {Mixed} actual
+- {Mixed} expected
+- {String} message
+- {String} operator
+
+
+###lengthOf
+#### .lengthOf(object, length, [message])
+Asserts that `object` has a `length` property with the expected value.
+
+```javascript
+assert.lengthOf([1,2,3], 3, 'array has length of 3');
+assert.lengthOf('foobar', 6, 'string has length of 6');
+```
+
+#### Parameters
+- {Mixed} object
+- {Number} length
+- {String} message
+
+
+###operator
+#### .operator(val1, operator, val2, [message])
+Compares two values using `operator`.
+
+```javascript
+assert.operator(1, '<', 2, 'everything is ok');
+assert.operator(1, '>', 2, 'this will fail');
+```
+
+#### Parameters
+- {Mixed} val1
+- {String} operator
+- {Mixed} val2
+- {String} message
+
+###oneOf
+#### .oneOf(inList, list, [message])
+Asserts that non-object, non-array value `inList` appears in the flat array `list`.
+
+```javascript
+assert.oneOf(1, [ 2, 1 ], 'Not found in list');
+```
+
+#### Parameters
+- {*} inList
+- {Array<*>} list
+- {String} message
+
+
+###isEmpty
 #### .isEmpty(target)
 Asserts that the target does not contain any values.
 For arrays and strings, it checks the `length` property.
@@ -2075,7 +2100,7 @@ assert.isEmpty('');
 - {String} message _optional_
 
 
-##isNotEmpty
+###isNotEmpty
 #### .isNotEmpty(target)
 Asserts that the target contains values.
 For arrays and strings, it checks the `length` property.
