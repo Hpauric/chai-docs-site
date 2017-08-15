@@ -250,7 +250,7 @@ Of the three style options, assert is the only one that is not chainable. Check 
 <h3 id="equal">equal</h3>
 <pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">equal</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="s1">'3'</span><span class="p">,</span> <span class="s1">'== coerces values to strings'</span><span class="p">);</span>
 </code></pre>
-<h4 id="equal-actual-expected-message">.equal(actual, expected, [message])</h4>
+<h4 id="equal-actual-expected-message"><code class="prettyprint">.equal(actual, expected, [message])</code></h4>
 
 <p>Asserts non-strict equality (<code class="prettyprint">==</code>) of <code class="prettyprint">actual</code> and <code class="prettyprint">expected</code>.</p>
 
@@ -310,7 +310,7 @@ Of the three style options, assert is the only one that is not chainable. Check 
 <h3 id="deepequal">deepEqual</h3>
 <pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">deepEqual</span><span class="p">({</span> <span class="na">tea</span><span class="p">:</span> <span class="s1">'green'</span> <span class="p">},</span> <span class="p">{</span> <span class="na">tea</span><span class="p">:</span> <span class="s1">'green'</span> <span class="p">});</span>
 </code></pre>
-<h4 id="deepequal-actual-expected-message">.deepEqual(actual, expected, [message])</h4>
+<h4 id="deepequal-actual-expected-message"><code class="prettyprint">.deepEqual(actual, expected, [message])</code></h4>
 
 <p>Asserts that <code class="prettyprint">actual</code> is deeply equal to <code class="prettyprint">expected</code>.</p>
 
@@ -325,7 +325,7 @@ Of the three style options, assert is the only one that is not chainable. Check 
 <h3 id="notdeepequal">notDeepEqual</h3>
 <pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">notDeepEqual</span><span class="p">({</span> <span class="na">tea</span><span class="p">:</span> <span class="s1">'green'</span> <span class="p">},</span> <span class="p">{</span> <span class="na">tea</span><span class="p">:</span> <span class="s1">'jasmine'</span> <span class="p">});</span>
 </code></pre>
-<h4 id="notdeepequal-actual-expected-message">.notDeepEqual(actual, expected, [message])</h4>
+<h4 id="notdeepequal-actual-expected-message"><code class="prettyprint">.notDeepEqual(actual, expected, [message])</code></h4>
 
 <p>Assert that <code class="prettyprint">actual</code> is not deeply equal to <code class="prettyprint">expected</code>.</p>
 
@@ -342,7 +342,7 @@ Of the three style options, assert is the only one that is not chainable. Check 
 <h3 id="isabove">isAbove</h3>
 <pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">isAbove</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="s1">'5 is strictly greater than 2'</span><span class="p">);</span>
 </code></pre>
-<h4 id="isabove-valuetocheck-valuetobeabove-message">.isAbove(valueToCheck, valueToBeAbove, [message])</h4>
+<h4 id="isabove-valuetocheck-valuetobeabove-message"><code class="prettyprint">.isAbove(valueToCheck, valueToBeAbove, [message])</code></h4>
 
 <p>Asserts <code class="prettyprint">valueToCheck</code> is strictly greater than (&gt;) <code class="prettyprint">valueToBeAbove</code>.</p>
 
@@ -357,9 +357,10 @@ Of the three style options, assert is the only one that is not chainable. Check 
 <h3 id="isatleast">isAtLeast</h3>
 <pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">isAtLeast</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="s1">'5 is greater or equal to 2'</span><span class="p">);</span>
 <span class="nx">assert</span><span class="p">.</span><span class="nx">isAtLeast</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="s1">'3 is greater or equal to 3'</span><span class="p">);</span>
-<span class="err">####</span> <span class="p">.</span><span class="nx">isAtLeast</span><span class="p">(</span><span class="nx">valueToCheck</span><span class="p">,</span> <span class="nx">valueToBeAtLeast</span><span class="p">,</span> <span class="p">[</span><span class="nx">message</span><span class="p">])</span>
 <span class="nx">Asserts</span> <span class="s2">`valueToCheck`</span> <span class="nx">is</span> <span class="nx">greater</span> <span class="nx">than</span> <span class="nx">or</span> <span class="nx">equal</span> <span class="nx">to</span> <span class="p">(</span><span class="o">&gt;=</span><span class="p">)</span> <span class="s2">`valueToBeAtLeast`</span><span class="p">.</span>
 </code></pre>
+<h4 id="isatleast-valuetocheck-valuetobeatleast-message"><code class="prettyprint">.isAtLeast(valueToCheck, valueToBeAtLeast, [message])</code></h4>
+
 <h4 id="parameters">Parameters</h4>
 
 <ul>
@@ -369,12 +370,12 @@ Of the three style options, assert is the only one that is not chainable. Check 
 </ul>
 
 <h3 id="isbelow">isBelow</h3>
-
-<h4 id="isbelow-valuetocheck-valuetobebelow-message">.isBelow(valueToCheck, valueToBeBelow, [message])</h4>
-
-<p>Asserts <code class="prettyprint">valueToCheck</code> is strictly less than (&lt;) <code class="prettyprint">valueToBeBelow</code>.</p>
 <pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">isBelow</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="s1">'3 is strictly less than 6'</span><span class="p">);</span>
 </code></pre>
+<h4 id="isbelow-valuetocheck-valuetobebelow-message"><code class="prettyprint">.isBelow(valueToCheck, valueToBeBelow, [message])</code></h4>
+
+<p>Asserts <code class="prettyprint">valueToCheck</code> is strictly less than (&lt;) <code class="prettyprint">valueToBeBelow</code>.</p>
+
 <h4 id="parameters">Parameters</h4>
 
 <ul>
@@ -384,13 +385,13 @@ Of the three style options, assert is the only one that is not chainable. Check 
 </ul>
 
 <h3 id="isatmost">isAtMost</h3>
-
-<h4 id="isatmost-valuetocheck-valuetobeatmost-message">.isAtMost(valueToCheck, valueToBeAtMost, [message])</h4>
-
-<p>Asserts <code class="prettyprint">valueToCheck</code> is less than or equal to (&lt;=) <code class="prettyprint">valueToBeAtMost</code>.</p>
 <pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">isAtMost</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="s1">'3 is less than or equal to 6'</span><span class="p">);</span>
 <span class="nx">assert</span><span class="p">.</span><span class="nx">isAtMost</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="s1">'4 is less than or equal to 4'</span><span class="p">);</span>
 </code></pre>
+<h4 id="isatmost-valuetocheck-valuetobeatmost-message"><code class="prettyprint">.isAtMost(valueToCheck, valueToBeAtMost, [message])</code></h4>
+
+<p>Asserts <code class="prettyprint">valueToCheck</code> is less than or equal to (&lt;=) <code class="prettyprint">valueToBeAtMost</code>.</p>
+
 <h4 id="parameters">Parameters</h4>
 
 <ul>
@@ -400,12 +401,12 @@ Of the three style options, assert is the only one that is not chainable. Check 
 </ul>
 
 <h3 id="isnan">isNaN</h3>
-
+<pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nb">isNaN</span><span class="p">(</span><span class="kc">NaN</span><span class="p">,</span> <span class="s1">'NaN is NaN'</span><span class="p">);</span>
+</code></pre>
 <h4 id="isnan">.isNaN</h4>
 
 <p>Asserts that value is NaN.</p>
-<pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nb">isNaN</span><span class="p">(</span><span class="kc">NaN</span><span class="p">,</span> <span class="s1">'NaN is NaN'</span><span class="p">);</span>
-</code></pre>
+
 <h4 id="parameters">Parameters</h4>
 
 <ul>
@@ -414,12 +415,12 @@ Of the three style options, assert is the only one that is not chainable. Check 
 </ul>
 
 <h3 id="isnotnan">isNotNaN</h3>
-
+<pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">isNotNaN</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="s1">'4 is not NaN'</span><span class="p">);</span>
+</code></pre>
 <h4 id="isnotnan">.isNotNaN</h4>
 
 <p>Asserts that value is not NaN.</p>
-<pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">isNotNaN</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="s1">'4 is not NaN'</span><span class="p">);</span>
-</code></pre>
+
 <h4 id="parameters">Parameters</h4>
 
 <ul>
@@ -428,15 +429,14 @@ Of the three style options, assert is the only one that is not chainable. Check 
 </ul>
 
 <h3 id="isfinite">isFinite</h3>
-
-<h4 id="isfinite-value-message">.isFinite(value, [message])</h4>
-
-<p>Asserts that <code class="prettyprint">value</code> is a finite number. Unlike <code class="prettyprint">.isNumber</code>, this will fail for <code class="prettyprint">NaN</code> and <code class="prettyprint">Infinity</code>.</p>
 <pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">cups</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>
 <span class="nx">assert</span><span class="p">.</span><span class="nb">isFinite</span><span class="p">(</span><span class="nx">cups</span><span class="p">,</span> <span class="s1">'how many cups'</span><span class="p">);</span>
-
-    <span class="nx">assert</span><span class="p">.</span><span class="nb">isFinite</span><span class="p">(</span><span class="kc">NaN</span><span class="p">);</span> <span class="c1">// throws</span>
+<span class="nx">assert</span><span class="p">.</span><span class="nb">isFinite</span><span class="p">(</span><span class="kc">NaN</span><span class="p">);</span> <span class="c1">// throws</span>
 </code></pre>
+<h4 id="isfinite-value-message"><code class="prettyprint">.isFinite(value, [message])</code></h4>
+
+<p>Asserts that <code class="prettyprint">value</code> is a finite number. Unlike <code class="prettyprint">.isNumber</code>, this will fail for <code class="prettyprint">NaN</code> and <code class="prettyprint">Infinity</code>.</p>
+
 <h4 id="parameters">Parameters</h4>
 
 <ul>
@@ -445,12 +445,12 @@ Of the three style options, assert is the only one that is not chainable. Check 
 </ul>
 
 <h3 id="closeto">closeTo</h3>
-
+<pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">closeTo</span><span class="p">(</span><span class="mf">1.5</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="s1">'numbers are close'</span><span class="p">);</span>
+</code></pre>
 <h4 id="closeto-actual-expected-delta-message">.closeTo(actual, expected, delta, [message])</h4>
 
 <p>Asserts that the target is equal <code class="prettyprint">expected</code>, to within a +/- <code class="prettyprint">delta</code> range.</p>
-<pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">closeTo</span><span class="p">(</span><span class="mf">1.5</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="s1">'numbers are close'</span><span class="p">);</span>
-</code></pre>
+
 <h4 id="parameters">Parameters</h4>
 
 <ul>
@@ -461,12 +461,12 @@ Of the three style options, assert is the only one that is not chainable. Check 
 </ul>
 
 <h3 id="approximately">approximately</h3>
-
-<h4 id="approximately-actual-expected-delta-message">.approximately(actual, expected, delta, [message])</h4>
-
-<p>Asserts that the target is equal <code class="prettyprint">expected</code>, to within a +/- <code class="prettyprint">delta</code> range.</p>
 <pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">approximately</span><span class="p">(</span><span class="mf">1.5</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="s1">'numbers are close'</span><span class="p">);</span>
 </code></pre>
+<h4 id="approximately-actual-expected-delta-message"><code class="prettyprint">.approximately(actual, expected, delta, [message])</code></h4>
+
+<p>Asserts that the target is equal <code class="prettyprint">expected</code>, to within a +/- <code class="prettyprint">delta</code> range.</p>
+
 <h4 id="parameters">Parameters</h4>
 
 <ul>
@@ -479,13 +479,13 @@ Of the three style options, assert is the only one that is not chainable. Check 
 <h2 id="true-false-tests">True/False Tests</h2>
 
 <h3 id="isok">isOk</h3>
-
-<h4 id="isok-object-message">.isOk(object, [message])</h4>
-
-<p>Asserts that <code class="prettyprint">object</code> is truthy.</p>
 <pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">isOk</span><span class="p">(</span><span class="s1">'everything'</span><span class="p">,</span> <span class="s1">'everything is ok'</span><span class="p">);</span>
 <span class="nx">assert</span><span class="p">.</span><span class="nx">isOk</span><span class="p">(</span><span class="kc">false</span><span class="p">,</span> <span class="s1">'this will fail'</span><span class="p">);</span>
 </code></pre>
+<h4 id="isok-object-message"><code class="prettyprint">.isOk(object, [message])</code></h4>
+
+<p>Asserts that <code class="prettyprint">object</code> is truthy.</p>
+
 <h4 id="parameters">Parameters</h4>
 
 <ul>
@@ -494,13 +494,13 @@ Of the three style options, assert is the only one that is not chainable. Check 
 </ul>
 
 <h3 id="isnotok">isNotOk</h3>
-
-<h4 id="isnotok-object-message">.isNotOk(object, [message])</h4>
-
-<p>Asserts that <code class="prettyprint">object</code> is falsy.</p>
 <pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">isNotOk</span><span class="p">(</span><span class="s1">'everything'</span><span class="p">,</span> <span class="s1">'this will fail'</span><span class="p">);</span>
 <span class="nx">assert</span><span class="p">.</span><span class="nx">isNotOk</span><span class="p">(</span><span class="kc">false</span><span class="p">,</span> <span class="s1">'this will pass'</span><span class="p">);</span>
 </code></pre>
+<h4 id="isnotok-object-message"><code class="prettyprint">.isNotOk(object, [message])</code></h4>
+
+<p>Asserts that <code class="prettyprint">object</code> is falsy.</p>
+
 <h4 id="parameters">Parameters</h4>
 
 <ul>
@@ -509,13 +509,13 @@ Of the three style options, assert is the only one that is not chainable. Check 
 </ul>
 
 <h3 id="istrue">isTrue</h3>
-
-<h4 id="istrue-value-message">.isTrue(value, [message])</h4>
-
-<p>Asserts that <code class="prettyprint">value</code> is true.</p>
 <pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">teaServed</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
 <span class="nx">assert</span><span class="p">.</span><span class="nx">isTrue</span><span class="p">(</span><span class="nx">teaServed</span><span class="p">,</span> <span class="s1">'the tea has been served'</span><span class="p">);</span>
 </code></pre>
+<h4 id="istrue-value-message"><code class="prettyprint">.isTrue(value, [message])</code></h4>
+
+<p>Asserts that <code class="prettyprint">value</code> is true.</p>
+
 <h4 id="parameters">Parameters</h4>
 
 <ul>
@@ -524,13 +524,13 @@ Of the three style options, assert is the only one that is not chainable. Check 
 </ul>
 
 <h3 id="isnottrue">isNotTrue</h3>
-
-<h4 id="isnottrue-value-message">.isNotTrue(value, [message])</h4>
-
-<p>Asserts that <code class="prettyprint">value</code> is not true.</p>
 <pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">tea</span> <span class="o">=</span> <span class="s1">'tasty chai'</span><span class="p">;</span>
 <span class="nx">assert</span><span class="p">.</span><span class="nx">isNotTrue</span><span class="p">(</span><span class="nx">tea</span><span class="p">,</span> <span class="s1">'great, time for tea!'</span><span class="p">);</span>
 </code></pre>
+<h4 id="isnottrue-value-message"><code class="prettyprint">.isNotTrue(value, [message])</code></h4>
+
+<p>Asserts that <code class="prettyprint">value</code> is not true.</p>
+
 <h4 id="parameters">Parameters</h4>
 
 <ul>
@@ -539,13 +539,13 @@ Of the three style options, assert is the only one that is not chainable. Check 
 </ul>
 
 <h3 id="isfalse">isFalse</h3>
-
-<h4 id="isfalse-value-message">.isFalse(value, [message])</h4>
-
-<p>Asserts that <code class="prettyprint">value</code> is false.</p>
 <pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">teaServed</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
 <span class="nx">assert</span><span class="p">.</span><span class="nx">isFalse</span><span class="p">(</span><span class="nx">teaServed</span><span class="p">,</span> <span class="s1">'no tea yet? hmm...'</span><span class="p">);</span>
 </code></pre>
+<h4 id="isfalse-value-message"><code class="prettyprint">.isFalse(value, [message])</code></h4>
+
+<p>Asserts that <code class="prettyprint">value</code> is false.</p>
+
 <h4 id="parameters">Parameters</h4>
 
 <ul>
@@ -554,13 +554,13 @@ Of the three style options, assert is the only one that is not chainable. Check 
 </ul>
 
 <h3 id="isnotfalse">isNotFalse</h3>
-
-<h4 id="isnotfalse-value-message">.isNotFalse(value, [message])</h4>
-
-<p>Asserts that <code class="prettyprint">value</code> is not false.</p>
 <pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">tea</span> <span class="o">=</span> <span class="s1">'tasty chai'</span><span class="p">;</span>
 <span class="nx">assert</span><span class="p">.</span><span class="nx">isNotFalse</span><span class="p">(</span><span class="nx">tea</span><span class="p">,</span> <span class="s1">'great, time for tea!'</span><span class="p">);</span>
 </code></pre>
+<h4 id="isnotfalse-value-message"><code class="prettyprint">.isNotFalse(value, [message])</code></h4>
+
+<p>Asserts that <code class="prettyprint">value</code> is not false.</p>
+
 <h4 id="parameters">Parameters</h4>
 
 <ul>
