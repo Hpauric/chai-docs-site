@@ -710,14 +710,14 @@ Of the three style options, assert is the only one that is not chainable. Check 
 </ul>
 
 <h3 id="isnotobject">isNotObject</h3>
-
-<h4 id="isnotobject-value-message">.isNotObject(value, [message])</h4>
-
-<p>Asserts that <code class="prettyprint">value</code> is <em>not</em> an object of type &lsquo;Object&rsquo; (as revealed by <code class="prettyprint">Object.prototype.toString</code>).</p>
 <pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">selection</span> <span class="o">=</span> <span class="s1">'chai'</span>
 <span class="nx">assert</span><span class="p">.</span><span class="nx">isNotObject</span><span class="p">(</span><span class="nx">selection</span><span class="p">,</span> <span class="s1">'tea selection is not an object'</span><span class="p">);</span>
     <span class="nx">assert</span><span class="p">.</span><span class="nx">isNotObject</span><span class="p">(</span><span class="kc">null</span><span class="p">,</span> <span class="s1">'null is not an object'</span><span class="p">);</span>
 </code></pre>
+<h4 id="isnotobject-value-message"><code class="prettyprint">.isNotObject(value, [message])</code></h4>
+
+<p>Asserts that <code class="prettyprint">value</code> is <em>not</em> an object of type &lsquo;Object&rsquo; (as revealed by <code class="prettyprint">Object.prototype.toString</code>).</p>
+
 <h4 id="parameters">Parameters</h4>
 
 <ul>
@@ -726,13 +726,13 @@ Of the three style options, assert is the only one that is not chainable. Check 
 </ul>
 
 <h3 id="isarray">isArray</h3>
-
-<h4 id="isarray-value-message">.isArray(value, [message])</h4>
-
-<p>Asserts that <code class="prettyprint">value</code> is an array.</p>
 <pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">menu</span> <span class="o">=</span> <span class="p">[</span> <span class="s1">'green'</span><span class="p">,</span> <span class="s1">'chai'</span><span class="p">,</span> <span class="s1">'oolong'</span> <span class="p">];</span>
 <span class="nx">assert</span><span class="p">.</span><span class="nx">isArray</span><span class="p">(</span><span class="nx">menu</span><span class="p">,</span> <span class="s1">'what kind of tea do we want?'</span><span class="p">);</span>
 </code></pre>
+<h4 id="isarray-value-message"><code class="prettyprint">.isArray(value, [message])</code></h4>
+
+<p>Asserts that <code class="prettyprint">value</code> is an array.</p>
+
 <h4 id="parameters">Parameters</h4>
 
 <ul>
@@ -741,13 +741,13 @@ Of the three style options, assert is the only one that is not chainable. Check 
 </ul>
 
 <h3 id="isnotarray">isNotArray</h3>
-
-<h4 id="isnotarray-value-message">.isNotArray(value, [message])</h4>
-
-<p>Asserts that <code class="prettyprint">value</code> is <em>not</em> an array.</p>
 <pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">menu</span> <span class="o">=</span> <span class="s1">'green|chai|oolong'</span><span class="p">;</span>
 <span class="nx">assert</span><span class="p">.</span><span class="nx">isNotArray</span><span class="p">(</span><span class="nx">menu</span><span class="p">,</span> <span class="s1">'what kind of tea do we want?'</span><span class="p">);</span>
 </code></pre>
+<h4 id="isnotarray-value-message"><code class="prettyprint">.isNotArray(value, [message])</code></h4>
+
+<p>Asserts that <code class="prettyprint">value</code> is <em>not</em> an array.</p>
+
 <h4 id="parameters">Parameters</h4>
 
 <ul>
@@ -757,27 +757,27 @@ Of the three style options, assert is the only one that is not chainable. Check 
 
 <h3 id="isstring">isString</h3>
 
-<h4 id="isstring-value-message">.isString(value, [message])</h4>
+<h4 id="isstring-value-message"><code class="prettyprint">.isString(value, [message])</code></h4>
 
 <p>Asserts that <code class="prettyprint">value</code> is a string.</p>
-<pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">teaOrder</span> <span class="o">=</span> <span class="s1">'chai'</span><span class="p">;</span>
-<span class="nx">assert</span><span class="p">.</span><span class="nx">isString</span><span class="p">(</span><span class="nx">teaOrder</span><span class="p">,</span> <span class="s1">'order placed'</span><span class="p">);</span>
-</code></pre>
+
 <h4 id="parameters">Parameters</h4>
 
 <ul>
 <li>{Mixed} value</li>
 <li>{String} message</li>
 </ul>
-
+<pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">teaOrder</span> <span class="o">=</span> <span class="s1">'chai'</span><span class="p">;</span>
+<span class="nx">assert</span><span class="p">.</span><span class="nx">isString</span><span class="p">(</span><span class="nx">teaOrder</span><span class="p">,</span> <span class="s1">'order placed'</span><span class="p">);</span>
+</code></pre>
 <h3 id="isnotstring">isNotString</h3>
-
-<h4 id="isnotstring-value-message">.isNotString(value, [message])</h4>
-
-<p>Asserts that <code class="prettyprint">value</code> is <em>not</em> a string.</p>
 <pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">teaOrder</span> <span class="o">=</span> <span class="mi">4</span><span class="p">;</span>
 <span class="nx">assert</span><span class="p">.</span><span class="nx">isNotString</span><span class="p">(</span><span class="nx">teaOrder</span><span class="p">,</span> <span class="s1">'order placed'</span><span class="p">);</span>
 </code></pre>
+<h4 id="isnotstring-value-message"><code class="prettyprint">.isNotString(value, [message])</code></h4>
+
+<p>Asserts that <code class="prettyprint">value</code> is <em>not</em> a string.</p>
+
 <h4 id="parameters">Parameters</h4>
 
 <ul>
@@ -786,13 +786,13 @@ Of the three style options, assert is the only one that is not chainable. Check 
 </ul>
 
 <h3 id="isnumber">isNumber</h3>
-
-<h4 id="isnumber-value-message">.isNumber(value, [message])</h4>
-
-<p>Asserts that <code class="prettyprint">value</code> is a number.</p>
 <pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">cups</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>
 <span class="nx">assert</span><span class="p">.</span><span class="nx">isNumber</span><span class="p">(</span><span class="nx">cups</span><span class="p">,</span> <span class="s1">'how many cups'</span><span class="p">);</span>
 </code></pre>
+<h4 id="isnumber-value-message"><code class="prettyprint">.isNumber(value, [message])</code></h4>
+
+<p>Asserts that <code class="prettyprint">value</code> is a number.</p>
+
 <h4 id="parameters">Parameters</h4>
 
 <ul>
@@ -802,7 +802,7 @@ Of the three style options, assert is the only one that is not chainable. Check 
 
 <h3 id="isnotnumber">isNotNumber</h3>
 
-<h4 id="isnotnumber-value-message">.isNotNumber(value, [message])</h4>
+<h4 id="isnotnumber-value-message"><code class="prettyprint">.isNotNumber(value, [message])</code></h4>
 
 <p>Asserts that <code class="prettyprint">value</code> is <em>not</em> a number.</p>
 <pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">cups</span> <span class="o">=</span> <span class="s1">'2 cups please'</span><span class="p">;</span>
@@ -816,16 +816,16 @@ Of the three style options, assert is the only one that is not chainable. Check 
 </ul>
 
 <h3 id="isboolean">isBoolean</h3>
-
-<h4 id="isboolean-value-message">.isBoolean(value, [message])</h4>
-
-<p>Asserts that <code class="prettyprint">value</code> is a boolean.</p>
 <pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">teaReady</span> <span class="o">=</span> <span class="kc">true</span>
   <span class="p">,</span> <span class="nx">teaServed</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
 
-    <span class="nx">assert</span><span class="p">.</span><span class="nx">isBoolean</span><span class="p">(</span><span class="nx">teaReady</span><span class="p">,</span> <span class="s1">'is the tea ready'</span><span class="p">);</span>
-    <span class="nx">assert</span><span class="p">.</span><span class="nx">isBoolean</span><span class="p">(</span><span class="nx">teaServed</span><span class="p">,</span> <span class="s1">'has tea been served'</span><span class="p">);</span>
+<span class="nx">assert</span><span class="p">.</span><span class="nx">isBoolean</span><span class="p">(</span><span class="nx">teaReady</span><span class="p">,</span> <span class="s1">'is the tea ready'</span><span class="p">);</span>
+<span class="nx">assert</span><span class="p">.</span><span class="nx">isBoolean</span><span class="p">(</span><span class="nx">teaServed</span><span class="p">,</span> <span class="s1">'has tea been served'</span><span class="p">);</span>
 </code></pre>
+<h4 id="isboolean-value-message"><code class="prettyprint">.isBoolean(value, [message])</code></h4>
+
+<p>Asserts that <code class="prettyprint">value</code> is a boolean.</p>
+
 <h4 id="parameters">Parameters</h4>
 
 <ul>
@@ -834,16 +834,16 @@ Of the three style options, assert is the only one that is not chainable. Check 
 </ul>
 
 <h3 id="isnotboolean">isNotBoolean</h3>
-
-<h4 id="isnotboolean-value-message">.isNotBoolean(value, [message])</h4>
-
-<p>Asserts that <code class="prettyprint">value</code> is <em>not</em> a boolean.</p>
 <pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">teaReady</span> <span class="o">=</span> <span class="s1">'yep'</span>
   <span class="p">,</span> <span class="nx">teaServed</span> <span class="o">=</span> <span class="s1">'nope'</span><span class="p">;</span>
 
-    <span class="nx">assert</span><span class="p">.</span><span class="nx">isNotBoolean</span><span class="p">(</span><span class="nx">teaReady</span><span class="p">,</span> <span class="s1">'is the tea ready'</span><span class="p">);</span>
-    <span class="nx">assert</span><span class="p">.</span><span class="nx">isNotBoolean</span><span class="p">(</span><span class="nx">teaServed</span><span class="p">,</span> <span class="s1">'has tea been served'</span><span class="p">);</span>
+<span class="nx">assert</span><span class="p">.</span><span class="nx">isNotBoolean</span><span class="p">(</span><span class="nx">teaReady</span><span class="p">,</span> <span class="s1">'is the tea ready'</span><span class="p">);</span>
+<span class="nx">assert</span><span class="p">.</span><span class="nx">isNotBoolean</span><span class="p">(</span><span class="nx">teaServed</span><span class="p">,</span> <span class="s1">'has tea been served'</span><span class="p">);</span>
 </code></pre>
+<h4 id="isnotboolean-value-message"><code class="prettyprint">.isNotBoolean(value, [message])</code></h4>
+
+<p>Asserts that <code class="prettyprint">value</code> is <em>not</em> a boolean.</p>
+
 <h4 id="parameters">Parameters</h4>
 
 <ul>
@@ -852,11 +852,6 @@ Of the three style options, assert is the only one that is not chainable. Check 
 </ul>
 
 <h3 id="typeof">typeOf</h3>
-
-<h4 id="typeof-value-name-message">.typeOf(value, name, [message])</h4>
-
-<p>Asserts that <code class="prettyprint">value</code>&lsquo;s type is <code class="prettyprint">name</code>, as determined by
-<code class="prettyprint">Object.prototype.toString</code>.</p>
 <pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">typeOf</span><span class="p">({</span> <span class="na">tea</span><span class="p">:</span> <span class="s1">'chai'</span> <span class="p">},</span> <span class="s1">'object'</span><span class="p">,</span> <span class="s1">'we have an object'</span><span class="p">);</span>
 <span class="nx">assert</span><span class="p">.</span><span class="nx">typeOf</span><span class="p">([</span><span class="s1">'chai'</span><span class="p">,</span> <span class="s1">'jasmine'</span><span class="p">],</span> <span class="s1">'array'</span><span class="p">,</span> <span class="s1">'we have an array'</span><span class="p">);</span>
     <span class="nx">assert</span><span class="p">.</span><span class="nx">typeOf</span><span class="p">(</span><span class="s1">'tea'</span><span class="p">,</span> <span class="s1">'string'</span><span class="p">,</span> <span class="s1">'we have a string'</span><span class="p">);</span>
@@ -864,6 +859,10 @@ Of the three style options, assert is the only one that is not chainable. Check 
     <span class="nx">assert</span><span class="p">.</span><span class="nx">typeOf</span><span class="p">(</span><span class="kc">null</span><span class="p">,</span> <span class="s1">'null'</span><span class="p">,</span> <span class="s1">'we have a null'</span><span class="p">);</span>
     <span class="nx">assert</span><span class="p">.</span><span class="nx">typeOf</span><span class="p">(</span><span class="kc">undefined</span><span class="p">,</span> <span class="s1">'undefined'</span><span class="p">,</span> <span class="s1">'we have an undefined'</span><span class="p">);</span>
 </code></pre>
+<h4 id="typeof-value-name-message"><code class="prettyprint">.typeOf(value, name, [message])</code></h4>
+
+<p>Asserts that <code class="prettyprint">value</code>&lsquo;s type is <code class="prettyprint">name</code>, as determined by <code class="prettyprint">Object.prototype.toString</code>.</p>
+
 <h4 id="parameters">Parameters</h4>
 
 <ul>
@@ -873,13 +872,13 @@ Of the three style options, assert is the only one that is not chainable. Check 
 </ul>
 
 <h3 id="nottypeof">notTypeOf</h3>
-
-<h4 id="nottypeof-value-name-message">.notTypeOf(value, name, [message])</h4>
+<pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">notTypeOf</span><span class="p">(</span><span class="s1">'tea'</span><span class="p">,</span> <span class="s1">'number'</span><span class="p">,</span> <span class="s1">'strings are not numbers'</span><span class="p">);</span>
+</code></pre>
+<h4 id="nottypeof-value-name-message"><code class="prettyprint">.notTypeOf(value, name, [message])</code></h4>
 
 <p>Asserts that <code class="prettyprint">value</code>&rsquo;s type is <em>not</em> <code class="prettyprint">name</code>, as determined by
 <code class="prettyprint">Object.prototype.toString</code>.</p>
-<pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">notTypeOf</span><span class="p">(</span><span class="s1">'tea'</span><span class="p">,</span> <span class="s1">'number'</span><span class="p">,</span> <span class="s1">'strings are not numbers'</span><span class="p">);</span>
-</code></pre>
+
 <h4 id="parameters">Parameters</h4>
 
 <ul>
@@ -891,15 +890,15 @@ Of the three style options, assert is the only one that is not chainable. Check 
 <h2 id="object-constructor-tests">Object Constructor Tests</h2>
 
 <h3 id="instanceof">instanceOf</h3>
-
-<h4 id="instanceof-object-constructor-message">.instanceOf(object, constructor, [message])</h4>
-
-<p>Asserts that <code class="prettyprint">value</code> is an instance of <code class="prettyprint">constructor</code>.</p>
 <pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">Tea</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">name</span><span class="p">)</span> <span class="p">{</span> <span class="k">this</span><span class="p">.</span><span class="nx">name</span> <span class="o">=</span> <span class="nx">name</span><span class="p">;</span> <span class="p">}</span>
   <span class="p">,</span> <span class="nx">chai</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Tea</span><span class="p">(</span><span class="s1">'chai'</span><span class="p">);</span>
 
-    <span class="nx">assert</span><span class="p">.</span><span class="nx">instanceOf</span><span class="p">(</span><span class="nx">chai</span><span class="p">,</span> <span class="nx">Tea</span><span class="p">,</span> <span class="s1">'chai is an instance of tea'</span><span class="p">);</span>
+<span class="nx">assert</span><span class="p">.</span><span class="nx">instanceOf</span><span class="p">(</span><span class="nx">chai</span><span class="p">,</span> <span class="nx">Tea</span><span class="p">,</span> <span class="s1">'chai is an instance of tea'</span><span class="p">);</span>
 </code></pre>
+<h4 id="instanceof-object-constructor-message"><code class="prettyprint">.instanceOf(object, constructor, [message])</code></h4>
+
+<p>Asserts that <code class="prettyprint">value</code> is an instance of <code class="prettyprint">constructor</code>.</p>
+
 <h4 id="parameters">Parameters</h4>
 
 <ul>
