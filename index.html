@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>Chai API Reference</title>
+    <title>API Documentation</title>
 
     <style>
       .highlight table td { padding: 5px; }
@@ -197,7 +197,7 @@
     </style>
     <link href="stylesheets/screen.css" rel="stylesheet" media="screen" />
     <link href="stylesheets/print.css" rel="stylesheet" media="print" />
-      <script src="javascripts/all.js"></script>
+      <script src="javascripts/all_nosearch.js"></script>
   </head>
 
   <body class="index" data-languages="[]">
@@ -209,21 +209,23 @@
     </a>
     <div class="tocify-wrapper">
       <img src="images/logo.png" alt="Logo" />
-        <div class="search">
-          <input type="text" class="search" id="input-search" placeholder="Search">
-        </div>
-        <ul class="search-results"></ul>
       <div id="toc">
       </div>
-        <ul class="toc-footer">
-            <li><a href='http://chaijs.com/api/'>Original Chai Documentation</a></li>
-            <li><a href='https://github.com/tripit/slate'>Documentation Powered by Slate</a></li>
-        </ul>
     </div>
     <div class="page-wrapper">
       <div class="dark-box"></div>
       <div class="content">
-        <h1 id="introduction">Introduction</h1>
+        <hr>
+
+<p>title: Chai API Reference</p>
+
+<p>toc_footers:
+  - <a href='http://chaijs.com/api/'>Original Chai Documentation</a>
+  - <a href='https://github.com/tripit/slate'>Documentation Powered by Slate</a></p>
+
+<h2 id="search-true">search: true</h2>
+
+<h1 id="introduction">Introduction</h1>
 
 <p>The Chai API is broken down by style or task.</p>
 
@@ -254,13 +256,25 @@ Of the three style options, assert is the only one that is not chainable. Check 
 
 <p>Asserts non-strict equality (<code class="prettyprint">==</code>) of <code class="prettyprint">actual</code> and <code class="prettyprint">expected</code>.</p>
 
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Mixed} actual</li>
-<li>{Mixed} expected</li>
-<li>{String} message</li>
-</ul>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>actual</td>
+<td>Mixed</td>
+</tr>
+<tr>
+<td>expected</td>
+<td>Mixed</td>
+</tr>
+<tr>
+<td>message</td>
+<td>String</td>
+</tr>
+</tbody></table>
 
 <h3 id="notequal">notEqual</h3>
 <pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">notEqual</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="s1">'these numbers are not equal'</span><span class="p">);</span>
@@ -269,13 +283,25 @@ Of the three style options, assert is the only one that is not chainable. Check 
 
 <p>Asserts non-strict inequality (<code class="prettyprint">!=</code>) of <code class="prettyprint">actual</code> and <code class="prettyprint">expected</code>.</p>
 
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Mixed} actual</li>
-<li>{Mixed} expected</li>
-<li>{String} message</li>
-</ul>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>actual</td>
+<td>Mixed</td>
+</tr>
+<tr>
+<td>expected</td>
+<td>Mixed</td>
+</tr>
+<tr>
+<td>message</td>
+<td>String</td>
+</tr>
+</tbody></table>
 
 <table><thead>
 <tr>
@@ -304,13 +330,25 @@ Of the three style options, assert is the only one that is not chainable. Check 
 
 <p>Asserts strict equality (<code class="prettyprint">===</code>) of <code class="prettyprint">actual</code> and <code class="prettyprint">expected</code>.</p>
 
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Mixed} actual</li>
-<li>{Mixed} expected</li>
-<li>{String} message</li>
-</ul>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>actual</td>
+<td>Mixed</td>
+</tr>
+<tr>
+<td>expected</td>
+<td>Mixed</td>
+</tr>
+<tr>
+<td>message</td>
+<td>String</td>
+</tr>
+</tbody></table>
 
 <h3 id="notstrictequal">notStrictEqual</h3>
 <pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">notStrictEqual</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="s1">'3'</span><span class="p">,</span> <span class="s1">'no coercion for strict equality'</span><span class="p">);</span>
@@ -319,13 +357,25 @@ Of the three style options, assert is the only one that is not chainable. Check 
 
 <p>Asserts strict inequality (<code class="prettyprint">!==</code>) of <code class="prettyprint">actual</code> and <code class="prettyprint">expected</code>.</p>
 
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Mixed} actual</li>
-<li>{Mixed} expected</li>
-<li>{String} message</li>
-</ul>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>actual</td>
+<td>Mixed</td>
+</tr>
+<tr>
+<td>expected</td>
+<td>Mixed</td>
+</tr>
+<tr>
+<td>message</td>
+<td>String</td>
+</tr>
+</tbody></table>
 
 <h3 id="deepequal">deepEqual</h3>
 <pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">deepEqual</span><span class="p">({</span> <span class="na">tea</span><span class="p">:</span> <span class="s1">'green'</span> <span class="p">},</span> <span class="p">{</span> <span class="na">tea</span><span class="p">:</span> <span class="s1">'green'</span> <span class="p">});</span>
@@ -334,13 +384,25 @@ Of the three style options, assert is the only one that is not chainable. Check 
 
 <p>Asserts that <code class="prettyprint">actual</code> is deeply equal to <code class="prettyprint">expected</code>.</p>
 
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Mixed} actual</li>
-<li>{Mixed} expected</li>
-<li>{String} message</li>
-</ul>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>actual</td>
+<td>Mixed</td>
+</tr>
+<tr>
+<td>expected</td>
+<td>Mixed</td>
+</tr>
+<tr>
+<td>message</td>
+<td>String</td>
+</tr>
+</tbody></table>
 
 <h3 id="notdeepequal">notDeepEqual</h3>
 <pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">notDeepEqual</span><span class="p">({</span> <span class="na">tea</span><span class="p">:</span> <span class="s1">'green'</span> <span class="p">},</span> <span class="p">{</span> <span class="na">tea</span><span class="p">:</span> <span class="s1">'jasmine'</span> <span class="p">});</span>
@@ -349,13 +411,25 @@ Of the three style options, assert is the only one that is not chainable. Check 
 
 <p>Assert that <code class="prettyprint">actual</code> is not deeply equal to <code class="prettyprint">expected</code>.</p>
 
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Mixed} actual</li>
-<li>{Mixed} expected</li>
-<li>{String} message</li>
-</ul>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>actual</td>
+<td>Mixed</td>
+</tr>
+<tr>
+<td>expected</td>
+<td>Mixed</td>
+</tr>
+<tr>
+<td>message</td>
+<td>String</td>
+</tr>
+</tbody></table>
 
 <h2 id="number-tests">Number Tests</h2>
 
@@ -366,13 +440,25 @@ Of the three style options, assert is the only one that is not chainable. Check 
 
 <p>Asserts <code class="prettyprint">valueToCheck</code> is strictly greater than (&gt;) <code class="prettyprint">valueToBeAbove</code>.</p>
 
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Mixed} valueToCheck</li>
-<li>{Mixed} valueToBeAbove</li>
-<li>{String} message</li>
-</ul>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>valueToCheck</td>
+<td>Mixed</td>
+</tr>
+<tr>
+<td>valueToBeAbove</td>
+<td>Mixed</td>
+</tr>
+<tr>
+<td>message</td>
+<td>String</td>
+</tr>
+</tbody></table>
 
 <h3 id="isatleast">isAtLeast</h3>
 <pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">isAtLeast</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="s1">'5 is greater or equal to 2'</span><span class="p">);</span>
@@ -382,13 +468,25 @@ Of the three style options, assert is the only one that is not chainable. Check 
 
 <p>Asserts <code class="prettyprint">valueToCheck</code> is greater than or equal to (&gt;=) <code class="prettyprint">valueToBeAtLeast</code>.</p>
 
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Mixed} valueToCheck</li>
-<li>{Mixed} valueToBeAtLeast</li>
-<li>{String} message</li>
-</ul>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>valueToCheck</td>
+<td>Mixed</td>
+</tr>
+<tr>
+<td>valueToBeAtLeast</td>
+<td>Mixed</td>
+</tr>
+<tr>
+<td>message</td>
+<td>String</td>
+</tr>
+</tbody></table>
 
 <h3 id="isbelow">isBelow</h3>
 <pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">isBelow</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="s1">'3 is strictly less than 6'</span><span class="p">);</span>
@@ -397,13 +495,25 @@ Of the three style options, assert is the only one that is not chainable. Check 
 
 <p>Asserts <code class="prettyprint">valueToCheck</code> is strictly less than (&lt;) <code class="prettyprint">valueToBeBelow</code>.</p>
 
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Mixed} valueToCheck</li>
-<li>{Mixed} valueToBeBelow</li>
-<li>{String} message</li>
-</ul>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>valueToCheck</td>
+<td>Mixed</td>
+</tr>
+<tr>
+<td>valueToBeBelow</td>
+<td>Mixed</td>
+</tr>
+<tr>
+<td>message</td>
+<td>String</td>
+</tr>
+</tbody></table>
 
 <h3 id="isatmost">isAtMost</h3>
 <pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">isAtMost</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="s1">'3 is less than or equal to 6'</span><span class="p">);</span>
@@ -413,13 +523,25 @@ Of the three style options, assert is the only one that is not chainable. Check 
 
 <p>Asserts <code class="prettyprint">valueToCheck</code> is less than or equal to (&lt;=) <code class="prettyprint">valueToBeAtMost</code>.</p>
 
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Mixed} valueToCheck</li>
-<li>{Mixed} valueToBeAtMost</li>
-<li>{String} message</li>
-</ul>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>valueToCheck</td>
+<td>Mixed</td>
+</tr>
+<tr>
+<td>valueToBeAtMost</td>
+<td>Mixed</td>
+</tr>
+<tr>
+<td>message</td>
+<td>String</td>
+</tr>
+</tbody></table>
 
 <h3 id="isnan">isNaN</h3>
 <pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nb">isNaN</span><span class="p">(</span><span class="kc">NaN</span><span class="p">,</span> <span class="s1">'NaN is NaN'</span><span class="p">);</span>
@@ -428,12 +550,21 @@ Of the three style options, assert is the only one that is not chainable. Check 
 
 <p>Asserts that value is NaN.</p>
 
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Mixed} value</li>
-<li>{String} message</li>
-</ul>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>value</td>
+<td>Mixed</td>
+</tr>
+<tr>
+<td>message</td>
+<td>String</td>
+</tr>
+</tbody></table>
 
 <h3 id="isnotnan">isNotNaN</h3>
 <pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">isNotNaN</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="s1">'4 is not NaN'</span><span class="p">);</span>
@@ -442,12 +573,21 @@ Of the three style options, assert is the only one that is not chainable. Check 
 
 <p>Asserts that value is not NaN.</p>
 
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Mixed} value</li>
-<li>{String} message</li>
-</ul>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>value</td>
+<td>Mixed</td>
+</tr>
+<tr>
+<td>message</td>
+<td>String</td>
+</tr>
+</tbody></table>
 
 <h3 id="isfinite">isFinite</h3>
 <pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">cups</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>
@@ -458,12 +598,21 @@ Of the three style options, assert is the only one that is not chainable. Check 
 
 <p>Asserts that <code class="prettyprint">value</code> is a finite number. Unlike <code class="prettyprint">.isNumber</code>, this will fail for <code class="prettyprint">NaN</code> and <code class="prettyprint">Infinity</code>.</p>
 
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Number} value</li>
-<li>{String} message</li>
-</ul>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>value</td>
+<td>Number</td>
+</tr>
+<tr>
+<td>message</td>
+<td>String</td>
+</tr>
+</tbody></table>
 
 <h3 id="closeto">closeTo</h3>
 <pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">closeTo</span><span class="p">(</span><span class="mf">1.5</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="s1">'numbers are close'</span><span class="p">);</span>
@@ -472,14 +621,29 @@ Of the three style options, assert is the only one that is not chainable. Check 
 
 <p>Asserts that the target is equal <code class="prettyprint">expected</code>, to within a +/- <code class="prettyprint">delta</code> range.</p>
 
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Number} actual</li>
-<li>{Number} expected</li>
-<li>{Number} delta</li>
-<li>{String} message</li>
-</ul>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>actual</td>
+<td>Number</td>
+</tr>
+<tr>
+<td>expected</td>
+<td>Number</td>
+</tr>
+<tr>
+<td>delta</td>
+<td>Number</td>
+</tr>
+<tr>
+<td>message</td>
+<td>String</td>
+</tr>
+</tbody></table>
 
 <h3 id="approximately">approximately</h3>
 <pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">approximately</span><span class="p">(</span><span class="mf">1.5</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="s1">'numbers are close'</span><span class="p">);</span>
@@ -488,14 +652,29 @@ Of the three style options, assert is the only one that is not chainable. Check 
 
 <p>Asserts that the target is equal <code class="prettyprint">expected</code>, to within a +/- <code class="prettyprint">delta</code> range.</p>
 
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Number} actual</li>
-<li>{Number} expected</li>
-<li>{Number} delta</li>
-<li>{String} message</li>
-</ul>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>actual</td>
+<td>Number</td>
+</tr>
+<tr>
+<td>expected</td>
+<td>Number</td>
+</tr>
+<tr>
+<td>delta</td>
+<td>Number</td>
+</tr>
+<tr>
+<td>message</td>
+<td>String</td>
+</tr>
+</tbody></table>
 
 <h2 id="true-false-tests">True/False Tests</h2>
 
@@ -507,12 +686,21 @@ Of the three style options, assert is the only one that is not chainable. Check 
 
 <p>Asserts that <code class="prettyprint">object</code> is truthy.</p>
 
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Mixed} object to test</li>
-<li>{String} message</li>
-</ul>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>object to test</td>
+<td>Mixed</td>
+</tr>
+<tr>
+<td>message</td>
+<td>String</td>
+</tr>
+</tbody></table>
 
 <h3 id="isnotok">isNotOk</h3>
 <pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">isNotOk</span><span class="p">(</span><span class="s1">'everything'</span><span class="p">,</span> <span class="s1">'this will fail'</span><span class="p">);</span>
@@ -522,12 +710,21 @@ Of the three style options, assert is the only one that is not chainable. Check 
 
 <p>Asserts that <code class="prettyprint">object</code> is falsy.</p>
 
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Mixed} object to test</li>
-<li>{String} message</li>
-</ul>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>object to test</td>
+<td>Mixed</td>
+</tr>
+<tr>
+<td>message</td>
+<td>String</td>
+</tr>
+</tbody></table>
 
 <h3 id="istrue">isTrue</h3>
 <pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">teaServed</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
@@ -537,12 +734,21 @@ Of the three style options, assert is the only one that is not chainable. Check 
 
 <p>Asserts that <code class="prettyprint">value</code> is true.</p>
 
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Mixed} value</li>
-<li>{String} message</li>
-</ul>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>value</td>
+<td>Mixed</td>
+</tr>
+<tr>
+<td>message</td>
+<td>String</td>
+</tr>
+</tbody></table>
 
 <h3 id="isnottrue">isNotTrue</h3>
 <pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">tea</span> <span class="o">=</span> <span class="s1">'tasty chai'</span><span class="p">;</span>
@@ -552,12 +758,21 @@ Of the three style options, assert is the only one that is not chainable. Check 
 
 <p>Asserts that <code class="prettyprint">value</code> is not true.</p>
 
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Mixed} value</li>
-<li>{String} message</li>
-</ul>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>value</td>
+<td>Mixed</td>
+</tr>
+<tr>
+<td>message</td>
+<td>String</td>
+</tr>
+</tbody></table>
 
 <h3 id="isfalse">isFalse</h3>
 <pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">teaServed</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
@@ -567,12 +782,21 @@ Of the three style options, assert is the only one that is not chainable. Check 
 
 <p>Asserts that <code class="prettyprint">value</code> is false.</p>
 
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Mixed} value</li>
-<li>{String} message</li>
-</ul>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>value</td>
+<td>Mixed</td>
+</tr>
+<tr>
+<td>message</td>
+<td>String</td>
+</tr>
+</tbody></table>
 
 <h3 id="isnotfalse">isNotFalse</h3>
 <pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">tea</span> <span class="o">=</span> <span class="s1">'tasty chai'</span><span class="p">;</span>
@@ -582,12 +806,21 @@ Of the three style options, assert is the only one that is not chainable. Check 
 
 <p>Asserts that <code class="prettyprint">value</code> is not false.</p>
 
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Mixed} value</li>
-<li>{String} message</li>
-</ul>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>value</td>
+<td>Mixed</td>
+</tr>
+<tr>
+<td>message</td>
+<td>String</td>
+</tr>
+</tbody></table>
 
 <h2 id="typeof-tests">Typeof Tests</h2>
 
@@ -598,12 +831,21 @@ Of the three style options, assert is the only one that is not chainable. Check 
 
 <p>Asserts that <code class="prettyprint">value</code> is null.</p>
 
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Mixed} value</li>
-<li>{String} message</li>
-</ul>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>value</td>
+<td>Mixed</td>
+</tr>
+<tr>
+<td>message</td>
+<td>String</td>
+</tr>
+</tbody></table>
 
 <h3 id="isnotnull">isNotNull</h3>
 <pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">tea</span> <span class="o">=</span> <span class="s1">'tasty chai'</span><span class="p">;</span>
@@ -613,12 +855,21 @@ Of the three style options, assert is the only one that is not chainable. Check 
 
 <p>Asserts that <code class="prettyprint">value</code> is not null.</p>
 
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Mixed} value</li>
-<li>{String} message</li>
-</ul>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>value</td>
+<td>Mixed</td>
+</tr>
+<tr>
+<td>message</td>
+<td>String</td>
+</tr>
+</tbody></table>
 
 <h3 id="exists">exists</h3>
 <pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">foo</span> <span class="o">=</span> <span class="s1">'hi'</span><span class="p">;</span>
@@ -628,12 +879,21 @@ Of the three style options, assert is the only one that is not chainable. Check 
 
 <p>Asserts that the target is neither <code class="prettyprint">null</code> nor <code class="prettyprint">undefined</code>.</p>
 
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Mixed} value</li>
-<li>{String} message</li>
-</ul>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>value</td>
+<td>Mixed</td>
+</tr>
+<tr>
+<td>message</td>
+<td>String</td>
+</tr>
+</tbody></table>
 
 <h3 id="notexists">notExists</h3>
 <pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">bar</span> <span class="o">=</span> <span class="kc">null</span>
@@ -646,12 +906,21 @@ Of the three style options, assert is the only one that is not chainable. Check 
 
 <p>Asserts that the target is either <code class="prettyprint">null</code> or <code class="prettyprint">undefined</code>.</p>
 
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Mixed} value</li>
-<li>{String} message</li>
-</ul>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>value</td>
+<td>Mixed</td>
+</tr>
+<tr>
+<td>message</td>
+<td>String</td>
+</tr>
+</tbody></table>
 
 <h3 id="isundefined">isUndefined</h3>
 <pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">tea</span><span class="p">;</span>
@@ -661,12 +930,21 @@ Of the three style options, assert is the only one that is not chainable. Check 
 
 <p>Asserts that <code class="prettyprint">value</code> is <code class="prettyprint">undefined</code>.</p>
 
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Mixed} value</li>
-<li>{String} message</li>
-</ul>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>value</td>
+<td>Mixed</td>
+</tr>
+<tr>
+<td>message</td>
+<td>String</td>
+</tr>
+</tbody></table>
 
 <h3 id="isdefined">isDefined</h3>
 <pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">tea</span> <span class="o">=</span> <span class="s1">'cup of chai'</span><span class="p">;</span>
@@ -676,12 +954,21 @@ Of the three style options, assert is the only one that is not chainable. Check 
 
 <p>Asserts that <code class="prettyprint">value</code> is not <code class="prettyprint">undefined</code>.</p>
 
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Mixed} value</li>
-<li>{String} message</li>
-</ul>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>value</td>
+<td>Mixed</td>
+</tr>
+<tr>
+<td>message</td>
+<td>String</td>
+</tr>
+</tbody></table>
 
 <h3 id="isfunction">isFunction</h3>
 <pre class="highlight javascript tab-javascript"><code><span class="kd">function</span> <span class="nx">serveTea</span><span class="p">()</span> <span class="p">{</span> <span class="k">return</span> <span class="s1">'cup of tea'</span><span class="p">;</span> <span class="p">};</span>
@@ -691,12 +978,21 @@ Of the three style options, assert is the only one that is not chainable. Check 
 
 <p>Asserts that <code class="prettyprint">value</code> is a function.</p>
 
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Mixed} value</li>
-<li>{String} message</li>
-</ul>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>value</td>
+<td>Mixed</td>
+</tr>
+<tr>
+<td>message</td>
+<td>String</td>
+</tr>
+</tbody></table>
 
 <h3 id="isnotfunction">isNotFunction</h3>
 <pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">serveTea</span> <span class="o">=</span> <span class="p">[</span> <span class="s1">'heat'</span><span class="p">,</span> <span class="s1">'pour'</span><span class="p">,</span> <span class="s1">'sip'</span> <span class="p">];</span>
@@ -706,12 +1002,21 @@ Of the three style options, assert is the only one that is not chainable. Check 
 
 <p>Asserts that <code class="prettyprint">value</code> is <em>not</em> a function.</p>
 
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Mixed} value</li>
-<li>{String} message</li>
-</ul>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>value</td>
+<td>Mixed</td>
+</tr>
+<tr>
+<td>message</td>
+<td>String</td>
+</tr>
+</tbody></table>
 
 <h3 id="isobject">isObject</h3>
 <pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">selection</span> <span class="o">=</span> <span class="p">{</span> <span class="na">name</span><span class="p">:</span> <span class="s1">'Chai'</span><span class="p">,</span> <span class="na">serve</span><span class="p">:</span> <span class="s1">'with spices'</span> <span class="p">};</span>
@@ -722,12 +1027,21 @@ Of the three style options, assert is the only one that is not chainable. Check 
 <p>Asserts that <code class="prettyprint">value</code> is an object of type &lsquo;Object&rsquo; (as revealed by <code class="prettyprint">Object.prototype.toString</code>).
 <em>The assertion does not match subclassed objects.</em></p>
 
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Mixed} value</li>
-<li>{String} message</li>
-</ul>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>value</td>
+<td>Mixed</td>
+</tr>
+<tr>
+<td>message</td>
+<td>String</td>
+</tr>
+</tbody></table>
 
 <h3 id="isnotobject">isNotObject</h3>
 <pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">selection</span> <span class="o">=</span> <span class="s1">'chai'</span>
@@ -738,12 +1052,21 @@ Of the three style options, assert is the only one that is not chainable. Check 
 
 <p>Asserts that <code class="prettyprint">value</code> is <em>not</em> an object of type &lsquo;Object&rsquo; (as revealed by <code class="prettyprint">Object.prototype.toString</code>).</p>
 
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Mixed} value</li>
-<li>{String} message</li>
-</ul>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>value</td>
+<td>Mixed</td>
+</tr>
+<tr>
+<td>message</td>
+<td>String</td>
+</tr>
+</tbody></table>
 
 <h3 id="isarray">isArray</h3>
 <pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">menu</span> <span class="o">=</span> <span class="p">[</span> <span class="s1">'green'</span><span class="p">,</span> <span class="s1">'chai'</span><span class="p">,</span> <span class="s1">'oolong'</span> <span class="p">];</span>
@@ -753,12 +1076,21 @@ Of the three style options, assert is the only one that is not chainable. Check 
 
 <p>Asserts that <code class="prettyprint">value</code> is an array.</p>
 
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Mixed} value</li>
-<li>{String} message</li>
-</ul>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>value</td>
+<td>Mixed</td>
+</tr>
+<tr>
+<td>message</td>
+<td>String</td>
+</tr>
+</tbody></table>
 
 <h3 id="isnotarray">isNotArray</h3>
 <pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">menu</span> <span class="o">=</span> <span class="s1">'green|chai|oolong'</span><span class="p">;</span>
@@ -768,12 +1100,21 @@ Of the three style options, assert is the only one that is not chainable. Check 
 
 <p>Asserts that <code class="prettyprint">value</code> is <em>not</em> an array.</p>
 
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Mixed} value</li>
-<li>{String} message</li>
-</ul>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>value</td>
+<td>Mixed</td>
+</tr>
+<tr>
+<td>message</td>
+<td>String</td>
+</tr>
+</tbody></table>
 
 <h3 id="isstring">isString</h3>
 
@@ -781,12 +1122,21 @@ Of the three style options, assert is the only one that is not chainable. Check 
 
 <p>Asserts that <code class="prettyprint">value</code> is a string.</p>
 
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Mixed} value</li>
-<li>{String} message</li>
-</ul>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>value</td>
+<td>Mixed</td>
+</tr>
+<tr>
+<td>message</td>
+<td>String</td>
+</tr>
+</tbody></table>
 <pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">teaOrder</span> <span class="o">=</span> <span class="s1">'chai'</span><span class="p">;</span>
 <span class="nx">assert</span><span class="p">.</span><span class="nx">isString</span><span class="p">(</span><span class="nx">teaOrder</span><span class="p">,</span> <span class="s1">'order placed'</span><span class="p">);</span>
 </code></pre>
@@ -798,12 +1148,21 @@ Of the three style options, assert is the only one that is not chainable. Check 
 
 <p>Asserts that <code class="prettyprint">value</code> is <em>not</em> a string.</p>
 
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Mixed} value</li>
-<li>{String} message</li>
-</ul>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>value</td>
+<td>Mixed</td>
+</tr>
+<tr>
+<td>message</td>
+<td>String</td>
+</tr>
+</tbody></table>
 
 <h3 id="isnumber">isNumber</h3>
 <pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">cups</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>
@@ -813,12 +1172,21 @@ Of the three style options, assert is the only one that is not chainable. Check 
 
 <p>Asserts that <code class="prettyprint">value</code> is a number.</p>
 
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Number} value</li>
-<li>{String} message</li>
-</ul>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>value</td>
+<td>Number</td>
+</tr>
+<tr>
+<td>message</td>
+<td>String</td>
+</tr>
+</tbody></table>
 
 <h3 id="isnotnumber">isNotNumber</h3>
 
@@ -828,12 +1196,21 @@ Of the three style options, assert is the only one that is not chainable. Check 
 <pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">cups</span> <span class="o">=</span> <span class="s1">'2 cups please'</span><span class="p">;</span>
 <span class="nx">assert</span><span class="p">.</span><span class="nx">isNotNumber</span><span class="p">(</span><span class="nx">cups</span><span class="p">,</span> <span class="s1">'how many cups'</span><span class="p">);</span>
 </code></pre>
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Mixed} value</li>
-<li>{String} message</li>
-</ul>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>value</td>
+<td>Mixed</td>
+</tr>
+<tr>
+<td>message</td>
+<td>String</td>
+</tr>
+</tbody></table>
 
 <h3 id="isboolean">isBoolean</h3>
 <pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">teaReady</span> <span class="o">=</span> <span class="kc">true</span>
@@ -846,12 +1223,21 @@ Of the three style options, assert is the only one that is not chainable. Check 
 
 <p>Asserts that <code class="prettyprint">value</code> is a boolean.</p>
 
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Mixed} value</li>
-<li>{String} message</li>
-</ul>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>value</td>
+<td>Mixed</td>
+</tr>
+<tr>
+<td>message</td>
+<td>String</td>
+</tr>
+</tbody></table>
 
 <h3 id="isnotboolean">isNotBoolean</h3>
 <pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">teaReady</span> <span class="o">=</span> <span class="s1">'yep'</span>
@@ -864,12 +1250,21 @@ Of the three style options, assert is the only one that is not chainable. Check 
 
 <p>Asserts that <code class="prettyprint">value</code> is <em>not</em> a boolean.</p>
 
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Mixed} value</li>
-<li>{String} message</li>
-</ul>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>value</td>
+<td>Mixed</td>
+</tr>
+<tr>
+<td>message</td>
+<td>String</td>
+</tr>
+</tbody></table>
 
 <h3 id="typeof">typeOf</h3>
 <pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">typeOf</span><span class="p">({</span> <span class="na">tea</span><span class="p">:</span> <span class="s1">'chai'</span> <span class="p">},</span> <span class="s1">'object'</span><span class="p">,</span> <span class="s1">'we have an object'</span><span class="p">);</span>
@@ -883,13 +1278,25 @@ Of the three style options, assert is the only one that is not chainable. Check 
 
 <p>Asserts that <code class="prettyprint">value</code>&lsquo;s type is <code class="prettyprint">name</code>, as determined by <code class="prettyprint">Object.prototype.toString</code>.</p>
 
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Mixed} value</li>
-<li>{String} name</li>
-<li>{String} message</li>
-</ul>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>value</td>
+<td>Mixed</td>
+</tr>
+<tr>
+<td>name</td>
+<td>String</td>
+</tr>
+<tr>
+<td>message</td>
+<td>String</td>
+</tr>
+</tbody></table>
 
 <h3 id="nottypeof">notTypeOf</h3>
 <pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">notTypeOf</span><span class="p">(</span><span class="s1">'tea'</span><span class="p">,</span> <span class="s1">'number'</span><span class="p">,</span> <span class="s1">'strings are not numbers'</span><span class="p">);</span>
@@ -899,13 +1306,25 @@ Of the three style options, assert is the only one that is not chainable. Check 
 <p>Asserts that <code class="prettyprint">value</code>&rsquo;s type is <em>not</em> <code class="prettyprint">name</code>, as determined by
 <code class="prettyprint">Object.prototype.toString</code>.</p>
 
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Mixed} value</li>
-<li>{String} typeof name</li>
-<li>{String} message</li>
-</ul>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>value</td>
+<td>Mixed</td>
+</tr>
+<tr>
+<td>typeof name</td>
+<td>String</td>
+</tr>
+<tr>
+<td>message</td>
+<td>String</td>
+</tr>
+</tbody></table>
 
 <h2 id="object-constructor-tests">Object Constructor Tests</h2>
 
@@ -919,13 +1338,25 @@ Of the three style options, assert is the only one that is not chainable. Check 
 
 <p>Asserts that <code class="prettyprint">value</code> is an instance of <code class="prettyprint">constructor</code>.</p>
 
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Object} object</li>
-<li>{Constructor} constructor</li>
-<li>{String} message</li>
-</ul>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>object</td>
+<td>Object</td>
+</tr>
+<tr>
+<td>constructor</td>
+<td>Constructor</td>
+</tr>
+<tr>
+<td>message</td>
+<td>String</td>
+</tr>
+</tbody></table>
 
 <h3 id="notinstanceof">notInstanceOf</h3>
 
@@ -937,13 +1368,25 @@ Of the three style options, assert is the only one that is not chainable. Check 
 
     <span class="nx">assert</span><span class="p">.</span><span class="nx">notInstanceOf</span><span class="p">(</span><span class="nx">chai</span><span class="p">,</span> <span class="nx">Tea</span><span class="p">,</span> <span class="s1">'chai is not an instance of tea'</span><span class="p">);</span>
 </code></pre>
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Object} object</li>
-<li>{Constructor} constructor</li>
-<li>{String} message</li>
-</ul>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>object</td>
+<td>Object</td>
+</tr>
+<tr>
+<td>constructor</td>
+<td>Constructor</td>
+</tr>
+<tr>
+<td>message</td>
+<td>String</td>
+</tr>
+</tbody></table>
 
 <h2 id="includes-tests">Includes Tests</h2>
 
@@ -969,13 +1412,25 @@ and stricty equal to the given property value. For instance:</p>
 <span class="nx">assert</span><span class="p">.</span><span class="nx">include</span><span class="p">({</span><span class="na">foo</span><span class="p">:</span> <span class="nx">obj1</span><span class="p">,</span> <span class="na">bar</span><span class="p">:</span> <span class="nx">obj2</span><span class="p">},</span> <span class="p">{</span><span class="na">foo</span><span class="p">:</span> <span class="nx">obj1</span><span class="p">});</span>
 <span class="nx">assert</span><span class="p">.</span><span class="nx">include</span><span class="p">({</span><span class="na">foo</span><span class="p">:</span> <span class="nx">obj1</span><span class="p">,</span> <span class="na">bar</span><span class="p">:</span> <span class="nx">obj2</span><span class="p">},</span> <span class="p">{</span><span class="na">foo</span><span class="p">:</span> <span class="nx">obj1</span><span class="p">,</span> <span class="na">bar</span><span class="p">:</span> <span class="nx">obj2</span><span class="p">});</span>
 </code></pre>
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Array|String} haystack</li>
-<li>{Mixed} needle</li>
-<li>{String} message</li>
-</ul>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>haystack</td>
+<td>Array</td>
+</tr>
+<tr>
+<td>needle</td>
+<td>Mixed</td>
+</tr>
+<tr>
+<td>message</td>
+<td>String</td>
+</tr>
+</tbody></table>
 
 <h3 id="notinclude">notInclude</h3>
 
@@ -1000,13 +1455,25 @@ property value. For instance:</p>
 <span class="nx">assert</span><span class="p">.</span><span class="nx">notInclude</span><span class="p">({</span><span class="na">foo</span><span class="p">:</span> <span class="nx">obj1</span><span class="p">,</span> <span class="na">bar</span><span class="p">:</span> <span class="nx">obj2</span><span class="p">},</span> <span class="p">{</span><span class="na">foo</span><span class="p">:</span> <span class="p">{</span><span class="na">a</span><span class="p">:</span> <span class="mi">1</span><span class="p">}});</span>
 <span class="nx">assert</span><span class="p">.</span><span class="nx">notInclude</span><span class="p">({</span><span class="na">foo</span><span class="p">:</span> <span class="nx">obj1</span><span class="p">,</span> <span class="na">bar</span><span class="p">:</span> <span class="nx">obj2</span><span class="p">},</span> <span class="p">{</span><span class="na">foo</span><span class="p">:</span> <span class="nx">obj1</span><span class="p">,</span> <span class="na">bar</span><span class="p">:</span> <span class="p">{</span><span class="na">b</span><span class="p">:</span> <span class="mi">2</span><span class="p">}});</span>
 </code></pre>
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Array|String} haystack</li>
-<li>{Mixed} needle</li>
-<li>{String} message</li>
-</ul>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>haystack</td>
+<td>Array</td>
+</tr>
+<tr>
+<td>needle</td>
+<td>Mixed</td>
+</tr>
+<tr>
+<td>message</td>
+<td>String</td>
+</tr>
+</tbody></table>
 
 <h3 id="deepinclude">deepInclude</h3>
 
@@ -1021,13 +1488,25 @@ Deep equality is used.</p>
     <span class="nx">assert</span><span class="p">.</span><span class="nx">deepInclude</span><span class="p">({</span><span class="na">foo</span><span class="p">:</span> <span class="nx">obj1</span><span class="p">,</span> <span class="na">bar</span><span class="p">:</span> <span class="nx">obj2</span><span class="p">},</span> <span class="p">{</span><span class="na">foo</span><span class="p">:</span> <span class="p">{</span><span class="na">a</span><span class="p">:</span> <span class="mi">1</span><span class="p">}});</span>
     <span class="nx">assert</span><span class="p">.</span><span class="nx">deepInclude</span><span class="p">({</span><span class="na">foo</span><span class="p">:</span> <span class="nx">obj1</span><span class="p">,</span> <span class="na">bar</span><span class="p">:</span> <span class="nx">obj2</span><span class="p">},</span> <span class="p">{</span><span class="na">foo</span><span class="p">:</span> <span class="p">{</span><span class="na">a</span><span class="p">:</span> <span class="mi">1</span><span class="p">},</span> <span class="na">bar</span><span class="p">:</span> <span class="p">{</span><span class="na">b</span><span class="p">:</span> <span class="mi">2</span><span class="p">}});</span>
 </code></pre>
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Array|String} haystack</li>
-<li>{Mixed} needle</li>
-<li>{String} message</li>
-</ul>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>haystack</td>
+<td>Array</td>
+</tr>
+<tr>
+<td>needle</td>
+<td>Mixed</td>
+</tr>
+<tr>
+<td>message</td>
+<td>String</td>
+</tr>
+</tbody></table>
 
 <h3 id="notdeepinclude">notDeepInclude</h3>
 
@@ -1042,13 +1521,25 @@ Deep equality is used.</p>
     <span class="nx">assert</span><span class="p">.</span><span class="nx">notDeepInclude</span><span class="p">({</span><span class="na">foo</span><span class="p">:</span> <span class="nx">obj1</span><span class="p">,</span> <span class="na">bar</span><span class="p">:</span> <span class="nx">obj2</span><span class="p">},</span> <span class="p">{</span><span class="na">foo</span><span class="p">:</span> <span class="p">{</span><span class="na">a</span><span class="p">:</span> <span class="mi">9</span><span class="p">}});</span>
     <span class="nx">assert</span><span class="p">.</span><span class="nx">notDeepInclude</span><span class="p">({</span><span class="na">foo</span><span class="p">:</span> <span class="nx">obj1</span><span class="p">,</span> <span class="na">bar</span><span class="p">:</span> <span class="nx">obj2</span><span class="p">},</span> <span class="p">{</span><span class="na">foo</span><span class="p">:</span> <span class="p">{</span><span class="na">a</span><span class="p">:</span> <span class="mi">1</span><span class="p">},</span> <span class="na">bar</span><span class="p">:</span> <span class="p">{</span><span class="na">b</span><span class="p">:</span> <span class="mi">9</span><span class="p">}});</span>
 </code></pre>
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Array|String} haystack</li>
-<li>{Mixed} needle</li>
-<li>{String} message</li>
-</ul>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>haystack</td>
+<td>Array</td>
+</tr>
+<tr>
+<td>needle</td>
+<td>Mixed</td>
+</tr>
+<tr>
+<td>message</td>
+<td>String</td>
+</tr>
+</tbody></table>
 
 <h3 id="nestedinclude">nestedInclude</h3>
 
@@ -1063,13 +1554,25 @@ properties.
 <pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">nestedInclude</span><span class="p">({</span><span class="s1">'.a'</span><span class="p">:</span> <span class="p">{</span><span class="s1">'b'</span><span class="p">:</span> <span class="s1">'x'</span><span class="p">}},</span> <span class="p">{</span><span class="s1">'\\.a.[b]'</span><span class="p">:</span> <span class="s1">'x'</span><span class="p">});</span>
 <span class="nx">assert</span><span class="p">.</span><span class="nx">nestedInclude</span><span class="p">({</span><span class="s1">'a'</span><span class="p">:</span> <span class="p">{</span><span class="s1">'[b]'</span><span class="p">:</span> <span class="s1">'x'</span><span class="p">}},</span> <span class="p">{</span><span class="s1">'a.\\[b\\]'</span><span class="p">:</span> <span class="s1">'x'</span><span class="p">});</span>
 </code></pre>
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Object} haystack</li>
-<li>{Object} needle</li>
-<li>{String} message</li>
-</ul>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>haystack</td>
+<td>Object</td>
+</tr>
+<tr>
+<td>needle</td>
+<td>Object</td>
+</tr>
+<tr>
+<td>message</td>
+<td>String</td>
+</tr>
+</tbody></table>
 
 <h3 id="notnestedinclude">notNestedInclude</h3>
 
@@ -1084,13 +1587,25 @@ properties.
 <pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">notNestedInclude</span><span class="p">({</span><span class="s1">'.a'</span><span class="p">:</span> <span class="p">{</span><span class="s1">'b'</span><span class="p">:</span> <span class="s1">'x'</span><span class="p">}},</span> <span class="p">{</span><span class="s1">'\\.a.b'</span><span class="p">:</span> <span class="s1">'y'</span><span class="p">});</span>
 <span class="nx">assert</span><span class="p">.</span><span class="nx">notNestedInclude</span><span class="p">({</span><span class="s1">'a'</span><span class="p">:</span> <span class="p">{</span><span class="s1">'[b]'</span><span class="p">:</span> <span class="s1">'x'</span><span class="p">}},</span> <span class="p">{</span><span class="s1">'a.\\[b\\]'</span><span class="p">:</span> <span class="s1">'y'</span><span class="p">});</span>
 </code></pre>
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Object} haystack</li>
-<li>{Object} needle</li>
-<li>{String} message</li>
-</ul>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>haystack</td>
+<td>Object</td>
+</tr>
+<tr>
+<td>needle</td>
+<td>Object</td>
+</tr>
+<tr>
+<td>message</td>
+<td>String</td>
+</tr>
+</tbody></table>
 
 <h3 id="deepnestedinclude">deepNestedInclude</h3>
 
@@ -1105,13 +1620,25 @@ properties.
 <pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">deepNestedInclude</span><span class="p">({</span><span class="na">a</span><span class="p">:</span> <span class="p">{</span><span class="na">b</span><span class="p">:</span> <span class="p">[{</span><span class="na">x</span><span class="p">:</span> <span class="mi">1</span><span class="p">}]}},</span> <span class="p">{</span><span class="s1">'a.b[0]'</span><span class="p">:</span> <span class="p">{</span><span class="na">x</span><span class="p">:</span> <span class="mi">1</span><span class="p">}});</span>
 <span class="nx">assert</span><span class="p">.</span><span class="nx">deepNestedInclude</span><span class="p">({</span><span class="s1">'.a'</span><span class="p">:</span> <span class="p">{</span><span class="s1">'[b]'</span><span class="p">:</span> <span class="p">{</span><span class="na">x</span><span class="p">:</span> <span class="mi">1</span><span class="p">}}},</span> <span class="p">{</span><span class="s1">'\\.a.\\[b\\]'</span><span class="p">:</span> <span class="p">{</span><span class="na">x</span><span class="p">:</span> <span class="mi">1</span><span class="p">}});</span>
 </code></pre>
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Object} haystack</li>
-<li>{Object} needle</li>
-<li>{String} message</li>
-</ul>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>haystack</td>
+<td>Object</td>
+</tr>
+<tr>
+<td>needle</td>
+<td>Object</td>
+</tr>
+<tr>
+<td>message</td>
+<td>String</td>
+</tr>
+</tbody></table>
 
 <h3 id="notdeepnestedinclude">notDeepNestedInclude</h3>
 
@@ -1126,13 +1653,25 @@ properties.
 <pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">notDeepNestedInclude</span><span class="p">({</span><span class="na">a</span><span class="p">:</span> <span class="p">{</span><span class="na">b</span><span class="p">:</span> <span class="p">[{</span><span class="na">x</span><span class="p">:</span> <span class="mi">1</span><span class="p">}]}},</span> <span class="p">{</span><span class="s1">'a.b[0]'</span><span class="p">:</span> <span class="p">{</span><span class="na">y</span><span class="p">:</span> <span class="mi">1</span><span class="p">}})</span>
 <span class="nx">assert</span><span class="p">.</span><span class="nx">notDeepNestedInclude</span><span class="p">({</span><span class="s1">'.a'</span><span class="p">:</span> <span class="p">{</span><span class="s1">'[b]'</span><span class="p">:</span> <span class="p">{</span><span class="na">x</span><span class="p">:</span> <span class="mi">1</span><span class="p">}}},</span> <span class="p">{</span><span class="s1">'\\.a.\\[b\\]'</span><span class="p">:</span> <span class="p">{</span><span class="na">y</span><span class="p">:</span> <span class="mi">2</span><span class="p">}});</span>
 </code></pre>
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Object} haystack</li>
-<li>{Object} needle</li>
-<li>{String} message</li>
-</ul>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>haystack</td>
+<td>Object</td>
+</tr>
+<tr>
+<td>needle</td>
+<td>Object</td>
+</tr>
+<tr>
+<td>message</td>
+<td>String</td>
+</tr>
+</tbody></table>
 
 <h3 id="owninclude">ownInclude</h3>
 
@@ -1143,13 +1682,25 @@ Can be used to assert the inclusion of a subset of properties in an
 object while ignoring inherited properties.</p>
 <pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">ownInclude</span><span class="p">({</span> <span class="na">a</span><span class="p">:</span> <span class="mi">1</span> <span class="p">},</span> <span class="p">{</span> <span class="na">a</span><span class="p">:</span> <span class="mi">1</span> <span class="p">});</span>
 </code></pre>
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Object} haystack</li>
-<li>{Object} needle</li>
-<li>{String} message</li>
-</ul>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>haystack</td>
+<td>Object</td>
+</tr>
+<tr>
+<td>needle</td>
+<td>Object</td>
+</tr>
+<tr>
+<td>message</td>
+<td>String</td>
+</tr>
+</tbody></table>
 
 <h3 id="notowninclude">notOwnInclude</h3>
 
@@ -1162,13 +1713,25 @@ object while ignoring inherited properties.</p>
 
 <span class="nx">assert</span><span class="p">.</span><span class="nx">notOwnInclude</span><span class="p">({</span> <span class="na">a</span><span class="p">:</span> <span class="mi">1</span> <span class="p">},</span> <span class="p">{</span> <span class="na">b</span><span class="p">:</span> <span class="mi">2</span> <span class="p">});</span>
 </code></pre>
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Object} haystack</li>
-<li>{Object} needle</li>
-<li>{String} message</li>
-</ul>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>haystack</td>
+<td>Object</td>
+</tr>
+<tr>
+<td>needle</td>
+<td>Object</td>
+</tr>
+<tr>
+<td>message</td>
+<td>String</td>
+</tr>
+</tbody></table>
 
 <h3 id="deepowninclude">deepOwnInclude</h3>
 
@@ -1179,13 +1742,25 @@ Can be used to assert the inclusion of a subset of properties in an
 object while ignoring inherited properties and checking for deep equality.</p>
 <pre class="highlight javascript tab-javascript"><code> <span class="nx">assert</span><span class="p">.</span><span class="nx">deepOwnInclude</span><span class="p">({</span><span class="na">a</span><span class="p">:</span> <span class="p">{</span><span class="na">b</span><span class="p">:</span> <span class="mi">2</span><span class="p">}},</span> <span class="p">{</span><span class="na">a</span><span class="p">:</span> <span class="p">{</span><span class="na">b</span><span class="p">:</span> <span class="mi">2</span><span class="p">}});</span>
 </code></pre>
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Object} haystack</li>
-<li>{Object} needle</li>
-<li>{String} message</li>
-</ul>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>haystack</td>
+<td>Object</td>
+</tr>
+<tr>
+<td>needle</td>
+<td>Object</td>
+</tr>
+<tr>
+<td>message</td>
+<td>String</td>
+</tr>
+</tbody></table>
 
 <h3 id="notdeepowninclude">notDeepOwnInclude</h3>
 
@@ -1196,13 +1771,25 @@ Can be used to assert the absence of a subset of properties in an
 object while ignoring inherited properties and checking for deep equality.</p>
 <pre class="highlight javascript tab-javascript"><code> <span class="nx">assert</span><span class="p">.</span><span class="nx">notDeepOwnInclude</span><span class="p">({</span><span class="na">a</span><span class="p">:</span> <span class="p">{</span><span class="na">b</span><span class="p">:</span> <span class="mi">2</span><span class="p">}},</span> <span class="p">{</span><span class="na">a</span><span class="p">:</span> <span class="p">{</span><span class="na">c</span><span class="p">:</span> <span class="mi">3</span><span class="p">}});</span>
 </code></pre>
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Object} haystack</li>
-<li>{Object} needle</li>
-<li>{String} message</li>
-</ul>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>haystack</td>
+<td>Object</td>
+</tr>
+<tr>
+<td>needle</td>
+<td>Object</td>
+</tr>
+<tr>
+<td>message</td>
+<td>String</td>
+</tr>
+</tbody></table>
 
 <h2 id="regex-tests">Regex Tests</h2>
 
@@ -1213,13 +1800,25 @@ object while ignoring inherited properties and checking for deep equality.</p>
 <p>Asserts that <code class="prettyprint">value</code> matches the regular expression <code class="prettyprint">regexp</code>.</p>
 <pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">match</span><span class="p">(</span><span class="s1">'foobar'</span><span class="p">,</span> <span class="sr">/^foo/</span><span class="p">,</span> <span class="s1">'regexp matches'</span><span class="p">);</span>
 </code></pre>
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Mixed} value</li>
-<li>{RegExp} regexp</li>
-<li>{String} message</li>
-</ul>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>value</td>
+<td>Mixed</td>
+</tr>
+<tr>
+<td>regexp</td>
+<td>RegExp</td>
+</tr>
+<tr>
+<td>message</td>
+<td>String</td>
+</tr>
+</tbody></table>
 
 <h3 id="notmatch">notMatch</h3>
 
@@ -1228,13 +1827,25 @@ object while ignoring inherited properties and checking for deep equality.</p>
 <p>Asserts that <code class="prettyprint">value</code> does not match the regular expression <code class="prettyprint">regexp</code>.</p>
 <pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">notMatch</span><span class="p">(</span><span class="s1">'foobar'</span><span class="p">,</span> <span class="sr">/^foo/</span><span class="p">,</span> <span class="s1">'regexp does not match'</span><span class="p">);</span>
 </code></pre>
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Mixed} value</li>
-<li>{RegExp} regexp</li>
-<li>{String} message</li>
-</ul>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>value</td>
+<td>Mixed</td>
+</tr>
+<tr>
+<td>regexp</td>
+<td>RegExp</td>
+</tr>
+<tr>
+<td>message</td>
+<td>String</td>
+</tr>
+</tbody></table>
 
 <h2 id="object-property-tests">Object Property Tests</h2>
 
@@ -1247,13 +1858,25 @@ object while ignoring inherited properties and checking for deep equality.</p>
 <pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">property</span><span class="p">({</span> <span class="na">tea</span><span class="p">:</span> <span class="p">{</span> <span class="na">green</span><span class="p">:</span> <span class="s1">'matcha'</span> <span class="p">}},</span> <span class="s1">'tea'</span><span class="p">);</span>
 <span class="nx">assert</span><span class="p">.</span><span class="nx">property</span><span class="p">({</span> <span class="na">tea</span><span class="p">:</span> <span class="p">{</span> <span class="na">green</span><span class="p">:</span> <span class="s1">'matcha'</span> <span class="p">}},</span> <span class="s1">'toString'</span><span class="p">);</span>
 </code></pre>
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Object} object</li>
-<li>{String} property</li>
-<li>{String} message</li>
-</ul>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>object</td>
+<td>Object</td>
+</tr>
+<tr>
+<td>property</td>
+<td>String</td>
+</tr>
+<tr>
+<td>message</td>
+<td>String</td>
+</tr>
+</tbody></table>
 
 <h3 id="notproperty">notProperty</h3>
 
@@ -1263,13 +1886,25 @@ object while ignoring inherited properties and checking for deep equality.</p>
 by <code class="prettyprint">property</code>.</p>
 <pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">notProperty</span><span class="p">({</span> <span class="na">tea</span><span class="p">:</span> <span class="p">{</span> <span class="na">green</span><span class="p">:</span> <span class="s1">'matcha'</span> <span class="p">}},</span> <span class="s1">'coffee'</span><span class="p">);</span>
 </code></pre>
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Object} object</li>
-<li>{String} property</li>
-<li>{String} message</li>
-</ul>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>object</td>
+<td>Object</td>
+</tr>
+<tr>
+<td>property</td>
+<td>String</td>
+</tr>
+<tr>
+<td>message</td>
+<td>String</td>
+</tr>
+</tbody></table>
 
 <h3 id="propertyval">propertyVal</h3>
 
@@ -1280,14 +1915,29 @@ by <code class="prettyprint">property</code>.</p>
 (===).</p>
 <pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">propertyVal</span><span class="p">({</span> <span class="na">tea</span><span class="p">:</span> <span class="s1">'is good'</span> <span class="p">},</span> <span class="s1">'tea'</span><span class="p">,</span> <span class="s1">'is good'</span><span class="p">);</span>
 </code></pre>
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Object} object</li>
-<li>{String} property</li>
-<li>{Mixed} value</li>
-<li>{String} message</li>
-</ul>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>object</td>
+<td>Object</td>
+</tr>
+<tr>
+<td>property</td>
+<td>String</td>
+</tr>
+<tr>
+<td>value</td>
+<td>Mixed</td>
+</tr>
+<tr>
+<td>message</td>
+<td>String</td>
+</tr>
+</tbody></table>
 
 <h3 id="notpropertyval">notPropertyVal</h3>
 
@@ -1299,14 +1949,29 @@ by <code class="prettyprint">property</code> with value given by <code class="pr
 <pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">notPropertyVal</span><span class="p">({</span> <span class="na">tea</span><span class="p">:</span> <span class="s1">'is good'</span> <span class="p">},</span> <span class="s1">'tea'</span><span class="p">,</span> <span class="s1">'is bad'</span><span class="p">);</span>
 <span class="nx">assert</span><span class="p">.</span><span class="nx">notPropertyVal</span><span class="p">({</span> <span class="na">tea</span><span class="p">:</span> <span class="s1">'is good'</span> <span class="p">},</span> <span class="s1">'coffee'</span><span class="p">,</span> <span class="s1">'is good'</span><span class="p">);</span>
 </code></pre>
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Object} object</li>
-<li>{String} property</li>
-<li>{Mixed} value</li>
-<li>{String} message</li>
-</ul>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>object</td>
+<td>Object</td>
+</tr>
+<tr>
+<td>property</td>
+<td>String</td>
+</tr>
+<tr>
+<td>value</td>
+<td>Mixed</td>
+</tr>
+<tr>
+<td>message</td>
+<td>String</td>
+</tr>
+</tbody></table>
 
 <h3 id="deeppropertyval">deepPropertyVal</h3>
 
@@ -1316,14 +1981,29 @@ by <code class="prettyprint">property</code> with value given by <code class="pr
 <code class="prettyprint">property</code> with a value given by <code class="prettyprint">value</code>. Uses a deep equality check.</p>
 <pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">deepPropertyVal</span><span class="p">({</span> <span class="na">tea</span><span class="p">:</span> <span class="p">{</span> <span class="na">green</span><span class="p">:</span> <span class="s1">'matcha'</span> <span class="p">}</span> <span class="p">},</span> <span class="s1">'tea'</span><span class="p">,</span> <span class="p">{</span> <span class="na">green</span><span class="p">:</span> <span class="s1">'matcha'</span> <span class="p">});</span>
 </code></pre>
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Object} object</li>
-<li>{String} property</li>
-<li>{Mixed} value</li>
-<li>{String} message</li>
-</ul>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>object</td>
+<td>Object</td>
+</tr>
+<tr>
+<td>property</td>
+<td>String</td>
+</tr>
+<tr>
+<td>value</td>
+<td>Mixed</td>
+</tr>
+<tr>
+<td>message</td>
+<td>String</td>
+</tr>
+</tbody></table>
 
 <h3 id="notdeeppropertyval">notDeepPropertyVal</h3>
 
@@ -1335,14 +2015,29 @@ by <code class="prettyprint">property</code> with value given by <code class="pr
 <span class="nx">assert</span><span class="p">.</span><span class="nx">notDeepPropertyVal</span><span class="p">({</span> <span class="na">tea</span><span class="p">:</span> <span class="p">{</span> <span class="na">green</span><span class="p">:</span> <span class="s1">'matcha'</span> <span class="p">}</span> <span class="p">},</span> <span class="s1">'tea'</span><span class="p">,</span> <span class="p">{</span> <span class="na">green</span><span class="p">:</span> <span class="s1">'oolong'</span> <span class="p">});</span>
     <span class="nx">assert</span><span class="p">.</span><span class="nx">notDeepPropertyVal</span><span class="p">({</span> <span class="na">tea</span><span class="p">:</span> <span class="p">{</span> <span class="na">green</span><span class="p">:</span> <span class="s1">'matcha'</span> <span class="p">}</span> <span class="p">},</span> <span class="s1">'coffee'</span><span class="p">,</span> <span class="p">{</span> <span class="na">green</span><span class="p">:</span> <span class="s1">'matcha'</span> <span class="p">});</span>
 </code></pre>
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Object} object</li>
-<li>{String} property</li>
-<li>{Mixed} value</li>
-<li>{String} message</li>
-</ul>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>object</td>
+<td>Object</td>
+</tr>
+<tr>
+<td>property</td>
+<td>String</td>
+</tr>
+<tr>
+<td>value</td>
+<td>Mixed</td>
+</tr>
+<tr>
+<td>message</td>
+<td>String</td>
+</tr>
+</tbody></table>
 
 <h3 id="nestedproperty">nestedProperty</h3>
 
@@ -1353,13 +2048,25 @@ by <code class="prettyprint">property</code> with value given by <code class="pr
 nested reference.</p>
 <pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">nestedProperty</span><span class="p">({</span> <span class="na">tea</span><span class="p">:</span> <span class="p">{</span> <span class="na">green</span><span class="p">:</span> <span class="s1">'matcha'</span> <span class="p">}},</span> <span class="s1">'tea.green'</span><span class="p">);</span>
 </code></pre>
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Object} object</li>
-<li>{String} property</li>
-<li>{String} message</li>
-</ul>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>object</td>
+<td>Object</td>
+</tr>
+<tr>
+<td>property</td>
+<td>String</td>
+</tr>
+<tr>
+<td>message</td>
+<td>String</td>
+</tr>
+</tbody></table>
 
 <h3 id="notnestedproperty">notNestedProperty</h3>
 
@@ -1370,13 +2077,25 @@ can be a string using dot- and bracket-notation for nested reference. The
 property cannot exist on the object nor anywhere in its prototype chain.</p>
 <pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">notNestedProperty</span><span class="p">({</span> <span class="na">tea</span><span class="p">:</span> <span class="p">{</span> <span class="na">green</span><span class="p">:</span> <span class="s1">'matcha'</span> <span class="p">}},</span> <span class="s1">'tea.oolong'</span><span class="p">);</span>
 </code></pre>
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Object} object</li>
-<li>{String} property</li>
-<li>{String} message</li>
-</ul>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>object</td>
+<td>Object</td>
+</tr>
+<tr>
+<td>property</td>
+<td>String</td>
+</tr>
+<tr>
+<td>message</td>
+<td>String</td>
+</tr>
+</tbody></table>
 
 <h3 id="nestedpropertyval">nestedPropertyVal</h3>
 
@@ -1387,14 +2106,29 @@ by <code class="prettyprint">value</code>. <code class="prettyprint">property</c
 reference. Uses a strict equality check (===).</p>
 <pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">nestedPropertyVal</span><span class="p">({</span> <span class="na">tea</span><span class="p">:</span> <span class="p">{</span> <span class="na">green</span><span class="p">:</span> <span class="s1">'matcha'</span> <span class="p">}},</span> <span class="s1">'tea.green'</span><span class="p">,</span> <span class="s1">'matcha'</span><span class="p">);</span>
 </code></pre>
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Object} object</li>
-<li>{String} property</li>
-<li>{Mixed} value</li>
-<li>{String} message</li>
-</ul>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>object</td>
+<td>Object</td>
+</tr>
+<tr>
+<td>property</td>
+<td>String</td>
+</tr>
+<tr>
+<td>value</td>
+<td>Mixed</td>
+</tr>
+<tr>
+<td>message</td>
+<td>String</td>
+</tr>
+</tbody></table>
 
 <h3 id="notnestedpropertyval">notNestedPropertyVal</h3>
 
@@ -1406,14 +2140,29 @@ nested reference. Uses a strict equality check (===).</p>
 <pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">notNestedPropertyVal</span><span class="p">({</span> <span class="na">tea</span><span class="p">:</span> <span class="p">{</span> <span class="na">green</span><span class="p">:</span> <span class="s1">'matcha'</span> <span class="p">}},</span> <span class="s1">'tea.green'</span><span class="p">,</span> <span class="s1">'konacha'</span><span class="p">);</span>
 <span class="nx">assert</span><span class="p">.</span><span class="nx">notNestedPropertyVal</span><span class="p">({</span> <span class="na">tea</span><span class="p">:</span> <span class="p">{</span> <span class="na">green</span><span class="p">:</span> <span class="s1">'matcha'</span> <span class="p">}},</span> <span class="s1">'coffee.green'</span><span class="p">,</span> <span class="s1">'matcha'</span><span class="p">);</span>
 </code></pre>
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Object} object</li>
-<li>{String} property</li>
-<li>{Mixed} value</li>
-<li>{String} message</li>
-</ul>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>object</td>
+<td>Object</td>
+</tr>
+<tr>
+<td>property</td>
+<td>String</td>
+</tr>
+<tr>
+<td>value</td>
+<td>Mixed</td>
+</tr>
+<tr>
+<td>message</td>
+<td>String</td>
+</tr>
+</tbody></table>
 
 <h3 id="deepnestedpropertyval">deepNestedPropertyVal</h3>
 
@@ -1424,14 +2173,29 @@ by <code class="prettyprint">value</code>. <code class="prettyprint">property</c
 reference. Uses a deep equality check.</p>
 <pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">deepNestedPropertyVal</span><span class="p">({</span> <span class="na">tea</span><span class="p">:</span> <span class="p">{</span> <span class="na">green</span><span class="p">:</span> <span class="p">{</span> <span class="na">matcha</span><span class="p">:</span> <span class="s1">'yum'</span> <span class="p">}</span> <span class="p">}</span> <span class="p">},</span> <span class="s1">'tea.green'</span><span class="p">,</span> <span class="p">{</span> <span class="na">matcha</span><span class="p">:</span> <span class="s1">'yum'</span> <span class="p">});</span>
 </code></pre>
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Object} object</li>
-<li>{String} property</li>
-<li>{Mixed} value</li>
-<li>{String} message</li>
-</ul>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>object</td>
+<td>Object</td>
+</tr>
+<tr>
+<td>property</td>
+<td>String</td>
+</tr>
+<tr>
+<td>value</td>
+<td>Mixed</td>
+</tr>
+<tr>
+<td>message</td>
+<td>String</td>
+</tr>
+</tbody></table>
 
 <h3 id="notdeepnestedpropertyval">notDeepNestedPropertyVal</h3>
 
@@ -1444,14 +2208,29 @@ nested reference. Uses a deep equality check.</p>
 <span class="nx">assert</span><span class="p">.</span><span class="nx">notDeepNestedPropertyVal</span><span class="p">({</span> <span class="na">tea</span><span class="p">:</span> <span class="p">{</span> <span class="na">green</span><span class="p">:</span> <span class="p">{</span> <span class="na">matcha</span><span class="p">:</span> <span class="s1">'yum'</span> <span class="p">}</span> <span class="p">}</span> <span class="p">},</span> <span class="s1">'tea.green'</span><span class="p">,</span> <span class="p">{</span> <span class="na">matcha</span><span class="p">:</span> <span class="s1">'yuck'</span> <span class="p">});</span>
     <span class="nx">assert</span><span class="p">.</span><span class="nx">notDeepNestedPropertyVal</span><span class="p">({</span> <span class="na">tea</span><span class="p">:</span> <span class="p">{</span> <span class="na">green</span><span class="p">:</span> <span class="p">{</span> <span class="na">matcha</span><span class="p">:</span> <span class="s1">'yum'</span> <span class="p">}</span> <span class="p">}</span> <span class="p">},</span> <span class="s1">'tea.black'</span><span class="p">,</span> <span class="p">{</span> <span class="na">matcha</span><span class="p">:</span> <span class="s1">'yum'</span> <span class="p">});</span>
 </code></pre>
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Object} object</li>
-<li>{String} property</li>
-<li>{Mixed} value</li>
-<li>{String} message</li>
-</ul>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>object</td>
+<td>Object</td>
+</tr>
+<tr>
+<td>property</td>
+<td>String</td>
+</tr>
+<tr>
+<td>value</td>
+<td>Mixed</td>
+</tr>
+<tr>
+<td>message</td>
+<td>String</td>
+</tr>
+</tbody></table>
 
 <h2 id="object-key-tests">Object Key Tests</h2>
 
@@ -1467,13 +2246,25 @@ will be used as the expected set of keys.</p>
     <span class="nx">assert</span><span class="p">.</span><span class="nx">hasAnyKey</span><span class="p">(</span><span class="k">new</span> <span class="nx">Map</span><span class="p">([[{</span><span class="na">foo</span><span class="p">:</span> <span class="mi">1</span><span class="p">},</span> <span class="s1">'bar'</span><span class="p">],</span> <span class="p">[</span><span class="s1">'key'</span><span class="p">,</span> <span class="s1">'value'</span><span class="p">]]),</span> <span class="p">[{</span><span class="na">foo</span><span class="p">:</span> <span class="mi">1</span><span class="p">},</span> <span class="s1">'thisKeyDoesNotExist'</span><span class="p">]);</span>
     <span class="nx">assert</span><span class="p">.</span><span class="nx">hasAnyKey</span><span class="p">(</span><span class="k">new</span> <span class="nx">Set</span><span class="p">([{</span><span class="na">foo</span><span class="p">:</span> <span class="s1">'bar'</span><span class="p">},</span> <span class="s1">'anotherKey'</span><span class="p">],</span> <span class="p">[{</span><span class="na">foo</span><span class="p">:</span> <span class="s1">'bar'</span><span class="p">},</span> <span class="s1">'thisKeyDoesNotExist'</span><span class="p">]);</span>
 </code></pre>
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Mixed} object</li>
-<li>{Array|Object} keys</li>
-<li>{String} message</li>
-</ul>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>object</td>
+<td>Mixed</td>
+</tr>
+<tr>
+<td>keys</td>
+<td>Array</td>
+</tr>
+<tr>
+<td>message</td>
+<td>String</td>
+</tr>
+</tbody></table>
 
 <h3 id="hasallkeys">hasAllKeys</h3>
 
@@ -1487,13 +2278,25 @@ will be used as the expected set of keys.</p>
     <span class="nx">assert</span><span class="p">.</span><span class="nx">hasAllKeys</span><span class="p">(</span><span class="k">new</span> <span class="nx">Map</span><span class="p">([[{</span><span class="na">foo</span><span class="p">:</span> <span class="mi">1</span><span class="p">},</span> <span class="s1">'bar'</span><span class="p">],</span> <span class="p">[</span><span class="s1">'key'</span><span class="p">,</span> <span class="s1">'value'</span><span class="p">]]),</span> <span class="p">[{</span><span class="na">foo</span><span class="p">:</span> <span class="mi">1</span><span class="p">},</span> <span class="s1">'key'</span><span class="p">]);</span>
     <span class="nx">assert</span><span class="p">.</span><span class="nx">hasAllKeys</span><span class="p">(</span><span class="k">new</span> <span class="nx">Set</span><span class="p">([{</span><span class="na">foo</span><span class="p">:</span> <span class="s1">'bar'</span><span class="p">},</span> <span class="s1">'anotherKey'</span><span class="p">],</span> <span class="p">[{</span><span class="na">foo</span><span class="p">:</span> <span class="s1">'bar'</span><span class="p">},</span> <span class="s1">'anotherKey'</span><span class="p">]);</span>
 </code></pre>
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Mixed} object</li>
-<li>{String[]} keys</li>
-<li>{String} message</li>
-</ul>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>object</td>
+<td>Mixed</td>
+</tr>
+<tr>
+<td>keys</td>
+<td>String[]</td>
+</tr>
+<tr>
+<td>message</td>
+<td>String</td>
+</tr>
+</tbody></table>
 
 <h3 id="containsallkeys">containsAllKeys</h3>
 
@@ -1511,13 +2314,25 @@ will be used as the expected set of keys.</p>
     <span class="nx">assert</span><span class="p">.</span><span class="nx">containsAllKeys</span><span class="p">(</span><span class="k">new</span> <span class="nx">Set</span><span class="p">([{</span><span class="na">foo</span><span class="p">:</span> <span class="s1">'bar'</span><span class="p">},</span> <span class="s1">'anotherKey'</span><span class="p">],</span> <span class="p">[{</span><span class="na">foo</span><span class="p">:</span> <span class="s1">'bar'</span><span class="p">}]);</span>
     <span class="nx">assert</span><span class="p">.</span><span class="nx">containsAllKeys</span><span class="p">(</span><span class="k">new</span> <span class="nx">Set</span><span class="p">([{</span><span class="na">foo</span><span class="p">:</span> <span class="s1">'bar'</span><span class="p">},</span> <span class="s1">'anotherKey'</span><span class="p">],</span> <span class="p">[{</span><span class="na">foo</span><span class="p">:</span> <span class="s1">'bar'</span><span class="p">},</span> <span class="s1">'anotherKey'</span><span class="p">]);</span>
 </code></pre>
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Mixed} object</li>
-<li>{String[]} keys</li>
-<li>{String} message</li>
-</ul>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>object</td>
+<td>Mixed</td>
+</tr>
+<tr>
+<td>keys</td>
+<td>String[]</td>
+</tr>
+<tr>
+<td>message</td>
+<td>String</td>
+</tr>
+</tbody></table>
 
 <h3 id="doesnothaveanykeys">doesNotHaveAnyKeys</h3>
 
@@ -1531,13 +2346,25 @@ will be used as the expected set of keys.</p>
     <span class="nx">assert</span><span class="p">.</span><span class="nx">doesNotHaveAnyKeys</span><span class="p">(</span><span class="k">new</span> <span class="nx">Map</span><span class="p">([[{</span><span class="na">foo</span><span class="p">:</span> <span class="mi">1</span><span class="p">},</span> <span class="s1">'bar'</span><span class="p">],</span> <span class="p">[</span><span class="s1">'key'</span><span class="p">,</span> <span class="s1">'value'</span><span class="p">]]),</span> <span class="p">[{</span><span class="na">one</span><span class="p">:</span> <span class="s1">'two'</span><span class="p">},</span> <span class="s1">'example'</span><span class="p">]);</span>
     <span class="nx">assert</span><span class="p">.</span><span class="nx">doesNotHaveAnyKeys</span><span class="p">(</span><span class="k">new</span> <span class="nx">Set</span><span class="p">([{</span><span class="na">foo</span><span class="p">:</span> <span class="s1">'bar'</span><span class="p">},</span> <span class="s1">'anotherKey'</span><span class="p">],</span> <span class="p">[{</span><span class="na">one</span><span class="p">:</span> <span class="s1">'two'</span><span class="p">},</span> <span class="s1">'example'</span><span class="p">]);</span>
 </code></pre>
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Mixed} object</li>
-<li>{String[]} keys</li>
-<li>{String} message</li>
-</ul>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>object</td>
+<td>Mixed</td>
+</tr>
+<tr>
+<td>keys</td>
+<td>String[]</td>
+</tr>
+<tr>
+<td>message</td>
+<td>String</td>
+</tr>
+</tbody></table>
 
 <h3 id="doesnothaveallkeys">doesNotHaveAllKeys</h3>
 
@@ -1551,13 +2378,25 @@ will be used as the expected set of keys.</p>
     <span class="nx">assert</span><span class="p">.</span><span class="nx">doesNotHaveAllKeys</span><span class="p">(</span><span class="k">new</span> <span class="nx">Map</span><span class="p">([[{</span><span class="na">foo</span><span class="p">:</span> <span class="mi">1</span><span class="p">},</span> <span class="s1">'bar'</span><span class="p">],</span> <span class="p">[</span><span class="s1">'key'</span><span class="p">,</span> <span class="s1">'value'</span><span class="p">]]),</span> <span class="p">[{</span><span class="na">one</span><span class="p">:</span> <span class="s1">'two'</span><span class="p">},</span> <span class="s1">'example'</span><span class="p">]);</span>
     <span class="nx">assert</span><span class="p">.</span><span class="nx">doesNotHaveAllKeys</span><span class="p">(</span><span class="k">new</span> <span class="nx">Set</span><span class="p">([{</span><span class="na">foo</span><span class="p">:</span> <span class="s1">'bar'</span><span class="p">},</span> <span class="s1">'anotherKey'</span><span class="p">],</span> <span class="p">[{</span><span class="na">one</span><span class="p">:</span> <span class="s1">'two'</span><span class="p">},</span> <span class="s1">'example'</span><span class="p">]);</span>
 </code></pre>
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Mixed} object</li>
-<li>{String[]} keys</li>
-<li>{String} message</li>
-</ul>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>object</td>
+<td>Mixed</td>
+</tr>
+<tr>
+<td>keys</td>
+<td>String[]</td>
+</tr>
+<tr>
+<td>message</td>
+<td>String</td>
+</tr>
+</tbody></table>
 
 <h3 id="doesnothaveallkeys">doesNotHaveAllKeys</h3>
 
@@ -1575,13 +2414,25 @@ will be used as the expected set of keys.</p>
 <span class="nx">assert</span><span class="p">.</span><span class="nx">hasAnyDeepKeys</span><span class="p">(</span><span class="k">new</span> <span class="nx">Set</span><span class="p">([{</span><span class="na">one</span><span class="p">:</span> <span class="s1">'one'</span><span class="p">},</span> <span class="p">{</span><span class="na">two</span><span class="p">:</span> <span class="s1">'two'</span><span class="p">}]),</span> <span class="p">[{</span><span class="na">one</span><span class="p">:</span> <span class="s1">'one'</span><span class="p">},</span> <span class="p">{</span><span class="na">three</span><span class="p">:</span> <span class="s1">'three'</span><span class="p">}]);</span>
 <span class="nx">assert</span><span class="p">.</span><span class="nx">hasAnyDeepKeys</span><span class="p">(</span><span class="k">new</span> <span class="nx">Set</span><span class="p">([{</span><span class="na">one</span><span class="p">:</span> <span class="s1">'one'</span><span class="p">},</span> <span class="p">{</span><span class="na">two</span><span class="p">:</span> <span class="s1">'two'</span><span class="p">}]),</span> <span class="p">[{</span><span class="na">one</span><span class="p">:</span> <span class="s1">'one'</span><span class="p">},</span> <span class="p">{</span><span class="na">two</span><span class="p">:</span> <span class="s1">'two'</span><span class="p">}]);</span>
 </code></pre>
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Mixed} object</li>
-<li>{Array|Object} keys</li>
-<li>{String} message</li>
-</ul>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>object</td>
+<td>Mixed</td>
+</tr>
+<tr>
+<td>keys</td>
+<td>Array</td>
+</tr>
+<tr>
+<td>message</td>
+<td>String</td>
+</tr>
+</tbody></table>
 
 <h3 id="hasalldeepkeys">hasAllDeepKeys</h3>
 
@@ -1597,13 +2448,25 @@ will be used as the expected set of keys.</p>
     <span class="nx">assert</span><span class="p">.</span><span class="nx">hasAllDeepKeys</span><span class="p">(</span><span class="k">new</span> <span class="nx">Set</span><span class="p">([{</span><span class="na">one</span><span class="p">:</span> <span class="s1">'one'</span><span class="p">}]),</span> <span class="p">{</span><span class="na">one</span><span class="p">:</span> <span class="s1">'one'</span><span class="p">});</span>
     <span class="nx">assert</span><span class="p">.</span><span class="nx">hasAllDeepKeys</span><span class="p">(</span><span class="k">new</span> <span class="nx">Set</span><span class="p">([{</span><span class="na">one</span><span class="p">:</span> <span class="s1">'one'</span><span class="p">},</span> <span class="p">{</span><span class="na">two</span><span class="p">:</span> <span class="s1">'two'</span><span class="p">}]),</span> <span class="p">[{</span><span class="na">one</span><span class="p">:</span> <span class="s1">'one'</span><span class="p">},</span> <span class="p">{</span><span class="na">two</span><span class="p">:</span> <span class="s1">'two'</span><span class="p">}]);</span>
 </code></pre>
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Mixed} object</li>
-<li>{Array|Object} keys</li>
-<li>{String} message</li>
-</ul>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>object</td>
+<td>Mixed</td>
+</tr>
+<tr>
+<td>keys</td>
+<td>Array</td>
+</tr>
+<tr>
+<td>message</td>
+<td>String</td>
+</tr>
+</tbody></table>
 
 <h3 id="containsalldeepkeys">containsAllDeepKeys</h3>
 
@@ -1619,13 +2482,25 @@ will be used as the expected set of keys.</p>
     <span class="nx">assert</span><span class="p">.</span><span class="nx">containsAllDeepKeys</span><span class="p">(</span><span class="k">new</span> <span class="nx">Set</span><span class="p">([{</span><span class="na">one</span><span class="p">:</span> <span class="s1">'one'</span><span class="p">},</span> <span class="p">{</span><span class="na">two</span><span class="p">:</span> <span class="s1">'two'</span><span class="p">}]),</span> <span class="p">{</span><span class="na">one</span><span class="p">:</span> <span class="s1">'one'</span><span class="p">});</span>
     <span class="nx">assert</span><span class="p">.</span><span class="nx">containsAllDeepKeys</span><span class="p">(</span><span class="k">new</span> <span class="nx">Set</span><span class="p">([{</span><span class="na">one</span><span class="p">:</span> <span class="s1">'one'</span><span class="p">},</span> <span class="p">{</span><span class="na">two</span><span class="p">:</span> <span class="s1">'two'</span><span class="p">}]),</span> <span class="p">[{</span><span class="na">one</span><span class="p">:</span> <span class="s1">'one'</span><span class="p">},</span> <span class="p">{</span><span class="na">two</span><span class="p">:</span> <span class="s1">'two'</span><span class="p">}]);</span>
 </code></pre>
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Mixed} object</li>
-<li>{Array|Object} keys</li>
-<li>{String} message</li>
-</ul>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>object</td>
+<td>Mixed</td>
+</tr>
+<tr>
+<td>keys</td>
+<td>Array</td>
+</tr>
+<tr>
+<td>message</td>
+<td>String</td>
+</tr>
+</tbody></table>
 
 <h3 id="doesnothaveanydeepkeys">doesNotHaveAnyDeepKeys</h3>
 
@@ -1641,13 +2516,25 @@ will be used as the expected set of keys.</p>
     <span class="nx">assert</span><span class="p">.</span><span class="nx">doesNotHaveAnyDeepKeys</span><span class="p">(</span><span class="k">new</span> <span class="nx">Set</span><span class="p">([{</span><span class="na">one</span><span class="p">:</span> <span class="s1">'one'</span><span class="p">},</span> <span class="p">{</span><span class="na">two</span><span class="p">:</span> <span class="s1">'two'</span><span class="p">}]),</span> <span class="p">{</span><span class="na">twenty</span><span class="p">:</span> <span class="s1">'twenty'</span><span class="p">});</span>
     <span class="nx">assert</span><span class="p">.</span><span class="nx">doesNotHaveAnyDeepKeys</span><span class="p">(</span><span class="k">new</span> <span class="nx">Set</span><span class="p">([{</span><span class="na">one</span><span class="p">:</span> <span class="s1">'one'</span><span class="p">},</span> <span class="p">{</span><span class="na">two</span><span class="p">:</span> <span class="s1">'two'</span><span class="p">}]),</span> <span class="p">[{</span><span class="na">twenty</span><span class="p">:</span> <span class="s1">'twenty'</span><span class="p">},</span> <span class="p">{</span><span class="na">fifty</span><span class="p">:</span> <span class="s1">'fifty'</span><span class="p">}]);</span>
 </code></pre>
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Mixed} object</li>
-<li>{Array|Object} keys</li>
-<li>{String} message</li>
-</ul>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>object</td>
+<td>Mixed</td>
+</tr>
+<tr>
+<td>keys</td>
+<td>Array</td>
+</tr>
+<tr>
+<td>message</td>
+<td>String</td>
+</tr>
+</tbody></table>
 
 <h3 id="doesnothavealldeepkeys">doesNotHaveAllDeepKeys</h3>
 
@@ -1663,13 +2550,25 @@ will be used as the expected set of keys.</p>
 <span class="nx">assert</span><span class="p">.</span><span class="nx">doesNotHaveAllDeepKeys</span><span class="p">(</span><span class="k">new</span> <span class="nx">Set</span><span class="p">([{</span><span class="na">one</span><span class="p">:</span> <span class="s1">'one'</span><span class="p">},</span> <span class="p">{</span><span class="na">two</span><span class="p">:</span> <span class="s1">'two'</span><span class="p">}]),</span> <span class="p">{</span><span class="na">twenty</span><span class="p">:</span> <span class="s1">'twenty'</span><span class="p">});</span>
 <span class="nx">assert</span><span class="p">.</span><span class="nx">doesNotHaveAllDeepKeys</span><span class="p">(</span><span class="k">new</span> <span class="nx">Set</span><span class="p">([{</span><span class="na">one</span><span class="p">:</span> <span class="s1">'one'</span><span class="p">},</span> <span class="p">{</span><span class="na">two</span><span class="p">:</span> <span class="s1">'two'</span><span class="p">}]),</span> <span class="p">[{</span><span class="na">one</span><span class="p">:</span> <span class="s1">'one'</span><span class="p">},</span> <span class="p">{</span><span class="na">fifty</span><span class="p">:</span> <span class="s1">'fifty'</span><span class="p">}]);</span>
 </code></pre>
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Mixed} object</li>
-<li>{Array|Object} keys</li>
-<li>{String} message</li>
-</ul>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>object</td>
+<td>Mixed</td>
+</tr>
+<tr>
+<td>keys</td>
+<td>Array</td>
+</tr>
+<tr>
+<td>message</td>
+<td>String</td>
+</tr>
+</tbody></table>
 
 <h2 id="error-tests">Error Tests</h2>
 
@@ -1692,14 +2591,29 @@ message matching <code class="prettyprint">errMsgMatcher</code>.</p>
     <span class="nx">assert</span><span class="p">.</span><span class="kr">throws</span><span class="p">(</span><span class="nx">fn</span><span class="p">,</span> <span class="nx">ReferenceError</span><span class="p">,</span> <span class="sr">/Error thrown must be a ReferenceError and match this/</span><span class="p">);</span>
     <span class="nx">assert</span><span class="p">.</span><span class="kr">throws</span><span class="p">(</span><span class="nx">fn</span><span class="p">,</span> <span class="nx">errorInstance</span><span class="p">,</span> <span class="sr">/Error thrown must be the same errorInstance and match this/</span><span class="p">);</span>
 </code></pre>
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Function} fn</li>
-<li>{ErrorConstructor|Error} errorLike</li>
-<li>{RegExp|String} errMsgMatcher</li>
-<li>{String} message</li>
-</ul>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>fn</td>
+<td>Function</td>
+</tr>
+<tr>
+<td>errorLike</td>
+<td>ErrorConstructor</td>
+</tr>
+<tr>
+<td>errMsgMatcher</td>
+<td>RegExp</td>
+</tr>
+<tr>
+<td>message</td>
+<td>String</td>
+</tr>
+</tbody></table>
 
 <h3 id="doesnotthrow">doesNotThrow</h3>
 
@@ -1720,14 +2634,29 @@ message matching <code class="prettyprint">errMsgMatcher</code>.</p>
     <span class="nx">assert</span><span class="p">.</span><span class="nx">doesNotThrow</span><span class="p">(</span><span class="nx">fn</span><span class="p">,</span> <span class="nb">Error</span><span class="p">,</span> <span class="sr">/Error must not match this/</span><span class="p">);</span>
     <span class="nx">assert</span><span class="p">.</span><span class="nx">doesNotThrow</span><span class="p">(</span><span class="nx">fn</span><span class="p">,</span> <span class="nx">errorInstance</span><span class="p">,</span> <span class="sr">/Error must not match this/</span><span class="p">);</span>
 </code></pre>
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Function} fn</li>
-<li>{ErrorConstructor} errorLike</li>
-<li>{RegExp|String} errMsgMatcher</li>
-<li>{String} message</li>
-</ul>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>fn</td>
+<td>Function</td>
+</tr>
+<tr>
+<td>errorLike</td>
+<td>ErrorConstructor</td>
+</tr>
+<tr>
+<td>errMsgMatcher</td>
+<td>RegExp</td>
+</tr>
+<tr>
+<td>message</td>
+<td>String</td>
+</tr>
+</tbody></table>
 
 <h3 id="iferror">ifError</h3>
 
@@ -1739,11 +2668,17 @@ assert class.</p>
 <pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">err</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Error</span><span class="p">(</span><span class="s1">'I am a custom error'</span><span class="p">);</span>
 <span class="nx">assert</span><span class="p">.</span><span class="nx">ifError</span><span class="p">(</span><span class="nx">err</span><span class="p">);</span> <span class="c1">// Rethrows err!</span>
 </code></pre>
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Object} object</li>
-</ul>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>object</td>
+<td>Object</td>
+</tr>
+</tbody></table>
 
 <h2 id="member-tests">Member Tests</h2>
 
@@ -1755,13 +2690,25 @@ assert class.</p>
 strict equality check (===).</p>
 <pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">sameMembers</span><span class="p">([</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span> <span class="p">],</span> <span class="p">[</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">3</span> <span class="p">],</span> <span class="s1">'same members'</span><span class="p">);</span>
 </code></pre>
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Array} set1</li>
-<li>{Array} set2</li>
-<li>{String} message</li>
-</ul>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>set1</td>
+<td>Array</td>
+</tr>
+<tr>
+<td>set2</td>
+<td>Array</td>
+</tr>
+<tr>
+<td>message</td>
+<td>String</td>
+</tr>
+</tbody></table>
 
 <h3 id="notsamemembers">notSameMembers</h3>
 
@@ -1771,13 +2718,25 @@ strict equality check (===).</p>
 Uses a strict equality check (===).</p>
 <pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">notSameMembers</span><span class="p">([</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span> <span class="p">],</span> <span class="p">[</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">3</span> <span class="p">],</span> <span class="s1">'not same members'</span><span class="p">);</span>
 </code></pre>
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Array} set1</li>
-<li>{Array} set2</li>
-<li>{String} message</li>
-</ul>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>set1</td>
+<td>Array</td>
+</tr>
+<tr>
+<td>set2</td>
+<td>Array</td>
+</tr>
+<tr>
+<td>message</td>
+<td>String</td>
+</tr>
+</tbody></table>
 
 <h3 id="samedeepmembers">sameDeepMembers</h3>
 
@@ -1787,13 +2746,25 @@ Uses a strict equality check (===).</p>
 deep equality check.</p>
 <pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">sameDeepMembers</span><span class="p">([</span> <span class="p">{</span> <span class="na">a</span><span class="p">:</span> <span class="mi">1</span> <span class="p">},</span> <span class="p">{</span> <span class="na">b</span><span class="p">:</span> <span class="mi">2</span> <span class="p">},</span> <span class="p">{</span> <span class="na">c</span><span class="p">:</span> <span class="mi">3</span> <span class="p">}</span> <span class="p">],</span> <span class="p">[{</span> <span class="na">b</span><span class="p">:</span> <span class="mi">2</span> <span class="p">},</span> <span class="p">{</span> <span class="na">a</span><span class="p">:</span> <span class="mi">1</span> <span class="p">},</span> <span class="p">{</span> <span class="na">c</span><span class="p">:</span> <span class="mi">3</span> <span class="p">}],</span> <span class="s1">'same deep members'</span><span class="p">);</span>
 </code></pre>
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Array} set1</li>
-<li>{Array} set2</li>
-<li>{String} message</li>
-</ul>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>set1</td>
+<td>Array</td>
+</tr>
+<tr>
+<td>set2</td>
+<td>Array</td>
+</tr>
+<tr>
+<td>message</td>
+<td>String</td>
+</tr>
+</tbody></table>
 
 <h3 id="notsamedeepmembers">notSameDeepMembers</h3>
 
@@ -1803,13 +2774,25 @@ deep equality check.</p>
 Uses a deep equality check.</p>
 <pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">notSameDeepMembers</span><span class="p">([</span> <span class="p">{</span> <span class="na">a</span><span class="p">:</span> <span class="mi">1</span> <span class="p">},</span> <span class="p">{</span> <span class="na">b</span><span class="p">:</span> <span class="mi">2</span> <span class="p">},</span> <span class="p">{</span> <span class="na">c</span><span class="p">:</span> <span class="mi">3</span> <span class="p">}</span> <span class="p">],</span> <span class="p">[{</span> <span class="na">b</span><span class="p">:</span> <span class="mi">2</span> <span class="p">},</span> <span class="p">{</span> <span class="na">a</span><span class="p">:</span> <span class="mi">1</span> <span class="p">},</span> <span class="p">{</span> <span class="na">f</span><span class="p">:</span> <span class="mi">5</span> <span class="p">}],</span> <span class="s1">'not same deep members'</span><span class="p">);</span>
 </code></pre>
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Array} set1</li>
-<li>{Array} set2</li>
-<li>{String} message</li>
-</ul>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>set1</td>
+<td>Array</td>
+</tr>
+<tr>
+<td>set2</td>
+<td>Array</td>
+</tr>
+<tr>
+<td>message</td>
+<td>String</td>
+</tr>
+</tbody></table>
 
 <h3 id="sameorderedmembers">sameOrderedMembers</h3>
 
@@ -1819,13 +2802,25 @@ Uses a deep equality check.</p>
 Uses a strict equality check (===).</p>
 <pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">sameOrderedMembers</span><span class="p">([</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span> <span class="p">],</span> <span class="p">[</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span> <span class="p">],</span> <span class="s1">'same ordered members'</span><span class="p">);</span>
 </code></pre>
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Array} set1</li>
-<li>{Array} set2</li>
-<li>{String} message</li>
-</ul>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>set1</td>
+<td>Array</td>
+</tr>
+<tr>
+<td>set2</td>
+<td>Array</td>
+</tr>
+<tr>
+<td>message</td>
+<td>String</td>
+</tr>
+</tbody></table>
 
 <h3 id="notsameorderedmembers">notSameOrderedMembers</h3>
 
@@ -1835,13 +2830,25 @@ Uses a strict equality check (===).</p>
 order. Uses a strict equality check (===).</p>
 <pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">notSameOrderedMembers</span><span class="p">([</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span> <span class="p">],</span> <span class="p">[</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">3</span> <span class="p">],</span> <span class="s1">'not same ordered members'</span><span class="p">);</span>
 </code></pre>
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Array} set1</li>
-<li>{Array} set2</li>
-<li>{String} message</li>
-</ul>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>set1</td>
+<td>Array</td>
+</tr>
+<tr>
+<td>set2</td>
+<td>Array</td>
+</tr>
+<tr>
+<td>message</td>
+<td>String</td>
+</tr>
+</tbody></table>
 
 <h3 id="samedeeporderedmembers">sameDeepOrderedMembers</h3>
 
@@ -1851,13 +2858,25 @@ order. Uses a strict equality check (===).</p>
 Uses a deep equality check.</p>
 <pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">sameDeepOrderedMembers</span><span class="p">([</span> <span class="p">{</span> <span class="na">a</span><span class="p">:</span> <span class="mi">1</span> <span class="p">},</span> <span class="p">{</span> <span class="na">b</span><span class="p">:</span> <span class="mi">2</span> <span class="p">},</span> <span class="p">{</span> <span class="na">c</span><span class="p">:</span> <span class="mi">3</span> <span class="p">}</span> <span class="p">],</span> <span class="p">[</span> <span class="p">{</span> <span class="na">a</span><span class="p">:</span> <span class="mi">1</span> <span class="p">},</span> <span class="p">{</span> <span class="na">b</span><span class="p">:</span> <span class="mi">2</span> <span class="p">},</span> <span class="p">{</span> <span class="na">c</span><span class="p">:</span> <span class="mi">3</span> <span class="p">}</span> <span class="p">],</span> <span class="s1">'same deep ordered members'</span><span class="p">);</span>
 </code></pre>
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Array} set1</li>
-<li>{Array} set2</li>
-<li>{String} message</li>
-</ul>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>set1</td>
+<td>Array</td>
+</tr>
+<tr>
+<td>set2</td>
+<td>Array</td>
+</tr>
+<tr>
+<td>message</td>
+<td>String</td>
+</tr>
+</tbody></table>
 
 <h3 id="notsamedeeporderedmembers">notSameDeepOrderedMembers</h3>
 
@@ -1868,13 +2887,25 @@ order. Uses a deep equality check.</p>
 <pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">notSameDeepOrderedMembers</span><span class="p">([</span> <span class="p">{</span> <span class="na">a</span><span class="p">:</span> <span class="mi">1</span> <span class="p">},</span> <span class="p">{</span> <span class="na">b</span><span class="p">:</span> <span class="mi">2</span> <span class="p">},</span> <span class="p">{</span> <span class="na">c</span><span class="p">:</span> <span class="mi">3</span> <span class="p">}</span> <span class="p">],</span> <span class="p">[</span> <span class="p">{</span> <span class="na">a</span><span class="p">:</span> <span class="mi">1</span> <span class="p">},</span> <span class="p">{</span> <span class="na">b</span><span class="p">:</span> <span class="mi">2</span> <span class="p">},</span> <span class="p">{</span> <span class="na">z</span><span class="p">:</span> <span class="mi">5</span> <span class="p">}</span> <span class="p">],</span> <span class="s1">'not same deep ordered members'</span><span class="p">);</span>
 <span class="nx">assert</span><span class="p">.</span><span class="nx">notSameDeepOrderedMembers</span><span class="p">([</span> <span class="p">{</span> <span class="na">a</span><span class="p">:</span> <span class="mi">1</span> <span class="p">},</span> <span class="p">{</span> <span class="na">b</span><span class="p">:</span> <span class="mi">2</span> <span class="p">},</span> <span class="p">{</span> <span class="na">c</span><span class="p">:</span> <span class="mi">3</span> <span class="p">}</span> <span class="p">],</span> <span class="p">[</span> <span class="p">{</span> <span class="na">b</span><span class="p">:</span> <span class="mi">2</span> <span class="p">},</span> <span class="p">{</span> <span class="na">a</span><span class="p">:</span> <span class="mi">1</span> <span class="p">},</span> <span class="p">{</span> <span class="na">c</span><span class="p">:</span> <span class="mi">3</span> <span class="p">}</span> <span class="p">],</span> <span class="s1">'not same deep ordered members'</span><span class="p">);</span>
 </code></pre>
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Array} set1</li>
-<li>{Array} set2</li>
-<li>{String} message</li>
-</ul>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>set1</td>
+<td>Array</td>
+</tr>
+<tr>
+<td>set2</td>
+<td>Array</td>
+</tr>
+<tr>
+<td>message</td>
+<td>String</td>
+</tr>
+</tbody></table>
 
 <h3 id="includemembers">includeMembers</h3>
 
@@ -1884,13 +2915,25 @@ order. Uses a deep equality check.</p>
 strict equality check (===). Duplicates are ignored.</p>
 <pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">includeMembers</span><span class="p">([</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span> <span class="p">],</span> <span class="p">[</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span> <span class="p">],</span> <span class="s1">'include members'</span><span class="p">);</span>
 </code></pre>
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Array} superset</li>
-<li>{Array} subset</li>
-<li>{String} message</li>
-</ul>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>superset</td>
+<td>Array</td>
+</tr>
+<tr>
+<td>subset</td>
+<td>Array</td>
+</tr>
+<tr>
+<td>message</td>
+<td>String</td>
+</tr>
+</tbody></table>
 
 <h3 id="notincludemembers">notIncludeMembers</h3>
 
@@ -1900,13 +2943,25 @@ strict equality check (===). Duplicates are ignored.</p>
 strict equality check (===). Duplicates are ignored.</p>
 <pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">notIncludeMembers</span><span class="p">([</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span> <span class="p">],</span> <span class="p">[</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">1</span> <span class="p">],</span> <span class="s1">'not include members'</span><span class="p">);</span>
 </code></pre>
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Array} superset</li>
-<li>{Array} subset</li>
-<li>{String} message</li>
-</ul>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>superset</td>
+<td>Array</td>
+</tr>
+<tr>
+<td>subset</td>
+<td>Array</td>
+</tr>
+<tr>
+<td>message</td>
+<td>String</td>
+</tr>
+</tbody></table>
 
 <h3 id="includedeepmembers">includeDeepMembers</h3>
 
@@ -1916,13 +2971,25 @@ strict equality check (===). Duplicates are ignored.</p>
 equality check. Duplicates are ignored.</p>
 <pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">includeDeepMembers</span><span class="p">([</span> <span class="p">{</span> <span class="na">a</span><span class="p">:</span> <span class="mi">1</span> <span class="p">},</span> <span class="p">{</span> <span class="na">b</span><span class="p">:</span> <span class="mi">2</span> <span class="p">},</span> <span class="p">{</span> <span class="na">c</span><span class="p">:</span> <span class="mi">3</span> <span class="p">}</span> <span class="p">],</span> <span class="p">[</span> <span class="p">{</span> <span class="na">b</span><span class="p">:</span> <span class="mi">2</span> <span class="p">},</span> <span class="p">{</span> <span class="na">a</span><span class="p">:</span> <span class="mi">1</span> <span class="p">},</span> <span class="p">{</span> <span class="na">b</span><span class="p">:</span> <span class="mi">2</span> <span class="p">}</span> <span class="p">],</span> <span class="s1">'include deep members'</span><span class="p">);</span>
 </code></pre>
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Array} superset</li>
-<li>{Array} subset</li>
-<li>{String} message</li>
-</ul>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>superset</td>
+<td>Array</td>
+</tr>
+<tr>
+<td>subset</td>
+<td>Array</td>
+</tr>
+<tr>
+<td>message</td>
+<td>String</td>
+</tr>
+</tbody></table>
 
 <h3 id="notincludedeepmembers">notIncludeDeepMembers</h3>
 
@@ -1932,13 +2999,25 @@ equality check. Duplicates are ignored.</p>
 deep equality check. Duplicates are ignored.</p>
 <pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">notIncludeDeepMembers</span><span class="p">([</span> <span class="p">{</span> <span class="na">a</span><span class="p">:</span> <span class="mi">1</span> <span class="p">},</span> <span class="p">{</span> <span class="na">b</span><span class="p">:</span> <span class="mi">2</span> <span class="p">},</span> <span class="p">{</span> <span class="na">c</span><span class="p">:</span> <span class="mi">3</span> <span class="p">}</span> <span class="p">],</span> <span class="p">[</span> <span class="p">{</span> <span class="na">b</span><span class="p">:</span> <span class="mi">2</span> <span class="p">},</span> <span class="p">{</span> <span class="na">f</span><span class="p">:</span> <span class="mi">5</span> <span class="p">}</span> <span class="p">],</span> <span class="s1">'not include deep members'</span><span class="p">);</span>
 </code></pre>
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Array} superset</li>
-<li>{Array} subset</li>
-<li>{String} message</li>
-</ul>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>superset</td>
+<td>Array</td>
+</tr>
+<tr>
+<td>subset</td>
+<td>Array</td>
+</tr>
+<tr>
+<td>message</td>
+<td>String</td>
+</tr>
+</tbody></table>
 
 <h3 id="includeorderedmembers">includeOrderedMembers</h3>
 
@@ -1949,13 +3028,25 @@ beginning with the first element in <code class="prettyprint">superset</code>. U
 check (===).</p>
 <pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">includeOrderedMembers</span><span class="p">([</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span> <span class="p">],</span> <span class="p">[</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span> <span class="p">],</span> <span class="s1">'include ordered members'</span><span class="p">);</span>
 </code></pre>
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Array} superset</li>
-<li>{Array} subset</li>
-<li>{String} message</li>
-</ul>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>superset</td>
+<td>Array</td>
+</tr>
+<tr>
+<td>subset</td>
+<td>Array</td>
+</tr>
+<tr>
+<td>message</td>
+<td>String</td>
+</tr>
+</tbody></table>
 
 <h3 id="notincludeorderedmembers">notIncludeOrderedMembers</h3>
 
@@ -1967,13 +3058,25 @@ check (===).</p>
 <pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">notIncludeOrderedMembers</span><span class="p">([</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span> <span class="p">],</span> <span class="p">[</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span> <span class="p">],</span> <span class="s1">'not include ordered members'</span><span class="p">);</span>
 <span class="nx">assert</span><span class="p">.</span><span class="nx">notIncludeOrderedMembers</span><span class="p">([</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span> <span class="p">],</span> <span class="p">[</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span> <span class="p">],</span> <span class="s1">'not include ordered members'</span><span class="p">);</span>
 </code></pre>
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Array} superset</li>
-<li>{Array} subset</li>
-<li>{String} message</li>
-</ul>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>superset</td>
+<td>Array</td>
+</tr>
+<tr>
+<td>subset</td>
+<td>Array</td>
+</tr>
+<tr>
+<td>message</td>
+<td>String</td>
+</tr>
+</tbody></table>
 
 <h3 id="includedeeporderedmembers">includeDeepOrderedMembers</h3>
 
@@ -1984,13 +3087,25 @@ beginning with the first element in <code class="prettyprint">superset</code>. U
 check.</p>
 <pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">includeDeepOrderedMembers</span><span class="p">([</span> <span class="p">{</span> <span class="na">a</span><span class="p">:</span> <span class="mi">1</span> <span class="p">},</span> <span class="p">{</span> <span class="na">b</span><span class="p">:</span> <span class="mi">2</span> <span class="p">},</span> <span class="p">{</span> <span class="na">c</span><span class="p">:</span> <span class="mi">3</span> <span class="p">}</span> <span class="p">],</span> <span class="p">[</span> <span class="p">{</span> <span class="na">a</span><span class="p">:</span> <span class="mi">1</span> <span class="p">},</span> <span class="p">{</span> <span class="na">b</span><span class="p">:</span> <span class="mi">2</span> <span class="p">}</span> <span class="p">],</span> <span class="s1">'include deep ordered members'</span><span class="p">);</span>
 </code></pre>
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Array} superset</li>
-<li>{Array} subset</li>
-<li>{String} message</li>
-</ul>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>superset</td>
+<td>Array</td>
+</tr>
+<tr>
+<td>subset</td>
+<td>Array</td>
+</tr>
+<tr>
+<td>message</td>
+<td>String</td>
+</tr>
+</tbody></table>
 
 <h3 id="notincludedeeporderedmembers">notIncludeDeepOrderedMembers</h3>
 
@@ -2003,13 +3118,25 @@ check.</p>
 <span class="nx">assert</span><span class="p">.</span><span class="nx">notIncludeDeepOrderedMembers</span><span class="p">([</span> <span class="p">{</span> <span class="na">a</span><span class="p">:</span> <span class="mi">1</span> <span class="p">},</span> <span class="p">{</span> <span class="na">b</span><span class="p">:</span> <span class="mi">2</span> <span class="p">},</span> <span class="p">{</span> <span class="na">c</span><span class="p">:</span> <span class="mi">3</span> <span class="p">}</span> <span class="p">],</span> <span class="p">[</span> <span class="p">{</span> <span class="na">b</span><span class="p">:</span> <span class="mi">2</span> <span class="p">},</span> <span class="p">{</span> <span class="na">a</span><span class="p">:</span> <span class="mi">1</span> <span class="p">}</span> <span class="p">],</span> <span class="s1">'not include deep ordered members'</span><span class="p">);</span>
     <span class="nx">assert</span><span class="p">.</span><span class="nx">notIncludeDeepOrderedMembers</span><span class="p">([</span> <span class="p">{</span> <span class="na">a</span><span class="p">:</span> <span class="mi">1</span> <span class="p">},</span> <span class="p">{</span> <span class="na">b</span><span class="p">:</span> <span class="mi">2</span> <span class="p">},</span> <span class="p">{</span> <span class="na">c</span><span class="p">:</span> <span class="mi">3</span> <span class="p">}</span> <span class="p">],</span> <span class="p">[</span> <span class="p">{</span> <span class="na">b</span><span class="p">:</span> <span class="mi">2</span> <span class="p">},</span> <span class="p">{</span> <span class="na">c</span><span class="p">:</span> <span class="mi">3</span> <span class="p">}</span> <span class="p">],</span> <span class="s1">'not include deep ordered members'</span><span class="p">);</span>
 </code></pre>
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Array} superset</li>
-<li>{Array} subset</li>
-<li>{String} message</li>
-</ul>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>superset</td>
+<td>Array</td>
+</tr>
+<tr>
+<td>subset</td>
+<td>Array</td>
+</tr>
+<tr>
+<td>message</td>
+<td>String</td>
+</tr>
+</tbody></table>
 
 <h2 id="function-tests">Function Tests</h2>
 
@@ -2022,14 +3149,29 @@ check.</p>
 <span class="kd">var</span> <span class="nx">fn</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span> <span class="nx">obj</span><span class="p">.</span><span class="nx">val</span> <span class="o">=</span> <span class="mi">22</span> <span class="p">};</span>
     <span class="nx">assert</span><span class="p">.</span><span class="nx">changes</span><span class="p">(</span><span class="nx">fn</span><span class="p">,</span> <span class="nx">obj</span><span class="p">,</span> <span class="s1">'val'</span><span class="p">);</span>
 </code></pre>
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Function} modifier function</li>
-<li>{Object} object or getter function</li>
-<li>{String} property name <em>optional</em></li>
-<li>{String} message <em>optional</em></li>
-</ul>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>modifier function</td>
+<td>Function</td>
+</tr>
+<tr>
+<td>object or getter function</td>
+<td>Object</td>
+</tr>
+<tr>
+<td>property name <em>optional</em></td>
+<td>String</td>
+</tr>
+<tr>
+<td>message <em>optional</em></td>
+<td>String</td>
+</tr>
+</tbody></table>
 
 <h3 id="changesby">changesBy</h3>
 
@@ -2040,15 +3182,33 @@ check.</p>
 <span class="kd">var</span> <span class="nx">fn</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span> <span class="nx">obj</span><span class="p">.</span><span class="nx">val</span> <span class="o">+=</span> <span class="mi">2</span> <span class="p">};</span>
     <span class="nx">assert</span><span class="p">.</span><span class="nx">changesBy</span><span class="p">(</span><span class="nx">fn</span><span class="p">,</span> <span class="nx">obj</span><span class="p">,</span> <span class="s1">'val'</span><span class="p">,</span> <span class="mi">2</span><span class="p">);</span>
 </code></pre>
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Function} modifier function</li>
-<li>{Object} object or getter function</li>
-<li>{String} property name <em>optional</em></li>
-<li>{Number} change amount (delta)</li>
-<li>{String} message <em>optional</em></li>
-</ul>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>modifier function</td>
+<td>Function</td>
+</tr>
+<tr>
+<td>object or getter function</td>
+<td>Object</td>
+</tr>
+<tr>
+<td>property name <em>optional</em></td>
+<td>String</td>
+</tr>
+<tr>
+<td>change amount (delta)</td>
+<td>Number</td>
+</tr>
+<tr>
+<td>message <em>optional</em></td>
+<td>String</td>
+</tr>
+</tbody></table>
 
 <h3 id="doesnotchange">doesNotChange</h3>
 
@@ -2059,14 +3219,29 @@ check.</p>
 <span class="kd">var</span> <span class="nx">fn</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'foo'</span><span class="p">);</span> <span class="p">};</span>
     <span class="nx">assert</span><span class="p">.</span><span class="nx">doesNotChange</span><span class="p">(</span><span class="nx">fn</span><span class="p">,</span> <span class="nx">obj</span><span class="p">,</span> <span class="s1">'val'</span><span class="p">);</span>
 </code></pre>
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Function} modifier function</li>
-<li>{Object} object or getter function</li>
-<li>{String} property name <em>optional</em></li>
-<li>{String} message <em>optional</em></li>
-</ul>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>modifier function</td>
+<td>Function</td>
+</tr>
+<tr>
+<td>object or getter function</td>
+<td>Object</td>
+</tr>
+<tr>
+<td>property name <em>optional</em></td>
+<td>String</td>
+</tr>
+<tr>
+<td>message <em>optional</em></td>
+<td>String</td>
+</tr>
+</tbody></table>
 
 <h3 id="changesbutnotby">changesButNotBy</h3>
 
@@ -2077,15 +3252,33 @@ check.</p>
 <span class="kd">var</span> <span class="nx">fn</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span> <span class="nx">obj</span><span class="p">.</span><span class="nx">val</span> <span class="o">+=</span> <span class="mi">10</span> <span class="p">};</span>
     <span class="nx">assert</span><span class="p">.</span><span class="nx">changesButNotBy</span><span class="p">(</span><span class="nx">fn</span><span class="p">,</span> <span class="nx">obj</span><span class="p">,</span> <span class="s1">'val'</span><span class="p">,</span> <span class="mi">5</span><span class="p">);</span>
 </code></pre>
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Function} modifier function</li>
-<li>{Object} object or getter function</li>
-<li>{String} property name <em>optional</em></li>
-<li>{Number} change amount (delta)</li>
-<li>{String} message <em>optional</em></li>
-</ul>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>modifier function</td>
+<td>Function</td>
+</tr>
+<tr>
+<td>object or getter function</td>
+<td>Object</td>
+</tr>
+<tr>
+<td>property name <em>optional</em></td>
+<td>String</td>
+</tr>
+<tr>
+<td>change amount (delta)</td>
+<td>Number</td>
+</tr>
+<tr>
+<td>message <em>optional</em></td>
+<td>String</td>
+</tr>
+</tbody></table>
 
 <h3 id="increases">increases</h3>
 
@@ -2096,14 +3289,29 @@ check.</p>
 <span class="kd">var</span> <span class="nx">fn</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span> <span class="nx">obj</span><span class="p">.</span><span class="nx">val</span> <span class="o">=</span> <span class="mi">13</span> <span class="p">};</span>
     <span class="nx">assert</span><span class="p">.</span><span class="nx">increases</span><span class="p">(</span><span class="nx">fn</span><span class="p">,</span> <span class="nx">obj</span><span class="p">,</span> <span class="s1">'val'</span><span class="p">);</span>
 </code></pre>
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Function} modifier function</li>
-<li>{Object} object or getter function</li>
-<li>{String} property name <em>optional</em></li>
-<li>{String} message <em>optional</em></li>
-</ul>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>modifier function</td>
+<td>Function</td>
+</tr>
+<tr>
+<td>object or getter function</td>
+<td>Object</td>
+</tr>
+<tr>
+<td>property name <em>optional</em></td>
+<td>String</td>
+</tr>
+<tr>
+<td>message <em>optional</em></td>
+<td>String</td>
+</tr>
+</tbody></table>
 
 <h3 id="increasesby">increasesBy</h3>
 
@@ -2114,15 +3322,33 @@ check.</p>
 <span class="kd">var</span> <span class="nx">fn</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span> <span class="nx">obj</span><span class="p">.</span><span class="nx">val</span> <span class="o">+=</span> <span class="mi">10</span> <span class="p">};</span>
     <span class="nx">assert</span><span class="p">.</span><span class="nx">increasesBy</span><span class="p">(</span><span class="nx">fn</span><span class="p">,</span> <span class="nx">obj</span><span class="p">,</span> <span class="s1">'val'</span><span class="p">,</span> <span class="mi">10</span><span class="p">);</span>
 </code></pre>
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Function} modifier function</li>
-<li>{Object} object or getter function</li>
-<li>{String} property name <em>optional</em></li>
-<li>{Number} change amount (delta)</li>
-<li>{String} message <em>optional</em></li>
-</ul>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>modifier function</td>
+<td>Function</td>
+</tr>
+<tr>
+<td>object or getter function</td>
+<td>Object</td>
+</tr>
+<tr>
+<td>property name <em>optional</em></td>
+<td>String</td>
+</tr>
+<tr>
+<td>change amount (delta)</td>
+<td>Number</td>
+</tr>
+<tr>
+<td>message <em>optional</em></td>
+<td>String</td>
+</tr>
+</tbody></table>
 
 <h3 id="doesnotincrease">doesNotIncrease</h3>
 
@@ -2133,14 +3359,29 @@ check.</p>
 <span class="kd">var</span> <span class="nx">fn</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span> <span class="nx">obj</span><span class="p">.</span><span class="nx">val</span> <span class="o">=</span> <span class="mi">8</span> <span class="p">};</span>
     <span class="nx">assert</span><span class="p">.</span><span class="nx">doesNotIncrease</span><span class="p">(</span><span class="nx">fn</span><span class="p">,</span> <span class="nx">obj</span><span class="p">,</span> <span class="s1">'val'</span><span class="p">);</span>
 </code></pre>
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Function} modifier function</li>
-<li>{Object} object or getter function</li>
-<li>{String} property name <em>optional</em></li>
-<li>{String} message <em>optional</em></li>
-</ul>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>modifier function</td>
+<td>Function</td>
+</tr>
+<tr>
+<td>object or getter function</td>
+<td>Object</td>
+</tr>
+<tr>
+<td>property name <em>optional</em></td>
+<td>String</td>
+</tr>
+<tr>
+<td>message <em>optional</em></td>
+<td>String</td>
+</tr>
+</tbody></table>
 
 <h3 id="increasesbutnotby">increasesButNotBy</h3>
 
@@ -2151,15 +3392,33 @@ check.</p>
 <span class="kd">var</span> <span class="nx">fn</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span> <span class="nx">obj</span><span class="p">.</span><span class="nx">val</span> <span class="o">=</span> <span class="mi">15</span> <span class="p">};</span>
     <span class="nx">assert</span><span class="p">.</span><span class="nx">increasesButNotBy</span><span class="p">(</span><span class="nx">fn</span><span class="p">,</span> <span class="nx">obj</span><span class="p">,</span> <span class="s1">'val'</span><span class="p">,</span> <span class="mi">10</span><span class="p">);</span>
 </code></pre>
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Function} modifier function</li>
-<li>{Object} object or getter function</li>
-<li>{String} property name <em>optional</em></li>
-<li>{Number} change amount (delta)</li>
-<li>{String} message <em>optional</em></li>
-</ul>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>modifier function</td>
+<td>Function</td>
+</tr>
+<tr>
+<td>object or getter function</td>
+<td>Object</td>
+</tr>
+<tr>
+<td>property name <em>optional</em></td>
+<td>String</td>
+</tr>
+<tr>
+<td>change amount (delta)</td>
+<td>Number</td>
+</tr>
+<tr>
+<td>message <em>optional</em></td>
+<td>String</td>
+</tr>
+</tbody></table>
 
 <h3 id="decreases">decreases</h3>
 
@@ -2170,14 +3429,29 @@ check.</p>
 <span class="kd">var</span> <span class="nx">fn</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span> <span class="nx">obj</span><span class="p">.</span><span class="nx">val</span> <span class="o">=</span> <span class="mi">5</span> <span class="p">};</span>
     <span class="nx">assert</span><span class="p">.</span><span class="nx">decreases</span><span class="p">(</span><span class="nx">fn</span><span class="p">,</span> <span class="nx">obj</span><span class="p">,</span> <span class="s1">'val'</span><span class="p">);</span>
 </code></pre>
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Function} modifier function</li>
-<li>{Object} object or getter function</li>
-<li>{String} property name <em>optional</em></li>
-<li>{String} message <em>optional</em></li>
-</ul>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>modifier function</td>
+<td>Function</td>
+</tr>
+<tr>
+<td>object or getter function</td>
+<td>Object</td>
+</tr>
+<tr>
+<td>property name <em>optional</em></td>
+<td>String</td>
+</tr>
+<tr>
+<td>message <em>optional</em></td>
+<td>String</td>
+</tr>
+</tbody></table>
 
 <h3 id="decreasesby">decreasesBy</h3>
 
@@ -2188,15 +3462,33 @@ check.</p>
 <span class="kd">var</span> <span class="nx">fn</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span> <span class="nx">obj</span><span class="p">.</span><span class="nx">val</span> <span class="o">-=</span> <span class="mi">5</span> <span class="p">};</span>
     <span class="nx">assert</span><span class="p">.</span><span class="nx">decreasesBy</span><span class="p">(</span><span class="nx">fn</span><span class="p">,</span> <span class="nx">obj</span><span class="p">,</span> <span class="s1">'val'</span><span class="p">,</span> <span class="mi">5</span><span class="p">);</span>
 </code></pre>
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Function} modifier function</li>
-<li>{Object} object or getter function</li>
-<li>{String} property name <em>optional</em></li>
-<li>{Number} change amount (delta)</li>
-<li>{String} message <em>optional</em></li>
-</ul>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>modifier function</td>
+<td>Function</td>
+</tr>
+<tr>
+<td>object or getter function</td>
+<td>Object</td>
+</tr>
+<tr>
+<td>property name <em>optional</em></td>
+<td>String</td>
+</tr>
+<tr>
+<td>change amount (delta)</td>
+<td>Number</td>
+</tr>
+<tr>
+<td>message <em>optional</em></td>
+<td>String</td>
+</tr>
+</tbody></table>
 
 <h3 id="doesnotdecrease">doesNotDecrease</h3>
 
@@ -2207,14 +3499,29 @@ check.</p>
 <span class="kd">var</span> <span class="nx">fn</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span> <span class="nx">obj</span><span class="p">.</span><span class="nx">val</span> <span class="o">=</span> <span class="mi">15</span> <span class="p">};</span>
     <span class="nx">assert</span><span class="p">.</span><span class="nx">doesNotDecrease</span><span class="p">(</span><span class="nx">fn</span><span class="p">,</span> <span class="nx">obj</span><span class="p">,</span> <span class="s1">'val'</span><span class="p">);</span>
 </code></pre>
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Function} modifier function</li>
-<li>{Object} object or getter function</li>
-<li>{String} property name <em>optional</em></li>
-<li>{String} message <em>optional</em></li>
-</ul>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>modifier function</td>
+<td>Function</td>
+</tr>
+<tr>
+<td>object or getter function</td>
+<td>Object</td>
+</tr>
+<tr>
+<td>property name <em>optional</em></td>
+<td>String</td>
+</tr>
+<tr>
+<td>message <em>optional</em></td>
+<td>String</td>
+</tr>
+</tbody></table>
 
 <h3 id="doesnotdecrease">doesNotDecrease</h3>
 
@@ -2225,15 +3532,33 @@ check.</p>
 <span class="kd">var</span> <span class="nx">fn</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span> <span class="nx">obj</span><span class="p">.</span><span class="nx">val</span> <span class="o">=</span> <span class="mi">5</span> <span class="p">};</span>
     <span class="nx">assert</span><span class="p">.</span><span class="nx">doesNotDecreaseBy</span><span class="p">(</span><span class="nx">fn</span><span class="p">,</span> <span class="nx">obj</span><span class="p">,</span> <span class="s1">'val'</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
 </code></pre>
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Function} modifier function</li>
-<li>{Object} object or getter function</li>
-<li>{String} property name <em>optional</em></li>
-<li>{Number} change amount (delta)</li>
-<li>{String} message <em>optional</em></li>
-</ul>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>modifier function</td>
+<td>Function</td>
+</tr>
+<tr>
+<td>object or getter function</td>
+<td>Object</td>
+</tr>
+<tr>
+<td>property name <em>optional</em></td>
+<td>String</td>
+</tr>
+<tr>
+<td>change amount (delta)</td>
+<td>Number</td>
+</tr>
+<tr>
+<td>message <em>optional</em></td>
+<td>String</td>
+</tr>
+</tbody></table>
 
 <h3 id="decreasesbutnotby">decreasesButNotBy</h3>
 
@@ -2244,15 +3569,33 @@ check.</p>
 <span class="kd">var</span> <span class="nx">fn</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span> <span class="nx">obj</span><span class="p">.</span><span class="nx">val</span> <span class="o">=</span> <span class="mi">5</span> <span class="p">};</span>
     <span class="nx">assert</span><span class="p">.</span><span class="nx">decreasesButNotBy</span><span class="p">(</span><span class="nx">fn</span><span class="p">,</span> <span class="nx">obj</span><span class="p">,</span> <span class="s1">'val'</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
 </code></pre>
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Function} modifier function</li>
-<li>{Object} object or getter function</li>
-<li>{String} property name <em>optional</em></li>
-<li>{Number} change amount (delta)</li>
-<li>{String} message <em>optional</em></li>
-</ul>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>modifier function</td>
+<td>Function</td>
+</tr>
+<tr>
+<td>object or getter function</td>
+<td>Object</td>
+</tr>
+<tr>
+<td>property name <em>optional</em></td>
+<td>String</td>
+</tr>
+<tr>
+<td>change amount (delta)</td>
+<td>Number</td>
+</tr>
+<tr>
+<td>message <em>optional</em></td>
+<td>String</td>
+</tr>
+</tbody></table>
 
 <h2 id="object-misc-tests">Object Misc Tests</h2>
 
@@ -2263,12 +3606,21 @@ check.</p>
 <p>Asserts that <code class="prettyprint">object</code> is extensible (can have new properties added to it).</p>
 <pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">isExtensible</span><span class="p">({});</span>
 </code></pre>
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Object} object</li>
-<li>{String} message <em>optional</em></li>
-</ul>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>object</td>
+<td>Object</td>
+</tr>
+<tr>
+<td>message <em>optional</em></td>
+<td>String</td>
+</tr>
+</tbody></table>
 
 <h3 id="isnotextensible">isNotExtensible</h3>
 
@@ -2283,12 +3635,21 @@ check.</p>
     <span class="nx">assert</span><span class="p">.</span><span class="nx">isNotExtensible</span><span class="p">(</span><span class="nx">sealedObject</span><span class="p">);</span>
     <span class="nx">assert</span><span class="p">.</span><span class="nx">isNotExtensible</span><span class="p">(</span><span class="nx">frozenObject</span><span class="p">);</span>
 </code></pre>
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Object} object</li>
-<li>{String} message <em>optional</em></li>
-</ul>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>object</td>
+<td>Object</td>
+</tr>
+<tr>
+<td>message <em>optional</em></td>
+<td>String</td>
+</tr>
+</tbody></table>
 
 <h3 id="issealed">isSealed</h3>
 
@@ -2302,12 +3663,21 @@ and its existing properties cannot be removed).</p>
     <span class="nx">assert</span><span class="p">.</span><span class="nx">isSealed</span><span class="p">(</span><span class="nx">sealedObject</span><span class="p">);</span>
     <span class="nx">assert</span><span class="p">.</span><span class="nx">isSealed</span><span class="p">(</span><span class="nx">frozenObject</span><span class="p">);</span>
 </code></pre>
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Object} object</li>
-<li>{String} message <em>optional</em></li>
-</ul>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>object</td>
+<td>Object</td>
+</tr>
+<tr>
+<td>message <em>optional</em></td>
+<td>String</td>
+</tr>
+</tbody></table>
 
 <h3 id="isnotsealed">isNotSealed</h3>
 
@@ -2316,12 +3686,21 @@ and its existing properties cannot be removed).</p>
 <p>Asserts that <code class="prettyprint">object</code> is <em>not</em> sealed.</p>
 <pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">isNotSealed</span><span class="p">({});</span>
 </code></pre>
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Object} object</li>
-<li>{String} message <em>optional</em></li>
-</ul>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>object</td>
+<td>Object</td>
+</tr>
+<tr>
+<td>message <em>optional</em></td>
+<td>String</td>
+</tr>
+</tbody></table>
 
 <h3 id="isfrozen">isFrozen</h3>
 
@@ -2332,12 +3711,21 @@ and its existing properties cannot be modified).</p>
 <pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">frozenObject</span> <span class="o">=</span> <span class="nb">Object</span><span class="p">.</span><span class="nx">freeze</span><span class="p">({});</span>
 <span class="nx">assert</span><span class="p">.</span><span class="nx">frozen</span><span class="p">(</span><span class="nx">frozenObject</span><span class="p">);</span>
 </code></pre>
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Object} object</li>
-<li>{String} message <em>optional</em></li>
-</ul>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>object</td>
+<td>Object</td>
+</tr>
+<tr>
+<td>message <em>optional</em></td>
+<td>String</td>
+</tr>
+</tbody></table>
 
 <h3 id="isnotfrozen">isNotFrozen</h3>
 
@@ -2346,12 +3734,21 @@ and its existing properties cannot be modified).</p>
 <p>Asserts that <code class="prettyprint">object</code> is <em>not</em> frozen.</p>
 <pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">isNotFrozen</span><span class="p">({});</span>
 </code></pre>
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Object} object</li>
-<li>{String} message <em>optional</em></li>
-</ul>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>object</td>
+<td>Object</td>
+</tr>
+<tr>
+<td>message <em>optional</em></td>
+<td>String</td>
+</tr>
+</tbody></table>
 
 <h2 id="mixed-misc-tests">Mixed Misc Tests</h2>
 
@@ -2363,12 +3760,21 @@ and its existing properties cannot be modified).</p>
 <pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">(</span><span class="s1">'foo'</span> <span class="o">!==</span> <span class="s1">'bar'</span><span class="p">,</span> <span class="s1">'foo is not bar'</span><span class="p">);</span>
 <span class="nx">assert</span><span class="p">(</span><span class="nb">Array</span><span class="p">.</span><span class="nx">isArray</span><span class="p">([]),</span> <span class="s1">'empty arrays are arrays'</span><span class="p">);</span>
 </code></pre>
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Mixed} expression to test for truthiness</li>
-<li>{String} message to display on error</li>
-</ul>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>expression to test for truthiness</td>
+<td>Mixed</td>
+</tr>
+<tr>
+<td>message to display on error</td>
+<td>String</td>
+</tr>
+</tbody></table>
 
 <h3 id="fail">fail</h3>
 
@@ -2376,14 +3782,29 @@ and its existing properties cannot be modified).</p>
 
 <p>Throw a failure. Node.js <code class="prettyprint">assert</code> module-compatible.</p>
 
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Mixed} actual</li>
-<li>{Mixed} expected</li>
-<li>{String} message</li>
-<li>{String} operator</li>
-</ul>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>actual</td>
+<td>Mixed</td>
+</tr>
+<tr>
+<td>expected</td>
+<td>Mixed</td>
+</tr>
+<tr>
+<td>message</td>
+<td>String</td>
+</tr>
+<tr>
+<td>operator</td>
+<td>String</td>
+</tr>
+</tbody></table>
 
 <h3 id="lengthof">lengthOf</h3>
 
@@ -2393,13 +3814,25 @@ and its existing properties cannot be modified).</p>
 <pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">lengthOf</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">],</span> <span class="mi">3</span><span class="p">,</span> <span class="s1">'array has length of 3'</span><span class="p">);</span>
 <span class="nx">assert</span><span class="p">.</span><span class="nx">lengthOf</span><span class="p">(</span><span class="s1">'foobar'</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="s1">'string has length of 6'</span><span class="p">);</span>
 </code></pre>
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Mixed} object</li>
-<li>{Number} length</li>
-<li>{String} message</li>
-</ul>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>object</td>
+<td>Mixed</td>
+</tr>
+<tr>
+<td>length</td>
+<td>Number</td>
+</tr>
+<tr>
+<td>message</td>
+<td>String</td>
+</tr>
+</tbody></table>
 
 <h3 id="operator">operator</h3>
 
@@ -2409,14 +3842,29 @@ and its existing properties cannot be modified).</p>
 <pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">operator</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="s1">'&lt;'</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="s1">'everything is ok'</span><span class="p">);</span>
 <span class="nx">assert</span><span class="p">.</span><span class="nx">operator</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="s1">'&gt;'</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="s1">'this will fail'</span><span class="p">);</span>
 </code></pre>
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Mixed} val1</li>
-<li>{String} operator</li>
-<li>{Mixed} val2</li>
-<li>{String} message</li>
-</ul>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>val1</td>
+<td>Mixed</td>
+</tr>
+<tr>
+<td>operator</td>
+<td>String</td>
+</tr>
+<tr>
+<td>val2</td>
+<td>Mixed</td>
+</tr>
+<tr>
+<td>message</td>
+<td>String</td>
+</tr>
+</tbody></table>
 
 <h3 id="oneof">oneOf</h3>
 
@@ -2425,13 +3873,25 @@ and its existing properties cannot be modified).</p>
 <p>Asserts that non-object, non-array value <code class="prettyprint">inList</code> appears in the flat array <code class="prettyprint">list</code>.</p>
 <pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">oneOf</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="p">[</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span> <span class="p">],</span> <span class="s1">'Not found in list'</span><span class="p">);</span>
 </code></pre>
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{*} inList</li>
-<li>{Array&lt;*&gt;} list</li>
-<li>{String} message</li>
-</ul>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>inList</td>
+<td>*</td>
+</tr>
+<tr>
+<td>list</td>
+<td>Array&lt;*&gt;</td>
+</tr>
+<tr>
+<td>message</td>
+<td>String</td>
+</tr>
+</tbody></table>
 
 <h3 id="isempty">isEmpty</h3>
 
@@ -2447,12 +3907,21 @@ enumerable string keys.</p>
     <span class="nx">assert</span><span class="p">.</span><span class="nx">isEmpty</span><span class="p">(</span><span class="k">new</span> <span class="nx">Map</span><span class="p">);</span>
     <span class="nx">assert</span><span class="p">.</span><span class="nx">isEmpty</span><span class="p">({});</span>
 </code></pre>
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Object|Array|String|Map|Set} target</li>
-<li>{String} message <em>optional</em></li>
-</ul>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>target</td>
+<td>Object</td>
+</tr>
+<tr>
+<td>message <em>optional</em></td>
+<td>String</td>
+</tr>
+</tbody></table>
 
 <h3 id="isnotempty">isNotEmpty</h3>
 
@@ -2468,12 +3937,21 @@ enumerable string keys.</p>
     <span class="nx">assert</span><span class="p">.</span><span class="nx">isNotEmpty</span><span class="p">(</span><span class="k">new</span> <span class="nx">Set</span><span class="p">([</span><span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">]));</span>
     <span class="nx">assert</span><span class="p">.</span><span class="nx">isNotEmpty</span><span class="p">({</span> <span class="na">key</span><span class="p">:</span> <span class="mi">7</span> <span class="p">});</span>
 </code></pre>
-<h4 id="parameters">Parameters</h4>
-
-<ul>
-<li>{Object|Array|String|Map|Set} target</li>
-<li>{String} message <em>optional</em></li>
-</ul>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>target</td>
+<td>Object</td>
+</tr>
+<tr>
+<td>message <em>optional</em></td>
+<td>String</td>
+</tr>
+</tbody></table>
 
       </div>
       <div class="dark-box">
