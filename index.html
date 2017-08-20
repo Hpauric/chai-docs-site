@@ -250,8 +250,9 @@ Of the three style options, assert is the only one that is not chainable. Check 
 <h3 id="equal">equal</h3>
 <pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">equal</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="s1">'3'</span><span class="p">,</span> <span class="s1">'== coerces values to strings'</span><span class="p">);</span>
 </code></pre>
-<p><code class="prettyprint">.equal(actual, expected, [message])</code>
-Asserts non-strict equality (<code class="prettyprint">==</code>) of <code class="prettyprint">actual</code> and <code class="prettyprint">expected</code>.</p>
+<p><code class="prettyprint">.equal(actual, expected, [message])</code></p>
+
+<p>Asserts non-strict equality (<code class="prettyprint">==</code>) of <code class="prettyprint">actual</code> and <code class="prettyprint">expected</code>.</p>
 
 <table><thead>
 <tr>
@@ -276,8 +277,9 @@ Asserts non-strict equality (<code class="prettyprint">==</code>) of <code class
 <h3 id="notequal">notEqual</h3>
 <pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">notEqual</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="s1">'these numbers are not equal'</span><span class="p">);</span>
 </code></pre>
-<p><code class="prettyprint">.notEqual(actual, expected, [message])</code>
-Asserts non-strict inequality (<code class="prettyprint">!=</code>) of <code class="prettyprint">actual</code> and <code class="prettyprint">expected</code>.</p>
+<p><code class="prettyprint">.notEqual(actual, expected, [message])</code></p>
+
+<p>Asserts non-strict inequality (<code class="prettyprint">!=</code>) of <code class="prettyprint">actual</code> and <code class="prettyprint">expected</code>.</p>
 
 <table><thead>
 <tr>
@@ -322,8 +324,9 @@ Asserts non-strict inequality (<code class="prettyprint">!=</code>) of <code cla
 <h3 id="strictequal">strictEqual</h3>
 <pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">strictEqual</span><span class="p">(</span><span class="kc">true</span><span class="p">,</span> <span class="kc">true</span><span class="p">,</span> <span class="s1">'these booleans are strictly equal'</span><span class="p">);</span>
 </code></pre>
-<p><code class="prettyprint">.strictEqual(actual, expected, [message])</code>
-Asserts strict equality (<code class="prettyprint">===</code>) of <code class="prettyprint">actual</code> and <code class="prettyprint">expected</code>.</p>
+<p><code class="prettyprint">.strictEqual(actual, expected, [message])</code></p>
+
+<p>Asserts strict equality (<code class="prettyprint">===</code>) of <code class="prettyprint">actual</code> and <code class="prettyprint">expected</code>.</p>
 
 <table><thead>
 <tr>
@@ -348,8 +351,9 @@ Asserts strict equality (<code class="prettyprint">===</code>) of <code class="p
 <h3 id="notstrictequal">notStrictEqual</h3>
 <pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">notStrictEqual</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="s1">'3'</span><span class="p">,</span> <span class="s1">'no coercion for strict equality'</span><span class="p">);</span>
 </code></pre>
-<p><code class="prettyprint">.notStrictEqual(actual, expected, [message])</code>
-Asserts strict inequality (<code class="prettyprint">!==</code>) of <code class="prettyprint">actual</code> and <code class="prettyprint">expected</code>.</p>
+<p><code class="prettyprint">.notStrictEqual(actual, expected, [message])</code></p>
+
+<p>Asserts strict inequality (<code class="prettyprint">!==</code>) of <code class="prettyprint">actual</code> and <code class="prettyprint">expected</code>.</p>
 
 <table><thead>
 <tr>
@@ -374,8 +378,9 @@ Asserts strict inequality (<code class="prettyprint">!==</code>) of <code class=
 <h3 id="deepequal">deepEqual</h3>
 <pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">deepEqual</span><span class="p">({</span> <span class="na">tea</span><span class="p">:</span> <span class="s1">'green'</span> <span class="p">},</span> <span class="p">{</span> <span class="na">tea</span><span class="p">:</span> <span class="s1">'green'</span> <span class="p">});</span>
 </code></pre>
-<p><code class="prettyprint">.deepEqual(actual, expected, [message])</code>
-Asserts that <code class="prettyprint">actual</code> is deeply equal to <code class="prettyprint">expected</code>.</p>
+<p><code class="prettyprint">.deepEqual(actual, expected, [message])</code></p>
+
+<p>Asserts that <code class="prettyprint">actual</code> is deeply equal to <code class="prettyprint">expected</code>.</p>
 
 <table><thead>
 <tr>
@@ -400,8 +405,9 @@ Asserts that <code class="prettyprint">actual</code> is deeply equal to <code cl
 <h3 id="notdeepequal">notDeepEqual</h3>
 <pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">notDeepEqual</span><span class="p">({</span> <span class="na">tea</span><span class="p">:</span> <span class="s1">'green'</span> <span class="p">},</span> <span class="p">{</span> <span class="na">tea</span><span class="p">:</span> <span class="s1">'jasmine'</span> <span class="p">});</span>
 </code></pre>
-<p><code class="prettyprint">.notDeepEqual(actual, expected, [message])</code>
-Assert that <code class="prettyprint">actual</code> is not deeply equal to <code class="prettyprint">expected</code>.</p>
+<p><code class="prettyprint">.notDeepEqual(actual, expected, [message])</code></p>
+
+<p>Assert that <code class="prettyprint">actual</code> is not deeply equal to <code class="prettyprint">expected</code>.</p>
 
 <table><thead>
 <tr>
@@ -428,8 +434,9 @@ Assert that <code class="prettyprint">actual</code> is not deeply equal to <code
 <h3 id="isabove">isAbove</h3>
 <pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">isAbove</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="s1">'5 is strictly greater than 2'</span><span class="p">);</span>
 </code></pre>
-<p><code class="prettyprint">.isAbove(valueToCheck, valueToBeAbove, [message])</code>
-Asserts <code class="prettyprint">valueToCheck</code> is strictly greater than (&gt;) <code class="prettyprint">valueToBeAbove</code>.</p>
+<p><code class="prettyprint">.isAbove(valueToCheck, valueToBeAbove, [message])</code></p>
+
+<p>Asserts <code class="prettyprint">valueToCheck</code> is strictly greater than (&gt;) <code class="prettyprint">valueToBeAbove</code>.</p>
 
 <table><thead>
 <tr>
@@ -482,8 +489,9 @@ Asserts <code class="prettyprint">valueToCheck</code> is strictly greater than (
 <h3 id="isbelow">isBelow</h3>
 <pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">isBelow</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="s1">'3 is strictly less than 6'</span><span class="p">);</span>
 </code></pre>
-<p><code class="prettyprint">.isBelow(valueToCheck, valueToBeBelow, [message])</code>
-Asserts <code class="prettyprint">valueToCheck</code> is strictly less than (&lt;) <code class="prettyprint">valueToBeBelow</code>.</p>
+<p><code class="prettyprint">.isBelow(valueToCheck, valueToBeBelow, [message])</code></p>
+
+<p>Asserts <code class="prettyprint">valueToCheck</code> is strictly less than (&lt;) <code class="prettyprint">valueToBeBelow</code>.</p>
 
 <table><thead>
 <tr>
@@ -509,8 +517,9 @@ Asserts <code class="prettyprint">valueToCheck</code> is strictly less than (&lt
 <pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">isAtMost</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="s1">'3 is less than or equal to 6'</span><span class="p">);</span>
 <span class="nx">assert</span><span class="p">.</span><span class="nx">isAtMost</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="s1">'4 is less than or equal to 4'</span><span class="p">);</span>
 </code></pre>
-<p><code class="prettyprint">.isAtMost(valueToCheck, valueToBeAtMost, [message])</code>
-Asserts <code class="prettyprint">valueToCheck</code> is less than or equal to (&lt;=) <code class="prettyprint">valueToBeAtMost</code>.</p>
+<p><code class="prettyprint">.isAtMost(valueToCheck, valueToBeAtMost, [message])</code></p>
+
+<p>Asserts <code class="prettyprint">valueToCheck</code> is less than or equal to (&lt;=) <code class="prettyprint">valueToBeAtMost</code>.</p>
 
 <table><thead>
 <tr>
@@ -535,8 +544,9 @@ Asserts <code class="prettyprint">valueToCheck</code> is less than or equal to (
 <h3 id="isnan">isNaN</h3>
 <pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nb">isNaN</span><span class="p">(</span><span class="kc">NaN</span><span class="p">,</span> <span class="s1">'NaN is NaN'</span><span class="p">);</span>
 </code></pre>
-<p><code class="prettyprint">.isNaN(valueToCheck, [message])</code>
-Asserts that value is NaN.</p>
+<p><code class="prettyprint">.isNaN(valueToCheck, [message])</code></p>
+
+<p>Asserts that value is NaN.</p>
 
 <table><thead>
 <tr>
@@ -581,8 +591,9 @@ Asserts that value is not NaN.</p>
 <span class="nx">assert</span><span class="p">.</span><span class="nb">isFinite</span><span class="p">(</span><span class="nx">cups</span><span class="p">,</span> <span class="s1">'how many cups'</span><span class="p">);</span>
 <span class="nx">assert</span><span class="p">.</span><span class="nb">isFinite</span><span class="p">(</span><span class="kc">NaN</span><span class="p">);</span> <span class="c1">// throws</span>
 </code></pre>
-<p><code class="prettyprint">.isFinite(value, [message])</code>
-Asserts that <code class="prettyprint">value</code> is a finite number. Unlike <code class="prettyprint">.isNumber</code>, this will fail for <code class="prettyprint">NaN</code> and <code class="prettyprint">Infinity</code>.</p>
+<p><code class="prettyprint">.isFinite(value, [message])</code></p>
+
+<p>Asserts that <code class="prettyprint">value</code> is a finite number. Unlike <code class="prettyprint">.isNumber</code>, this will fail for <code class="prettyprint">NaN</code> and <code class="prettyprint">Infinity</code>.</p>
 
 <table><thead>
 <tr>
@@ -603,8 +614,9 @@ Asserts that <code class="prettyprint">value</code> is a finite number. Unlike <
 <h3 id="closeto">closeTo</h3>
 <pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">closeTo</span><span class="p">(</span><span class="mf">1.5</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="s1">'numbers are close'</span><span class="p">);</span>
 </code></pre>
-<p><code class="prettyprint">.closeTo(actual, expected, delta, [message])</code>
-Asserts that the target is equal <code class="prettyprint">expected</code>, to within a +/- <code class="prettyprint">delta</code> range.</p>
+<p><code class="prettyprint">.closeTo(actual, expected, delta, [message])</code></p>
+
+<p>Asserts that the target is equal <code class="prettyprint">expected</code>, to within a +/- <code class="prettyprint">delta</code> range.</p>
 
 <table><thead>
 <tr>
@@ -633,8 +645,9 @@ Asserts that the target is equal <code class="prettyprint">expected</code>, to w
 <h3 id="approximately">approximately</h3>
 <pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">approximately</span><span class="p">(</span><span class="mf">1.5</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="s1">'numbers are close'</span><span class="p">);</span>
 </code></pre>
-<p><code class="prettyprint">.approximately(actual, expected, delta, [message])</code>
-Asserts that the target is equal <code class="prettyprint">expected</code>, to within a +/- <code class="prettyprint">delta</code> range.</p>
+<p><code class="prettyprint">.approximately(actual, expected, delta, [message])</code></p>
+
+<p>Asserts that the target is equal <code class="prettyprint">expected</code>, to within a +/- <code class="prettyprint">delta</code> range.</p>
 
 <table><thead>
 <tr>
@@ -666,8 +679,9 @@ Asserts that the target is equal <code class="prettyprint">expected</code>, to w
 <pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">isOk</span><span class="p">(</span><span class="s1">'everything'</span><span class="p">,</span> <span class="s1">'everything is ok'</span><span class="p">);</span>
 <span class="nx">assert</span><span class="p">.</span><span class="nx">isOk</span><span class="p">(</span><span class="kc">false</span><span class="p">,</span> <span class="s1">'this will fail'</span><span class="p">);</span>
 </code></pre>
-<p><code class="prettyprint">.isOk(object, [message])</code>
-Asserts that <code class="prettyprint">object</code> is truthy.</p>
+<p><code class="prettyprint">.isOk(object, [message])</code></p>
+
+<p>Asserts that <code class="prettyprint">object</code> is truthy.</p>
 
 <table><thead>
 <tr>
@@ -689,8 +703,9 @@ Asserts that <code class="prettyprint">object</code> is truthy.</p>
 <pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">isNotOk</span><span class="p">(</span><span class="s1">'everything'</span><span class="p">,</span> <span class="s1">'this will fail'</span><span class="p">);</span>
 <span class="nx">assert</span><span class="p">.</span><span class="nx">isNotOk</span><span class="p">(</span><span class="kc">false</span><span class="p">,</span> <span class="s1">'this will pass'</span><span class="p">);</span>
 </code></pre>
-<p><code class="prettyprint">.isNotOk(object, [message])</code>
-Asserts that <code class="prettyprint">object</code> is falsy.</p>
+<p><code class="prettyprint">.isNotOk(object, [message])</code></p>
+
+<p>Asserts that <code class="prettyprint">object</code> is falsy.</p>
 
 <table><thead>
 <tr>
@@ -712,8 +727,9 @@ Asserts that <code class="prettyprint">object</code> is falsy.</p>
 <pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">teaServed</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
 <span class="nx">assert</span><span class="p">.</span><span class="nx">isTrue</span><span class="p">(</span><span class="nx">teaServed</span><span class="p">,</span> <span class="s1">'the tea has been served'</span><span class="p">);</span>
 </code></pre>
-<p><code class="prettyprint">.isTrue(value, [message])</code>
-Asserts that <code class="prettyprint">value</code> is true.</p>
+<p><code class="prettyprint">.isTrue(value, [message])</code></p>
+
+<p>Asserts that <code class="prettyprint">value</code> is true.</p>
 
 <table><thead>
 <tr>
@@ -735,8 +751,9 @@ Asserts that <code class="prettyprint">value</code> is true.</p>
 <pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">tea</span> <span class="o">=</span> <span class="s1">'tasty chai'</span><span class="p">;</span>
 <span class="nx">assert</span><span class="p">.</span><span class="nx">isNotTrue</span><span class="p">(</span><span class="nx">tea</span><span class="p">,</span> <span class="s1">'great, time for tea!'</span><span class="p">);</span>
 </code></pre>
-<p><code class="prettyprint">.isNotTrue(value, [message])</code>
-Asserts that <code class="prettyprint">value</code> is not true.</p>
+<p><code class="prettyprint">.isNotTrue(value, [message])</code></p>
+
+<p>Asserts that <code class="prettyprint">value</code> is not true.</p>
 
 <table><thead>
 <tr>
@@ -758,8 +775,9 @@ Asserts that <code class="prettyprint">value</code> is not true.</p>
 <pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">teaServed</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
 <span class="nx">assert</span><span class="p">.</span><span class="nx">isFalse</span><span class="p">(</span><span class="nx">teaServed</span><span class="p">,</span> <span class="s1">'no tea yet? hmm...'</span><span class="p">);</span>
 </code></pre>
-<p><code class="prettyprint">.isFalse(value, [message])</code>
-Asserts that <code class="prettyprint">value</code> is false.</p>
+<p><code class="prettyprint">.isFalse(value, [message])</code></p>
+
+<p>Asserts that <code class="prettyprint">value</code> is false.</p>
 
 <table><thead>
 <tr>
@@ -781,8 +799,9 @@ Asserts that <code class="prettyprint">value</code> is false.</p>
 <pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">tea</span> <span class="o">=</span> <span class="s1">'tasty chai'</span><span class="p">;</span>
 <span class="nx">assert</span><span class="p">.</span><span class="nx">isNotFalse</span><span class="p">(</span><span class="nx">tea</span><span class="p">,</span> <span class="s1">'great, time for tea!'</span><span class="p">);</span>
 </code></pre>
-<p><code class="prettyprint">.isNotFalse(value, [message])</code>
-Asserts that <code class="prettyprint">value</code> is not false.</p>
+<p><code class="prettyprint">.isNotFalse(value, [message])</code></p>
+
+<p>Asserts that <code class="prettyprint">value</code> is not false.</p>
 
 <table><thead>
 <tr>
@@ -805,8 +824,9 @@ Asserts that <code class="prettyprint">value</code> is not false.</p>
 <h3 id="isnull">isNull</h3>
 <pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">isNull</span><span class="p">(</span><span class="nx">err</span><span class="p">,</span> <span class="s1">'there was no error'</span><span class="p">);</span>
 </code></pre>
-<p><code class="prettyprint">.isNull(value, [message])</code>
-Asserts that <code class="prettyprint">value</code> is null.</p>
+<p><code class="prettyprint">.isNull(value, [message])</code></p>
+
+<p>Asserts that <code class="prettyprint">value</code> is null.</p>
 
 <table><thead>
 <tr>
@@ -828,8 +848,9 @@ Asserts that <code class="prettyprint">value</code> is null.</p>
 <pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">tea</span> <span class="o">=</span> <span class="s1">'tasty chai'</span><span class="p">;</span>
 <span class="nx">assert</span><span class="p">.</span><span class="nx">isNotNull</span><span class="p">(</span><span class="nx">tea</span><span class="p">,</span> <span class="s1">'great, time for tea!'</span><span class="p">);</span>
 </code></pre>
-<p><code class="prettyprint">.isNotNull(value, [message])</code>
-Asserts that <code class="prettyprint">value</code> is not null.</p>
+<p><code class="prettyprint">.isNotNull(value, [message])</code></p>
+
+<p>Asserts that <code class="prettyprint">value</code> is not null.</p>
 
 <table><thead>
 <tr>
@@ -851,8 +872,9 @@ Asserts that <code class="prettyprint">value</code> is not null.</p>
 <pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">foo</span> <span class="o">=</span> <span class="s1">'hi'</span><span class="p">;</span>
 <span class="nx">assert</span><span class="p">.</span><span class="nx">exists</span><span class="p">(</span><span class="nx">foo</span><span class="p">,</span> <span class="s1">'foo is neither `null` nor `undefined`'</span><span class="p">);</span>
 </code></pre>
-<p><code class="prettyprint">.exists(value, [message])</code>
-Asserts that the target is neither <code class="prettyprint">null</code> nor <code class="prettyprint">undefined</code>.</p>
+<p><code class="prettyprint">.exists(value, [message])</code></p>
+
+<p>Asserts that the target is neither <code class="prettyprint">null</code> nor <code class="prettyprint">undefined</code>.</p>
 
 <table><thead>
 <tr>
@@ -877,8 +899,9 @@ Asserts that the target is neither <code class="prettyprint">null</code> nor <co
 <span class="nx">assert</span><span class="p">.</span><span class="nx">notExists</span><span class="p">(</span><span class="nx">bar</span><span class="p">);</span>
 <span class="nx">assert</span><span class="p">.</span><span class="nx">notExists</span><span class="p">(</span><span class="nx">baz</span><span class="p">,</span> <span class="s1">'baz is either null or undefined'</span><span class="p">);</span>
 </code></pre>
-<p><code class="prettyprint">.notExists(value, [message])</code>
-Asserts that the target is either <code class="prettyprint">null</code> or <code class="prettyprint">undefined</code>.</p>
+<p><code class="prettyprint">.notExists(value, [message])</code></p>
+
+<p>Asserts that the target is either <code class="prettyprint">null</code> or <code class="prettyprint">undefined</code>.</p>
 
 <table><thead>
 <tr>
@@ -900,8 +923,9 @@ Asserts that the target is either <code class="prettyprint">null</code> or <code
 <pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">tea</span><span class="p">;</span>
 <span class="nx">assert</span><span class="p">.</span><span class="nx">isUndefined</span><span class="p">(</span><span class="nx">tea</span><span class="p">,</span> <span class="s1">'no tea defined'</span><span class="p">);</span>
 </code></pre>
-<p><code class="prettyprint">.isUndefined(value, [message])</code>
-Asserts that <code class="prettyprint">value</code> is <code class="prettyprint">undefined</code>.</p>
+<p><code class="prettyprint">.isUndefined(value, [message])</code></p>
+
+<p>Asserts that <code class="prettyprint">value</code> is <code class="prettyprint">undefined</code>.</p>
 
 <table><thead>
 <tr>
@@ -923,8 +947,9 @@ Asserts that <code class="prettyprint">value</code> is <code class="prettyprint"
 <pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">tea</span> <span class="o">=</span> <span class="s1">'cup of chai'</span><span class="p">;</span>
 <span class="nx">assert</span><span class="p">.</span><span class="nx">isDefined</span><span class="p">(</span><span class="nx">tea</span><span class="p">,</span> <span class="s1">'tea has been defined'</span><span class="p">);</span>
 </code></pre>
-<p><code class="prettyprint">.isDefined(value, [message])</code>
-Asserts that <code class="prettyprint">value</code> is not <code class="prettyprint">undefined</code>.</p>
+<p><code class="prettyprint">.isDefined(value, [message])</code></p>
+
+<p>Asserts that <code class="prettyprint">value</code> is not <code class="prettyprint">undefined</code>.</p>
 
 <table><thead>
 <tr>
@@ -946,8 +971,9 @@ Asserts that <code class="prettyprint">value</code> is not <code class="prettypr
 <pre class="highlight javascript tab-javascript"><code><span class="kd">function</span> <span class="nx">serveTea</span><span class="p">()</span> <span class="p">{</span> <span class="k">return</span> <span class="s1">'cup of tea'</span><span class="p">;</span> <span class="p">};</span>
 <span class="nx">assert</span><span class="p">.</span><span class="nx">isFunction</span><span class="p">(</span><span class="nx">serveTea</span><span class="p">,</span> <span class="s1">'great, we can have tea now'</span><span class="p">);</span>
 </code></pre>
-<p><code class="prettyprint">.isFunction(value, [message])</code>
-Asserts that <code class="prettyprint">value</code> is a function.</p>
+<p><code class="prettyprint">.isFunction(value, [message])</code></p>
+
+<p>Asserts that <code class="prettyprint">value</code> is a function.</p>
 
 <table><thead>
 <tr>
@@ -969,8 +995,9 @@ Asserts that <code class="prettyprint">value</code> is a function.</p>
 <pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">serveTea</span> <span class="o">=</span> <span class="p">[</span> <span class="s1">'heat'</span><span class="p">,</span> <span class="s1">'pour'</span><span class="p">,</span> <span class="s1">'sip'</span> <span class="p">];</span>
 <span class="nx">assert</span><span class="p">.</span><span class="nx">isNotFunction</span><span class="p">(</span><span class="nx">serveTea</span><span class="p">,</span> <span class="s1">'great, we have listed the steps'</span><span class="p">);</span>
 </code></pre>
-<p><code class="prettyprint">.isNotFunction(value, [message])</code>
-Asserts that <code class="prettyprint">value</code> is <em>not</em> a function.</p>
+<p><code class="prettyprint">.isNotFunction(value, [message])</code></p>
+
+<p>Asserts that <code class="prettyprint">value</code> is <em>not</em> a function.</p>
 
 <table><thead>
 <tr>
@@ -1018,8 +1045,9 @@ Asserts that <code class="prettyprint">value</code> is <em>not</em> a function.<
 <span class="nx">assert</span><span class="p">.</span><span class="nx">isNotObject</span><span class="p">(</span><span class="nx">selection</span><span class="p">,</span> <span class="s1">'tea selection is not an object'</span><span class="p">);</span>
 <span class="nx">assert</span><span class="p">.</span><span class="nx">isNotObject</span><span class="p">(</span><span class="kc">null</span><span class="p">,</span> <span class="s1">'null is not an object'</span><span class="p">);</span>
 </code></pre>
-<p><code class="prettyprint">.isNotObject(value, [message])</code>
-Asserts that <code class="prettyprint">value</code> is <em>not</em> an object of type &lsquo;Object&rsquo; (as revealed by <code class="prettyprint">Object.prototype.toString</code>).</p>
+<p><code class="prettyprint">.isNotObject(value, [message])</code></p>
+
+<p>Asserts that <code class="prettyprint">value</code> is <em>not</em> an object of type &lsquo;Object&rsquo; (as revealed by <code class="prettyprint">Object.prototype.toString</code>).</p>
 
 <table><thead>
 <tr>
@@ -1041,8 +1069,9 @@ Asserts that <code class="prettyprint">value</code> is <em>not</em> an object of
 <pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">menu</span> <span class="o">=</span> <span class="p">[</span> <span class="s1">'green'</span><span class="p">,</span> <span class="s1">'chai'</span><span class="p">,</span> <span class="s1">'oolong'</span> <span class="p">];</span>
 <span class="nx">assert</span><span class="p">.</span><span class="nx">isArray</span><span class="p">(</span><span class="nx">menu</span><span class="p">,</span> <span class="s1">'what kind of tea do we want?'</span><span class="p">);</span>
 </code></pre>
-<p><code class="prettyprint">.isArray(value, [message])</code>
-Asserts that <code class="prettyprint">value</code> is an array.</p>
+<p><code class="prettyprint">.isArray(value, [message])</code></p>
+
+<p>Asserts that <code class="prettyprint">value</code> is an array.</p>
 
 <table><thead>
 <tr>
@@ -1064,8 +1093,9 @@ Asserts that <code class="prettyprint">value</code> is an array.</p>
 <pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">menu</span> <span class="o">=</span> <span class="s1">'green|chai|oolong'</span><span class="p">;</span>
 <span class="nx">assert</span><span class="p">.</span><span class="nx">isNotArray</span><span class="p">(</span><span class="nx">menu</span><span class="p">,</span> <span class="s1">'what kind of tea do we want?'</span><span class="p">);</span>
 </code></pre>
-<p><code class="prettyprint">.isNotArray(value, [message])</code>
-Asserts that <code class="prettyprint">value</code> is <em>not</em> an array.</p>
+<p><code class="prettyprint">.isNotArray(value, [message])</code></p>
+
+<p>Asserts that <code class="prettyprint">value</code> is <em>not</em> an array.</p>
 
 <table><thead>
 <tr>
@@ -1085,8 +1115,9 @@ Asserts that <code class="prettyprint">value</code> is <em>not</em> an array.</p
 
 <h3 id="isstring">isString</h3>
 
-<p><code class="prettyprint">.isString(value, [message])</code>
-Asserts that <code class="prettyprint">value</code> is a string.</p>
+<p><code class="prettyprint">.isString(value, [message])</code></p>
+
+<p>Asserts that <code class="prettyprint">value</code> is a string.</p>
 
 <table><thead>
 <tr>
@@ -1110,8 +1141,9 @@ Asserts that <code class="prettyprint">value</code> is a string.</p>
 <pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">teaOrder</span> <span class="o">=</span> <span class="mi">4</span><span class="p">;</span>
 <span class="nx">assert</span><span class="p">.</span><span class="nx">isNotString</span><span class="p">(</span><span class="nx">teaOrder</span><span class="p">,</span> <span class="s1">'order placed'</span><span class="p">);</span>
 </code></pre>
-<p><code class="prettyprint">.isNotString(value, [message])</code>
-Asserts that <code class="prettyprint">value</code> is <em>not</em> a string.</p>
+<p><code class="prettyprint">.isNotString(value, [message])</code></p>
+
+<p>Asserts that <code class="prettyprint">value</code> is <em>not</em> a string.</p>
 
 <table><thead>
 <tr>
@@ -1133,8 +1165,9 @@ Asserts that <code class="prettyprint">value</code> is <em>not</em> a string.</p
 <pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">cups</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>
 <span class="nx">assert</span><span class="p">.</span><span class="nx">isNumber</span><span class="p">(</span><span class="nx">cups</span><span class="p">,</span> <span class="s1">'how many cups'</span><span class="p">);</span>
 </code></pre>
-<p><code class="prettyprint">.isNumber(value, [message])</code>
-Asserts that <code class="prettyprint">value</code> is a number.</p>
+<p><code class="prettyprint">.isNumber(value, [message])</code></p>
+
+<p>Asserts that <code class="prettyprint">value</code> is a number.</p>
 
 <table><thead>
 <tr>
@@ -1154,8 +1187,9 @@ Asserts that <code class="prettyprint">value</code> is a number.</p>
 
 <h3 id="isnotnumber">isNotNumber</h3>
 
-<p><code class="prettyprint">.isNotNumber(value, [message])</code>
-Asserts that <code class="prettyprint">value</code> is <em>not</em> a number.</p>
+<p><code class="prettyprint">.isNotNumber(value, [message])</code></p>
+
+<p>Asserts that <code class="prettyprint">value</code> is <em>not</em> a number.</p>
 <pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">cups</span> <span class="o">=</span> <span class="s1">'2 cups please'</span><span class="p">;</span>
 <span class="nx">assert</span><span class="p">.</span><span class="nx">isNotNumber</span><span class="p">(</span><span class="nx">cups</span><span class="p">,</span> <span class="s1">'how many cups'</span><span class="p">);</span>
 </code></pre>
@@ -1182,8 +1216,9 @@ Asserts that <code class="prettyprint">value</code> is <em>not</em> a number.</p
 <span class="nx">assert</span><span class="p">.</span><span class="nx">isBoolean</span><span class="p">(</span><span class="nx">teaReady</span><span class="p">,</span> <span class="s1">'is the tea ready'</span><span class="p">);</span>
 <span class="nx">assert</span><span class="p">.</span><span class="nx">isBoolean</span><span class="p">(</span><span class="nx">teaServed</span><span class="p">,</span> <span class="s1">'has tea been served'</span><span class="p">);</span>
 </code></pre>
-<p><code class="prettyprint">.isBoolean(value, [message])</code>
-Asserts that <code class="prettyprint">value</code> is a boolean.</p>
+<p><code class="prettyprint">.isBoolean(value, [message])</code></p>
+
+<p>Asserts that <code class="prettyprint">value</code> is a boolean.</p>
 
 <table><thead>
 <tr>
@@ -1208,8 +1243,9 @@ Asserts that <code class="prettyprint">value</code> is a boolean.</p>
 <span class="nx">assert</span><span class="p">.</span><span class="nx">isNotBoolean</span><span class="p">(</span><span class="nx">teaReady</span><span class="p">,</span> <span class="s1">'is the tea ready'</span><span class="p">);</span>
 <span class="nx">assert</span><span class="p">.</span><span class="nx">isNotBoolean</span><span class="p">(</span><span class="nx">teaServed</span><span class="p">,</span> <span class="s1">'has tea been served'</span><span class="p">);</span>
 </code></pre>
-<p><code class="prettyprint">.isNotBoolean(value, [message])</code>
-Asserts that <code class="prettyprint">value</code> is <em>not</em> a boolean.</p>
+<p><code class="prettyprint">.isNotBoolean(value, [message])</code></p>
+
+<p>Asserts that <code class="prettyprint">value</code> is <em>not</em> a boolean.</p>
 
 <table><thead>
 <tr>
@@ -1235,8 +1271,9 @@ Asserts that <code class="prettyprint">value</code> is <em>not</em> a boolean.</
 <span class="nx">assert</span><span class="p">.</span><span class="nx">typeOf</span><span class="p">(</span><span class="kc">null</span><span class="p">,</span> <span class="s1">'null'</span><span class="p">,</span> <span class="s1">'we have a null'</span><span class="p">);</span>
 <span class="nx">assert</span><span class="p">.</span><span class="nx">typeOf</span><span class="p">(</span><span class="kc">undefined</span><span class="p">,</span> <span class="s1">'undefined'</span><span class="p">,</span> <span class="s1">'we have an undefined'</span><span class="p">);</span>
 </code></pre>
-<p><code class="prettyprint">.typeOf(value, name, [message])</code>
-Asserts that <code class="prettyprint">value</code>&lsquo;s type is <code class="prettyprint">name</code>, as determined by <code class="prettyprint">Object.prototype.toString</code>.</p>
+<p><code class="prettyprint">.typeOf(value, name, [message])</code></p>
+
+<p>Asserts that <code class="prettyprint">value</code>&lsquo;s type is <code class="prettyprint">name</code>, as determined by <code class="prettyprint">Object.prototype.toString</code>.</p>
 
 <table><thead>
 <tr>
@@ -1261,8 +1298,9 @@ Asserts that <code class="prettyprint">value</code>&lsquo;s type is <code class=
 <h3 id="nottypeof">notTypeOf</h3>
 <pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">notTypeOf</span><span class="p">(</span><span class="s1">'tea'</span><span class="p">,</span> <span class="s1">'number'</span><span class="p">,</span> <span class="s1">'strings are not numbers'</span><span class="p">);</span>
 </code></pre>
-<p><code class="prettyprint">.notTypeOf(value, name, [message])</code>
-Asserts that <code class="prettyprint">value</code>&rsquo;s type is <em>not</em> <code class="prettyprint">name</code>, as determined by
+<p><code class="prettyprint">.notTypeOf(value, name, [message])</code></p>
+
+<p>Asserts that <code class="prettyprint">value</code>&rsquo;s type is <em>not</em> <code class="prettyprint">name</code>, as determined by
 <code class="prettyprint">Object.prototype.toString</code>.</p>
 
 <table><thead>
@@ -1293,8 +1331,9 @@ Asserts that <code class="prettyprint">value</code>&rsquo;s type is <em>not</em>
 
 <span class="nx">assert</span><span class="p">.</span><span class="nx">instanceOf</span><span class="p">(</span><span class="nx">chai</span><span class="p">,</span> <span class="nx">Tea</span><span class="p">,</span> <span class="s1">'chai is an instance of tea'</span><span class="p">);</span>
 </code></pre>
-<p><code class="prettyprint">.instanceOf(object, constructor, [message])</code>
-Asserts that <code class="prettyprint">value</code> is an instance of <code class="prettyprint">constructor</code>.</p>
+<p><code class="prettyprint">.instanceOf(object, constructor, [message])</code></p>
+
+<p>Asserts that <code class="prettyprint">value</code> is an instance of <code class="prettyprint">constructor</code>.</p>
 
 <table><thead>
 <tr>
@@ -1318,8 +1357,9 @@ Asserts that <code class="prettyprint">value</code> is an instance of <code clas
 
 <h3 id="notinstanceof">notInstanceOf</h3>
 
-<p><code class="prettyprint">.notInstanceOf(object, constructor, [message])</code>
-Asserts <code class="prettyprint">value</code> is not an instance of <code class="prettyprint">constructor</code>.</p>
+<p><code class="prettyprint">.notInstanceOf(object, constructor, [message])</code></p>
+
+<p>Asserts <code class="prettyprint">value</code> is not an instance of <code class="prettyprint">constructor</code>.</p>
 <pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">Tea</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">name</span><span class="p">)</span> <span class="p">{</span> <span class="k">this</span><span class="p">.</span><span class="nx">name</span> <span class="o">=</span> <span class="nx">name</span><span class="p">;</span> <span class="p">}</span>
   <span class="p">,</span> <span class="nx">chai</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">String</span><span class="p">(</span><span class="s1">'chai'</span><span class="p">);</span>
 
@@ -1349,8 +1389,9 @@ Asserts <code class="prettyprint">value</code> is not an instance of <code class
 
 <h3 id="include">include</h3>
 
-<p><code class="prettyprint">.include(haystack, needle, [message])</code>
-Asserts that <code class="prettyprint">haystack</code> includes <code class="prettyprint">needle</code>. Can be used to assert the
+<p><code class="prettyprint">.include(haystack, needle, [message])</code></p>
+
+<p>Asserts that <code class="prettyprint">haystack</code> includes <code class="prettyprint">needle</code>. Can be used to assert the
 inclusion of a value in an array, a substring in a string, or a subset of
 properties in an object.</p>
 <pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">include</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">],</span> <span class="mi">2</span><span class="p">,</span> <span class="s1">'array contains value'</span><span class="p">);</span>
@@ -1376,7 +1417,7 @@ and stricty equal to the given property value. For instance:</p>
 </thead><tbody>
 <tr>
 <td>haystack</td>
-<td>Array</td>
+<td>Array\</td>
 </tr>
 <tr>
 <td>needle</td>
@@ -1390,8 +1431,9 @@ and stricty equal to the given property value. For instance:</p>
 
 <h3 id="notinclude">notInclude</h3>
 
-<p><code class="prettyprint">.notInclude(haystack, needle, [message])</code>
-Asserts that <code class="prettyprint">haystack</code> does not include <code class="prettyprint">needle</code>. Can be used to assert
+<p><code class="prettyprint">.notInclude(haystack, needle, [message])</code></p>
+
+<p>Asserts that <code class="prettyprint">haystack</code> does not include <code class="prettyprint">needle</code>. Can be used to assert
 the absence of a value in an array, a substring in a string, or a subset of
 properties in an object.</p>
 <pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">notInclude</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">],</span> <span class="mi">4</span><span class="p">,</span> <span class="s1">'array doesn'</span><span class="nx">t</span> <span class="nx">contain</span> <span class="nx">value</span><span class="s1">');
@@ -1418,7 +1460,7 @@ property value. For instance:</p>
 </thead><tbody>
 <tr>
 <td>haystack</td>
-<td>Array</td>
+<td>Array\</td>
 </tr>
 <tr>
 <td>needle</td>
@@ -1432,8 +1474,9 @@ property value. For instance:</p>
 
 <h3 id="deepinclude">deepInclude</h3>
 
-<p><code class="prettyprint">.deepInclude(haystack, needle, [message])</code>
-Asserts that <code class="prettyprint">haystack</code> includes <code class="prettyprint">needle</code>. Can be used to assert the
+<p><code class="prettyprint">.deepInclude(haystack, needle, [message])</code></p>
+
+<p>Asserts that <code class="prettyprint">haystack</code> includes <code class="prettyprint">needle</code>. Can be used to assert the
 inclusion of a value in an array or a subset of properties in an object.
 Deep equality is used.</p>
 <pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">obj1</span> <span class="o">=</span> <span class="p">{</span><span class="na">a</span><span class="p">:</span> <span class="mi">1</span><span class="p">}</span>
@@ -1450,7 +1493,7 @@ Deep equality is used.</p>
 </thead><tbody>
 <tr>
 <td>haystack</td>
-<td>Array</td>
+<td>Array\</td>
 </tr>
 <tr>
 <td>needle</td>
@@ -1464,8 +1507,9 @@ Deep equality is used.</p>
 
 <h3 id="notdeepinclude">notDeepInclude</h3>
 
-<p><code class="prettyprint">.notDeepInclude(haystack, needle, [message])</code>
-Asserts that <code class="prettyprint">haystack</code> does not include <code class="prettyprint">needle</code>. Can be used to assert
+<p><code class="prettyprint">.notDeepInclude(haystack, needle, [message])</code></p>
+
+<p>Asserts that <code class="prettyprint">haystack</code> does not include <code class="prettyprint">needle</code>. Can be used to assert
 the absence of a value in an array or a subset of properties in an object.
 Deep equality is used.</p>
 <pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">obj1</span> <span class="o">=</span> <span class="p">{</span><span class="na">a</span><span class="p">:</span> <span class="mi">1</span><span class="p">}</span>
@@ -1482,7 +1526,7 @@ Deep equality is used.</p>
 </thead><tbody>
 <tr>
 <td>haystack</td>
-<td>Array</td>
+<td>Array\</td>
 </tr>
 <tr>
 <td>needle</td>
@@ -1496,8 +1540,9 @@ Deep equality is used.</p>
 
 <h3 id="nestedinclude">nestedInclude</h3>
 
-<p><code class="prettyprint">.nestedInclude(haystack, needle, [message])</code>
-Asserts that &#39;haystack&rsquo; includes &lsquo;needle&rsquo;. 
+<p><code class="prettyprint">.nestedInclude(haystack, needle, [message])</code></p>
+
+<p>Asserts that &#39;haystack&rsquo; includes &lsquo;needle&rsquo;. 
 Can be used to assert the inclusion of a subset of properties in an 
 object.
 Enables the use of dot- and bracket-notation for referencing nested 
@@ -1528,8 +1573,9 @@ properties.
 
 <h3 id="notnestedinclude">notNestedInclude</h3>
 
-<p><code class="prettyprint">.notNestedInclude(haystack, needle, [message])</code>
-Asserts that &lsquo;haystack&rsquo; does not include &lsquo;needle&rsquo;. 
+<p><code class="prettyprint">.notNestedInclude(haystack, needle, [message])</code></p>
+
+<p>Asserts that &lsquo;haystack&rsquo; does not include &lsquo;needle&rsquo;. 
 Can be used to assert the absence of a subset of properties in an 
 object.
 Enables the use of dot- and bracket-notation for referencing nested 
@@ -1560,8 +1606,9 @@ properties.
 
 <h3 id="deepnestedinclude">deepNestedInclude</h3>
 
-<p><code class="prettyprint">.deepNestedInclude(haystack, needle, [message])</code>
-Asserts that &lsquo;haystack&rsquo; includes &lsquo;needle&rsquo;.
+<p><code class="prettyprint">.deepNestedInclude(haystack, needle, [message])</code></p>
+
+<p>Asserts that &lsquo;haystack&rsquo; includes &lsquo;needle&rsquo;.
 Can be used to assert the inclusion of a subset of properties in an 
 object while checking for deep equality.
 Enables the use of dot- and bracket-notation for referencing nested 
@@ -1592,8 +1639,9 @@ properties.
 
 <h3 id="notdeepnestedinclude">notDeepNestedInclude</h3>
 
-<p><code class="prettyprint">.notDeepNestedInclude(haystack, needle, [message])</code>
-Asserts that &lsquo;haystack&rsquo; does not include &lsquo;needle&rsquo;.
+<p><code class="prettyprint">.notDeepNestedInclude(haystack, needle, [message])</code></p>
+
+<p>Asserts that &lsquo;haystack&rsquo; does not include &lsquo;needle&rsquo;.
 Can be used to assert the absence of a subset of properties in an 
 object while checking for deep equality.
 Enables the use of dot- and bracket-notation for referencing nested 
@@ -1624,8 +1672,9 @@ properties.
 
 <h3 id="owninclude">ownInclude</h3>
 
-<p><code class="prettyprint">.ownInclude(haystack, needle, [message])</code>
-Asserts that &lsquo;haystack&rsquo; includes &lsquo;needle&rsquo;.
+<p><code class="prettyprint">.ownInclude(haystack, needle, [message])</code></p>
+
+<p>Asserts that &lsquo;haystack&rsquo; includes &lsquo;needle&rsquo;.
 Can be used to assert the inclusion of a subset of properties in an 
 object while ignoring inherited properties.</p>
 <pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">ownInclude</span><span class="p">({</span> <span class="na">a</span><span class="p">:</span> <span class="mi">1</span> <span class="p">},</span> <span class="p">{</span> <span class="na">a</span><span class="p">:</span> <span class="mi">1</span> <span class="p">});</span>
@@ -1652,8 +1701,9 @@ object while ignoring inherited properties.</p>
 
 <h3 id="notowninclude">notOwnInclude</h3>
 
-<p><code class="prettyprint">.notOwnInclude(haystack, needle, [message])</code>
-Asserts that &lsquo;haystack&rsquo; includes &lsquo;needle&rsquo;.
+<p><code class="prettyprint">.notOwnInclude(haystack, needle, [message])</code></p>
+
+<p>Asserts that &lsquo;haystack&rsquo; includes &lsquo;needle&rsquo;.
 Can be used to assert the absence of a subset of properties in an 
 object while ignoring inherited properties.</p>
 <pre class="highlight javascript tab-javascript"><code><span class="nb">Object</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">b</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>
@@ -1682,8 +1732,9 @@ object while ignoring inherited properties.</p>
 
 <h3 id="deepowninclude">deepOwnInclude</h3>
 
-<p><code class="prettyprint">.deepOwnInclude(haystack, needle, [message])</code>
-Asserts that &lsquo;haystack&rsquo; includes &lsquo;needle&rsquo;.
+<p><code class="prettyprint">.deepOwnInclude(haystack, needle, [message])</code></p>
+
+<p>Asserts that &lsquo;haystack&rsquo; includes &lsquo;needle&rsquo;.
 Can be used to assert the inclusion of a subset of properties in an 
 object while ignoring inherited properties and checking for deep equality.</p>
 <pre class="highlight javascript tab-javascript"><code> <span class="nx">assert</span><span class="p">.</span><span class="nx">deepOwnInclude</span><span class="p">({</span><span class="na">a</span><span class="p">:</span> <span class="p">{</span><span class="na">b</span><span class="p">:</span> <span class="mi">2</span><span class="p">}},</span> <span class="p">{</span><span class="na">a</span><span class="p">:</span> <span class="p">{</span><span class="na">b</span><span class="p">:</span> <span class="mi">2</span><span class="p">}});</span>
@@ -1710,8 +1761,9 @@ object while ignoring inherited properties and checking for deep equality.</p>
 
 <h3 id="notdeepowninclude">notDeepOwnInclude</h3>
 
-<p><code class="prettyprint">.notDeepOwnInclude(haystack, needle, [message])</code>
-Asserts that &lsquo;haystack&rsquo; includes &lsquo;needle&rsquo;.
+<p><code class="prettyprint">.notDeepOwnInclude(haystack, needle, [message])</code></p>
+
+<p>Asserts that &lsquo;haystack&rsquo; includes &lsquo;needle&rsquo;.
 Can be used to assert the absence of a subset of properties in an 
 object while ignoring inherited properties and checking for deep equality.</p>
 <pre class="highlight javascript tab-javascript"><code> <span class="nx">assert</span><span class="p">.</span><span class="nx">notDeepOwnInclude</span><span class="p">({</span><span class="na">a</span><span class="p">:</span> <span class="p">{</span><span class="na">b</span><span class="p">:</span> <span class="mi">2</span><span class="p">}},</span> <span class="p">{</span><span class="na">a</span><span class="p">:</span> <span class="p">{</span><span class="na">c</span><span class="p">:</span> <span class="mi">3</span><span class="p">}});</span>
@@ -1740,8 +1792,9 @@ object while ignoring inherited properties and checking for deep equality.</p>
 
 <h3 id="match">match</h3>
 
-<p><code class="prettyprint">.match(value, regexp, [message])</code>
-Asserts that <code class="prettyprint">value</code> matches the regular expression <code class="prettyprint">regexp</code>.</p>
+<p><code class="prettyprint">.match(value, regexp, [message])</code></p>
+
+<p>Asserts that <code class="prettyprint">value</code> matches the regular expression <code class="prettyprint">regexp</code>.</p>
 <pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">match</span><span class="p">(</span><span class="s1">'foobar'</span><span class="p">,</span> <span class="sr">/^foo/</span><span class="p">,</span> <span class="s1">'regexp matches'</span><span class="p">);</span>
 </code></pre>
 <table><thead>
@@ -1766,8 +1819,9 @@ Asserts that <code class="prettyprint">value</code> matches the regular expressi
 
 <h3 id="notmatch">notMatch</h3>
 
-<p><code class="prettyprint">.notMatch(value, regexp, [message])</code>
-Asserts that <code class="prettyprint">value</code> does not match the regular expression <code class="prettyprint">regexp</code>.</p>
+<p><code class="prettyprint">.notMatch(value, regexp, [message])</code></p>
+
+<p>Asserts that <code class="prettyprint">value</code> does not match the regular expression <code class="prettyprint">regexp</code>.</p>
 <pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">notMatch</span><span class="p">(</span><span class="s1">'foobar'</span><span class="p">,</span> <span class="sr">/^foo/</span><span class="p">,</span> <span class="s1">'regexp does not match'</span><span class="p">);</span>
 </code></pre>
 <table><thead>
@@ -1794,8 +1848,9 @@ Asserts that <code class="prettyprint">value</code> does not match the regular e
 
 <h3 id="property">property</h3>
 
-<p><code class="prettyprint">.property(object, property, [message])</code>
-Asserts that <code class="prettyprint">object</code> has a direct or inherited property named by
+<p><code class="prettyprint">.property(object, property, [message])</code></p>
+
+<p>Asserts that <code class="prettyprint">object</code> has a direct or inherited property named by
 <code class="prettyprint">property</code>.</p>
 <pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">property</span><span class="p">({</span> <span class="na">tea</span><span class="p">:</span> <span class="p">{</span> <span class="na">green</span><span class="p">:</span> <span class="s1">'matcha'</span> <span class="p">}},</span> <span class="s1">'tea'</span><span class="p">);</span>
 <span class="nx">assert</span><span class="p">.</span><span class="nx">property</span><span class="p">({</span> <span class="na">tea</span><span class="p">:</span> <span class="p">{</span> <span class="na">green</span><span class="p">:</span> <span class="s1">'matcha'</span> <span class="p">}},</span> <span class="s1">'toString'</span><span class="p">);</span>
@@ -1822,8 +1877,9 @@ Asserts that <code class="prettyprint">object</code> has a direct or inherited p
 
 <h3 id="notproperty">notProperty</h3>
 
-<p><code class="prettyprint">.notProperty(object, property, [message])</code>
-Asserts that <code class="prettyprint">object</code> does <em>not</em> have a direct or inherited property named
+<p><code class="prettyprint">.notProperty(object, property, [message])</code></p>
+
+<p>Asserts that <code class="prettyprint">object</code> does <em>not</em> have a direct or inherited property named
 by <code class="prettyprint">property</code>.</p>
 <pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">notProperty</span><span class="p">({</span> <span class="na">tea</span><span class="p">:</span> <span class="p">{</span> <span class="na">green</span><span class="p">:</span> <span class="s1">'matcha'</span> <span class="p">}},</span> <span class="s1">'coffee'</span><span class="p">);</span>
 </code></pre>
@@ -1849,8 +1905,9 @@ by <code class="prettyprint">property</code>.</p>
 
 <h3 id="propertyval">propertyVal</h3>
 
-<p><code class="prettyprint">.propertyVal(object, property, value, [message])</code>
-Asserts that <code class="prettyprint">object</code> has a direct or inherited property named by
+<p><code class="prettyprint">.propertyVal(object, property, value, [message])</code></p>
+
+<p>Asserts that <code class="prettyprint">object</code> has a direct or inherited property named by
 <code class="prettyprint">property</code> with a value given by <code class="prettyprint">value</code>. Uses a strict equality check
 (===).</p>
 <pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">propertyVal</span><span class="p">({</span> <span class="na">tea</span><span class="p">:</span> <span class="s1">'is good'</span> <span class="p">},</span> <span class="s1">'tea'</span><span class="p">,</span> <span class="s1">'is good'</span><span class="p">);</span>
@@ -1881,8 +1938,9 @@ Asserts that <code class="prettyprint">object</code> has a direct or inherited p
 
 <h3 id="notpropertyval">notPropertyVal</h3>
 
-<p><code class="prettyprint">.notPropertyVal(object, property, value, [message])</code>
-Asserts that <code class="prettyprint">object</code> does <em>not</em> have a direct or inherited property named
+<p><code class="prettyprint">.notPropertyVal(object, property, value, [message])</code></p>
+
+<p>Asserts that <code class="prettyprint">object</code> does <em>not</em> have a direct or inherited property named
 by <code class="prettyprint">property</code> with value given by <code class="prettyprint">value</code>. Uses a strict equality check
 (===).</p>
 <pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">notPropertyVal</span><span class="p">({</span> <span class="na">tea</span><span class="p">:</span> <span class="s1">'is good'</span> <span class="p">},</span> <span class="s1">'tea'</span><span class="p">,</span> <span class="s1">'is bad'</span><span class="p">);</span>
@@ -1914,8 +1972,9 @@ by <code class="prettyprint">property</code> with value given by <code class="pr
 
 <h3 id="deeppropertyval">deepPropertyVal</h3>
 
-<p><code class="prettyprint">.deepPropertyVal(object, property, value, [message])</code>
-Asserts that <code class="prettyprint">object</code> has a direct or inherited property named by
+<p><code class="prettyprint">.deepPropertyVal(object, property, value, [message])</code></p>
+
+<p>Asserts that <code class="prettyprint">object</code> has a direct or inherited property named by
 <code class="prettyprint">property</code> with a value given by <code class="prettyprint">value</code>. Uses a deep equality check.</p>
 <pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">deepPropertyVal</span><span class="p">({</span> <span class="na">tea</span><span class="p">:</span> <span class="p">{</span> <span class="na">green</span><span class="p">:</span> <span class="s1">'matcha'</span> <span class="p">}</span> <span class="p">},</span> <span class="s1">'tea'</span><span class="p">,</span> <span class="p">{</span> <span class="na">green</span><span class="p">:</span> <span class="s1">'matcha'</span> <span class="p">});</span>
 </code></pre>
@@ -1945,8 +2004,9 @@ Asserts that <code class="prettyprint">object</code> has a direct or inherited p
 
 <h3 id="notdeeppropertyval">notDeepPropertyVal</h3>
 
-<p><code class="prettyprint">.notDeepPropertyVal(object, property, value, [message])</code>
-Asserts that <code class="prettyprint">object</code> does <em>not</em> have a direct or inherited property named
+<p><code class="prettyprint">.notDeepPropertyVal(object, property, value, [message])</code></p>
+
+<p>Asserts that <code class="prettyprint">object</code> does <em>not</em> have a direct or inherited property named
 by <code class="prettyprint">property</code> with value given by <code class="prettyprint">value</code>. Uses a deep equality check.</p>
 <pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">notDeepPropertyVal</span><span class="p">({</span> <span class="na">tea</span><span class="p">:</span> <span class="p">{</span> <span class="na">green</span><span class="p">:</span> <span class="s1">'matcha'</span> <span class="p">}</span> <span class="p">},</span> <span class="s1">'tea'</span><span class="p">,</span> <span class="p">{</span> <span class="na">black</span><span class="p">:</span> <span class="s1">'matcha'</span> <span class="p">});</span>
 <span class="nx">assert</span><span class="p">.</span><span class="nx">notDeepPropertyVal</span><span class="p">({</span> <span class="na">tea</span><span class="p">:</span> <span class="p">{</span> <span class="na">green</span><span class="p">:</span> <span class="s1">'matcha'</span> <span class="p">}</span> <span class="p">},</span> <span class="s1">'tea'</span><span class="p">,</span> <span class="p">{</span> <span class="na">green</span><span class="p">:</span> <span class="s1">'oolong'</span> <span class="p">});</span>
@@ -1978,8 +2038,9 @@ by <code class="prettyprint">property</code> with value given by <code class="pr
 
 <h3 id="nestedproperty">nestedProperty</h3>
 
-<p><code class="prettyprint">.nestedProperty(object, property, [message])</code>
-Asserts that <code class="prettyprint">object</code> has a direct or inherited property named by
+<p><code class="prettyprint">.nestedProperty(object, property, [message])</code></p>
+
+<p>Asserts that <code class="prettyprint">object</code> has a direct or inherited property named by
 <code class="prettyprint">property</code>, which can be a string using dot- and bracket-notation for
 nested reference.</p>
 <pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">nestedProperty</span><span class="p">({</span> <span class="na">tea</span><span class="p">:</span> <span class="p">{</span> <span class="na">green</span><span class="p">:</span> <span class="s1">'matcha'</span> <span class="p">}},</span> <span class="s1">'tea.green'</span><span class="p">);</span>
@@ -2006,8 +2067,9 @@ nested reference.</p>
 
 <h3 id="notnestedproperty">notNestedProperty</h3>
 
-<p><code class="prettyprint">.notNestedProperty(object, property, [message])</code>
-Asserts that <code class="prettyprint">object</code> does <em>not</em> have a property named by <code class="prettyprint">property</code>, which
+<p><code class="prettyprint">.notNestedProperty(object, property, [message])</code></p>
+
+<p>Asserts that <code class="prettyprint">object</code> does <em>not</em> have a property named by <code class="prettyprint">property</code>, which
 can be a string using dot- and bracket-notation for nested reference. The
 property cannot exist on the object nor anywhere in its prototype chain.</p>
 <pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">notNestedProperty</span><span class="p">({</span> <span class="na">tea</span><span class="p">:</span> <span class="p">{</span> <span class="na">green</span><span class="p">:</span> <span class="s1">'matcha'</span> <span class="p">}},</span> <span class="s1">'tea.oolong'</span><span class="p">);</span>
@@ -2034,8 +2096,9 @@ property cannot exist on the object nor anywhere in its prototype chain.</p>
 
 <h3 id="nestedpropertyval">nestedPropertyVal</h3>
 
-<p><code class="prettyprint">.nestedPropertyVal(object, property, value, [message])</code>
-Asserts that <code class="prettyprint">object</code> has a property named by <code class="prettyprint">property</code> with value given
+<p><code class="prettyprint">.nestedPropertyVal(object, property, value, [message])</code></p>
+
+<p>Asserts that <code class="prettyprint">object</code> has a property named by <code class="prettyprint">property</code> with value given
 by <code class="prettyprint">value</code>. <code class="prettyprint">property</code> can use dot- and bracket-notation for nested
 reference. Uses a strict equality check (===).</p>
 <pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">nestedPropertyVal</span><span class="p">({</span> <span class="na">tea</span><span class="p">:</span> <span class="p">{</span> <span class="na">green</span><span class="p">:</span> <span class="s1">'matcha'</span> <span class="p">}},</span> <span class="s1">'tea.green'</span><span class="p">,</span> <span class="s1">'matcha'</span><span class="p">);</span>
@@ -2066,8 +2129,9 @@ reference. Uses a strict equality check (===).</p>
 
 <h3 id="notnestedpropertyval">notNestedPropertyVal</h3>
 
-<p><code class="prettyprint">.notNestedPropertyVal(object, property, value, [message])</code>
-Asserts that <code class="prettyprint">object</code> does <em>not</em> have a property named by <code class="prettyprint">property</code> with
+<p><code class="prettyprint">.notNestedPropertyVal(object, property, value, [message])</code></p>
+
+<p>Asserts that <code class="prettyprint">object</code> does <em>not</em> have a property named by <code class="prettyprint">property</code> with
 value given by <code class="prettyprint">value</code>. <code class="prettyprint">property</code> can use dot- and bracket-notation for
 nested reference. Uses a strict equality check (===).</p>
 <pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">notNestedPropertyVal</span><span class="p">({</span> <span class="na">tea</span><span class="p">:</span> <span class="p">{</span> <span class="na">green</span><span class="p">:</span> <span class="s1">'matcha'</span> <span class="p">}},</span> <span class="s1">'tea.green'</span><span class="p">,</span> <span class="s1">'konacha'</span><span class="p">);</span>
@@ -2099,8 +2163,9 @@ nested reference. Uses a strict equality check (===).</p>
 
 <h3 id="deepnestedpropertyval">deepNestedPropertyVal</h3>
 
-<p><code class="prettyprint">.deepNestedPropertyVal(object, property, value, [message])</code>
-Asserts that <code class="prettyprint">object</code> has a property named by <code class="prettyprint">property</code> with a value given
+<p><code class="prettyprint">.deepNestedPropertyVal(object, property, value, [message])</code></p>
+
+<p>Asserts that <code class="prettyprint">object</code> has a property named by <code class="prettyprint">property</code> with a value given
 by <code class="prettyprint">value</code>. <code class="prettyprint">property</code> can use dot- and bracket-notation for nested
 reference. Uses a deep equality check.</p>
 <pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">deepNestedPropertyVal</span><span class="p">({</span> <span class="na">tea</span><span class="p">:</span> <span class="p">{</span> <span class="na">green</span><span class="p">:</span> <span class="p">{</span> <span class="na">matcha</span><span class="p">:</span> <span class="s1">'yum'</span> <span class="p">}</span> <span class="p">}</span> <span class="p">},</span> <span class="s1">'tea.green'</span><span class="p">,</span> <span class="p">{</span> <span class="na">matcha</span><span class="p">:</span> <span class="s1">'yum'</span> <span class="p">});</span>
@@ -2131,8 +2196,9 @@ reference. Uses a deep equality check.</p>
 
 <h3 id="notdeepnestedpropertyval">notDeepNestedPropertyVal</h3>
 
-<p><code class="prettyprint">.notDeepNestedPropertyVal(object, property, value, [message])</code>
-Asserts that <code class="prettyprint">object</code> does <em>not</em> have a property named by <code class="prettyprint">property</code> with
+<p><code class="prettyprint">.notDeepNestedPropertyVal(object, property, value, [message])</code></p>
+
+<p>Asserts that <code class="prettyprint">object</code> does <em>not</em> have a property named by <code class="prettyprint">property</code> with
 value given by <code class="prettyprint">value</code>. <code class="prettyprint">property</code> can use dot- and bracket-notation for
 nested reference. Uses a deep equality check.</p>
 <pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">notDeepNestedPropertyVal</span><span class="p">({</span> <span class="na">tea</span><span class="p">:</span> <span class="p">{</span> <span class="na">green</span><span class="p">:</span> <span class="p">{</span> <span class="na">matcha</span><span class="p">:</span> <span class="s1">'yum'</span> <span class="p">}</span> <span class="p">}</span> <span class="p">},</span> <span class="s1">'tea.green'</span><span class="p">,</span> <span class="p">{</span> <span class="na">oolong</span><span class="p">:</span> <span class="s1">'yum'</span> <span class="p">});</span>
@@ -2167,8 +2233,9 @@ nested reference. Uses a deep equality check.</p>
 
 <h3 id="hasanykeys">hasAnyKeys</h3>
 
-<p><code class="prettyprint">.hasAnyKeys(object, [keys], [message])</code>
-Asserts that <code class="prettyprint">object</code> has at least one of the <code class="prettyprint">keys</code> provided.
+<p><code class="prettyprint">.hasAnyKeys(object, [keys], [message])</code></p>
+
+<p>Asserts that <code class="prettyprint">object</code> has at least one of the <code class="prettyprint">keys</code> provided.
 You can also provide a single object instead of a <code class="prettyprint">keys</code> array and its keys
 will be used as the expected set of keys.</p>
 <pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">hasAnyKey</span><span class="p">({</span><span class="na">foo</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="na">bar</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="na">baz</span><span class="p">:</span> <span class="mi">3</span><span class="p">},</span> <span class="p">[</span><span class="s1">'foo'</span><span class="p">,</span> <span class="s1">'iDontExist'</span><span class="p">,</span> <span class="s1">'baz'</span><span class="p">]);</span>
@@ -2188,7 +2255,7 @@ will be used as the expected set of keys.</p>
 </tr>
 <tr>
 <td>keys</td>
-<td>Array</td>
+<td>Array\</td>
 </tr>
 <tr>
 <td>message</td>
@@ -2198,8 +2265,9 @@ will be used as the expected set of keys.</p>
 
 <h3 id="hasallkeys">hasAllKeys</h3>
 
-<p><code class="prettyprint">.hasAllKeys(object, [keys], [message])</code>
-Asserts that <code class="prettyprint">object</code> has all and only all of the <code class="prettyprint">keys</code> provided.
+<p><code class="prettyprint">.hasAllKeys(object, [keys], [message])</code></p>
+
+<p>Asserts that <code class="prettyprint">object</code> has all and only all of the <code class="prettyprint">keys</code> provided.
 You can also provide a single object instead of a <code class="prettyprint">keys</code> array and its keys
 will be used as the expected set of keys.</p>
 <pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">hasAllKeys</span><span class="p">({</span><span class="na">foo</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="na">bar</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="na">baz</span><span class="p">:</span> <span class="mi">3</span><span class="p">},</span> <span class="p">[</span><span class="s1">'foo'</span><span class="p">,</span> <span class="s1">'bar'</span><span class="p">,</span> <span class="s1">'baz'</span><span class="p">]);</span>
@@ -2229,8 +2297,9 @@ will be used as the expected set of keys.</p>
 
 <h3 id="containsallkeys">containsAllKeys</h3>
 
-<p><code class="prettyprint">.containsAllKeys(object, [keys], [message])</code>
-Asserts that <code class="prettyprint">object</code> has all of the <code class="prettyprint">keys</code> provided but may have more keys not listed.
+<p><code class="prettyprint">.containsAllKeys(object, [keys], [message])</code></p>
+
+<p>Asserts that <code class="prettyprint">object</code> has all of the <code class="prettyprint">keys</code> provided but may have more keys not listed.
 You can also provide a single object instead of a <code class="prettyprint">keys</code> array and its keys
 will be used as the expected set of keys.</p>
 <pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">containsAllKeys</span><span class="p">({</span><span class="na">foo</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="na">bar</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="na">baz</span><span class="p">:</span> <span class="mi">3</span><span class="p">},</span> <span class="p">[</span><span class="s1">'foo'</span><span class="p">,</span> <span class="s1">'baz'</span><span class="p">]);</span>
@@ -2264,8 +2333,9 @@ will be used as the expected set of keys.</p>
 
 <h3 id="doesnothaveanykeys">doesNotHaveAnyKeys</h3>
 
-<p><code class="prettyprint">.doesNotHaveAnyKeys(object, [keys], [message])</code>
-Asserts that <code class="prettyprint">object</code> has none of the <code class="prettyprint">keys</code> provided.
+<p><code class="prettyprint">.doesNotHaveAnyKeys(object, [keys], [message])</code></p>
+
+<p>Asserts that <code class="prettyprint">object</code> has none of the <code class="prettyprint">keys</code> provided.
 You can also provide a single object instead of a <code class="prettyprint">keys</code> array and its keys
 will be used as the expected set of keys.</p>
 <pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">doesNotHaveAnyKeys</span><span class="p">({</span><span class="na">foo</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="na">bar</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="na">baz</span><span class="p">:</span> <span class="mi">3</span><span class="p">},</span> <span class="p">[</span><span class="s1">'one'</span><span class="p">,</span> <span class="s1">'two'</span><span class="p">,</span> <span class="s1">'example'</span><span class="p">]);</span>
@@ -2295,8 +2365,9 @@ will be used as the expected set of keys.</p>
 
 <h3 id="doesnothaveallkeys">doesNotHaveAllKeys</h3>
 
-<p><code class="prettyprint">.doesNotHaveAllKeys(object, [keys], [message])</code>
-Asserts that <code class="prettyprint">object</code> does not have at least one of the <code class="prettyprint">keys</code> provided.
+<p><code class="prettyprint">.doesNotHaveAllKeys(object, [keys], [message])</code></p>
+
+<p>Asserts that <code class="prettyprint">object</code> does not have at least one of the <code class="prettyprint">keys</code> provided.
 You can also provide a single object instead of a <code class="prettyprint">keys</code> array and its keys
 will be used as the expected set of keys.</p>
 <pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">doesNotHaveAllKeys</span><span class="p">({</span><span class="na">foo</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="na">bar</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="na">baz</span><span class="p">:</span> <span class="mi">3</span><span class="p">},</span> <span class="p">[</span><span class="s1">'one'</span><span class="p">,</span> <span class="s1">'two'</span><span class="p">,</span> <span class="s1">'example'</span><span class="p">]);</span>
@@ -2326,8 +2397,9 @@ will be used as the expected set of keys.</p>
 
 <h3 id="doesnothaveallkeys">doesNotHaveAllKeys</h3>
 
-<p><code class="prettyprint">.hasAnyDeepKeys(object, [keys], [message])</code>
-Asserts that <code class="prettyprint">object</code> has at least one of the <code class="prettyprint">keys</code> provided.
+<p><code class="prettyprint">.hasAnyDeepKeys(object, [keys], [message])</code></p>
+
+<p>Asserts that <code class="prettyprint">object</code> has at least one of the <code class="prettyprint">keys</code> provided.
 Since Sets and Maps can have objects as keys you can use this assertion to perform
 a deep comparison.
 You can also provide a single object instead of a <code class="prettyprint">keys</code> array and its keys
@@ -2351,7 +2423,7 @@ will be used as the expected set of keys.</p>
 </tr>
 <tr>
 <td>keys</td>
-<td>Array</td>
+<td>Array\</td>
 </tr>
 <tr>
 <td>message</td>
@@ -2361,8 +2433,9 @@ will be used as the expected set of keys.</p>
 
 <h3 id="hasalldeepkeys">hasAllDeepKeys</h3>
 
-<p><code class="prettyprint">.hasAllDeepKeys(object, [keys], [message])</code>
-Asserts that <code class="prettyprint">object</code> has all and only all of the <code class="prettyprint">keys</code> provided.
+<p><code class="prettyprint">.hasAllDeepKeys(object, [keys], [message])</code></p>
+
+<p>Asserts that <code class="prettyprint">object</code> has all and only all of the <code class="prettyprint">keys</code> provided.
 Since Sets and Maps can have objects as keys you can use this assertion to perform
 a deep comparison.
 You can also provide a single object instead of a <code class="prettyprint">keys</code> array and its keys
@@ -2384,7 +2457,7 @@ will be used as the expected set of keys.</p>
 </tr>
 <tr>
 <td>keys</td>
-<td>Array</td>
+<td>Array\</td>
 </tr>
 <tr>
 <td>message</td>
@@ -2394,8 +2467,9 @@ will be used as the expected set of keys.</p>
 
 <h3 id="containsalldeepkeys">containsAllDeepKeys</h3>
 
-<p><code class="prettyprint">.containsAllDeepKeys(object, [keys], [message])</code>
-Asserts that <code class="prettyprint">object</code> contains all of the <code class="prettyprint">keys</code> provided.
+<p><code class="prettyprint">.containsAllDeepKeys(object, [keys], [message])</code></p>
+
+<p>Asserts that <code class="prettyprint">object</code> contains all of the <code class="prettyprint">keys</code> provided.
 Since Sets and Maps can have objects as keys you can use this assertion to perform
 a deep comparison.
 You can also provide a single object instead of a <code class="prettyprint">keys</code> array and its keys
@@ -2417,7 +2491,7 @@ will be used as the expected set of keys.</p>
 </tr>
 <tr>
 <td>keys</td>
-<td>Array</td>
+<td>Array\</td>
 </tr>
 <tr>
 <td>message</td>
@@ -2427,8 +2501,9 @@ will be used as the expected set of keys.</p>
 
 <h3 id="doesnothaveanydeepkeys">doesNotHaveAnyDeepKeys</h3>
 
-<p><code class="prettyprint">.doesNotHaveAnyDeepKeys(object, [keys], [message])</code>
-Asserts that <code class="prettyprint">object</code> has none of the <code class="prettyprint">keys</code> provided.
+<p><code class="prettyprint">.doesNotHaveAnyDeepKeys(object, [keys], [message])</code></p>
+
+<p>Asserts that <code class="prettyprint">object</code> has none of the <code class="prettyprint">keys</code> provided.
 Since Sets and Maps can have objects as keys you can use this assertion to perform
 a deep comparison.
 You can also provide a single object instead of a <code class="prettyprint">keys</code> array and its keys
@@ -2450,7 +2525,7 @@ will be used as the expected set of keys.</p>
 </tr>
 <tr>
 <td>keys</td>
-<td>Array</td>
+<td>Array\</td>
 </tr>
 <tr>
 <td>message</td>
@@ -2460,8 +2535,9 @@ will be used as the expected set of keys.</p>
 
 <h3 id="doesnothavealldeepkeys">doesNotHaveAllDeepKeys</h3>
 
-<p><code class="prettyprint">.doesNotHaveAllDeepKeys(object, [keys], [message])</code>
-Asserts that <code class="prettyprint">object</code> does not have at least one of the <code class="prettyprint">keys</code> provided.
+<p><code class="prettyprint">.doesNotHaveAllDeepKeys(object, [keys], [message])</code></p>
+
+<p>Asserts that <code class="prettyprint">object</code> does not have at least one of the <code class="prettyprint">keys</code> provided.
 Since Sets and Maps can have objects as keys you can use this assertion to perform
 a deep comparison.
 You can also provide a single object instead of a <code class="prettyprint">keys</code> array and its keys
@@ -2483,7 +2559,7 @@ will be used as the expected set of keys.</p>
 </tr>
 <tr>
 <td>keys</td>
-<td>Array</td>
+<td>Array\</td>
 </tr>
 <tr>
 <td>message</td>
@@ -2495,8 +2571,9 @@ will be used as the expected set of keys.</p>
 
 <h3 id="throws">throws</h3>
 
-<p><code class="prettyprint">.throws(fn, [errorLike/string/regexp], [string/regexp], [message])</code>
-If <code class="prettyprint">errorLike</code> is an <code class="prettyprint">Error</code> constructor, asserts that <code class="prettyprint">fn</code> will throw an error that is an
+<p><code class="prettyprint">.throws(fn, [errorLike/string/regexp], [string/regexp], [message])</code></p>
+
+<p>If <code class="prettyprint">errorLike</code> is an <code class="prettyprint">Error</code> constructor, asserts that <code class="prettyprint">fn</code> will throw an error that is an
 instance of <code class="prettyprint">errorLike</code>.
 If <code class="prettyprint">errorLike</code> is an <code class="prettyprint">Error</code> instance, asserts that the error thrown is the same
 instance as <code class="prettyprint">errorLike</code>.
@@ -2523,11 +2600,11 @@ message matching <code class="prettyprint">errMsgMatcher</code>.</p>
 </tr>
 <tr>
 <td>errorLike</td>
-<td>ErrorConstructor</td>
+<td>ErrorConstructor\</td>
 </tr>
 <tr>
 <td>errMsgMatcher</td>
-<td>RegExp</td>
+<td>RegExp\</td>
 </tr>
 <tr>
 <td>message</td>
@@ -2537,8 +2614,9 @@ message matching <code class="prettyprint">errMsgMatcher</code>.</p>
 
 <h3 id="doesnotthrow">doesNotThrow</h3>
 
-<p><code class="prettyprint">.doesNotThrow(fn, [errorLike/string/regexp], [string/regexp], [message])</code>
-If <code class="prettyprint">errorLike</code> is an <code class="prettyprint">Error</code> constructor, asserts that <code class="prettyprint">fn</code> will <em>not</em> throw an error that is an
+<p><code class="prettyprint">.doesNotThrow(fn, [errorLike/string/regexp], [string/regexp], [message])</code></p>
+
+<p>If <code class="prettyprint">errorLike</code> is an <code class="prettyprint">Error</code> constructor, asserts that <code class="prettyprint">fn</code> will <em>not</em> throw an error that is an
 instance of <code class="prettyprint">errorLike</code>.
 If <code class="prettyprint">errorLike</code> is an <code class="prettyprint">Error</code> instance, asserts that the error thrown is <em>not</em> the same
 instance as <code class="prettyprint">errorLike</code>.
@@ -2569,7 +2647,7 @@ message matching <code class="prettyprint">errMsgMatcher</code>.</p>
 </tr>
 <tr>
 <td>errMsgMatcher</td>
-<td>RegExp</td>
+<td>RegExp\</td>
 </tr>
 <tr>
 <td>message</td>
@@ -2579,8 +2657,9 @@ message matching <code class="prettyprint">errMsgMatcher</code>.</p>
 
 <h3 id="iferror">ifError</h3>
 
-<p><code class="prettyprint">.ifError(object)</code>
-Asserts if value is not a false value, and throws if it is a true value.
+<p><code class="prettyprint">.ifError(object)</code></p>
+
+<p>Asserts if value is not a false value, and throws if it is a true value.
 This is added to allow for chai to be a drop-in replacement for Node&rsquo;s
 assert class.</p>
 <pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">err</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Error</span><span class="p">(</span><span class="s1">'I am a custom error'</span><span class="p">);</span>
@@ -2602,8 +2681,9 @@ assert class.</p>
 
 <h3 id="samemembers">sameMembers</h3>
 
-<p><code class="prettyprint">.sameMembers(set1, set2, [message])</code>
-Asserts that <code class="prettyprint">set1</code> and <code class="prettyprint">set2</code> have the same members in any order. Uses a
+<p><code class="prettyprint">.sameMembers(set1, set2, [message])</code></p>
+
+<p>Asserts that <code class="prettyprint">set1</code> and <code class="prettyprint">set2</code> have the same members in any order. Uses a
 strict equality check (===).</p>
 <pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">sameMembers</span><span class="p">([</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span> <span class="p">],</span> <span class="p">[</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">3</span> <span class="p">],</span> <span class="s1">'same members'</span><span class="p">);</span>
 </code></pre>
@@ -2629,8 +2709,9 @@ strict equality check (===).</p>
 
 <h3 id="notsamemembers">notSameMembers</h3>
 
-<p><code class="prettyprint">.notSameMembers(set1, set2, [message])</code>
-Asserts that <code class="prettyprint">set1</code> and <code class="prettyprint">set2</code> don&rsquo;t have the same members in any order.
+<p><code class="prettyprint">.notSameMembers(set1, set2, [message])</code></p>
+
+<p>Asserts that <code class="prettyprint">set1</code> and <code class="prettyprint">set2</code> don&rsquo;t have the same members in any order.
 Uses a strict equality check (===).</p>
 <pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">notSameMembers</span><span class="p">([</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span> <span class="p">],</span> <span class="p">[</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">3</span> <span class="p">],</span> <span class="s1">'not same members'</span><span class="p">);</span>
 </code></pre>
@@ -2656,8 +2737,9 @@ Uses a strict equality check (===).</p>
 
 <h3 id="samedeepmembers">sameDeepMembers</h3>
 
-<p><code class="prettyprint">.sameDeepMembers(set1, set2, [message])</code>
-Asserts that <code class="prettyprint">set1</code> and <code class="prettyprint">set2</code> have the same members in any order. Uses a
+<p><code class="prettyprint">.sameDeepMembers(set1, set2, [message])</code></p>
+
+<p>Asserts that <code class="prettyprint">set1</code> and <code class="prettyprint">set2</code> have the same members in any order. Uses a
 deep equality check.</p>
 <pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">sameDeepMembers</span><span class="p">([</span> <span class="p">{</span> <span class="na">a</span><span class="p">:</span> <span class="mi">1</span> <span class="p">},</span> <span class="p">{</span> <span class="na">b</span><span class="p">:</span> <span class="mi">2</span> <span class="p">},</span> <span class="p">{</span> <span class="na">c</span><span class="p">:</span> <span class="mi">3</span> <span class="p">}</span> <span class="p">],</span> <span class="p">[{</span> <span class="na">b</span><span class="p">:</span> <span class="mi">2</span> <span class="p">},</span> <span class="p">{</span> <span class="na">a</span><span class="p">:</span> <span class="mi">1</span> <span class="p">},</span> <span class="p">{</span> <span class="na">c</span><span class="p">:</span> <span class="mi">3</span> <span class="p">}],</span> <span class="s1">'same deep members'</span><span class="p">);</span>
 </code></pre>
@@ -2683,8 +2765,9 @@ deep equality check.</p>
 
 <h3 id="notsamedeepmembers">notSameDeepMembers</h3>
 
-<p><code class="prettyprint">.notSameDeepMembers(set1, set2, [message])</code>
-Asserts that <code class="prettyprint">set1</code> and <code class="prettyprint">set2</code> don&rsquo;t have the same members in any order.
+<p><code class="prettyprint">.notSameDeepMembers(set1, set2, [message])</code></p>
+
+<p>Asserts that <code class="prettyprint">set1</code> and <code class="prettyprint">set2</code> don&rsquo;t have the same members in any order.
 Uses a deep equality check.</p>
 <pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">notSameDeepMembers</span><span class="p">([</span> <span class="p">{</span> <span class="na">a</span><span class="p">:</span> <span class="mi">1</span> <span class="p">},</span> <span class="p">{</span> <span class="na">b</span><span class="p">:</span> <span class="mi">2</span> <span class="p">},</span> <span class="p">{</span> <span class="na">c</span><span class="p">:</span> <span class="mi">3</span> <span class="p">}</span> <span class="p">],</span> <span class="p">[{</span> <span class="na">b</span><span class="p">:</span> <span class="mi">2</span> <span class="p">},</span> <span class="p">{</span> <span class="na">a</span><span class="p">:</span> <span class="mi">1</span> <span class="p">},</span> <span class="p">{</span> <span class="na">f</span><span class="p">:</span> <span class="mi">5</span> <span class="p">}],</span> <span class="s1">'not same deep members'</span><span class="p">);</span>
 </code></pre>
@@ -2710,8 +2793,9 @@ Uses a deep equality check.</p>
 
 <h3 id="sameorderedmembers">sameOrderedMembers</h3>
 
-<p><code class="prettyprint">.sameOrderedMembers(set1, set2, [message])</code>
-Asserts that <code class="prettyprint">set1</code> and <code class="prettyprint">set2</code> have the same members in the same order.
+<p><code class="prettyprint">.sameOrderedMembers(set1, set2, [message])</code></p>
+
+<p>Asserts that <code class="prettyprint">set1</code> and <code class="prettyprint">set2</code> have the same members in the same order.
 Uses a strict equality check (===).</p>
 <pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">sameOrderedMembers</span><span class="p">([</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span> <span class="p">],</span> <span class="p">[</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span> <span class="p">],</span> <span class="s1">'same ordered members'</span><span class="p">);</span>
 </code></pre>
@@ -2737,8 +2821,9 @@ Uses a strict equality check (===).</p>
 
 <h3 id="notsameorderedmembers">notSameOrderedMembers</h3>
 
-<p><code class="prettyprint">.notSameOrderedMembers(set1, set2, [message])</code>
-Asserts that <code class="prettyprint">set1</code> and <code class="prettyprint">set2</code> don&rsquo;t have the same members in the same
+<p><code class="prettyprint">.notSameOrderedMembers(set1, set2, [message])</code></p>
+
+<p>Asserts that <code class="prettyprint">set1</code> and <code class="prettyprint">set2</code> don&rsquo;t have the same members in the same
 order. Uses a strict equality check (===).</p>
 <pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">notSameOrderedMembers</span><span class="p">([</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span> <span class="p">],</span> <span class="p">[</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">3</span> <span class="p">],</span> <span class="s1">'not same ordered members'</span><span class="p">);</span>
 </code></pre>
@@ -2764,8 +2849,9 @@ order. Uses a strict equality check (===).</p>
 
 <h3 id="samedeeporderedmembers">sameDeepOrderedMembers</h3>
 
-<p><code class="prettyprint">.sameDeepOrderedMembers(set1, set2, [message])</code>
-Asserts that <code class="prettyprint">set1</code> and <code class="prettyprint">set2</code> have the same members in the same order.
+<p><code class="prettyprint">.sameDeepOrderedMembers(set1, set2, [message])</code></p>
+
+<p>Asserts that <code class="prettyprint">set1</code> and <code class="prettyprint">set2</code> have the same members in the same order.
 Uses a deep equality check.</p>
 <pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">sameDeepOrderedMembers</span><span class="p">([</span> <span class="p">{</span> <span class="na">a</span><span class="p">:</span> <span class="mi">1</span> <span class="p">},</span> <span class="p">{</span> <span class="na">b</span><span class="p">:</span> <span class="mi">2</span> <span class="p">},</span> <span class="p">{</span> <span class="na">c</span><span class="p">:</span> <span class="mi">3</span> <span class="p">}</span> <span class="p">],</span> <span class="p">[</span> <span class="p">{</span> <span class="na">a</span><span class="p">:</span> <span class="mi">1</span> <span class="p">},</span> <span class="p">{</span> <span class="na">b</span><span class="p">:</span> <span class="mi">2</span> <span class="p">},</span> <span class="p">{</span> <span class="na">c</span><span class="p">:</span> <span class="mi">3</span> <span class="p">}</span> <span class="p">],</span> <span class="s1">'same deep ordered members'</span><span class="p">);</span>
 </code></pre>
@@ -2791,8 +2877,9 @@ Uses a deep equality check.</p>
 
 <h3 id="notsamedeeporderedmembers">notSameDeepOrderedMembers</h3>
 
-<p><code class="prettyprint">.notSameDeepOrderedMembers(set1, set2, [message])</code>
-Asserts that <code class="prettyprint">set1</code> and <code class="prettyprint">set2</code> don&rsquo;t have the same members in the same
+<p><code class="prettyprint">.notSameDeepOrderedMembers(set1, set2, [message])</code></p>
+
+<p>Asserts that <code class="prettyprint">set1</code> and <code class="prettyprint">set2</code> don&rsquo;t have the same members in the same
 order. Uses a deep equality check.</p>
 <pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">notSameDeepOrderedMembers</span><span class="p">([</span> <span class="p">{</span> <span class="na">a</span><span class="p">:</span> <span class="mi">1</span> <span class="p">},</span> <span class="p">{</span> <span class="na">b</span><span class="p">:</span> <span class="mi">2</span> <span class="p">},</span> <span class="p">{</span> <span class="na">c</span><span class="p">:</span> <span class="mi">3</span> <span class="p">}</span> <span class="p">],</span> <span class="p">[</span> <span class="p">{</span> <span class="na">a</span><span class="p">:</span> <span class="mi">1</span> <span class="p">},</span> <span class="p">{</span> <span class="na">b</span><span class="p">:</span> <span class="mi">2</span> <span class="p">},</span> <span class="p">{</span> <span class="na">z</span><span class="p">:</span> <span class="mi">5</span> <span class="p">}</span> <span class="p">],</span> <span class="s1">'not same deep ordered members'</span><span class="p">);</span>
 <span class="nx">assert</span><span class="p">.</span><span class="nx">notSameDeepOrderedMembers</span><span class="p">([</span> <span class="p">{</span> <span class="na">a</span><span class="p">:</span> <span class="mi">1</span> <span class="p">},</span> <span class="p">{</span> <span class="na">b</span><span class="p">:</span> <span class="mi">2</span> <span class="p">},</span> <span class="p">{</span> <span class="na">c</span><span class="p">:</span> <span class="mi">3</span> <span class="p">}</span> <span class="p">],</span> <span class="p">[</span> <span class="p">{</span> <span class="na">b</span><span class="p">:</span> <span class="mi">2</span> <span class="p">},</span> <span class="p">{</span> <span class="na">a</span><span class="p">:</span> <span class="mi">1</span> <span class="p">},</span> <span class="p">{</span> <span class="na">c</span><span class="p">:</span> <span class="mi">3</span> <span class="p">}</span> <span class="p">],</span> <span class="s1">'not same deep ordered members'</span><span class="p">);</span>
@@ -2819,8 +2906,9 @@ order. Uses a deep equality check.</p>
 
 <h3 id="includemembers">includeMembers</h3>
 
-<p><code class="prettyprint">.includeMembers(superset, subset, [message])</code>
-Asserts that <code class="prettyprint">subset</code> is included in <code class="prettyprint">superset</code> in any order. Uses a
+<p><code class="prettyprint">.includeMembers(superset, subset, [message])</code></p>
+
+<p>Asserts that <code class="prettyprint">subset</code> is included in <code class="prettyprint">superset</code> in any order. Uses a
 strict equality check (===). Duplicates are ignored.</p>
 <pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">includeMembers</span><span class="p">([</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span> <span class="p">],</span> <span class="p">[</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span> <span class="p">],</span> <span class="s1">'include members'</span><span class="p">);</span>
 </code></pre>
@@ -2846,8 +2934,9 @@ strict equality check (===). Duplicates are ignored.</p>
 
 <h3 id="notincludemembers">notIncludeMembers</h3>
 
-<p><code class="prettyprint">.notIncludeMembers(superset, subset, [message])</code>
-Asserts that <code class="prettyprint">subset</code> isn&rsquo;t included in <code class="prettyprint">superset</code> in any order. Uses a
+<p><code class="prettyprint">.notIncludeMembers(superset, subset, [message])</code></p>
+
+<p>Asserts that <code class="prettyprint">subset</code> isn&rsquo;t included in <code class="prettyprint">superset</code> in any order. Uses a
 strict equality check (===). Duplicates are ignored.</p>
 <pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">notIncludeMembers</span><span class="p">([</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span> <span class="p">],</span> <span class="p">[</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">1</span> <span class="p">],</span> <span class="s1">'not include members'</span><span class="p">);</span>
 </code></pre>
@@ -2873,8 +2962,9 @@ strict equality check (===). Duplicates are ignored.</p>
 
 <h3 id="includedeepmembers">includeDeepMembers</h3>
 
-<p><code class="prettyprint">.includeDeepMembers(superset, subset, [message])</code>
-Asserts that <code class="prettyprint">subset</code> is included in <code class="prettyprint">superset</code> in any order. Uses a deep
+<p><code class="prettyprint">.includeDeepMembers(superset, subset, [message])</code></p>
+
+<p>Asserts that <code class="prettyprint">subset</code> is included in <code class="prettyprint">superset</code> in any order. Uses a deep
 equality check. Duplicates are ignored.</p>
 <pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">includeDeepMembers</span><span class="p">([</span> <span class="p">{</span> <span class="na">a</span><span class="p">:</span> <span class="mi">1</span> <span class="p">},</span> <span class="p">{</span> <span class="na">b</span><span class="p">:</span> <span class="mi">2</span> <span class="p">},</span> <span class="p">{</span> <span class="na">c</span><span class="p">:</span> <span class="mi">3</span> <span class="p">}</span> <span class="p">],</span> <span class="p">[</span> <span class="p">{</span> <span class="na">b</span><span class="p">:</span> <span class="mi">2</span> <span class="p">},</span> <span class="p">{</span> <span class="na">a</span><span class="p">:</span> <span class="mi">1</span> <span class="p">},</span> <span class="p">{</span> <span class="na">b</span><span class="p">:</span> <span class="mi">2</span> <span class="p">}</span> <span class="p">],</span> <span class="s1">'include deep members'</span><span class="p">);</span>
 </code></pre>
@@ -2900,8 +2990,9 @@ equality check. Duplicates are ignored.</p>
 
 <h3 id="notincludedeepmembers">notIncludeDeepMembers</h3>
 
-<p><code class="prettyprint">.notIncludeDeepMembers(superset, subset, [message])</code>
-Asserts that <code class="prettyprint">subset</code> isn&rsquo;t included in <code class="prettyprint">superset</code> in any order. Uses a
+<p><code class="prettyprint">.notIncludeDeepMembers(superset, subset, [message])</code></p>
+
+<p>Asserts that <code class="prettyprint">subset</code> isn&rsquo;t included in <code class="prettyprint">superset</code> in any order. Uses a
 deep equality check. Duplicates are ignored.</p>
 <pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">notIncludeDeepMembers</span><span class="p">([</span> <span class="p">{</span> <span class="na">a</span><span class="p">:</span> <span class="mi">1</span> <span class="p">},</span> <span class="p">{</span> <span class="na">b</span><span class="p">:</span> <span class="mi">2</span> <span class="p">},</span> <span class="p">{</span> <span class="na">c</span><span class="p">:</span> <span class="mi">3</span> <span class="p">}</span> <span class="p">],</span> <span class="p">[</span> <span class="p">{</span> <span class="na">b</span><span class="p">:</span> <span class="mi">2</span> <span class="p">},</span> <span class="p">{</span> <span class="na">f</span><span class="p">:</span> <span class="mi">5</span> <span class="p">}</span> <span class="p">],</span> <span class="s1">'not include deep members'</span><span class="p">);</span>
 </code></pre>
@@ -2927,8 +3018,9 @@ deep equality check. Duplicates are ignored.</p>
 
 <h3 id="includeorderedmembers">includeOrderedMembers</h3>
 
-<p><code class="prettyprint">.includeOrderedMembers(superset, subset, [message])</code>
-Asserts that <code class="prettyprint">subset</code> is included in <code class="prettyprint">superset</code> in the same order
+<p><code class="prettyprint">.includeOrderedMembers(superset, subset, [message])</code></p>
+
+<p>Asserts that <code class="prettyprint">subset</code> is included in <code class="prettyprint">superset</code> in the same order
 beginning with the first element in <code class="prettyprint">superset</code>. Uses a strict equality
 check (===).</p>
 <pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">includeOrderedMembers</span><span class="p">([</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span> <span class="p">],</span> <span class="p">[</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span> <span class="p">],</span> <span class="s1">'include ordered members'</span><span class="p">);</span>
@@ -2955,8 +3047,9 @@ check (===).</p>
 
 <h3 id="notincludeorderedmembers">notIncludeOrderedMembers</h3>
 
-<p><code class="prettyprint">.notIncludeOrderedMembers(superset, subset, [message])</code>
-Asserts that <code class="prettyprint">subset</code> isn&rsquo;t included in <code class="prettyprint">superset</code> in the same order
+<p><code class="prettyprint">.notIncludeOrderedMembers(superset, subset, [message])</code></p>
+
+<p>Asserts that <code class="prettyprint">subset</code> isn&rsquo;t included in <code class="prettyprint">superset</code> in the same order
 beginning with the first element in <code class="prettyprint">superset</code>. Uses a strict equality
 check (===).</p>
 <pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">notIncludeOrderedMembers</span><span class="p">([</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span> <span class="p">],</span> <span class="p">[</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span> <span class="p">],</span> <span class="s1">'not include ordered members'</span><span class="p">);</span>
@@ -2984,8 +3077,9 @@ check (===).</p>
 
 <h3 id="includedeeporderedmembers">includeDeepOrderedMembers</h3>
 
-<p><code class="prettyprint">.includeDeepOrderedMembers(superset, subset, [message])</code>
-Asserts that <code class="prettyprint">subset</code> is included in <code class="prettyprint">superset</code> in the same order
+<p><code class="prettyprint">.includeDeepOrderedMembers(superset, subset, [message])</code></p>
+
+<p>Asserts that <code class="prettyprint">subset</code> is included in <code class="prettyprint">superset</code> in the same order
 beginning with the first element in <code class="prettyprint">superset</code>. Uses a deep equality
 check.</p>
 <pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">includeDeepOrderedMembers</span><span class="p">([</span> <span class="p">{</span> <span class="na">a</span><span class="p">:</span> <span class="mi">1</span> <span class="p">},</span> <span class="p">{</span> <span class="na">b</span><span class="p">:</span> <span class="mi">2</span> <span class="p">},</span> <span class="p">{</span> <span class="na">c</span><span class="p">:</span> <span class="mi">3</span> <span class="p">}</span> <span class="p">],</span> <span class="p">[</span> <span class="p">{</span> <span class="na">a</span><span class="p">:</span> <span class="mi">1</span> <span class="p">},</span> <span class="p">{</span> <span class="na">b</span><span class="p">:</span> <span class="mi">2</span> <span class="p">}</span> <span class="p">],</span> <span class="s1">'include deep ordered members'</span><span class="p">);</span>
@@ -3012,8 +3106,9 @@ check.</p>
 
 <h3 id="notincludedeeporderedmembers">notIncludeDeepOrderedMembers</h3>
 
-<p><code class="prettyprint">.notIncludeDeepOrderedMembers(superset, subset, [message])</code>
-Asserts that <code class="prettyprint">subset</code> isn&rsquo;t included in <code class="prettyprint">superset</code> in the same order
+<p><code class="prettyprint">.notIncludeDeepOrderedMembers(superset, subset, [message])</code></p>
+
+<p>Asserts that <code class="prettyprint">subset</code> isn&rsquo;t included in <code class="prettyprint">superset</code> in the same order
 beginning with the first element in <code class="prettyprint">superset</code>. Uses a deep equality
 check.</p>
 <pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">notIncludeDeepOrderedMembers</span><span class="p">([</span> <span class="p">{</span> <span class="na">a</span><span class="p">:</span> <span class="mi">1</span> <span class="p">},</span> <span class="p">{</span> <span class="na">b</span><span class="p">:</span> <span class="mi">2</span> <span class="p">},</span> <span class="p">{</span> <span class="na">c</span><span class="p">:</span> <span class="mi">3</span> <span class="p">}</span> <span class="p">],</span> <span class="p">[</span> <span class="p">{</span> <span class="na">a</span><span class="p">:</span> <span class="mi">1</span> <span class="p">},</span> <span class="p">{</span> <span class="na">f</span><span class="p">:</span> <span class="mi">5</span> <span class="p">}</span> <span class="p">],</span> <span class="s1">'not include deep ordered members'</span><span class="p">);</span>
@@ -3044,8 +3139,9 @@ check.</p>
 
 <h3 id="changes">changes</h3>
 
-<p><code class="prettyprint">.changes(function, object, property, [message])</code>
-Asserts that a function changes the value of a property.</p>
+<p><code class="prettyprint">.changes(function, object, property, [message])</code></p>
+
+<p>Asserts that a function changes the value of a property.</p>
 <pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">obj</span> <span class="o">=</span> <span class="p">{</span> <span class="na">val</span><span class="p">:</span> <span class="mi">10</span> <span class="p">};</span>
 <span class="kd">var</span> <span class="nx">fn</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span> <span class="nx">obj</span><span class="p">.</span><span class="nx">val</span> <span class="o">=</span> <span class="mi">22</span> <span class="p">};</span>
 <span class="nx">assert</span><span class="p">.</span><span class="nx">changes</span><span class="p">(</span><span class="nx">fn</span><span class="p">,</span> <span class="nx">obj</span><span class="p">,</span> <span class="s1">'val'</span><span class="p">);</span>
@@ -3076,8 +3172,9 @@ Asserts that a function changes the value of a property.</p>
 
 <h3 id="changesby">changesBy</h3>
 
-<p><code class="prettyprint">.changesBy(function, object, property, delta, [message])</code>
-Asserts that a function changes the value of a property by an amount (delta).</p>
+<p><code class="prettyprint">.changesBy(function, object, property, delta, [message])</code></p>
+
+<p>Asserts that a function changes the value of a property by an amount (delta).</p>
 <pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">obj</span> <span class="o">=</span> <span class="p">{</span> <span class="na">val</span><span class="p">:</span> <span class="mi">10</span> <span class="p">};</span>
 <span class="kd">var</span> <span class="nx">fn</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span> <span class="nx">obj</span><span class="p">.</span><span class="nx">val</span> <span class="o">+=</span> <span class="mi">2</span> <span class="p">};</span>
 <span class="nx">assert</span><span class="p">.</span><span class="nx">changesBy</span><span class="p">(</span><span class="nx">fn</span><span class="p">,</span> <span class="nx">obj</span><span class="p">,</span> <span class="s1">'val'</span><span class="p">,</span> <span class="mi">2</span><span class="p">);</span>
@@ -3112,8 +3209,9 @@ Asserts that a function changes the value of a property by an amount (delta).</p
 
 <h3 id="doesnotchange">doesNotChange</h3>
 
-<p><code class="prettyprint">.doesNotChange(function, object, property, [message])</code>
-Asserts that a function does not change the value of a property.</p>
+<p><code class="prettyprint">.doesNotChange(function, object, property, [message])</code></p>
+
+<p>Asserts that a function does not change the value of a property.</p>
 <pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">obj</span> <span class="o">=</span> <span class="p">{</span> <span class="na">val</span><span class="p">:</span> <span class="mi">10</span> <span class="p">};</span>
 <span class="kd">var</span> <span class="nx">fn</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'foo'</span><span class="p">);</span> <span class="p">};</span>
 <span class="nx">assert</span><span class="p">.</span><span class="nx">doesNotChange</span><span class="p">(</span><span class="nx">fn</span><span class="p">,</span> <span class="nx">obj</span><span class="p">,</span> <span class="s1">'val'</span><span class="p">);</span>
@@ -3144,8 +3242,9 @@ Asserts that a function does not change the value of a property.</p>
 
 <h3 id="changesbutnotby">changesButNotBy</h3>
 
-<p><code class="prettyprint">.changesButNotBy(function, object, property, delta, [message])</code>
-Asserts that a function does not change the value of a property or of a function&rsquo;s return value by an amount (delta)</p>
+<p><code class="prettyprint">.changesButNotBy(function, object, property, delta, [message])</code></p>
+
+<p>Asserts that a function does not change the value of a property or of a function&rsquo;s return value by an amount (delta)</p>
 <pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">obj</span> <span class="o">=</span> <span class="p">{</span> <span class="na">val</span><span class="p">:</span> <span class="mi">10</span> <span class="p">};</span>
 <span class="kd">var</span> <span class="nx">fn</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span> <span class="nx">obj</span><span class="p">.</span><span class="nx">val</span> <span class="o">+=</span> <span class="mi">10</span> <span class="p">};</span>
 <span class="nx">assert</span><span class="p">.</span><span class="nx">changesButNotBy</span><span class="p">(</span><span class="nx">fn</span><span class="p">,</span> <span class="nx">obj</span><span class="p">,</span> <span class="s1">'val'</span><span class="p">,</span> <span class="mi">5</span><span class="p">);</span>
@@ -3180,8 +3279,9 @@ Asserts that a function does not change the value of a property or of a function
 
 <h3 id="increases">increases</h3>
 
-<p><code class="prettyprint">.increases(function, object, property, [message])</code>
-Asserts that a function increases a numeric object property.</p>
+<p><code class="prettyprint">.increases(function, object, property, [message])</code></p>
+
+<p>Asserts that a function increases a numeric object property.</p>
 <pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">obj</span> <span class="o">=</span> <span class="p">{</span> <span class="na">val</span><span class="p">:</span> <span class="mi">10</span> <span class="p">};</span>
 <span class="kd">var</span> <span class="nx">fn</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span> <span class="nx">obj</span><span class="p">.</span><span class="nx">val</span> <span class="o">=</span> <span class="mi">13</span> <span class="p">};</span>
 <span class="nx">assert</span><span class="p">.</span><span class="nx">increases</span><span class="p">(</span><span class="nx">fn</span><span class="p">,</span> <span class="nx">obj</span><span class="p">,</span> <span class="s1">'val'</span><span class="p">);</span>
@@ -3212,8 +3312,9 @@ Asserts that a function increases a numeric object property.</p>
 
 <h3 id="increasesby">increasesBy</h3>
 
-<p><code class="prettyprint">.increasesBy(function, object, property, delta, [message])</code>
-Asserts that a function increases a numeric object property or a function&rsquo;s return value by an amount (delta).</p>
+<p><code class="prettyprint">.increasesBy(function, object, property, delta, [message])</code></p>
+
+<p>Asserts that a function increases a numeric object property or a function&rsquo;s return value by an amount (delta).</p>
 <pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">obj</span> <span class="o">=</span> <span class="p">{</span> <span class="na">val</span><span class="p">:</span> <span class="mi">10</span> <span class="p">};</span>
 <span class="kd">var</span> <span class="nx">fn</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span> <span class="nx">obj</span><span class="p">.</span><span class="nx">val</span> <span class="o">+=</span> <span class="mi">10</span> <span class="p">};</span>
 <span class="nx">assert</span><span class="p">.</span><span class="nx">increasesBy</span><span class="p">(</span><span class="nx">fn</span><span class="p">,</span> <span class="nx">obj</span><span class="p">,</span> <span class="s1">'val'</span><span class="p">,</span> <span class="mi">10</span><span class="p">);</span>
@@ -3248,8 +3349,9 @@ Asserts that a function increases a numeric object property or a function&rsquo;
 
 <h3 id="doesnotincrease">doesNotIncrease</h3>
 
-<p><code class="prettyprint">.doesNotIncrease(function, object, property, [message])</code>
-Asserts that a function does not increase a numeric object property.</p>
+<p><code class="prettyprint">.doesNotIncrease(function, object, property, [message])</code></p>
+
+<p>Asserts that a function does not increase a numeric object property.</p>
 <pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">obj</span> <span class="o">=</span> <span class="p">{</span> <span class="na">val</span><span class="p">:</span> <span class="mi">10</span> <span class="p">};</span>
 <span class="kd">var</span> <span class="nx">fn</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span> <span class="nx">obj</span><span class="p">.</span><span class="nx">val</span> <span class="o">=</span> <span class="mi">8</span> <span class="p">};</span>
 <span class="nx">assert</span><span class="p">.</span><span class="nx">doesNotIncrease</span><span class="p">(</span><span class="nx">fn</span><span class="p">,</span> <span class="nx">obj</span><span class="p">,</span> <span class="s1">'val'</span><span class="p">);</span>
@@ -3280,8 +3382,9 @@ Asserts that a function does not increase a numeric object property.</p>
 
 <h3 id="increasesbutnotby">increasesButNotBy</h3>
 
-<p><code class="prettyprint">.increasesButNotBy(function, object, property, [message])</code>
-Asserts that a function does not increase a numeric object property or function&rsquo;s return value by an amount (delta).</p>
+<p><code class="prettyprint">.increasesButNotBy(function, object, property, [message])</code></p>
+
+<p>Asserts that a function does not increase a numeric object property or function&rsquo;s return value by an amount (delta).</p>
 <pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">obj</span> <span class="o">=</span> <span class="p">{</span> <span class="na">val</span><span class="p">:</span> <span class="mi">10</span> <span class="p">};</span>
 <span class="kd">var</span> <span class="nx">fn</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span> <span class="nx">obj</span><span class="p">.</span><span class="nx">val</span> <span class="o">=</span> <span class="mi">15</span> <span class="p">};</span>
 <span class="nx">assert</span><span class="p">.</span><span class="nx">increasesButNotBy</span><span class="p">(</span><span class="nx">fn</span><span class="p">,</span> <span class="nx">obj</span><span class="p">,</span> <span class="s1">'val'</span><span class="p">,</span> <span class="mi">10</span><span class="p">);</span>
@@ -3316,8 +3419,9 @@ Asserts that a function does not increase a numeric object property or function&
 
 <h3 id="decreases">decreases</h3>
 
-<p><code class="prettyprint">.decreases(function, object, property, [message])</code>
-Asserts that a function decreases a numeric object property.</p>
+<p><code class="prettyprint">.decreases(function, object, property, [message])</code></p>
+
+<p>Asserts that a function decreases a numeric object property.</p>
 <pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">obj</span> <span class="o">=</span> <span class="p">{</span> <span class="na">val</span><span class="p">:</span> <span class="mi">10</span> <span class="p">};</span>
 <span class="kd">var</span> <span class="nx">fn</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span> <span class="nx">obj</span><span class="p">.</span><span class="nx">val</span> <span class="o">=</span> <span class="mi">5</span> <span class="p">};</span>
 <span class="nx">assert</span><span class="p">.</span><span class="nx">decreases</span><span class="p">(</span><span class="nx">fn</span><span class="p">,</span> <span class="nx">obj</span><span class="p">,</span> <span class="s1">'val'</span><span class="p">);</span>
@@ -3348,8 +3452,9 @@ Asserts that a function decreases a numeric object property.</p>
 
 <h3 id="decreasesby">decreasesBy</h3>
 
-<p><code class="prettyprint">.decreasesBy(function, object, property, delta, [message])</code>
-Asserts that a function decreases a numeric object property or a function&rsquo;s return value by an amount (delta)</p>
+<p><code class="prettyprint">.decreasesBy(function, object, property, delta, [message])</code></p>
+
+<p>Asserts that a function decreases a numeric object property or a function&rsquo;s return value by an amount (delta)</p>
 <pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">obj</span> <span class="o">=</span> <span class="p">{</span> <span class="na">val</span><span class="p">:</span> <span class="mi">10</span> <span class="p">};</span>
 <span class="kd">var</span> <span class="nx">fn</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span> <span class="nx">obj</span><span class="p">.</span><span class="nx">val</span> <span class="o">-=</span> <span class="mi">5</span> <span class="p">};</span>
 <span class="nx">assert</span><span class="p">.</span><span class="nx">decreasesBy</span><span class="p">(</span><span class="nx">fn</span><span class="p">,</span> <span class="nx">obj</span><span class="p">,</span> <span class="s1">'val'</span><span class="p">,</span> <span class="mi">5</span><span class="p">);</span>
@@ -3384,8 +3489,9 @@ Asserts that a function decreases a numeric object property or a function&rsquo;
 
 <h3 id="doesnotdecrease">doesNotDecrease</h3>
 
-<p><code class="prettyprint">.doesNotDecrease(function, object, property, [message])</code>
-Asserts that a function does not decreases a numeric object property.</p>
+<p><code class="prettyprint">.doesNotDecrease(function, object, property, [message])</code></p>
+
+<p>Asserts that a function does not decreases a numeric object property.</p>
 <pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">obj</span> <span class="o">=</span> <span class="p">{</span> <span class="na">val</span><span class="p">:</span> <span class="mi">10</span> <span class="p">};</span>
 <span class="kd">var</span> <span class="nx">fn</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span> <span class="nx">obj</span><span class="p">.</span><span class="nx">val</span> <span class="o">=</span> <span class="mi">15</span> <span class="p">};</span>
 <span class="nx">assert</span><span class="p">.</span><span class="nx">doesNotDecrease</span><span class="p">(</span><span class="nx">fn</span><span class="p">,</span> <span class="nx">obj</span><span class="p">,</span> <span class="s1">'val'</span><span class="p">);</span>
@@ -3416,8 +3522,9 @@ Asserts that a function does not decreases a numeric object property.</p>
 
 <h3 id="doesnotdecrease">doesNotDecrease</h3>
 
-<p><code class="prettyprint">.doesNotDecreaseBy(function, object, property, delta, [message])</code>
-Asserts that a function does not decreases a numeric object property or a function&rsquo;s return value by an amount (delta)</p>
+<p><code class="prettyprint">.doesNotDecreaseBy(function, object, property, delta, [message])</code></p>
+
+<p>Asserts that a function does not decreases a numeric object property or a function&rsquo;s return value by an amount (delta)</p>
 <pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">obj</span> <span class="o">=</span> <span class="p">{</span> <span class="na">val</span><span class="p">:</span> <span class="mi">10</span> <span class="p">};</span>
 <span class="kd">var</span> <span class="nx">fn</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span> <span class="nx">obj</span><span class="p">.</span><span class="nx">val</span> <span class="o">=</span> <span class="mi">5</span> <span class="p">};</span>
 <span class="nx">assert</span><span class="p">.</span><span class="nx">doesNotDecreaseBy</span><span class="p">(</span><span class="nx">fn</span><span class="p">,</span> <span class="nx">obj</span><span class="p">,</span> <span class="s1">'val'</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
@@ -3452,8 +3559,9 @@ Asserts that a function does not decreases a numeric object property or a functi
 
 <h3 id="decreasesbutnotby">decreasesButNotBy</h3>
 
-<p><code class="prettyprint">.decreasesButNotBy(function, object, property, delta, [message])</code>
-Asserts that a function does not decreases a numeric object property or a function&rsquo;s return value by an amount (delta)</p>
+<p><code class="prettyprint">.decreasesButNotBy(function, object, property, delta, [message])</code></p>
+
+<p>Asserts that a function does not decreases a numeric object property or a function&rsquo;s return value by an amount (delta)</p>
 <pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">obj</span> <span class="o">=</span> <span class="p">{</span> <span class="na">val</span><span class="p">:</span> <span class="mi">10</span> <span class="p">};</span>
 <span class="kd">var</span> <span class="nx">fn</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span> <span class="nx">obj</span><span class="p">.</span><span class="nx">val</span> <span class="o">=</span> <span class="mi">5</span> <span class="p">};</span>
 <span class="nx">assert</span><span class="p">.</span><span class="nx">decreasesButNotBy</span><span class="p">(</span><span class="nx">fn</span><span class="p">,</span> <span class="nx">obj</span><span class="p">,</span> <span class="s1">'val'</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
@@ -3490,8 +3598,9 @@ Asserts that a function does not decreases a numeric object property or a functi
 
 <h3 id="isextensible">isExtensible</h3>
 
-<p><code class="prettyprint">.isExtensible(object)</code>
-Asserts that <code class="prettyprint">object</code> is extensible (can have new properties added to it).</p>
+<p><code class="prettyprint">.isExtensible(object)</code></p>
+
+<p>Asserts that <code class="prettyprint">object</code> is extensible (can have new properties added to it).</p>
 <pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">isExtensible</span><span class="p">({});</span>
 </code></pre>
 <table><thead>
@@ -3512,8 +3621,9 @@ Asserts that <code class="prettyprint">object</code> is extensible (can have new
 
 <h3 id="isnotextensible">isNotExtensible</h3>
 
-<p><code class="prettyprint">.isNotExtensible(object)</code>
-Asserts that <code class="prettyprint">object</code> is <em>not</em> extensible.</p>
+<p><code class="prettyprint">.isNotExtensible(object)</code></p>
+
+<p>Asserts that <code class="prettyprint">object</code> is <em>not</em> extensible.</p>
 <pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">nonExtensibleObject</span> <span class="o">=</span> <span class="nb">Object</span><span class="p">.</span><span class="nx">preventExtensions</span><span class="p">({});</span>
 <span class="kd">var</span> <span class="nx">sealedObject</span> <span class="o">=</span> <span class="nb">Object</span><span class="p">.</span><span class="nx">seal</span><span class="p">({});</span>
 <span class="kd">var</span> <span class="nx">frozenObject</span> <span class="o">=</span> <span class="nb">Object</span><span class="p">.</span><span class="nx">freeze</span><span class="p">({});</span>
@@ -3540,8 +3650,9 @@ Asserts that <code class="prettyprint">object</code> is <em>not</em> extensible.
 
 <h3 id="issealed">isSealed</h3>
 
-<p><code class="prettyprint">.isSealed(object)</code>
-Asserts that <code class="prettyprint">object</code> is sealed (cannot have new properties added to it
+<p><code class="prettyprint">.isSealed(object)</code></p>
+
+<p>Asserts that <code class="prettyprint">object</code> is sealed (cannot have new properties added to it
 and its existing properties cannot be removed).</p>
 <pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">sealedObject</span> <span class="o">=</span> <span class="nb">Object</span><span class="p">.</span><span class="nx">seal</span><span class="p">({});</span>
 <span class="kd">var</span> <span class="nx">frozenObject</span> <span class="o">=</span> <span class="nb">Object</span><span class="p">.</span><span class="nx">seal</span><span class="p">({});</span>
@@ -3567,8 +3678,9 @@ and its existing properties cannot be removed).</p>
 
 <h3 id="isnotsealed">isNotSealed</h3>
 
-<p><code class="prettyprint">.isNotSealed(object)</code>
-Asserts that <code class="prettyprint">object</code> is <em>not</em> sealed.</p>
+<p><code class="prettyprint">.isNotSealed(object)</code></p>
+
+<p>Asserts that <code class="prettyprint">object</code> is <em>not</em> sealed.</p>
 <pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">isNotSealed</span><span class="p">({});</span>
 </code></pre>
 <table><thead>
@@ -3589,8 +3701,9 @@ Asserts that <code class="prettyprint">object</code> is <em>not</em> sealed.</p>
 
 <h3 id="isfrozen">isFrozen</h3>
 
-<p><code class="prettyprint">.isFrozen(object)</code>
-Asserts that <code class="prettyprint">object</code> is frozen (cannot have new properties added to it
+<p><code class="prettyprint">.isFrozen(object)</code></p>
+
+<p>Asserts that <code class="prettyprint">object</code> is frozen (cannot have new properties added to it
 and its existing properties cannot be modified).</p>
 <pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">frozenObject</span> <span class="o">=</span> <span class="nb">Object</span><span class="p">.</span><span class="nx">freeze</span><span class="p">({});</span>
 <span class="nx">assert</span><span class="p">.</span><span class="nx">frozen</span><span class="p">(</span><span class="nx">frozenObject</span><span class="p">);</span>
@@ -3613,8 +3726,9 @@ and its existing properties cannot be modified).</p>
 
 <h3 id="isnotfrozen">isNotFrozen</h3>
 
-<p><code class="prettyprint">.isNotFrozen(object)</code>
-Asserts that <code class="prettyprint">object</code> is <em>not</em> frozen.</p>
+<p><code class="prettyprint">.isNotFrozen(object)</code></p>
+
+<p>Asserts that <code class="prettyprint">object</code> is <em>not</em> frozen.</p>
 <pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">isNotFrozen</span><span class="p">({});</span>
 </code></pre>
 <table><thead>
@@ -3661,8 +3775,9 @@ Asserts that <code class="prettyprint">object</code> is <em>not</em> frozen.</p>
 
 <h3 id="fail">fail</h3>
 
-<p><code class="prettyprint">.fail(actual, expected, [message], [operator])</code>
-Throw a failure. Node.js <code class="prettyprint">assert</code> module-compatible.</p>
+<p><code class="prettyprint">.fail(actual, expected, [message], [operator])</code></p>
+
+<p>Throw a failure. Node.js <code class="prettyprint">assert</code> module-compatible.</p>
 
 <table><thead>
 <tr>
@@ -3690,8 +3805,9 @@ Throw a failure. Node.js <code class="prettyprint">assert</code> module-compatib
 
 <h3 id="lengthof">lengthOf</h3>
 
-<p><code class="prettyprint">.lengthOf(object, length, [message])</code>
-Asserts that <code class="prettyprint">object</code> has a <code class="prettyprint">length</code> property with the expected value.</p>
+<p><code class="prettyprint">.lengthOf(object, length, [message])</code></p>
+
+<p>Asserts that <code class="prettyprint">object</code> has a <code class="prettyprint">length</code> property with the expected value.</p>
 <pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">lengthOf</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">],</span> <span class="mi">3</span><span class="p">,</span> <span class="s1">'array has length of 3'</span><span class="p">);</span>
 <span class="nx">assert</span><span class="p">.</span><span class="nx">lengthOf</span><span class="p">(</span><span class="s1">'foobar'</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="s1">'string has length of 6'</span><span class="p">);</span>
 </code></pre>
@@ -3717,8 +3833,9 @@ Asserts that <code class="prettyprint">object</code> has a <code class="prettypr
 
 <h3 id="operator">operator</h3>
 
-<p><code class="prettyprint">.operator(val1, operator, val2, [message])</code>
-Compares two values using <code class="prettyprint">operator</code>.</p>
+<p><code class="prettyprint">.operator(val1, operator, val2, [message])</code></p>
+
+<p>Compares two values using <code class="prettyprint">operator</code>.</p>
 <pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">operator</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="s1">'&lt;'</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="s1">'everything is ok'</span><span class="p">);</span>
 <span class="nx">assert</span><span class="p">.</span><span class="nx">operator</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="s1">'&gt;'</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="s1">'this will fail'</span><span class="p">);</span>
 </code></pre>
@@ -3748,8 +3865,9 @@ Compares two values using <code class="prettyprint">operator</code>.</p>
 
 <h3 id="oneof">oneOf</h3>
 
-<p><code class="prettyprint">.oneOf(inList, list, [message])</code>
-Asserts that non-object, non-array value <code class="prettyprint">inList</code> appears in the flat array <code class="prettyprint">list</code>.</p>
+<p><code class="prettyprint">.oneOf(inList, list, [message])</code></p>
+
+<p>Asserts that non-object, non-array value <code class="prettyprint">inList</code> appears in the flat array <code class="prettyprint">list</code>.</p>
 <pre class="highlight javascript tab-javascript"><code><span class="nx">assert</span><span class="p">.</span><span class="nx">oneOf</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="p">[</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span> <span class="p">],</span> <span class="s1">'Not found in list'</span><span class="p">);</span>
 </code></pre>
 <table><thead>
@@ -3774,8 +3892,9 @@ Asserts that non-object, non-array value <code class="prettyprint">inList</code>
 
 <h3 id="isempty">isEmpty</h3>
 
-<p><code class="prettyprint">.isEmpty(target)</code>
-Asserts that the target does not contain any values.
+<p><code class="prettyprint">.isEmpty(target)</code></p>
+
+<p>Asserts that the target does not contain any values.
 For arrays and strings, it checks the <code class="prettyprint">length</code> property.
 For <code class="prettyprint">Map</code> and <code class="prettyprint">Set</code> instances, it checks the <code class="prettyprint">size</code> property.
 For non-function objects, it gets the count of own
@@ -3793,7 +3912,7 @@ enumerable string keys.</p>
 </thead><tbody>
 <tr>
 <td>target</td>
-<td>Object</td>
+<td>Object\</td>
 </tr>
 <tr>
 <td>message <em>optional</em></td>
@@ -3803,8 +3922,9 @@ enumerable string keys.</p>
 
 <h3 id="isnotempty">isNotEmpty</h3>
 
-<p><code class="prettyprint">.isNotEmpty(target)</code>
-Asserts that the target contains values.
+<p><code class="prettyprint">.isNotEmpty(target)</code></p>
+
+<p>Asserts that the target contains values.
 For arrays and strings, it checks the <code class="prettyprint">length</code> property.
 For <code class="prettyprint">Map</code> and <code class="prettyprint">Set</code> instances, it checks the <code class="prettyprint">size</code> property.
 For non-function objects, it gets the count of own
