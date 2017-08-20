@@ -25,4 +25,5 @@ div.tocify-wrapper::-webkit-scrollbar {
 
 div.tocify-wrapper::-webkit-scrollbar-thumb {
   border-radius: 10px;
-  background-color: #f1e0be; }
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: white; }
