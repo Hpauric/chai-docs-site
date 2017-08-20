@@ -412,7 +412,8 @@ border-top: none;
 font-size: 18px;
 margin-top: 0.8em;
 margin-bottom: 0;
-border-top: 1px dashed black;
+background-image: linear-gradient(to bottom, rgba(255,255,255,0.4), rgba(255,255,255,0));
+border-top: 1px solid #ccc;
 padding-top: 20px;
 padding-bottom: 20px;
   }
@@ -482,6 +483,12 @@ margin-top: 0;
 max-width: 100%;
 
   }
+  
+  .content code.prettyprint {
+    font-size: 15px;
+}
+
+   
 
   code {
 background-color: rgba(0,0,0,0.05);

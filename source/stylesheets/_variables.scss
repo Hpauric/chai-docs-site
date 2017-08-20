@@ -25,13 +25,14 @@ $light-cream: #faf4e8;
 $dark-cream: darken( $light-cream, 10% );
 
 $dark-gray: #292929;
+$almost-black: #1E2224;
 
 $steel-blue: #2467af;
 
 // BACKGROUND COLORS
 ////////////////////
 $nav-bg: $light-cream !default;
-$examples-bg: $light-cream !default;
+$examples-bg: $almost-black !default;
 $code-bg: $dark-gray !default;
 $code-annotation-bg: #1c1c1c !default;
 $nav-subitem-bg: $dark-cream !default;
