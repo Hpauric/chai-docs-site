@@ -11,25 +11,13 @@ Beautiful responsive documentation of Chai assertions built with slate.
 
 ## Installation
 
-Download to your project directory, add `README.md`, and commit:
-
-```sh
-curl -LO http://git.io/Xy0Chg
-git add README.md
-git commit -m "Use README Boilerplate"
-```
-
-Getting Set Up
-
 Fork this repository on Github.
-Clone your forked repository (not our original one) to your hard drive with git clone https://github.com/YOURUSERNAME/slate.git
-cd slate
-Initialize and start Slate. You can either do this locally, or with Vagrant:
+Clone your forked repository to your hard drive with git clone https://github.com/YOURUSERNAME/chai-docs-site.git
+Initialize and start Slate. 
 ```sh
 bundle install
 bundle exec middleman server
 ```
-
 To Deploy
 ```sh
 ./deploy.sh
