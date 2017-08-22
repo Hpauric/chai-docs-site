@@ -19,6 +19,22 @@ git add README.md
 git commit -m "Use README Boilerplate"
 ```
 
+Getting Set Up
+
+Fork this repository on Github.
+Clone your forked repository (not our original one) to your hard drive with git clone https://github.com/YOURUSERNAME/slate.git
+cd slate
+Initialize and start Slate. You can either do this locally, or with Vagrant:
+```sh
+bundle install
+bundle exec middleman server
+```
+
+To Deploy
+```sh
+./deploy.sh
+```
+
 ## Usage
 
 Replace the contents of `README.md` with your project's:
