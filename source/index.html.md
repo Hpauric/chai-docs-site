@@ -848,7 +848,7 @@ assert.notInclude({foo: obj1, bar: obj2}, {foo: obj1, bar: {b: 2}});
 
 | Parameter | Type |
 | ------------- | ------------- |
-|  haystack | Array\|String | 
+|  haystack | Array \| String | 
 |  needle | Mixed | 
 |  message | String | 
 
@@ -871,7 +871,7 @@ assert.deepInclude({foo: obj1, bar: obj2}, {foo: {a: 1}, bar: {b: 2}});
 
 | Parameter | Type |
 | ------------- | ------------- |
-|  haystack | Array\|String | 
+|  haystack | Array \| String | 
 |  needle | Mixed | 
 |  message | String | 
 
@@ -894,7 +894,7 @@ assert.notDeepInclude({foo: obj1, bar: obj2}, {foo: {a: 1}, bar: {b: 9}});
 
 | Parameter | Type |
 | ------------- | ------------- |
-|  haystack | Array\|String | 
+|  haystack | Array \| String | 
 |  needle | Mixed | 
 |  message | String | 
 
@@ -2373,7 +2373,7 @@ assert.isEmpty({});
 
 | Parameter | Type |
 | ------------- | ------------- |
-|  target | Object\|Array\|String\|Map\|Set | 
+|  target | Object \| Array \| String \| Map \| Set | 
 |  message _optional_ | String | 
 
 
