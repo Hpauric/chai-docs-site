@@ -1,0 +1,36 @@
+@import 'variables';
+
+div.tocify-wrapper::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: $light-cream;
+}
+
+div.tocify-wrapper::-webkit-scrollbar
+{
+	width: 8px;
+	height: 8px;
+	background-color: $steel-blue;
+}
+
+div.tocify-wrapper::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: white;
+}
+
+div.content > pre.javascript::-webkit-scrollbar
+{
+	height: 8px;
+	background-color: $dark-gray;
+}
+
+div.content > pre.javascript::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: white;
+}
+
