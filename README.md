@@ -1,6 +1,6 @@
 # Chai Documentation
 
-Beautiful responsive documentation of Chai assertions.
+Beautiful responsive documentation of Chai assertions built with slate.
 
 ## Table of Contents
 
