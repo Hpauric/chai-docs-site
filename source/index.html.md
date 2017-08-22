@@ -812,7 +812,7 @@ assert.include({foo: obj1, bar: obj2}, {foo: obj1, bar: obj2});
 
 | Parameter | Type |
 | ------------- | ------------- |
-|  haystack | Array\|String | 
+|  haystack | Array&#124;String | 
 |  needle | Mixed | 
 |  message | String | 
 
@@ -848,7 +848,7 @@ assert.notInclude({foo: obj1, bar: obj2}, {foo: obj1, bar: {b: 2}});
 
 | Parameter | Type |
 | ------------- | ------------- |
-|  haystack | Array \| String | 
+|  haystack | Array &#124; String | 
 |  needle | Mixed | 
 |  message | String | 
 
@@ -871,7 +871,7 @@ assert.deepInclude({foo: obj1, bar: obj2}, {foo: {a: 1}, bar: {b: 2}});
 
 | Parameter | Type |
 | ------------- | ------------- |
-|  haystack | Array \| String | 
+|  haystack | Array &#124; String | 
 |  needle | Mixed | 
 |  message | String | 
 
@@ -894,7 +894,7 @@ assert.notDeepInclude({foo: obj1, bar: obj2}, {foo: {a: 1}, bar: {b: 9}});
 
 | Parameter | Type |
 | ------------- | ------------- |
-|  haystack | Array \| String | 
+|  haystack | Array &#124; String | 
 |  needle | Mixed | 
 |  message | String | 
 
@@ -1346,7 +1346,7 @@ assert.hasAnyKey(new Set([{foo: 'bar'}, 'anotherKey'], [{foo: 'bar'}, 'thisKeyDo
 | Parameter | Type |
 | ------------- | ------------- |
 |  object | Mixed | 
-|  keys | Array\|Object | 
+|  keys | Array&#124;Object | 
 |  message | String | 
 
 
@@ -1459,7 +1459,7 @@ assert.hasAnyDeepKeys(new Set([{one: 'one'}, {two: 'two'}]), [{one: 'one'}, {two
 | Parameter | Type |
 | ------------- | ------------- |
 |  object | Mixed | 
-|  keys | Array\|Object | 
+|  keys | Array&#124;Object | 
 |  message | String | 
 
 
@@ -1482,7 +1482,7 @@ assert.hasAllDeepKeys(new Set([{one: 'one'}, {two: 'two'}]), [{one: 'one'}, {two
 | Parameter | Type |
 | ------------- | ------------- |
 |  object | Mixed | 
-|  keys | Array\|Object | 
+|  keys | Array&#124;Object | 
 |  message | String | 
 
 
@@ -1505,7 +1505,7 @@ assert.containsAllDeepKeys(new Set([{one: 'one'}, {two: 'two'}]), [{one: 'one'},
 | Parameter | Type |
 | ------------- | ------------- |
 |  object | Mixed | 
-|  keys | Array\|Object | 
+|  keys | Array&#124;Object | 
 |  message | String | 
 
 
@@ -1528,7 +1528,7 @@ assert.doesNotHaveAnyDeepKeys(new Set([{one: 'one'}, {two: 'two'}]), [{twenty: '
 | Parameter | Type |
 | ------------- | ------------- |
 |  object | Mixed | 
-|  keys | Array\|Object | 
+|  keys | Array&#124;Object | 
 |  message | String | 
 
 
@@ -1551,7 +1551,7 @@ assert.doesNotHaveAllDeepKeys(new Set([{one: 'one'}, {two: 'two'}]), [{one: 'one
 | Parameter | Type |
 | ------------- | ------------- |
 |  object | Mixed | 
-|  keys | Array\|Object | 
+|  keys | Array&#124;Object | 
 |  message | String | 
 
 ## Error Tests
@@ -1580,8 +1580,8 @@ assert.throws(fn, errorInstance, /Error thrown must be the same errorInstance an
 | Parameter | Type |
 | ------------- | ------------- |
 |  fn | Function | 
-|  errorLike | ErrorConstructor\|Error | 
-|  errMsgMatcher | RegExp\|String | 
+|  errorLike | ErrorConstructor&#124;Error | 
+|  errMsgMatcher | RegExp&#124;String | 
 |  message | String | 
 
 
@@ -1610,7 +1610,7 @@ assert.doesNotThrow(fn, errorInstance, /Error must not match this/);
 | ------------- | ------------- |
 |  fn | Function | 
 |  errorLike | ErrorConstructor | 
-|  errMsgMatcher | RegExp\|String | 
+|  errMsgMatcher | RegExp&#124;String | 
 |  message | String | 
 
 ###ifError
@@ -2373,7 +2373,7 @@ assert.isEmpty({});
 
 | Parameter | Type |
 | ------------- | ------------- |
-|  target | Object \| Array \| String \| Map \| Set | 
+|  target | Object &#124; Array &#124; String &#124; Map &#124; Set | 
 |  message _optional_ | String | 
 
 
@@ -2395,6 +2395,6 @@ assert.isNotEmpty({ key: 7 });
 
 | Parameter | Type |
 | ------------- | ------------- |
-|  target | Object|Array\|String\|Map\|Set | 
+|  target | Object|Array&#124;String&#124;Map&#124;Set | 
 |  message _optional_ | String | 
 
