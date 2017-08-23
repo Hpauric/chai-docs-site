@@ -2,6 +2,9 @@
 
 Beautiful responsive documentation of Chai assertions built with slate.
 
+![chai-docs-site.png]({{site.baseurl}}/images/chai-docs-site.png)
+
+
 ## Table of Contents
 
 - [Installation](#installation)
